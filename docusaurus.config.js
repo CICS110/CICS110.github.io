@@ -18,7 +18,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'CS-110', // Usually your GitHub org/user name.
   projectName: 'CS-110.github.io', // Usually your repo name.
-  deploymentBranch: 'main',
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
