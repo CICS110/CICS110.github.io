@@ -10,5 +10,12 @@ def hello_world():
     print("Hello, World!")
 
 hello_world()
+```
 
+```js
+function hello_world() {
+    console.log("Hello, World!");
+}
+
+hello_world();
 ```
