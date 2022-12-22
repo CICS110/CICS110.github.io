@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CS 110',
+  title: 'CS 110!',
   tagline: 'Whoa! a Website!',
   url: 'https://CS-110.github.io',
   baseUrl: '/',
