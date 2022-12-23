@@ -30,6 +30,19 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'guides',
+        path: 'guides',
+        routeBasePath: 'guides',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -66,9 +79,15 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Guides',
+            label: 'Docs',
           },
           { to: '/blog', label: 'Announcements', position: 'left' },
+          {
+            activeBaseRegex: `guides`,
+            to: 'guides',
+            position: 'left',
+            label: "Guides",
+          },
           {
             href: 'https://github.com/CS-110/CS-110.github.io',
             label: 'GitHub',
