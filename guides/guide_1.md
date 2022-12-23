@@ -1,8 +1,10 @@
+export const year = new Date().getFullYear();
+
 ### Example Guide
 
 Hello, World!
 
-Add some code in python
+Add some code in python {year}
 
 ```python
 

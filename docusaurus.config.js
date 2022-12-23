@@ -6,8 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site?',
-  tagline: 'Dinosaurs are cool',
+  title: 'CS 110',
   url: 'https://CS-110.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -29,6 +28,19 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'guides',
+        path: 'guides',
+        routeBasePath: 'guides',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -66,9 +78,15 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Guides',
+            label: 'Docs',
           },
           { to: '/blog', label: 'Announcements', position: 'left' },
+          {
+            activeBaseRegex: `guides`,
+            to: 'guides',
+            position: 'left',
+            label: "Guides",
+          },
           {
             href: 'https://github.com/CS-110/CS-110.github.io',
             label: 'GitHub',

@@ -4,9 +4,21 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Installation
 
+1. Install [Node.js](https://nodejs.org/en/)
+2. Install [Yarn](https://yarnpkg.com/).
+```sh
+npm install -g yarn
 ```
-$ yarn
+3. Clone the [Repository](https://github.com/CS-110/CS-110.github.io):
+```sh
+git clone https://github.com/CS-110/CS-110.github.io.git
 ```
+4. Install dependencies:
+```sh
+cd CS-110.github.io
+yarn install
+```
+
 
 ### Local Development
 
@@ -16,26 +28,7 @@ $ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+We are using Github Pages to host our website. To deploy changes, first push your changes to your own branch (NOT `main`), then create a pull request to merge your branch into the `main` branch. Once the pull request is merged, the changes will be deployed to the website.
