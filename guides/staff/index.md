@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+---
+
 # CICS 110 Staff Guide
 This is a guide for all-things staff for CICS 110. This page is rather long! I'd recommend using the section headers to navigate. Don't feel like you have to plow through it all in one sitting, since this serves a dual purpose as a guide and a manual (and therefore likely doesn't make for particularly fun reading `D:`).
 
