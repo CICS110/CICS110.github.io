@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # How to use Piazza
 
 ## Using Piazza

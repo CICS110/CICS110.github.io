@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Guide to Exams
 This is a guide of how to be prepared for exams as a student in CICS 110.
 
