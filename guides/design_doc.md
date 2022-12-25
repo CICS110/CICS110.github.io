@@ -1,6 +1,19 @@
-# Kobi's Design Doc for CICS 110
+# Kobi's Everything Doc for CICS 110
 
 Preface: I made this as a way to organize my thoughts and to help me plan out the course. This was done primarily as an exercise so I can better understand the course content. I have no notion that any of this stuff is good, but it can be used if it seems helpful.
+
+## Things to ask:
+1. How much should we meet?
+    - Currently is once a week. I think twice a week would be better since we are continually creating stuff. Since we are making stuff, we often will need to discuss next steps so we stay in sync. We also need to make sure that what we create is good, and I imagine the way we do this is by meeting and sharing what we did. Meeting twice a week would allow us to have more discussion about what we are doing, and would allow us to catch mistakes or miscommunications sooner.
+1. What do people's winters look like?
+    - I have something from the 9th-11th, anyone else have things they have planned in advance?
+1. What are goals for the winter?
+    - Add to this document the results
+1. Goals for a slide template
+    - Black/White was mentioned, anything else?
+1. Should we make an Agenda before each meeting?
+    - If we want to, put all of this on it
+
 
 
 ## Units:
