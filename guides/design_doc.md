@@ -285,13 +285,14 @@ Note: Units 3 and 4 will need a **LOT** of practice work so the content can sink
 11|4| Comprehensions + Enumerate/Zip + Practice|
 12|5| Importing modules + Standard Module Practice|
 13|5| What is a file + Opening/Closing + Writing/Reading Text|
-14|6| What is a function + Why + Functions without parameters + None|
-15|6| Functions with Parameters + Control Flow + Practice|
-16|6| Custom Modules + Documentation + Recursion |
-17|7| OOP philosophy + Class analogy + Class with constructor + attributes/accessing/dictionary comparison |
-18|7| Methods + Overloading + Practice |
-19|7| What is Pip + Installing a library + Using the library + looking up documentation |
-20|7| What is an Exception + Exception Vs Error + Types of Exceptions + Try/Except |
+14|5| What is a csv file + csv module/DiictReader + practice|
+15|6| What is a function + Why + Functions without parameters + None|
+16|6| Functions with Parameters + Control Flow + Practice|
+17|6| Custom Modules + Documentation + Recursion |
+18|7| OOP philosophy + Class analogy + Class with constructor + attributes/accessing/dictionary comparison |
+19|7| Methods + Overloading + Practice |
+20|7| What is Pip + Installing a library + Using the library + looking up documentation |
+21|7| What is an Exception + Exception Vs Error + Types of Exceptions + Try/Except |
 
 ---
 
