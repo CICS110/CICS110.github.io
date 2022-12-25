@@ -312,7 +312,7 @@ I imagine there will be weekly assignments. Each assignment will contain:
     - Will have documentation and likely will
         - introduce a more complex method
         - Require a complex control flow
-    - These should also feel (more so than the excercises) to be a meaningful task. I imagine some excercises will just be do X, without the context of why they are doing X. The challenges should have context, and should be a meaningful task.
+    - These should also feel (more so than the exercises) to be a meaningful task. I imagine some exercises will just be do X, without the context of why they are doing X. The challenges should have context, and should be a meaningful task.
 
 ### Labs
 
@@ -320,9 +320,9 @@ Each week will have a lab unless there is an exam (do we have exams?)
 
 What I imagine a lab is:
 1. Introduces a new concept:
-    - Should be a new concept that is not directly covered in class. I want this because there are a bunch of concepts that I want to cover, but if I were to introduce them breifly in class only students will forget them. It will also make class periods more confusing to cover one-off methods or concepts, but they could totally be learned in the lab.
+    - Should be a new concept that is not directly covered in class. I want this because there are a bunch of concepts that I want to cover, but if I were to introduce them briefly in class only students will forget them. It will also make class periods more confusing to cover one-off methods or concepts, but they could totally be learned in the lab.
 2. Collaboration:
-    - Students should work in teams of 2-3. 4, according to people in 121, is too many.
+    - Students should work in teams of 2 (3 if there is an odd number of people). According to people in 121, 4 is too many, so defiantly split to 2 groups of 2.
     - There should be periodic times in the lab where students should check in with a TA or UCA in the lab. This is to:
         1. Make sure they are on the right track
         2. Make sure all group members know whats going on
@@ -362,7 +362,7 @@ Note: This is just my thoughts on the website (mainly so I don't forget). This j
         - Doesn't need to be the result of live coding in class (but that would be cool)
         - Could be prepared in advance (an answer key for in-class activities basically)
         - Want to add functionality to run python code in the website. Doesn't look that bad and would be cool. For Me: Lookup live-brython again
-3. Assignments: Excercises + Challenges
+3. Assignments: Exercises + Challenges
     - Should have the documentation on the website
     - Should store the base code (if there is any) on the website
 4. Labs
