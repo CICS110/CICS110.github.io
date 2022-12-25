@@ -27,7 +27,7 @@ Learn Modules in a Lab? I think it would be a good lab assignment to learn how t
 - Computational thinking
 - The basics of python
 #### Content:
-0. Introduction to the course and instuctor
+0. Introduction to the course and instructor
 1. Model of a computer
 2. Computational thinking (how to read a program)
 3. Literals - ints, floats, strings
@@ -214,7 +214,7 @@ Learn Modules in a Lab? I think it would be a good lab assignment to learn how t
 
 ## What I'm Currently not covering 
 #### (Unfinished, need ZyBooks chapters 7-13)
-- String Aritmetic
+- String Arithmetic
     - Stuff like string concatenation, string multiplication, etc. I think this would be good for an introductory Lab or assignment to get them used to looking things up
 - Type Casting
     - I think I might want to include this, but I forgot about it initially. It might be good for a lab, but I might just shove it in in lecture 3 or 4
@@ -249,9 +249,9 @@ Learn Modules in a Lab? I think it would be a good lab assignment to learn how t
 - Lists and Modulo
     - Modulo is useful for indexing lists so you don't index out of bounds. This would be good for an exercise
 - Using the math and random modules
-    - I expose them to this in the first week, but then don't touch it for a while. It would be good to use them occasionally in excercises so they don't forget about them.
+    - I expose them to this in the first week, but then don't touch it for a while. It would be good to use them occasionally in exercises so they don't forget about them.
 - Boolean Arithmetic
-    - I cover and, or, not and stuff, but in practice (especially for the problems they see which are introductory) they don't ususally need them. We should either have the excercises require complex boolean arithmetic, or have them straight up write code that matches a boolean arithmetic expression or something.
+    - I cover and, or, not and stuff, but in practice (especially for the problems they see which are introductory) they don't usually need them. We should either have the exercises require complex boolean arithmetic, or have them straight up write code that matches a boolean arithmetic expression or something.
 - While loops
     - All sorts of while loops with different step conditions.
 - For loops
