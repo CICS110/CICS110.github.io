@@ -266,7 +266,7 @@ Learn Modules in a Lab? I think it would be a good lab assignment to learn how t
 
 ## Class timeline + Overview:
 
-Budgeting 20 classes (1 class = 75 minutes) underbudgeting so things can be moved around if needed.
+Budgeting 21 classes (1 class = 75 minutes) underbudgeting so things can be moved around if needed.
 
 Note: Units 3 and 4 will need a **LOT** of practice work so the content can sink in.
 
@@ -285,7 +285,7 @@ Note: Units 3 and 4 will need a **LOT** of practice work so the content can sink
 11|4| Comprehensions + Enumerate/Zip + Practice|
 12|5| Importing modules + Standard Module Practice|
 13|5| What is a file + Opening/Closing + Writing/Reading Text|
-14|5| What is a csv file + csv module/DiictReader + practice|
+14|5| What is a csv file + csv module/DictReader + practice|
 15|6| What is a function + Why + Functions without parameters + None|
 16|6| Functions with Parameters + Control Flow + Practice|
 17|6| Custom Modules + Documentation + Recursion |
@@ -293,6 +293,102 @@ Note: Units 3 and 4 will need a **LOT** of practice work so the content can sink
 19|7| Methods + Overloading + Practice |
 20|7| What is Pip + Installing a library + Using the library + looking up documentation |
 21|7| What is an Exception + Exception Vs Error + Types of Exceptions + Try/Except |
+
+---
+
+
+## Labs and Assignments
+
+Note: I do not know what Labs/Assignments should look like. These are just my preconceived notions of what I expect them to be (mainly so I remember to ask in a meeting if these are accurate/require any changes).
+
+### Assignments
+
+I imagine there will be weekly assignments. Each assignment will contain:
+1. 5 Exercises
+    - These will be pretty straightforward (5-15 lines of code each)
+    - They will have documentation for each exercise, and may introduce a simple concept or method on a data type. For example, there may be an exercise that introduces the string method: .toLower() which makes all letters lowercase.
+2. 2 Challenges
+    - These will be more complex (20+ lines of code, or using multiple concepts layered etc.)
+    - Will have documentation and likely will
+        - introduce a more complex method
+        - Require a complex control flow
+    - These should also feel (more so than the excercises) to be a meaningful task. I imagine some excercises will just be do X, without the context of why they are doing X. The challenges should have context, and should be a meaningful task.
+
+### Labs
+
+Each week will have a lab unless there is an exam (do we have exams?)
+
+What I imagine a lab is:
+1. Introduces a new concept:
+    - Should be a new concept that is not directly covered in class. I want this because there are a bunch of concepts that I want to cover, but if I were to introduce them breifly in class only students will forget them. It will also make class periods more confusing to cover one-off methods or concepts, but they could totally be learned in the lab.
+2. Collaboration:
+    - Students should work in teams of 2-3. 4, according to people in 121, is too many.
+    - There should be periodic times in the lab where students should check in with a TA or UCA in the lab. This is to:
+        1. Make sure they are on the right track
+        2. Make sure all group members know whats going on
+        3. Encourage discussion (hearing people talk also encourages discussion)
+
+---
+
+## Exam(s)
+
+This is just my thoughts:
+
+We had exams in the fall. However, I'm not sure about the value of exams. The purpose of an exam, from my understanding, is to verify how much each student understands about the topic.
+
+Students will have weekly assignments, and will have a lab every week. I think that the assignments and labs will be a better indicator of how much each student understands. Students who don't understand a concept will struggle with that week's exercises, challenges, and Lab. This lack of understanding will therefore be present in the grade.
+
+Additionally, most of the exam questions we had in the fall were very pinpointed. There were many questions on specific edge cases. This is what most CS exams end up with since a question needs to be specific to have a multiple choice answer. However, this also means that grades on the exam are very dependent on the student's ability to memorize edge cases. I don't think this is not a good indicator of how much the student understands the topic.
+
+On the other hand, having a lab I think is a better environment to evaluate this. In a lab, students write a program. This program is a good indicator of how much the student understands the topic. This is because the program is a direct result of the student's understanding of the topic. If the student doesn't understand the topic, they will struggle to write the program. If they do understand the topic, they will be able to write the program.
+
+A worry that could exist with this is that we are testing the group of 2-3 student's knowledge instead of an individual student. However, I think this is a good thing. In the real world, students will be working in groups. This is a good way to prepare them for that. Additionally, if we feel that the groups are inhibiting our ability to determine how much students understand, we can just make the lab sections that would have been exams, into labs without groups.
+
+---
+
+## The Website
+
+Note: This is just my thoughts on the website (mainly so I don't forget). This just reflects my understanding of what we want on the website. So if something should be here, let me know because I probably forgot. Also, if something should not be here, let me know because there is probably a misunderstanding on my part.
+
+1. Schedule
+    - I wanted the office hours on the website so it was easy to view
+        - Potentially with a react calendar component
+    - I wanted the class schedule with topics for each class period
+        - So students could get an understanding of what we were going to cover
+2. Slides + In class content
+    - I wanted the slides on the website so students could view them at home
+        - Embedded PowerPoint slides or google slides
+    - Code used in class
+        - Doesn't need to be the result of live coding in class (but that would be cool)
+        - Could be prepared in advance (an answer key for in-class activities basically)
+        - Want to add functionality to run python code in the website. Doesn't look that bad and would be cool. For Me: Lookup live-brython again
+3. Assignments: Excercises + Challenges
+    - Should have the documentation on the website
+    - Should store the base code (if there is any) on the website
+4. Labs
+    - Should have the documentation on the website
+    - Should store the base code (if there is any) on the website
+5. Guides
+    - Wanted to address common issues (like how to install python) with guides on the website
+    - Wanted to go over topics (like how to define a function) with guides on the website so it was easy for students to reference
+6. People
+    - Wanted to have a page with information on the instructors, TAs, and UCA's
+        - Picture, name, email, office hours, etc.
+7. Course Information
+    - Wanted to have a page with information on the course
+        - Course description, course goals, Unit overviews, etc.
+    - Syllabus
+8. Helpful Resources
+    - Wanted to have a page with helpful resources outside of the course
+        - Information on SI sessions, helpful youtube channels, tutoring from CICS 298A, etc.
+9. Announcements
+    - Wanted to have a page with announcements
+        - Important announcements, reminders, etc.
+10. Forms
+    - Wanted to have a page with forms
+        - Feedback form, Extension form, etc.
+
+
 
 ---
 
