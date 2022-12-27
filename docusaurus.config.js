@@ -21,6 +21,9 @@ const config = {
   organizationName: 'CS-110',
   trailingSlash: false,
 
+  // Add live python code execution
+  themes: ['docusaurus-live-brython'],
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
