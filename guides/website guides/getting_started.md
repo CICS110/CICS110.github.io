@@ -11,10 +11,11 @@ A computer that you can install software on
 2. Install Yarn:
     1. Open a terminal
     2. Run `npm install --global yarn`
-3. Clone the repository:
+3. Install Git: https://git-scm.com/downloads
+4. Clone the repository:
     1. Open a terminal and navigate to the directory you want to clone the repository into
     2. Run `git clone https://github.com/CS-110/CS-110.github.io.git`
-4. Install dependencies:
+5. Install dependencies:
     1. In the same terminal, navigate to the directory you cloned the repository into: `cd CS-110.github.io`
     2. Run `yarn install` in the terminal to install the dependencies
 
