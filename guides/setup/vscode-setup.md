@@ -1,4 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Setting up VSCode
+sidebar_label: VSCode
 ---
+
+# Setting up VSCode
