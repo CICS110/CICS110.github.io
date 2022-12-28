@@ -53,6 +53,9 @@ The best example of posts in this category are things like "what's on the next e
 If questions are coming in faster than the assigned staff can handle, like before a major deadline or exam, don't be afraid to `@` all UCAs asking if anyone is free to help out.
 
 ## Grading
+Grading is all done via Gradescope. For a guide on how to grade (both at the high level and how to use Gradescope itself), 
+see [this guide](https://groups.cs.umass.edu/uca/uca-training-grading-on-gradescope/) on the UCA website. 
+
  
 ## Uploading to Moonami
 ### zyBooks
