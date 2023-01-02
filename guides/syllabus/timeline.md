@@ -2,6 +2,10 @@
 
 ## 🗓️ Week 01 - Introduction to Programming
 
+### 📖 Reading
+
+- Chapter 1: Introduction to Programming
+
 ### 📚 Primary Topics
 
 - Course administration
@@ -49,6 +53,10 @@
 
 ## 🗓️ Week 02 - Variables and Expressions
 
+### 📖 Reading
+
+- Chapter 2: Variables and Expressions
+
 ### 📚 Primary Topics
 
 - Variables and assignments
@@ -72,8 +80,8 @@
 
 ### 🧱 Lectures
 
-- **03 Variables and Assignments**: cover variables, assignments, identifiers. Introduce control flow diagrams and memory traces. Introduce `assert` to prove a variable contains a value. This will require the `==` operator. This is ok. Explain what equivalence means here. Two values are equivalent, two variables referencing the same value are equivalent. Variables do not hold values, they refer to places in memory that hold values.
-- **04 Arithmetic Expressions**: arithmetic expressions and various operators. Spend some time on modulo - students often are confused about this. Show an example of a program with a control flow diagram and memory diagram. Introduce a module (Math) explain how it is used. Introduce `tkinter` and show how we can get input using a GUI.
+- **03 Arithmetic Expressions**: arithmetic expressions and various operators. Spend some time on modulo - students often are confused about this.
+- **04 Variables and Assignments**: cover variables, assignments, identifiers. Introduce control flow diagrams and memory traces. Introduce `assert` to prove a variable contains a value. This will require the `==` operator. This is ok. Explain what equivalence means here. Two values are equivalent, two variables referencing the same value are equivalent. Variables do not hold values, they refer to places in memory that hold values. Introduce a module (Math) explain how it is used. Introduce `tkinter` and show how we can get input using a GUI.
 
 ### 🧪 Lab
 
@@ -91,6 +99,10 @@
 - Transition students form basic I/O to GUI. Explain the difference and remind them that both are very important to know about in future classes. They must be able to run a Python program from the command line as well as from within VSCode.
 
 ## 🗓️ Week 03 - Types
+
+### 📖 Reading
+
+- Chapter 3: Types
 
 ### 📚 Primary Topics
 
@@ -115,7 +127,7 @@
 ### 🧱 Lectures
 
 - **05 Data Types**: covers the string and list data types. Demonstration programs that use them, show control flow and memory diagrams, use GUI modals for I/O along with console examples.
-- **06 Representation**: Show the representation of types, how to convert from one to another (string to int/float), binary numbers, and the formatting of strings. Again, use control flow diagrams and memory diagrams to demonstrate how execution works and how the data is organized in memory.
+- **06 Representation**: Show the representation of types, how to convert from one to another (string to int/float), binary numbers, and the formatting of strings. Again, use control flow diagrams and memory diagrams to demonstrate how execution works and how the data is organized in memory. Use GUI modals for I/O along with console examples.
 
 ### 🧪 Lab
 
@@ -130,6 +142,10 @@
 - Use the debugger to trace through the code. Connect it with the control flow and memory diagram. Show them the basics of understanding the code through the debugger. Connect the changes in program state to what is displayed in the debugger.
 
 ## 🗓️ Week 04 - Branching
+
+### 📖 Reading
+
+- Chapter 4: Branching
 
 ### 📚 Primary Topics
 
@@ -176,6 +192,10 @@
 
 ## 🗓️ Week 05 - Loops
 
+### 📖 Reading
+
+- Chapter 5: Loops
+
 ### 📚 Primary Topics
 
 - Loops (general)
@@ -187,7 +207,7 @@
 - Nested loops
 - Developing programs incrementally
 - Break and continue
-- Loop else
+- Loop else (special to Python - perhaps cover this in lab?)
 - The `enumerate()` function
 
 ### 🧶 Thread
@@ -219,41 +239,154 @@
 
 ## 🗓️ Week 06 - Branching and Loops
 
-### 📚 Primary Topics
+### 📖 Reading
 
-### 🧶 Thread
-
-### 🧱 Lectures
-
-### 🧪 Lab
-
-### 📝 Notes
-
-## 🗓️ Week 07 - Files and Functions
+- Chapter 8: More on Strings, Lists, and Dictionaries
 
 ### 📚 Primary Topics
 
+- Advanced branching and loop examples
+- Nested data types (arrays in arrays, dictionaries of dictionaries of arrays)
+- Debugging branching and loops
+- Counting how many steps a loops takes (intuitive efficiency) with branches
+- When to use which kind of loop and/or branch
+- When to use `break` and `continue`
+- Loops for processing input (loop until some condition user inputs)
+  - branches nested in loops (command line / input processing)
+- Loops for processing data (loop until end of data)
+  - branches evaluating that data
+- Nested loops for processing nested objects (an array of strings).
+- Command line arguments
+- List comprehensions
+
 ### 🧶 Thread
+
+- Control flow diagrams and state tracing is a must here. Students will need to fully understand how to look at Python code and translate it into a control diagram and trace it. Likewise, they will need to be able to translate a control flow diagram into Python code.
+- Focusing on `assert` and loop invariants is a must. Every loop should have a comment indicating the invariant(s) and an assert testing the invariant. We want students to understand what an invariant is so they are prepared for future theoretical courses.
+- Pre/post conditions for loops.
+- Students must have an intuitive sense of how many steps a loop takes to complete. This week should focus on the steps of a nested loop and develop some simple formulas to quantify the number of steps taken to complete a loop given some input. Do not discuss Big-O here, but develop an intuitive notion.
 
 ### 🧱 Lectures
 
+- **11 Nested Data Types**: This lecture focuses on nested data types. Lists of lists, dictionaries of dictionaries, dictionaries of lists, lists of dictionaries, etc. Memory diagrams are a must here. Students must have a visual of what this looks like in memory. Examples of why nested data types are important.
+- **12 Nested Iteration**: Advanced examples of iterating over nested data types. Use control flow diagrams and memory tracing to help students see the what is going on. Discuss the number of steps it takes to complete a loop intuitively. Demonstrate an application that uses nested iteration using a GUI.
+
 ### 🧪 Lab
+
+- An in-depth look at the various methods available to the different data types.
+- String methods
+- List methods
+- Dictionary methods
+- Examples of how they are used
+- Complete an exercise using a selection of data type methods
 
 ### 📝 Notes
 
-## 🗓️ Week 08 - Functions and Modules
+- We want students to be confident in their ability to use loops and conditionals. To do that we need to make sure that they have ownership of the material. This requires lots of exercises. They should complete many exercises involving loops and branching.
+- There are many methods associated with built-in data types. They should be presented in the context of examples rather than just a list of what exists (boring). Solid examples that exemplify the associated data type methods is important to provide context and clarity for the **why** and not just the **how**.
+
+## 🗓️ Week 07 - Functions and Files
+
+### 📖 Reading
+
+- Chapter 6: Functions
+- Chapter 10: Files
 
 ### 📚 Primary Topics
 
+- User-defined functions
+- Top-down design / bottom-up design
+- Dynamic typing
+- Reasons for defining functions
+- Mathematical functions and function stubs
+- Functions with branches and loops
+- Function arguments
+- Keyword arguments and default parameter values
+- Common errors
+- Arbitrary argument lists
+- Multiple return values
+- Documenting functions
+- Interacting with file systems
+- Reading files
+- Writing files
+- Binary data
+- Command-line arguments
+- The `with` statement
+- Comma separated value files (CSV)
+
 ### 🧶 Thread
+
+- Using `assert` to test function parameter values
+- Drawing control flow diagrams for a function
+- Memory tracing with functions (separate memory for now, a stack for recursion)
+- Use the debugger to trace through a program
+- Use Python Tutor to demonstrate memory tracing
 
 ### 🧱 Lectures
 
+- **13 Functions**: Introduce the basics of functions. Focus on top-down design and how to decompose a problem into smaller parts. Define functions for the smaller parts. How input/output to functions work. What does all of this look like in a control flow diagram?
+- **14 Functions and Files**: Keyword arguments, multiple return values, documenting functions. Combine this with reading/writing files. Introduce CSV files and why they are important and how are they used. Relate this to data science and the built-in library for processing CSV files.
+
 ### 🧪 Lab
 
+- How do you debug a function? Demonstrate how to debug a function using print statements as well as the VSCode debugger. Show students how to see the values of parameters and local variables and how to set break points in a function and how to step through and into a program with functions.
+- An in-depth look at the CSV module. Explore how CSV file are read and written to. Look at how to process them. Look at how to read a CSV file into a dictionary and process the information in that format.
+- Complete an exercise using the CSV module where students need to write several functions extracting information from the CSV data after it has been read in. After manipulation, the data is written to a different CSV file. Students should draw control flow diagrams and state diagrams for their functions.
+
 ### 📝 Notes
+
+- At this point in the class we want students to have a firm grasp of programming using the basic primary constructs of the language: branching, loops, and functions. We also want them to know how to evaluate a problem and solve it using a programming language. We want them to be able to break that problem down into smaller parts and write functions. We also want them to be capable of using the built-in types and functions to solve those problems.
+- Students should know how to proceed when they are stuck. They should have the tools from the previous 6 weeks that will help them debug a program and determine where the problem is. We should probably have a rule that they can't ask a question unless they can narrow the scope of the issue to 5 lines of code.
+
+## 🗓️ Week 08 - Functions, Modules, and Event Loops
+
+### 📖 Reading
+
+- Chapter 7: Function Scope, Function Objects, and Modules
+
+### 📚 Primary Topics
+
+- Scope of variables and functions
+- Namespaces and scope resolution
+- Functions are objects
+- Modules
+- Finding modules
+- Importing specific names form modules
+- Executing modules as scripts
+- Reloading modules
+- Packages
+- Standard library
+- Event loops
+
+### 🧶 Thread
+
+- Using `assert` to test function parameter values
+- Drawing control flow diagrams for a function and emphasize scope
+- Memory tracing with functions (separate memory for now, a stack for recursion)
+- Use the debugger to trace through a program
+- Use Python Tutor to demonstrate memory tracing
+
+### 🧱 Lectures
+
+- **15 Variable Scope and Function Objects**: Discuss variable scope and what that means. How does variable scope change in the context of functions? What is a namespace and why is that an important aspect of software engineering?
+- **16 Modules and Event Loops**: What is a module and why are they important? How do you use a module? How do you write a module? What is an interface to that module? How does this differ from the standard library? What is an event loop and how does it relate to a GUI? Write a GUI that uses an event loop.
+
+### 🧪 Lab
+
+- Design a module with an interface for creating a GUI.
+- Write a module confirming to the interface that uses an event loop and GUI.
+- How do you debug that module and GUI?
+- Where can you use print statements? How do you use the debugger?
+
+### 📝 Notes
+
+- Introduce event loops with `tkinter` here
+- Connect function objects to event handlers in `tkinter`.
+- Combine functions, event handlers, loops, branching, and files into a single example that demonstrates all of them.
 
 ## 🗓️ Week 09 - Modules and Recursion
+
+### 📖 Reading
 
 ### 📚 Primary Topics
 
@@ -267,6 +400,8 @@
 
 ## 🗓️ Week 10 - Recursion
 
+### 📖 Reading
+
 ### 📚 Primary Topics
 
 ### 🧶 Thread
@@ -278,6 +413,8 @@
 ### 📝 Notes
 
 ## 🗓️ Week 11 - Strings, Lists, and Dictionaries
+
+### 📖 Reading
 
 ### 📚 Primary Topics
 
@@ -291,6 +428,8 @@
 
 ## 🗓️ Week 12 - Classes
 
+### 📖 Reading
+
 ### 📚 Primary Topics
 
 ### 🧶 Thread
@@ -302,6 +441,8 @@
 ### 📝 Notes
 
 ## 🗓️ Week 13 - Classes and Exceptions
+
+### 📖 Reading
 
 ### 📚 Primary Topics
 
