@@ -75,6 +75,17 @@
 - **03 Variables and Assignments**: cover variables, assignments, identifiers. Introduce control flow diagrams and memory traces. Introduce `assert` to prove a variable contains a value. This will require the `==` operator. This is ok. Explain what equivalence means here. Two values are equivalent, two variables referencing the same value are equivalent. Variables do not hold values, they refer to places in memory that hold values.
 - **04 Arithmetic Expressions**: arithmetic expressions and various operators. Spend some time on modulo - students often are confused about this. Show an example of a program with a control flow diagram and memory diagram. Introduce a module (Math) explain how it is used. Introduce `tkinter` and show how we can get input using a GUI.
 
+### Lab
+
+- How to use `assert` with basic variables and their values
+- How to use VSCode effectively
+- How to use the VSCode debugger with basic variables and their values
+  - Step, step over, step in, etc.
+  - Watching variables and their values
+  - Do not talk about the stack (to early for that, wait until functions)
+- Broken programs and invalid variable names - exercise: fix these
+- Complete an exercise using `assert` and the debugger
+
 ### Notes
 
 - Transition students form basic I/O to GUI. Explain the difference and remind them that both are very important to know about in future classes. They must be able to run a Python program from the command line as well as from within VSCode.
