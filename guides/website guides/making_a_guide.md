@@ -5,7 +5,7 @@ This is a guide on how to make a guide. This guide will teach you how to make a 
 ## Prerequisites
 
 - A code editor (VS Code, Atom, etc.)
-- A local version of the development enviroment (see [here](getting_started.md) for instructions on how to set it up)
+- A local version of the development environment (see [here](getting_started.md) for instructions on how to set it up)
 - An understanding of Markdown (see [here](markdown_tutorial.md) for a guide on Markdown)
 
 ## Creating A Guide
