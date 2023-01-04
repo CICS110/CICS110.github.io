@@ -25,3 +25,12 @@ Note: must have the local development environment setup first
 2. Run `yarn start` in the terminal to start the local development environment
 
 This should open a browser window with the website running locally
+
+:::caution Search Bar Will Not Work Locally
+In the local development environment, the search bar will not work. You can get it to work by first building it then serving the local production build:
+
+```bash
+yarn build
+npx http-server ./build
+```
+:::
