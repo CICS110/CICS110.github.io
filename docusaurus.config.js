@@ -43,6 +43,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
+    require.resolve('docusaurus-lunr-search')
   ],
 
   presets: [
