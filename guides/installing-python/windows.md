@@ -1,6 +1,6 @@
 # Installing Python on Windows
 
-This guide will help you install Python on Windows. If you are using a different operating system, please see the [Installing Python on other operating systems](/guides/installing-python) for a different guide.
+This guide will help you install Python on Windows. If you are using a different operating system, please see the [Installing Python on other operating systems](/guides/category/guides-on-installing-python) for a different guide.
 
 ## Make sure you don't already have Python
 
