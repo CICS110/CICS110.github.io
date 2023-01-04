@@ -28,6 +28,13 @@ $ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+#### Warning Search Bar Will Not Work Locally
+In the local development environment, the search bar will not work. You can get it to work by first building it then serving the local production build:
+
+```bash
+yarn build
+npx http-server ./build
+```
 
 ### Deployment
 
