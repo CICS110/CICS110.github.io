@@ -4,6 +4,11 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// Should be the name of the folder containing the docs folders
+const mainFolder = 'main'
+
+const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder)
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CS 110',
@@ -13,10 +18,6 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'facebook', // Usually your GitHub org/user name.
-  // projectName: 'docusaurus', // Usually your repo name.
   projectName: 'CS-110.github.io',
   organizationName: 'CS-110',
   trailingSlash: false,
@@ -24,46 +25,34 @@ const config = {
   // Add live python code execution
   themes: ['docusaurus-live-brython'],
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
+  clientModules: [
+    require.resolve('./src/css/custom.css'),
+  ],
+
   plugins: [
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'guides',
-        path: 'guides',
-        routeBasePath: 'guides',
-        sidebarPath: require.resolve('./sidebars.js'),
-      }),
-    ],
+    ...navPlugins,
+    ['@docusaurus/plugin-content-blog', {
+      id: 'blog',
+      path: `${mainFolder}/blog`,
+      routeBasePath: 'blog',
+      showReadingTime: true,
+    }],
     require.resolve('docusaurus-lunr-search')
   ],
 
+  // I don't know why this can't be removed?
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+        docs: false,
+        blog: false,
+        theme: false
       }),
     ],
   ],
@@ -78,19 +67,8 @@ const config = {
         //   src: 'img/logo.svg',
         // },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          },
           { to: '/blog', label: 'Announcements', position: 'left' },
-          {
-            activeBaseRegex: `guides`,
-            to: 'guides',
-            position: 'left',
-            label: "Guides",
-          },
+          ...navItems,
           {
             href: 'https://github.com/CS-110/CS-110.github.io',
             label: 'GitHub',
@@ -101,15 +79,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Links',
             items: [
@@ -142,6 +111,9 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        respectPrefersColorScheme: true,
       },
     }),
 };

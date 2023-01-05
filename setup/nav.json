@@ -1,0 +1,27 @@
+[
+  {
+    "id": "guides",
+    "label": "Guides",
+    "position": "left"
+  },
+  {
+    "id": "labs",
+    "label": "Labs",
+    "position": "left"
+  },
+  {
+    "id": "assignments",
+    "label": "Assignments",
+    "position": "left"
+  },
+  {
+    "id": "lectures",
+    "label": "Lectures",
+    "position": "left"
+  },
+  {
+    "id": "about",
+    "label": "About",
+    "position": "left"
+  }
+]
