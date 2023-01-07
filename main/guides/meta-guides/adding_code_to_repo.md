@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Committing Code
 
 This is a guide on how to commit code to the repository.

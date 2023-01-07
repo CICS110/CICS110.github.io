@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Making A Guide
 
 This is a guide on how to make a guide. This guide will teach you how to make a guide for this website.
@@ -50,7 +54,7 @@ The following is a list of front matter that can be used for guides:
 
 ### Live Code Editor
 
-If you want to add a live python code editor, see this guide: [Live Code Editor](../live_python.md)
+If you want to add a live python code editor, see this guide: [Live Code Editor](./live_python.md)
 
 ### Linking To Other Guides
 

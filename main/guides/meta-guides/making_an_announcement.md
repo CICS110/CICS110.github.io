@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Making an Announcement
 
 This guide will show you how to make an announcement in the blog section.
