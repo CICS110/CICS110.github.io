@@ -1,4 +1,8 @@
-# Kobi's Everything Doc for CICS 110
+---
+sidebar_position: 2
+---
+
+# Kobi's Design Doc
 
 Preface: I made this as a way to organize my thoughts and to help me plan out the course. This was done primarily as an exercise so I can better understand the course content. I have no notion that any of this stuff is good, but it can be used if it seems helpful.
 

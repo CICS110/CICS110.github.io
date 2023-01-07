@@ -1,3 +1,8 @@
+---
+sidebar_position: 0
+sidebar_label: "Windows"
+---
+
 # Installing Python on Windows
 
 This guide will help you install Python on Windows. If you are using a different operating system, please see the [Installing Python on other operating systems](/guides/category/guides-on-installing-python) for a different guide.

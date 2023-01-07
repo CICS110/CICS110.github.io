@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Making A Guide
 
 This is a guide on how to make a guide. This guide will teach you how to make a guide for this website.

@@ -1,3 +1,7 @@
+--- 
+sidebar_position: 0
+---
+
 # Getting Started
 
 This guide will walk you through the process of setting up a local development environment for the website
