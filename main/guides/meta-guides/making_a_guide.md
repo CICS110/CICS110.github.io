@@ -54,7 +54,7 @@ The following is a list of front matter that can be used for guides:
 
 ### Live Code Editor
 
-If you want to add a live python code editor, see this guide: [Live Code Editor](../live_python.md)
+If you want to add a live python code editor, see this guide: [Live Code Editor](./live_python.md)
 
 ### Linking To Other Guides
 
