@@ -342,6 +342,13 @@ Spend time reading/reviewing Chapter 5
 
 Spend time reading/reviewing Chapter 5
 
+## 🧱 Lecture XX: Looping and Branching (Tu 3/21)
+
+- control flow diagrams
+- loops with branches
+- back and forth with control flow and code
+- "SQL" statement.
+
 ## 🧱 Lecture 11: Looping Details (Tu 3/21)
 
 Introduce the for loop and the `range()` function as an alternative to the while loop. Explain how they are different and when each should be used. Discuss incremental development of a program and the importance of program design before implementation using control flow diagrams and architectural drawings. These diagrams will be simple at this stage, but it will start students off on the right foot by thinking before coding. This is something that should be emphasized through out the rest of the course.
@@ -480,7 +487,7 @@ This is the second exam for the course. It will cover the following:
 - Use VSCode debugger to debug broken code
 - Complete an exercise using a selection of data type methods
 
-## 🧱 Lecture 15 Functions (Tu 4/4)
+## 🧱 Lecture 15 Functions (Tu 4/4) (expand this to two additional classes)
 
 Introduce the basics of functions. Focus on top-down design and how to decompose a problem into smaller parts. Define functions for the smaller parts. How input/output to functions work. What does all of this look like in a control flow diagram?
 
