@@ -13,7 +13,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">CS 110</h1>
-        <p className="hero__subtitle">Welcome to Intro to Programming</p>
+        <p className="hero__subtitle">Welcome to Foundations of Programming</p>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -31,11 +31,12 @@ export default function Home() {
   return (
     <Layout
       title="Homepage"
-      description="Description will go into a meta tag in <head />" >
+      description="Description will go into a meta tag in <head />"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
-    </Layout >
+    </Layout>
   );
 }
