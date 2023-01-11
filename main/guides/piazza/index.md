@@ -1,5 +1,6 @@
 ---
-sidebar_position: 8
+author: Ben Burns
+sidebar_position: 9
 ---
 
 # How to use Piazza
@@ -7,11 +8,21 @@ sidebar_position: 8
 ## Using Piazza
 To ask a question, click the `New Post` button in the top left corner:
 
-![New Post](./new-post.png)
+<div style={{textAlign: 'center'}}>
+  <img 
+    src={require('./new-post.png').default} 
+    alt="Image of new post button"
+  />
+</div>
 
 You'll then be presented with the following screen:
 
-![Create](./create.png)
+<div style={{textAlign: 'center'}}>
+  <img 
+    src={require('./create.png').default} 
+    alt="Image of post creation screen"
+  />
+</div>
 
 99% of the time you'll want to pick `Question`. 
 Public posts are `Entire Class`, private posts are `Individual Student(s)/Instructor(s)`. 
