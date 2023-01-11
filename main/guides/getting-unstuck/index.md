@@ -121,6 +121,6 @@ this section will still have content of how to parse an error message:
 - what's the error
 - error message 
 
-See the [Common Errors guide](./common-errors.md) on how to approach various specific errors. 
+See the [Common Errors guide](./common-errors) on how to approach various specific errors. 
 ## Unexpected Output
 See the debugger article, how to logically identify what part of the program has the problem
