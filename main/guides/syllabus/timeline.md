@@ -1,3 +1,7 @@
+---
+author: Tim Richards
+---
+
 # Timeline
 
 ## 🧱 Lecture 1 Introduction (Tu 2/7)
