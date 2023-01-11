@@ -50,7 +50,7 @@ function Feature({ Svg, title, description }) {
       <div className={clsx('col col--3 text--center')}>
         <img src="img/110-image.png" width="70%"></img>
       </div>
-      <div className={clsx('col col--9')}>
+      <div className={clsx('col col--8')}>
         <div className="padding-vert--md">
           <p>{description}</p>
         </div>
