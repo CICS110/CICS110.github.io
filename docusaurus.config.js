@@ -5,9 +5,9 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // Should be the name of the folder containing the docs folders
-const mainFolder = 'main'
+const mainFolder = 'main';
 
-const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder)
+const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -30,30 +30,31 @@ const config = {
     locales: ['en'],
   },
 
-  clientModules: [
-    require.resolve('./src/css/custom.css'),
-  ],
+  clientModules: [require.resolve('./src/css/custom.css')],
 
   plugins: [
     ...navPlugins,
-    ['@docusaurus/plugin-content-blog', {
-      id: 'blog',
-      path: `${mainFolder}/blog`,
-      routeBasePath: 'blog',
-      showReadingTime: true,
-    }],
-    require.resolve('docusaurus-lunr-search')
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'blog',
+        path: `${mainFolder}/blog`,
+        routeBasePath: 'blog',
+        showReadingTime: true,
+      },
+    ],
+    require.resolve('docusaurus-lunr-search'),
   ],
 
   // I don't know why this can't be removed?
   presets: [
     [
       'classic',
-      ({
+      {
         docs: false,
         blog: false,
-        theme: false
-      }),
+        theme: false,
+      },
     ],
   ],
 
@@ -75,6 +76,11 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
       footer: {
         style: 'dark',
