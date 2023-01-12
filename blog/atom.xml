@@ -20,15 +20,4 @@
         </author>
         <category label="welcome" term="welcome"/>
     </entry>
-    <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>welcome</id>
-        <link href="https://CS-110.github.io/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p>Welcome students to our course on introductory programming! Whether you are brand new to programming or have some experience under your belt, we are excited to have you join us on this journey.</p><p>In this course, you will learn the fundamental concepts and skills needed to become a successful programmer. You'll start by learning how to write simple programs in a programming language, and then gradually build up your knowledge and abilities as you progress through the course. Along the way, you'll also have the opportunity to apply what you've learned by completing interactive exercises and projects.</p><p>We know that learning to program can be challenging at times, but we are here to support you every step of the way. Our experienced instructors will be available to answer any questions you may have, and your fellow students will also be a valuable resource as you work through the material.</p><p>We are excited to see what you will accomplish and where your newfound programming skills will take you. Let's get started!</p>]]></content>
-        <category label="facebook" term="facebook"/>
-        <category label="hello" term="hello"/>
-        <category label="docusaurus" term="docusaurus"/>
-    </entry>
 </feed>
