@@ -1,6 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
@@ -48,7 +50,13 @@ function Feature({ Svg, title, description }) {
   return (
     <div className="row">
       <div className={clsx('col col--3 text--center')}>
-        <img src="img/110-image.png" width="70%"></img>
+        <ThemedImage
+          alt="110 image"
+          sources={{
+            light: useBaseUrl('img/110-image-light.png'),
+            dark: useBaseUrl('img/110-image-dark.png'),
+          }}
+        />
       </div>
       <div className={clsx('col col--8')}>
         <div className="padding-vert--md">
