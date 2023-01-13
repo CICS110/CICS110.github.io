@@ -16,7 +16,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/110-image-light.png',
 
   projectName: 'CS-110.github.io',
   organizationName: 'CS-110',
