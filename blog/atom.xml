@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CS-110.github.io/blog"/>
     <subtitle>CS 110 Blog</subtitle>
-    <icon>https://CS-110.github.io/img/favicon.ico</icon>
+    <icon>https://CS-110.github.io/img/110-image-light.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
