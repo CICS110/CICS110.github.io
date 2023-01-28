@@ -4,6 +4,29 @@ sidebar_position: 9
 ---
 
 # Common Errors
+## `NameError`
+`NameError` occurs when we attempt to reference a variable name that has not been declared. This usually occurs because
+1. We're referencing a variable that doesn't exist yet
+2. We're referencing a variable that does exist, but we misspelled a reference somewhere
+
+Remember that python runs line by line, top to bottom (once we start writing our own functions this isn't strictly true), so a variable has to be declared above where you first attempt to use it. 
+
+In rare cases, a variable can get deleted or "garbage collected" before it is called, and this error can occur, but this is extremely rare in Python specifically. This case is more common in almost any other language, like C or Java, where variables declared inside a loop are deleted/garbage collected once the loop finishes. For example
+
+```python 
+for i in range(3):
+  print(i)
+print(i)
+```
+will print `0\n1\n2\n3\n`. In C, the equivalent code
+```c
+for (int i; i < 3; i++) {
+  printf("%d\n", i);  
+}
+printf("%d\n", i);
+```
+will not even compile, because `i` is deleted, or "garbage collected", after the loop finished. Keep this in mind in the future if you switch to another language.
+
 ## `IndexError`
 `IndexError` means we are trying to access an element of an indexed collection, like a String or list, but that index is outside the range of the collection. 
 
