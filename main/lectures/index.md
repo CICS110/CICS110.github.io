@@ -15,7 +15,9 @@ Participation:
 - Lecture 1 Tu 2/7: Introduction
 - Lecture 2 Th 2/9: Programming and Python
 - Lecture 3 Tu 2/14: Arithmetic Expressions and Evaluation
+  - Homework 1 Due Wd 2/15 @ 11:59 AM
 - Lecture 4 Th 2/16: Variables and Assignment
+  - Quiz 1 Due Th 2/17 @ 11:59
 - Lecture 5 Tu 2/21: Data Types
 - Lecture 6 Th 2/23: Dictionaries and Functions
 - Lecture 7 Tu 2/28: Branching Basics with Equality
