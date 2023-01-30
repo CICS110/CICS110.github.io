@@ -11,15 +11,15 @@ const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CS 110',
-  url: 'https://CS-110.github.io',
+  title: 'CICS 110',
+  url: 'https://CICS110.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/110-image-light.png',
 
-  projectName: 'CS-110.github.io',
-  organizationName: 'CS-110',
+  projectName: 'CICS110.github.io',
+  organizationName: 'CICS110',
   trailingSlash: false,
 
   // Add live python code execution
@@ -71,7 +71,7 @@ const config = {
           { to: '/blog', label: 'Announcements', position: 'left' },
           ...navItems,
           {
-            href: 'https://github.com/CS-110/CS-110.github.io',
+            href: 'https://github.com/CICS110/CICS110.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'GitHub Repo',
-                href: 'https://github.com/CS-110/CS-110.github.io',
+                href: 'https://github.com/CICS110/CICS110.github.io',
               },
             ],
           },
