@@ -9,13 +9,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 ```sh
 npm install -g yarn
 ```
-3. Clone the [Repository](https://github.com/CS-110/CS-110.github.io):
+3. Clone the [Repository](https://github.com/CICS110/CICS110.github.io):
 ```sh
-git clone https://github.com/CS-110/CS-110.github.io.git
+git clone https://github.com/CICS110/CICS110.github.io.git
 ```
 4. Install dependencies:
 ```sh
-cd CS-110.github.io
+cd CICS110.github.io
 yarn install
 ```
 

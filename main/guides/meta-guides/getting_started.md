@@ -19,9 +19,9 @@ A computer that you can install software on
 3. Install Git: https://git-scm.com/downloads
 4. Clone the repository:
     1. Open a terminal and navigate to the directory you want to clone the repository into
-    2. Run `git clone https://github.com/CS-110/CS-110.github.io.git`
+    2. Run `git clone https://github.com/CICS110/CICS110.github.io.git`
 5. Install dependencies:
-    1. In the same terminal, navigate to the directory you cloned the repository into: `cd CS-110.github.io`
+    1. In the same terminal, navigate to the directory you cloned the repository into: `cd CICS110.github.io`
     2. Run `yarn install` in the terminal to install the dependencies
 
 ## Steps to run the local development environment
