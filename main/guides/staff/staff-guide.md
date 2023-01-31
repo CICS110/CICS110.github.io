@@ -8,11 +8,10 @@ This is a guide for all-things staff for CICS 110. This page is rather long! I'd
 
 ## Communication and Organization
 If you need to be added to the staff chat, email `bburns@umass.edu`.
-Every week, Ben will send out a message detailing all assignments due that week and any unfinished grading to `#noteboard`
-Meeting notes will be sent in `#noteboard` as well. 
+Every week, Ben will send out a message detailing all assignments due that week and any unfinished grading to `#logistics`
+Meeting notes will be sent in `#logistics` as well. 
 
-We use Trello for course organization. This is mostly used for making sure slides and assignments are ready before we need them, status on graded items (grading, needs uploading, uploaded). 
-We also use Trello for processing extension requests.
+We have a Trello board for course organization. This is mostly used for making sure slides and assignments are ready before we need them, status on graded items (grading, needs uploading, uploaded). You do not need to check the Trello, as it's mostly for my (Ben's) use in keeping us organized. However, you should be able it, and it will let you can see, at a glance, the status of everything in the course. 
 
 ## Labs
 
@@ -73,6 +72,10 @@ see [this guide](https://groups.cs.umass.edu/uca/uca-training-grading-on-gradesc
 
 ## Exams
 A detailed break down of exam structure can be found in the [Guide to Exams](./exams).
+
+:::note
+In Spring 2023, CICS 110 plans to have no exams. However, this guide will remain for future semesters. 
+:::
 
 ### Before the Exam
 A Google sheet needs to be created for check out. There should be subsheet for each section with all student names and emails imported. The sheet should look something like:

@@ -6,6 +6,10 @@ sidebar_position: 10
 # Guide to Exams
 This is a guide of how to be prepared for exams as a student in CICS 110.
 
+:::note
+In Spring 2023, CICS 110 plans to have no exams. However, this guide will remain for future semesters. 
+:::
+
 ## Overview
 In-class exams will be held during the lab session. Lab attendance is required to complete the exam. All exams are hosted on Moonami/Moodle, and you will need a laptop to take the exam.
 
