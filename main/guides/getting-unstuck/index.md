@@ -78,7 +78,7 @@ This is not something that goes away! Even as advanced programmers, we will get 
 This is a balancing act that you will get better at handling the more complicated problems you tackle.
 :::
 
-## Compilation Problems
+## Warning and Error Messages
 Once we're done coding, there are two main types of errors we can get, 
 - Compilation or interpretation errors: the source code we've written isn't valid Python
 - Runtime errors: our source code is valid, but the code performs an unexpected action while running
