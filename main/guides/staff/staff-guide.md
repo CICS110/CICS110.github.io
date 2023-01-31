@@ -71,7 +71,7 @@ see [this guide](https://groups.cs.umass.edu/uca/uca-training-grading-on-gradesc
 ### Gradescope
 
 ## Exams
-A detailed break down of exam structure can be found in the [Guide to Exams](./exams).
+A detailed break down of exam structure can be found in the [Guide to Exams](../exams).
 
 :::note
 In Spring 2023, CICS 110 plans to have no exams. However, this guide will remain for future semesters. 
