@@ -6,3 +6,7 @@ richards:
 bburns: 
   name: Ben Burns
   title: UCA
+car:
+  name: Cole Adam Reilly
+  title: Instructor
+  image_url: https://github.com/Colebeep.png
