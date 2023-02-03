@@ -87,5 +87,5 @@ This lecture schedule applies to the following sections:
 - Tu 5/2 - L21 URLLib and APIs
 - Th 5/4 - L22 Lambda, Map, Filter
 - Tu 5/9 - L23 Event Loops
-- Th 5/11 - L25 Capstone Project Work
+- Th 5/11 - L24 Capstone Project Work
 - Tu 5/15 - L25 Capstone Project Share
