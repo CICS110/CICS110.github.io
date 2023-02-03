@@ -1,6 +1,6 @@
----
-sidebar_position: 0
----
+
+
+# Lectures
 
 Wd: Homework due date
 Th: Quiz due date

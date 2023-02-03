@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // Should be the name of the folder containing the docs folders
-const mainFolder = 'main';
+const mainFolder = '';
 
 const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder);
 
@@ -38,7 +38,7 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'blog',
-        path: `${mainFolder}/blog`,
+        path: `blog`,
         routeBasePath: 'blog',
         showReadingTime: true,
       },

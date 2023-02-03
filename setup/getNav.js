@@ -7,7 +7,7 @@ function get(mainFolder) {
     /** @type {import('@docusaurus/plugin-content-docs').Options} */
     {
       id: item.id,
-      path: `${mainFolder}/${item.id}`,
+      path: `main`,
       routeBasePath: item.id,
       sidebarPath: require.resolve('./sidebars.js'),
     },
