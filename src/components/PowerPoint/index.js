@@ -1,16 +1,17 @@
 import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-// Note: The preview does not work locally, only on a server
+// Note: The preview does not work locally, only on the actual site
 
-export const PowerPoint = ({ src }) => {
-    let file_link = `${window.location.origin}${src}`;
-    // file_link = 'https://tmpfiles.org/dl/901685/lecture1.pptx'
-    // console.log(file_link);
-    const iframe_src = `https://view.officeapps.live.com/op/embed.aspx?src=${file_link}`;
+export const PowerPoint = ({ lec_src }) => {
+    const { siteConfig } = useDocusaurusContext();
+    const { url } = siteConfig;
+    const global_src = url + lec_src;
+    const iframe_src = `https://view.officeapps.live.com/op/embed.aspx?src=${global_src}`;
     return (
         <>
             <iframe src={iframe_src} width='100%' height='600px' frameborder='0'></iframe>
-            <a href={file_link} target="_blank" rel="noopener noreferrer">Download Powerpoint</a>
+            <a href={lec_src} target="_blank" rel="noopener noreferrer">Download Powerpoint</a>
         </>
     )
 };

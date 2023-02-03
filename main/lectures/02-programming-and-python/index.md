@@ -2,4 +2,4 @@
 
 import { PowerPoint } from '@site/src/components/PowerPoint'
 
-<PowerPoint src={require("./Lecture_2.pptx").default}/>
+<PowerPoint lec_src={require('./Lecture_2.pptx').default}/>
