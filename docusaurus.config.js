@@ -44,6 +44,7 @@ const config = {
       },
     ],
     require.resolve('docusaurus-lunr-search'),
+    './src/plugins/webpack_mod'
   ],
 
   // I don't know why this can't be removed?
