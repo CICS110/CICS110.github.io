@@ -23,7 +23,7 @@ On the left edge of the image, you'll see the sidebar icons. Reading down from t
 4. Debugger
 5. Extensions
 
-The icons after the "Tetris block" Extensions icon are all icons for extensions I have installed. The ones useful for this course will be detailed in the [extensions guide](../extensions), but we can ignore these for now.
+The icons after the "Tetris block" Extensions icon are all icons for extensions I have installed. The ones useful for this course will be detailed in the [extensions guide](./extensions), but we can ignore these for now.
 
 ## Opening a folder
 To use VSCode to edit code, we need to open files. When writing code for a homework or project, the best practice is often to have all your files for that project in a single folder on your computer. That way, all your files are in one place for easy access, and we can just open the folder in VSCode to edit the code, rather than opening each file individually.
