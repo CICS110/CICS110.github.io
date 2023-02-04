@@ -89,3 +89,5 @@ This lecture schedule applies to the following sections:
 - Tu 5/9 - L23 Event Loops
 - Th 5/11 - L24 Capstone Project Work
 - Tu 5/15 - L25 Capstone Project Share
+
+*This schedule is subject to change during the semester*
