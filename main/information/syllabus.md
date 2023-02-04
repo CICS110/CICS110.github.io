@@ -4,48 +4,13 @@ sidebar_position: 1
 
 # Syllabus
 
-## General Information
-
-- **Semester:** Spring 2023
-- **Start Date:** February 6, 2023
-- **End Date:** May 17, 2023
-- **Credits:** 4
-
-### Lectures
-
-| Section       | Time               | Location                     | Instructor  |
-| ------------- | ------------------ | ---------------------------- | ----------- |
-| 01-LEC(48638) | MoWe 4:00PM-5:15PM | Lederle Grad Res Ctr rm A301 | Cole Reilly |
-| A2            | B2                 | C2                           |             |
-| A3            | B3                 | C3                           |             |
-
-### Labs
-
-| Section       | Time               | Location                     | Instructor  |
-| ------------- | ------------------ | ---------------------------- | ----------- |
-| 01-LEC(48638) | MoWe 4:00PM-5:15PM | Lederle Grad Res Ctr rm A301 | Cole Reilly |
-| A2            | B2                 | C2                           |             |
-| A3            | B3                 | C3                           |             |
-
-### Prerequisites
-
-R1 (or a score of 20 or higher on the math placement test Part A), or one of the following courses: MATH 101&102 or MATH 104 or MATH 127 or MATH 128 or MATH 131 or MATH 132.
-
-### Instructors
-
-- one
-- two
-- three
-
-### Staff
-
-- One
-- Two
-- Three
-
 ## Description
 
 An introduction to computer programming and problem solving using computers. This course teaches you how real-world problems can be solved computationally using programming constructs and data abstractions of a modern programming language. Concepts and techniques covered include variables, expressions, data types, objects, branching, iteration, functions, classes, and methods. We will also cover how to translate problems into a sequence of instructions, investigate the fundamental operation of a computational system and trace program execution and memory, and learn how to test and debug programs. No previous programming experience required.
+
+## Prerequisites
+
+R1 (or a score of 20 or higher on the math placement test Part A), or one of the following courses: MATH 101&102 or MATH 104 or MATH 127 or MATH 128 or MATH 131 or MATH 132.
 
 ## Statement of Inclusivity
 
@@ -99,12 +64,7 @@ The following textbook is required:
 
 - Programming in Python 3, an interactive textbook from [zyBooks](https://learn.zybooks.com/) designed specifically for this course.
 
-To activate your zyBook subscription:
-
-- Go to: [https://learn.zybooks.com](https://learn.zybooks.com)
-- Create an Account. Make sure to sign up with your @umass.edu email address.
-- When prompted for the zyBook code, enter: UMASSINFO190SFall2022
-- You can purchase the Zybook online with a credit card. A subscription is $58. You may begin subscribing on Aug 23, 2022 and the cutoff to subscribe is Dec 01, 2022. Subscriptions will last until Dec 26, 2022.
+The information you need to subscribe to this book can be found on the course LMS (e.g., Moodle).
 
 Here are some additional textbook recommendations freely available online. You may consider looking at these as supplemental material:
 
@@ -140,6 +100,10 @@ We use the [VSCode](https://code.visualstudio.com/) Development Environment for 
 
 We will be using the [Python programming language](https://www.python.org/) in this course. It is an excellent language to learn about programming and computational thinking. It is also used extensively in the software engineering, data science domain, and many additional areas of computing. You will be required to download and install Python on your own computer. You will be using Python and VSCode to complete many programming tasks as part of your studies in this class. The current Python version used in this course is 3.10.6.
 
+### Echo360
+
+All lectures will be recorded and posted to the Echo360 platform. Echo360 is a plug-in tool that integrates personal and classroom video capture, student engagement tools, and analytic tools to maximize student participation and engagement for both campus-based and online courses. A link to Echo360 will be available in the course LMS.
+
 ## Communication
 
 ### Email
@@ -162,11 +126,11 @@ We expect you to attend lectures and labs on a regular basis. If you are absent 
 
 The final grade for this course is broken down into the following categories and weights:
 
-- 10% Lab Assignments
-- 20% Homework Assignments
-- 40% Programming Projects
-- 20% In-Class Exams
-- 10% Final Exam
+- 10% Participation
+- 10% Quizzes
+- 20% Labs
+- 40% Homework
+- 20% Capstone Project
 
 The numerical cutoff for final course letter grade assignment will be made after all grading is completed. As a rough guide, expect to require at least a 93 to get an A, a 90 to get an A-, an 87 to get a B+, an 83 to get a B, an 80 to get a B-, etc.
 
@@ -192,53 +156,64 @@ The following grade scale will be used for this course:
 
 **Note:** *some adjustments may be made to the above grade scale to better reflect student performance.*
 
-### Lab Assignments
+### Participation
 
-Most labs will be accompanied by an assignment that you will complete totally or partially during your assigned lab section. You will complete 1 to 3 programming exercises during the lab. If you are unable to complete the assignment during that time you will be responsible for completing the work on your own time before the assigned due date. You may work collaboratively during the lab section, but submit your work individually. Labs will be assigned at the start of the lab in Moodle and completed and submitted in the zyBook. They will be automatically graded by the zyLab autograding system. During the lab section you will have the opportunity to ask the lab staff questions. The lab staff will provide guidance so that you may complete the lab successfully. Lab assignments are low-stakes exercises that are designed to allow you to practice your understanding of the material covered in the book and during lecture in the presence of the course staff in a collaborative setting. You will need to bring a laptop if you have one or work with another student. If you do not have a laptop, please notify the course staff so we can make arrangements for you to work with another student.
+You will be assigned participation exercises to complete as part of the reading. These exercises exist inside of our online textbook and you are expected to complete them by the assigned due date. You may not request an extension to the due date for these assignments.
+
+### Quizzes
+
+There will be a weekly quiz that focuses on the material covered prior to the release of each quiz. These quizzes are cumulative. You are able to take the quiz as many times as necessary to achieve a 100%. Quizzes contain multiple choice style questions covering material from lecture, the reading, and possibly labs and assignments.
+
+### Labs
+
+Lab assignments are low-stakes exercises that are designed to allow you to practice your understanding of the material covered in the book and during lecture in the presence of the course staff in a collaborative setting. You will need to bring a laptop if you have one or work with another student. If you do not have a laptop, please notify the course staff so we can make arrangements for you to work with another student.
 
 ### Homework Assignments
 
-There will be a number of homework assignments that you will complete individually by the assigned due date. Each homework assignment will have you complete a programming challenge by analyzing the problem, coding the solution, answering some questions about the problem, and providing a reflection on your experience before you hand in your solution. Homework assignments will be completed using Zylab and/or VSCode and your completed assignment will be submitted to Zylabs or Gradescope. Homework assignments are a low-stakes exercise that are designed for you to practice problem solving with code independently.
+Homework assignments require you to solve computational problems using the Python programming language. You will be presented with a number of different challenges that will require you to understand the problem, this how to solve that problem computationally, and implement an algorithm using Python to solve that problem. You will have a homework approximately every week.
 
-As you complete a homework assignment you should take note of your abilities with respect to the material. Although getting the correct code is an important part of programming, that is not the only criteria you are evaluated on and it is not necessarily the purpose of a homework assignment. You should use the homework as an instrument to determine how well you are understanding the material.
+### Capstone Project
 
-### Programming Projects
+You will be required to design and implement a Python program to solve a problem of your choice. The capstone project will be assigned and submitted toward the end of the semester. You will have the freedom to use any aspect of Python you learned in this course in your solution. On the last day of class we will have a poster session where you will have the opportunity to showcase your project to other students as well as see projects produced by others.
 
-There will be approximately 4 programming projects. Programming projects are high-stakes programming assignments that will assess you on what you have learned. A programming project is a more in-depth assignment where you will apply the programming concepts you have learned to solving a problem. You will need to demonstrate your understanding of the concepts and the programming skills you have learned from the zyBook, lecture, lab, and homework. Programming projects are completed independently using Python/VSCode and are automatically graded by Gradescope. Gradescope will run several tests on your program to evaluate your solution. You will be allowed to submit a programming project as many times as you would like before the deadline. Programming projects measure your mastery of the learning outcomes.
+## Late and Early Submissions
 
-### Exams
+### Lateness General Guidelines
 
-There will be 3 in-class exams. Your best two scores will count towards your final grade. Exams are high-stakes assignments that will assess your ability to recall, understand, and apply the course material covered in the zyBook, lecture, lab, homework, and programming projects. Each exam focuses on specific lectures and associated material and assignments. Due to the nature of the material, all exams are cumulative. 
-
-Exams will be taken during a scheduled class session. You will have the entire class period to complete the exam and submit it. Questions consist of multiple choice, true/false, fill in the blank, matching, reading/writing code and other similar forms.
-
-To prepare for an exam you should review all the readings, lecture material, code, and exercises/assignments covered by the exam. It is important that you plan ahead and give yourself plenty of time to review the material. Cramming for an exam or pulling an all nighter can lead to anxiety and exhaustion and often result in lower performance. So, be kind to yourself and begin preparations by studying the material often and early.
-
-### Final Exam
-
-The final exam will be given during the final exam period. The final exam will be cumulative and assess your knowledge of the material covered during the entire semester. You will have the entire exam period to complete the exam and submit it. Questions consist of multiple choice, true/false, fill in the blank, matching, reading/writing code and other similar forms.
-
-To prepare for the final exam you should review all the readings, lecture material, code, and exercises/assignments covered in the course. It is important that you plan ahead and give yourself plenty of time to review the material. Cramming for an exam or pulling an all nighter can lead to anxiety and exhaustion and often result in lower performance. So, be kind to yourself and begin preparations by studying the material often and early.
-
-Make sure you get plenty of rest and eat well before you arrive at the final exam!
-
-## Late Submissions
-
-It is your responsibility for maintaining your own schedule and being prompt with your submissions. We expect that you become familiar with the course submission software and verify that your submission has been properly uploaded. We will not grant late submissions due to lack of checking on this. We assume:
+Lateness is defined as any assignment that is outside of the stated due date requirements. We allow assignments to be submitted three days “late” after the posted due date. However, penalties might be applied (see Submission Currency below). After the three days we will not accept a submission from any assessment component. It is your responsibility for maintaining your own schedule and being prompt with your submissions. We expect that you become familiar with the course submission software and verify that your submission has been properly uploaded. We will not accept late submissions due to lack of checking on this. We assume:
 
 - You are an adult and have the ability to check and verify your work has been received properly.
-- You are capable of using OneDrive, DropBox, Google Drive, or some other backup software to ensure that your work is not lost in the event of a computer failure.
+- You are capable of using GitHub, DropBox, Google Drive, or some other backup software to ensure that your work is not lost in the event of a computer failure.
 - You have a back-up plan in place in the event that your computer fails or your internet connection is unavailable. Make sure you have a plan B and C if your computer crashes or your internet is unavailable. This is your responsibility.
+- To ensure that you submit projects on time you should begin them early and not wait until the last minute to submit. You will be able to submit multiple times so submit early and often to ensure you have something in before the deadline.
 
-To ensure that you submit assignments on time you should begin them early and not wait until the last minute to submit. For some assignments you may be able to submit multiple times so submit early and often to ensure you have something in before the deadline.
+If there are extenuating circumstances beyond your control that prevent you from completing an assignment by the posted deadline you must contact the instructor immediately using the appropriate communication channel (see Communication below).
 
-### Late Submission Requests
+### Submission Currency 💵
 
-Requests will be reviewed and responded to in a timely fashion. If you are requesting an extension to a deadline and the request is granted, arrangements will be made for you to complete the work. It is your responsibility to complete that work by the extension deadline.
+To add some flexibility to submission deadlines, we will be using a form of “currency” in this course to earn “tokens” for submissions that are made before the day an assignment is due. If you submit an assignment before the deadline you will receive a token. You may then use a token to buy a late day allowing you to submit an assignment past the deadline. If you submit an assignment late and you run out of tokens, you may borrow tokens putting you in the negative. To get out of the hole you will need to submit subsequent assignments early to earn tokens back and pay your debt!
 
-Although you are allowed to make requests for extensions, we are not obligated to grant the extension request. If we find that you are consistently requesting extensions, we will schedule a meeting with you to discuss why you are unable to complete assignments on time and determine the best path forward.
+If you complete the course with leftover tokens it will be applied to your final grade and increase your overall grade for the course. If you complete the course with negative tokens it will be applied to your final grade and decrease your overall grade for the course.
 
-**Please send late submission requests to Instructors on Piazza.**
+**Here are the rules:**
+
+- You start the course with 3 tokens.
+- If you submit an assignment any day before or on the day an assignment is due you will receive a token.
+- If you submit an assignment any day after the day an assignment is due you will pay a token for each day past the due date.
+- You may only use tokens up to three days past the deadline of an assignment. After three days past the deadline you are no longer able to use tokens or submit an assignment late. It will be marked as missing with a 0.
+- You can only earn a maximum of 5 tokens.
+- To use your tokens you must use our token request form available on the course LMS.
+
+**Examples:**
+
+- At the start of the semester Mia submits the first assignment two days early and receives a token increasing their purse to 4.
+- In the middle of the semester Pat is late by 2 days. This uses 2 tokens from their purse. This is not bad since Pat hasn’t missed an assignment. Pat has 1 token remaining.
+- At the end of the semester Jorge has 3 tokens and their grade is an 88. The tokens are applied and their final grade is a 91. Jorge is happy. 😃
+- At the end of the semester Tanya has -2 tokens and their grade is a 90. The tokens are applied and their final grade is an 88. Tanya is unhappy 😔, but understands.
+
+You are ultimately responsible for maintaining your token count. We will do our best to calculate the number of tokens you have for each assignment. However, it may take a few days to do so.
+
+**Tokens may not be used or gained on in-class exercises or labs.**
 
 ## Incompletes
 
@@ -297,21 +272,46 @@ The General Education Program has four common objectives that pervade all design
 
 This course will satisfy the R2 learning outcomes. In particular, it will advance student’s formal reasoning skills beyond the basic competency level by having them solve programming challenges on a weekly basis using a programming language. This will also increase a student’s sophistication as a consumer of numerical information as they must have a fundamental understanding of how a computer represents information (numerical or otherwise) in a discrete environment. Clearly, computer literacy is established in this context and naturally the limits of formal methods and the abuse of numerical arguments will be covered as part of developing programs and solving problems in general.
 
-## Schedule
+## Time Management
 
-The following is a schedule of topics and assignments for this course. This schedule may change as the course progresses based on uncontrolled circumstances, student progress and understanding, or any other reason the instructor determines is a valid reason to make a change.
+The university suggests that students spend 3-4 hours of time on a class per credit hour. This is a 4-credit course, so you should plan to spend 12-16 hours a week on this course. In a typical week you will:
 
-### Week 1 (9/6 - 9/9) Introduction to Programming
+- Attend 2 75-minute lectures (unless there is a holiday or class is canceled for any reason)
+- Attend 1 50-minute lab (unless there is a holiday of lab is canceled for any reason)
+- Complete participation exercises if some are due that week.
+- Optionally attend office hours.
+- Complete a lab assignment if one is due that week.
+- Complete a homework assignment if one is due that week.
+- Complete a quiz if one is due that week.
 
-**Meetings**
-- Lecture 1 Introduction to Computers and Programs
-- Lab 1 Introduction
+## Code of conduct
 
-**Activities**
-- Attend class and participate in the Friday lab
-- Signup with Piazza and Gradescope
-- Register with zyBook: 190S Introduction to Programming
-- Read zyBook Chapter 1: Introduction to Programming
-- Install and Setup Visual Student Code (VScode)
-- Sign Academic Honesty Pledge
-- Complete Homework 1 and Lab 1
+- The course staff are committed to providing a friendly, safe and welcoming environment for all, regardless of level of experience, gender identity and expression, sexual orientation, disability, personal appearance, body size, shape, race, ethnicity, age, religion, nationality, or other similar characteristics.
+- Please be kind and courteous. There’s no need to be mean or rude.
+- Respect that people have differences of opinion and that differing approaches to problems in this course may each carry a trade-off and numerous costs. There isn’t always a single right answer to complicated questions.
+- Please keep unstructured critique to a minimum. Criticism should be constructive.
+- We will informally warn you, once, if you insult, demean or harass anyone. That is not welcome behavior. After that we will report your behavior to the Dean of Students office. We interpret the term “harassment” as including the definition in the [Citizen Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md#4-unacceptable-behavior) under “Unacceptable Behavior”; if you have any lack of clarity about what might be included in that concept, please read their definition and then ask us for clarification. We don’t tolerate behavior that excludes people in socially marginalized groups.
+- Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a member of this class, please contact a member of the course staff immediately (or if you do not feel safe doing so, you should contact the Chair of the Faculty of CICS). Whether you’ve been at UMass for years or are a newcomer, we care about making this course a safe place for you and we’ve got your back.
+- Likewise, any spamming, trolling, flaming, baiting or other attention-stealing behavior is not welcome.
+
+## Collaboration Policy
+
+1. **Group Work Encouragement:** Students are encouraged to work in groups to facilitate learning, knowledge sharing, and skill development. Group work will be a regular part of the course and students are expected to actively participate in it. **Group work is allowed on all assignments in this course.**
+2. **Individual Submissions:** Although group work is encouraged, each student is required to submit their own individual work based on the group collaboration. This is to ensure that each student is held accountable for their own learning and understanding of the course material.
+3. **Group Responsibilities:** All group members are expected to contribute equally to the group discussions and work and should be prepared to share their knowledge and skills with their peers. Group members should also be respectful of each other's opinions and work styles.
+4. **Conflict Resolution:** In the event of a conflict within the group, students are encouraged to communicate and resolve the issue amongst themselves. If the conflict cannot be resolved, the instructor will mediate.
+5. **Credit Allocation:** Credit for group work will be allocated based on each student's individual contribution to the assignment. Students will assess their own contributions to submitted assignments and determine their grades accordingly.
+6. **Cheating:** Cheating, including plagiarism, is not tolerated and will result in a failing grade for the assignment. All work submitted must be original and should accurately reflect the student's own understanding of the course material.
+7. **Communication:** Regular communication between group members is essential for successful collaboration. Students are encouraged to use online tools, such as email or group chat platforms, to stay in touch and communicate effectively.
+
+By following this collaboration policy, students will be able to work collectively while still being held accountable for their individual learning and understanding of the course material.
+
+## AI Assistants
+
+As students of the Manning College of Information and Computer Sciences, it's important to understand the judicious use of AI technologies like ChatGPT in your homework assignments and projects. While these tools can be a valuable resource in your learning journey, it's essential to use them in a responsible and ethical manner.
+
+In this course, we allow the use of AI technologies like ChatGPT as a means of learning and improving your understanding of the subject matter. However, it's important to remember that the work you submit must be original and created by you, the student. Submitting work that is not your own constitutes academic dishonesty and is a violation of the code of conduct in this course.
+
+The use of AI technologies like ChatGPT should be seen as a tool for assistance, not a substitute for your own efforts. While it's tempting to rely solely on these tools to complete your assignments and projects, doing so will not help you develop the critical thinking and problem-solving skills that are essential for success in computer science.
+
+In conclusion, while we encourage the use of AI technologies like ChatGPT in your learning journey, it's important to use them responsibly and ethically. The work you submit must be original and created by you, and the use of these tools should be seen as a means of assistance, not a substitute for your own efforts. By doing so, you'll be able to make the most of these tools and develop the skills and knowledge you need to succeed in computer science.
