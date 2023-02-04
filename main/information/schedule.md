@@ -91,3 +91,19 @@ This lecture schedule applies to the following sections:
 - Tu 5/15 - L25 Capstone Project Share
 
 *This schedule is subject to change during the semester*
+
+## Lab Schedule
+
+- Fr 2/10 - B01 Python Setup
+- Fr 2/17 - B02 String Formatting
+- Fr 2/24 - B03 Assert
+- Fr 3/03 - B04 Collections
+- Fr 3/10 - B05 Debugging Control Flow
+- Fr 3/24 - B06 While
+- Fr 3/31 - B07 For
+- Fr 4/07 - B08 Modules & Files
+- Fr 4/14 - B09 Towers of Hanoi
+- Fr 4/21 - B10 Designing Objects
+- Fr 4/28 - B11 Object Behavior
+- Fr 5/05 - B12 Fetch & Filter
+- Fr 5/12 - B13 Capstone Work
