@@ -61,32 +61,32 @@ This lecture schedule applies to the following sections:
 
 ---
 
-- Tu 2/7 - L01 Course Introduction
-- Th 2/9 - L02 Arithmetic Expressions & Evaluation
+- Tu 2/07 - L01 Course Introduction
+- Th 2/09 - L02 Arithmetic Expressions & Evaluation
 - Tu 2/14 - L03 Variables and Assignment
 - Th 2/16 - L04 Function Basics
 - Tu 2/21 - L05 Booleans and Assert
 - Th 2/23 - L06 Lists, Tuples, Strings
 - Tu 2/28 - L07 Dictionaries, Sets
-- Th 3/2 - L08 Branching Introduction
-- Tu 3/7 - L09 Branching and Debugging
-- Th 3/9 - Branching Practice
+- Th 3/02 - L08 Branching Introduction
+- Tu 3/07 - L09 Branching and Debugging
+- Th 3/09 - Branching Practice
 - Tu 3/14 - No Class, Spring Recess
 - Th 3/16 - No Class, Spring Recess
 - Tu 3/21 - L10 Exceptions Handling 
 - Th 3/23 - L11 While Loops
 - Tu 3/28 - L12 For Loops
 - Th 3/30 - L13 List Comprehension
-- Tu 4/4 - L14 Creating Modules
-- Th 4/6 - L15 Files
+- Tu 4/04 - L14 Creating Modules
+- Th 4/06 - L15 Files
 - Tu 4/11 - L16 CSV Files
 - Th 4/13 - L17 Recursion
 - Th 4/20 - L18 Classes and OOP
 - Tu 4/25 - L19 Methods
 - Th 4/27 - L20 Installing Libraries 
-- Tu 5/2 - L21 URLLib and APIs
-- Th 5/4 - L22 Lambda, Map, Filter
-- Tu 5/9 - L23 Event Loops
+- Tu 5/02 - L21 URLLib and APIs
+- Th 5/04 - L22 Lambda, Map, Filter
+- Tu 5/09 - L23 Event Loops
 - Th 5/11 - L24 Capstone Project Work
 - Tu 5/15 - L25 Capstone Project Share
 
