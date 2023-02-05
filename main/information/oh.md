@@ -5,7 +5,7 @@ author: Ben Burns
 # Office Hours
 These are all office hour times for the course. 
 
-Instructor and TA office hours will start the first week of classes (2/6). UCAs will host their office hours starting the second week of classes (2/13). 
+All office hours will start the second week of classes (2/13). There are no office hours before 2/13.
 
 | Day | Time | Course Staff |Name |  Location|
 |---|---|---|---|---|
@@ -25,6 +25,8 @@ Instructor and TA office hours will start the first week of classes (2/6). UCAs 
 |Wednesday|12PM-1PM|UCA|Tanush Savadi|Zoom: [link](https://umass-amherst.zoom.us/j/98218887926)|
 |Wednesday|1PM-2PM|UCA|Wenhao Yang|In-person: TBA|
 |Wednesday|3PM-4PM|UCA|Cynthia Rajeshkanna|Zoom: [link](https://umass-amherst.zoom.us/j/97234574107)|
+|Wednesday|4PM-5PM|UCA|Kelly Deng|Zoom: [link](https://umass-amherst.zoom.us/j/2445323090)|
+|Wednesday|7PM-8PM|UCA|Ben Burns|Zoom: [link](https://umass-amherst.zoom.us/j/91505685457)|
 |Thursday|11:30AM-12:30AM|TA|Erfan Entezami|Zoom: [link](https://umass-amherst.zoom.us/my/erfanentezami)|
 |Thursday|2:30PM-3:30PM|TA|Yuefeng Peng|In-person: TBA|
 |Thursday|2:30PM-3:30PM|Instructor|Jakob (Kobi) Falus|Zoom: link TBA|
