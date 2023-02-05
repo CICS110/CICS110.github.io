@@ -22,7 +22,8 @@ The objective of this course is to introduce the fundamentals of computing and p
 
 ## Learning Outcomes
 
-- At the completion of this course you will be able to:
+At the completion of this course you will be able to:
+
 - Read and write programs to solve non-trivial programs using the Python programming language.
 - Describe fundamental units of computation and program structure.
 - Translate real-world problems into computational solutions.
@@ -140,6 +141,42 @@ Individual grade items are not curved, so you should not get stressed about mean
 
 You are responsible for monitoring your grades. Grades will be available through Moodle and you should check them regularly and review any provided feedback. If you encounter any issues with your grades, you will have one week past the first posting of a particular assignment’s grade to Moodle to contact the course staff so that we can investigate.
 
+### Grading Categories
+
+This course uses a *standards-based* grading system. Our goal is to shift focus from grades to learning. We will be using the following scale for all activities in this course:
+
+1. No Attempt
+2. Below Standards
+3. Approaching Standards
+4. Meeting Standards
+5. Exceeding Standards
+
+**What is standards-based grading? Why the shift from traditional grades?**
+
+We believe that grades should communicate, as clearly as possible, what students know and can do. We also seek to create a growth mindset environment that encourages students to take risks and to embrace mistakes as learning opportunities. Standards-based grading and the corresponding five-point scale are set up to support these two values by clarifying learning goals and assessing students on their progress towards meeting those goals, rather than prioritizing completion of tasks and assignments over learning. This allows for more meaningful student learning and teacher feedback, and moves away from an approach in which students are seeking to earn points rather than practicing to meet the learning goal.
+
+**What is the five-point scale?**
+
+Educational researchers developed the five-point scale to more clearly assess what a student knows and can do:
+
+- **4:** Exceeding Standards, Consistently exceeds expectations for skills and understanding 
+- **3:** Meeting Standards, Consistently meets expectations for skills and understanding
+- **2:** Approaching Standards, Meets some expectations for skills and understanding
+- **1:** Below Standards, Meets few expectations for skills and understanding
+- **0:** No Submissions, Did not submit assignment
+
+**What does this look like in practice?**
+
+Students will receive assignment and final grades on the 0-4 scale. ​Students will receive
+
+1-5 grades on assignments and for your semester grade; students will not receive letter grades (A, B, C, D) on assignments or fine-grained percentages. We will map our scale to letter grades for submission the the University at the end of the semester.
+
+Grades are clearer to students: ​Teachers and students engage in conversation about what 4/3/2/1/0 work looks like, so students understand what is expected and what they are learning.
+
+Grades are more useful and meaningful: ​When students get clear grades and feedback on a five point scale, they can monitor their progress and set goals for their learning. Teachers can also provide more specific feedback on how to improve from a “3” to a “4”.
+
+### Grading Scale
+
 The following grade scale will be used for this course:
 
 - A = 93-100%
@@ -158,7 +195,7 @@ The following grade scale will be used for this course:
 
 ### Participation
 
-You will be assigned participation exercises to complete as part of the reading. These exercises exist inside of our online textbook and you are expected to complete them by the assigned due date. You may not request an extension to the due date for these assignments.
+You will be assigned participation exercises to complete as part of the reading. These exercises exist inside of our online textbook, zyBooks, and you are expected to complete them by the assigned due date. You may not request an extension to the due date for these assignments.
 
 ### Quizzes
 
@@ -201,8 +238,15 @@ If you complete the course with leftover tokens it will be applied to your final
 - If you submit an assignment any day before or on the day an assignment is due you will receive a token.
 - If you submit an assignment any day after the day an assignment is due you will pay a token for each day past the due date.
 - You may only use tokens up to three days past the deadline of an assignment. After three days past the deadline you are no longer able to use tokens or submit an assignment late. It will be marked as missing with a 0.
-- You can only earn a maximum of 5 tokens.
+- You can only hold a maximum of 5 tokens. That is, if you have 5 tokens and you hand an assignment early or on time, you still have 5 tokens.
 - To use your tokens you must use our token request form available on the course LMS.
+
+**What can tokens be used for?**
+
+Tokens can be used on the following assessments:
+
+- Homework
+- Labs
 
 **Examples:**
 
@@ -296,7 +340,7 @@ The university suggests that students spend 3-4 hours of time on a class per cre
 
 ## Collaboration Policy
 
-1. **Group Work Encouragement:** Students are encouraged to work in groups to facilitate learning, knowledge sharing, and skill development. Group work will be a regular part of the course and students are expected to actively participate in it. **Group work is allowed on all assignments in this course.**
+1. **Group Work Encouragement:** Students are encouraged to work in groups to facilitate learning, knowledge sharing, and skill development. Group work will be a regular part of the course and students are expected to actively participate in it. **Group work is allowed on all assignments in this course.** You are allowed to submit an assignment as a group of up to 4 collaborators.
 2. **Individual Submissions:** Although group work is encouraged, each student is required to submit their own individual work based on the group collaboration. This is to ensure that each student is held accountable for their own learning and understanding of the course material.
 3. **Group Responsibilities:** All group members are expected to contribute equally to the group discussions and work and should be prepared to share their knowledge and skills with their peers. Group members should also be respectful of each other's opinions and work styles.
 4. **Conflict Resolution:** In the event of a conflict within the group, students are encouraged to communicate and resolve the issue amongst themselves. If the conflict cannot be resolved, the instructor will mediate.
