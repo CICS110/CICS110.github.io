@@ -1,3 +1,3 @@
-# B06 While
+# Lab 06: ???
 
 Coming soon...

@@ -1,3 +1,3 @@
-# B02 String Formatting
+# Lab 02: String Formatting
 
 Coming soon...
