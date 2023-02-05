@@ -41,6 +41,9 @@ const config = {
         path: `blog`,
         routeBasePath: 'blog',
         showReadingTime: true,
+        blogTitle: "Announcements",
+        blogDescription: "Announcements",
+        blogSidebarTitle: "Recent Announcements"
       },
     ],
     require.resolve('docusaurus-lunr-search'),
@@ -87,7 +90,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Links',
+            title: 'Material',
+            items: [
+              {
+                label: 'Syllabus',
+                href: 'main/information/syllabus',
+              },
+              {
+                label: 'Schedule',
+                href: 'main/information/schedule',
+              },
+              {
+                label: 'Lectures',
+                href: 'main/lectures',
+              },
+              {
+                label: 'Labs',
+                href: 'main/labs',
+              },
+            ],
+          },
+          {
+            title: 'Assignments',
+            items: [
+              {
+                label: 'Homework',
+                href: 'main/assignments',
+              },
+              {
+                label: 'Labs',
+                href: 'main/labs',
+              },
+            ],
+          },
+          {
+            title: 'Learning Systems',
             items: [
               {
                 label: 'Piazza - Class Forum',
@@ -100,15 +137,6 @@ const config = {
               {
                 label: 'Gradescope',
                 href: 'https://www.gradescope.com/',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub Repo',
-                href: 'https://github.com/CICS110/CICS110.github.io',
               },
             ],
           },
