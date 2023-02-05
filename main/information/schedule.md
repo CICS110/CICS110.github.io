@@ -94,16 +94,16 @@ This lecture schedule applies to the following sections:
 
 ## Lab Schedule
 
-- Fr 2/10 - B01 Python Setup
-- Fr 2/17 - B02 String Formatting
-- Fr 2/24 - B03 Assert
-- Fr 3/03 - B04 Collections
-- Fr 3/10 - B05 Debugging Control Flow
-- Fr 3/24 - B06 While
-- Fr 3/31 - B07 For
-- Fr 4/07 - B08 Modules & Files
-- Fr 4/14 - B09 Towers of Hanoi
-- Fr 4/21 - B10 Designing Objects
-- Fr 4/28 - B11 Object Behavior
-- Fr 5/05 - B12 Fetch & Filter
-- Fr 5/12 - B13 Capstone Work
+- [Fr 2/10 - B01 Python Setup](../labs/python-setup/)
+- [Fr 2/17 - B02 String Formatting](../labs/string-formatting/)
+- [Fr 2/24 - B03 Assert](../labs/assert/)
+- [Fr 3/03 - B04 Collections](../labs/collections/)
+- [Fr 3/10 - B05 Debugging Control Flow](../labs/debugging-control-flow/)
+- [Fr 3/24 - B06 While](../labs/while/)
+- [Fr 3/31 - B07 For](../labs/for/)
+- [Fr 4/07 - B08 Modules & Files](../labs/modules-files/)
+- [Fr 4/14 - B09 Towers of Hanoi](../labs/towers-of-hanoi/)
+- [Fr 4/21 - B10 Designing Objects](../labs/designing-objects/)
+- [Fr 4/28 - B11 Object Behavior](../labs/object-behavior/)
+- [Fr 5/05 - B12 Fetch & Filter](../labs/fetch-filter/)
+- [Fr 5/12 - B13 Capstone Work](../labs/capstone-work/)
