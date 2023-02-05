@@ -17,36 +17,36 @@ This lecture schedule applies to the following sections:
 
 ---
 
-- Mo 2/06 - L01 Course Introduction
-- Wd 2/08 - L02 Arithmetic Expressions & Evaluation
-- Mo 2/13 - L03 Variables and Assignment
-- Wd 2/15 - L04 Function Basics
+- [Mo 2/06 - L01 Course Introduction](../lectures/introduction/)
+- [Wd 2/08 - L02 Arithmetic Expressions & Evaluation](../lectures/arith-exprs/)
+- [Mo 2/13 - L03 Variables and Assignment](../lectures/vars-and-assignment/)
+- [Wd 2/15 - L04 Function Basics](../lectures/function-basics/)
 - Mo 2/20 - No Class, Presidents' Day
-- Wd 2/22 - L05 Booleans and Assert
-- Mo 2/27 - L06 Lists, Tuples, Strings
-- Wd 3/01 - L07 Dictionaries, Sets
-- Mo 3/06 - L08 Branching Introduction
-- Wd 3/08 - L09 Branching and Debugging
+- [Wd 2/22 - L05 Booleans and Assert](../lectures/booleans-and-assert/)
+- [Mo 2/27 - L06 Lists, Tuples, Strings](../lectures/lists-tuples-strings/)
+- [Wd 3/01 - L07 Dictionaries, Sets](../lectures/dictionaries-sets/)
+- [Mo 3/06 - L08 Branching Introduction](../lectures/branching-intro/)
+- [Wd 3/08 - L09 Branching and Debugging](../lectures/branching-debugging/)
 - Mo 3/13 - No Class, Spring Recess
 - Wd 3/15 - No Class, Spring Recess
-- Mo 3/20 - L10 Exception Handling
-- Wd 3/22 - L11 While Loops
-- Mo 3/27 - L12 For Loops
-- Wd 3/29 - L13 List Comprehensions
-- Mo 4/03 - L14 Creating Modules
-- Wd 4/05 - L15 Files
-- Mo 4/10 - L16 CSV Files
-- Wd 4/12 - L17 Recursion
+- [Mo 3/20 - L10 Exception Handling](../lectures/exceptions/)
+- [Wd 3/22 - L11 While Loops](../lectures/while/)
+- [Mo 3/27 - L12 For Loops](../lectures/for/)
+- [Wd 3/29 - L13 List Comprehensions](../lectures/list-comps/)
+- [Mo 4/03 - L14 Creating Modules](../lectures/creating-modules/)
+- [Wd 4/05 - L15 Files](../lectures/files/)
+- [Mo 4/10 - L16 CSV Files](../lectures/csv-files/)
+- [Wd 4/12 - L17 Recursion](../lectures/recursion/)
 - Mo 4/17 - No Class, Patriot's Day
-- Wd 4/19 - L18 Classes and OOP
-- Mo 4/24 - L19 Methods
-- Wd 4/26 - L20 Installing Libraries
-- Mo 5/01 - L21 URLLib and APIs
-- Wd 5/03 - L22 Lambda, Map, Filter
-- Mo 5/08 - L23 Event Loops
-- Wd 5/10 - L24 Capstone Project Work
-- Mo 5/15 - L25 Capstone Project Work
-- Wd 5/17 - L26 Capstone Project Share
+- [Wd 4/19 - L18 Classes and OOP](../lectures/classes-and-oop/)
+- [Mo 4/24 - L19 Methods](../lectures/methods/)
+- [Wd 4/26 - L20 Installing Libraries](../lectures/libraries/)
+- [Mo 5/01 - L21 URLLib and APIs](../lectures/urllib-apis/)
+- [Wd 5/03 - L22 Lambda, Map, Filter](../lectures/lambda-map-filter/)
+- [Mo 5/08 - L23 Event Loops](../lectures/event-loops/)
+- [Wd 5/10 - L24 Capstone Project Work](../lectures/capstone-work-1/)
+- [Mo 5/15 - L25 Capstone Project Work](../lectures/capstone-work-2/)
+- [Wd 5/17 - L26 Capstone Project Share](../lectures/capstone-project/)
 
 *This schedule is subject to change during the semester*
 
@@ -61,49 +61,49 @@ This lecture schedule applies to the following sections:
 
 ---
 
-- Tu 2/07 - L01 Course Introduction
-- Th 2/09 - L02 Arithmetic Expressions & Evaluation
-- Tu 2/14 - L03 Variables and Assignment
-- Th 2/16 - L04 Function Basics
-- Tu 2/21 - L05 Booleans and Assert
-- Th 2/23 - L06 Lists, Tuples, Strings
-- Tu 2/28 - L07 Dictionaries, Sets
-- Th 3/02 - L08 Branching Introduction
-- Tu 3/07 - L09 Branching and Debugging
-- Th 3/09 - Branching Practice
+- [Tu 2/07 - L01 Course Introduction](../lectures/introduction/)
+- [Th 2/09 - L02 Arithmetic Expressions & Evaluation](../lectures/arith-exprs/)
+- [Tu 2/14 - L03 Variables and Assignment](../lectures/vars-and-assignment/)
+- [Th 2/16 - L04 Function Basics](../lectures/function-basics/)
+- [Tu 2/21 - L05 Booleans and Assert](../lectures/booleans-and-assert/)
+- [Th 2/23 - L06 Lists, Tuples, Strings](../lectures/lists-tuples-strings/)
+- [Tu 2/28 - L07 Dictionaries, Sets](../lectures/dictionaries-sets/)
+- [Th 3/02 - L08 Branching Introduction](../lectures/branching-intro/)
+- [Tu 3/07 - L09 Branching and Debugging](../lectures/branching-debugging/)
+- [Th 3/09 - Branching Practice](../lectures/exceptions/)
 - Tu 3/14 - No Class, Spring Recess
 - Th 3/16 - No Class, Spring Recess
-- Tu 3/21 - L10 Exceptions Handling 
-- Th 3/23 - L11 While Loops
-- Tu 3/28 - L12 For Loops
-- Th 3/30 - L13 List Comprehension
-- Tu 4/04 - L14 Creating Modules
-- Th 4/06 - L15 Files
-- Tu 4/11 - L16 CSV Files
-- Th 4/13 - L17 Recursion
-- Th 4/20 - L18 Classes and OOP
-- Tu 4/25 - L19 Methods
-- Th 4/27 - L20 Installing Libraries 
-- Tu 5/02 - L21 URLLib and APIs
-- Th 5/04 - L22 Lambda, Map, Filter
-- Tu 5/09 - L23 Event Loops
-- Th 5/11 - L24 Capstone Project Work
-- Tu 5/15 - L25 Capstone Project Share
+- [Tu 3/21 - L10 Exceptions Handling](../lectures/exceptions/)
+- [Th 3/23 - L11 While Loops](../lectures/while/)
+- [Tu 3/28 - L12 For Loops](../lectures/for/)
+- [Th 3/30 - L13 List Comprehension](../lectures/list-comps/)
+- [Tu 4/04 - L14 Creating Modules](../lectures/creating-modules/)
+- [Th 4/06 - L15 Files](../lectures/files/)
+- [Tu 4/11 - L16 CSV Files](../lectures/csv-files/)
+- [Th 4/13 - L17 Recursion](../lectures/recursion/)
+- [Th 4/20 - L18 Classes and OOP](../lectures/classes-and-oop/)
+- [Tu 4/25 - L19 Methods](../lectures/methods/)
+- [Th 4/27 - L20 Installing Libraries](../lectures/libraries/)
+- [Tu 5/02 - L21 URLLib and APIs](../lectures/urllib-apis/)
+- [Th 5/04 - L22 Lambda, Map, Filter](../lectures/lambda-map-filter/)
+- [Tu 5/09 - L23 Event Loops](../lectures/event-loops/)
+- [Th 5/11 - L24/L25 Capstone Project Work](../lectures/capstone-work-1/)
+- [Tu 5/15 - L25/L26 Capstone Project Share](../lectures/capstone-project/)
 
 *This schedule is subject to change during the semester*
 
 ## Lab Schedule
 
-- Fr 2/10 - B01 Python Setup
-- Fr 2/17 - B02 String Formatting
-- Fr 2/24 - B03 Assert
-- Fr 3/03 - B04 Collections
-- Fr 3/10 - B05 Debugging Control Flow
-- Fr 3/24 - B06 While
-- Fr 3/31 - B07 For
-- Fr 4/07 - B08 Modules & Files
-- Fr 4/14 - B09 Towers of Hanoi
-- Fr 4/21 - B10 Designing Objects
-- Fr 4/28 - B11 Object Behavior
-- Fr 5/05 - B12 Fetch & Filter
-- Fr 5/12 - B13 Capstone Work
+- [Fr 2/10 - B01 Python Setup](../labs/python-setup/)
+- [Fr 2/17 - B02 String Formatting](../labs/string-formatting/)
+- [Fr 2/24 - B03 Assert](../labs/assert/)
+- [Fr 3/03 - B04 Collections](../labs/collections/)
+- [Fr 3/10 - B05 Debugging Control Flow](../labs/debugging-control-flow/)
+- [Fr 3/24 - B06 While](../labs/while/)
+- [Fr 3/31 - B07 For](../labs/for/)
+- [Fr 4/07 - B08 Modules & Files](../labs/modules-files/)
+- [Fr 4/14 - B09 Towers of Hanoi](../labs/towers-of-hanoi/)
+- [Fr 4/21 - B10 Designing Objects](../labs/designing-objects/)
+- [Fr 4/28 - B11 Object Behavior](../labs/object-behavior/)
+- [Fr 5/05 - B12 Fetch & Filter](../labs/fetch-filter/)
+- [Fr 5/12 - B13 Capstone Work](../labs/capstone-work/)
