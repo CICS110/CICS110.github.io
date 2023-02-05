@@ -1,3 +1,3 @@
-# L7 Dictionaries, Sets
+# Lec 07 Dictionaries, Sets
 
 Coming soon...

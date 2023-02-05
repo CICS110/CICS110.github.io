@@ -1,3 +1,3 @@
-# L25 Capstone Project Work
+# Lec 25 Capstone Project Work
 
 Coming soon...

@@ -1,3 +1,3 @@
-# L24 Capstone Project Work
+# Lec 24 Capstone Project Work
 
 Coming soon...

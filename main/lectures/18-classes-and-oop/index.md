@@ -1,3 +1,3 @@
-# L18 Classes and OOP
+# Lec 18 Classes and OOP
 
 Coming soon...

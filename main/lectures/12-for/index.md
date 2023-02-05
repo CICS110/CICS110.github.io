@@ -1,3 +1,3 @@
-# L12 For Loops
+# Lec 12 For Loops
 
 Coming soon...

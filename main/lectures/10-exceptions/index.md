@@ -1,3 +1,3 @@
-# L10 Exceptions
+# Lec 10 Exceptions
 
 Coming soon...

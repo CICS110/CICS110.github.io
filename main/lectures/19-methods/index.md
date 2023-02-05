@@ -1,3 +1,3 @@
-# L19 Methods
+# Lec 19 Methods
 
 Coming soon...
