@@ -23,7 +23,7 @@ This lecture schedule applies to the following sections:
 - [Wd 2/15 - L04 Function Basics](../lectures/function-basics/)
 - Mo 2/20 - No Class, Presidents' Day
 - [Wd 2/22 - L05 Booleans and Assert](../lectures/booleans-and-assert/)
-- [Mo 2/27 - L06 Lists, Tuples, Strings](../lectures/lists-tuples-sets/)
+- [Mo 2/27 - L06 Lists, Tuples, Strings](../lectures/lists-tuples-strings/)
 - [Wd 3/01 - L07 Dictionaries, Sets](../lectures/dictionaries-sets/)
 - [Mo 3/06 - L08 Branching Introduction](../lectures/branching-intro/)
 - [Wd 3/08 - L09 Branching and Debugging](../lectures/branching-debugging/)
@@ -61,34 +61,34 @@ This lecture schedule applies to the following sections:
 
 ---
 
-- Tu 2/07 - L01 Course Introduction
-- Th 2/09 - L02 Arithmetic Expressions & Evaluation
-- Tu 2/14 - L03 Variables and Assignment
-- Th 2/16 - L04 Function Basics
-- Tu 2/21 - L05 Booleans and Assert
-- Th 2/23 - L06 Lists, Tuples, Strings
-- Tu 2/28 - L07 Dictionaries, Sets
-- Th 3/02 - L08 Branching Introduction
-- Tu 3/07 - L09 Branching and Debugging
-- Th 3/09 - Branching Practice
+- [Tu 2/07 - L01 Course Introduction](../lectures/introduction/)
+- [Th 2/09 - L02 Arithmetic Expressions & Evaluation](../lectures/arith-exprs/)
+- [Tu 2/14 - L03 Variables and Assignment](../lectures/vars-and-assignment/)
+- [Th 2/16 - L04 Function Basics](../lectures/function-basics/)
+- [Tu 2/21 - L05 Booleans and Assert](../lectures/booleans-and-assert/)
+- [Th 2/23 - L06 Lists, Tuples, Strings](../lectures/lists-tuples-strings/)
+- [Tu 2/28 - L07 Dictionaries, Sets](../lectures/dictionaries-sets/)
+- [Th 3/02 - L08 Branching Introduction](../lectures/branching-intro/)
+- [Tu 3/07 - L09 Branching and Debugging](../lectures/branching-debugging/)
+- [Th 3/09 - Branching Practice](../lectures/exceptions/)
 - Tu 3/14 - No Class, Spring Recess
 - Th 3/16 - No Class, Spring Recess
-- Tu 3/21 - L10 Exceptions Handling 
-- Th 3/23 - L11 While Loops
-- Tu 3/28 - L12 For Loops
-- Th 3/30 - L13 List Comprehension
-- Tu 4/04 - L14 Creating Modules
-- Th 4/06 - L15 Files
-- Tu 4/11 - L16 CSV Files
-- Th 4/13 - L17 Recursion
-- Th 4/20 - L18 Classes and OOP
-- Tu 4/25 - L19 Methods
-- Th 4/27 - L20 Installing Libraries 
-- Tu 5/02 - L21 URLLib and APIs
-- Th 5/04 - L22 Lambda, Map, Filter
-- Tu 5/09 - L23 Event Loops
-- Th 5/11 - L24 Capstone Project Work
-- Tu 5/15 - L25 Capstone Project Share
+- [Tu 3/21 - L10 Exceptions Handling](../lectures/exceptions/)
+- [Th 3/23 - L11 While Loops](../lectures/while/)
+- [Tu 3/28 - L12 For Loops](../lectures/for/)
+- [Th 3/30 - L13 List Comprehension](../lectures/list-comps/)
+- [Tu 4/04 - L14 Creating Modules](../lectures/creating-modules/)
+- [Th 4/06 - L15 Files](../lectures/files/)
+- [Tu 4/11 - L16 CSV Files](../lectures/csv-files/)
+- [Th 4/13 - L17 Recursion](../lectures/recursion/)
+- [Th 4/20 - L18 Classes and OOP](../lectures/classes-and-oop/)
+- [Tu 4/25 - L19 Methods](../lectures/methods/)
+- [Th 4/27 - L20 Installing Libraries](../lectures/libraries/)
+- [Tu 5/02 - L21 URLLib and APIs](../lectures/urllib-apis/)
+- [Th 5/04 - L22 Lambda, Map, Filter](../lectures/lambda-map-filter/)
+- [Tu 5/09 - L23 Event Loops](../lectures/event-loops/)
+- [Th 5/11 - L24/L25 Capstone Project Work](../lectures/capstone-work-1/)
+- [Tu 5/15 - L25/L26 Capstone Project Share](../lectures/capstone-project/)
 
 *This schedule is subject to change during the semester*
 
