@@ -41,6 +41,9 @@ const config = {
         path: `blog`,
         routeBasePath: 'blog',
         showReadingTime: true,
+        blogTitle: "Announcements",
+        blogDescription: "Announcements",
+        blogSidebarTitle: "Recent Announcements"
       },
     ],
     require.resolve('docusaurus-lunr-search'),
