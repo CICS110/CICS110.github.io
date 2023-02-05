@@ -1,3 +1,3 @@
-# B04 Collections
+# Lab 04: ???
 
 Coming soon...
