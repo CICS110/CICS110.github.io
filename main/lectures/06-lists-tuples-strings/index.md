@@ -1,3 +1,3 @@
-# L6 Lists, Tuples, Sets
+# Lec 06 Lists, Tuples, Sets
 
 Coming soon...

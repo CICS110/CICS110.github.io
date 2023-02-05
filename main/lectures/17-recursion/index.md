@@ -1,3 +1,3 @@
-# L17 Recursion
+# Lec 17 Recursion
 
 Coming soon...

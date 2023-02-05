@@ -1,4 +1,4 @@
-# L1 Course Introduction
+# Lec 01 Course Introduction
 
 import { PowerPoint } from '@site/src/components/PowerPoint'
 

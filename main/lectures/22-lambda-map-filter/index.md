@@ -1,3 +1,3 @@
-# L22 Lambda, Map, Filter
+# Lec 22 Lambda, Map, Filter
 
 Coming soon...

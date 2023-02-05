@@ -1,3 +1,3 @@
-# L3 Variables & Assignment
+# Lec 03 Variables & Assignment
 
 Coming soon...

@@ -1,3 +1,3 @@
-# L23 Event Loops
+# Lec 23 Event Loops
 
 Coming soon...

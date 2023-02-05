@@ -1,3 +1,3 @@
-# L11 While Loops
+# Lec 11 While Loops
 
 Coming soon...
