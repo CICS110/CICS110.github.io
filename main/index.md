@@ -23,3 +23,9 @@ As you begin to write more complex programs, you will encounter bugs and errors.
 The software development life cycle is the process of creating and maintaining software applications. It includes the following phases: design, coding, testing, and maintenance. The design phase involves creating a plan for what your application should do and how it should work. The coding phase involves writing the code for your application. The testing phase involves verifying that your code works as intended. The maintenance phase involves fixing bugs, adding new features, and keeping your application up to date.
 
 Programming skills are in high demand and can be applied to a wide range of real-world scenarios, including website development, data analysis, automation, and more. By understanding the basic concepts of programming, you will have the skills and knowledge you need to develop software applications and solve problems in any number of fields. Whether you are interested in creating mobile apps, building websites, or automating tasks, programming is a valuable and versatile skill that can open doors to many exciting career opportunities.
+
+:::note
+
+The course material, including all assignments and labs, is openly available from the start of the course. Our goal is to be transparent and open about the material in the course, giving you the opportunity to plan ahead and make the most of your time. This open access allows you to see what is coming up in future lectures, readings, assignments, and labs, so you can stay organized and focused. By providing you with this level of visibility, we aim to make the course as accessible and user-friendly as possible. This approach is in line with our commitment to creating a supportive and inclusive learning environment that empowers you to achieve your goals as a programmer.
+
+:::
