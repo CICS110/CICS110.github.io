@@ -121,7 +121,7 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Yuefeng Peng</div>
             <div id="bio">
-                
+                Hello! My name is Yuefeng. I am a Ph.D. student in Computer Science. My research focuses on security and privacy in machine learning. I like reading, hiking, and playing video games in my free time.
             </div>
         </div>
     </div>
@@ -154,11 +154,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/cynthia.png"/>
             </div>
             <div id="name">Cynthia Rajeshkanna</div>
             <div id="bio">
-                
+                Hello! My name is Cynthia Rajeshkanna. I’m a freshman Computer Science major. As an aspiring entrepreneur, I like to spend my time working on ventures and exploring the intersection of entrepreneurship and technology. I also love trying new foods and learning about different cultures.
             </div>
         </div>
     </div>
