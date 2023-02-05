@@ -5,7 +5,7 @@ author: Ben Burns
 # Office Hours
 These are all office hour times for the course. 
 
-Instructor and TA office hours will start the first week of classes (2/6). UCAs will host their office hours starting the second week of classes (2/13). 
+All office hours will start the second week of classes (2/13). There are no office hours before 2/13.
 
 | Day | Time | Course Staff |Name |  Location|
 |---|---|---|---|---|
