@@ -14,6 +14,13 @@ Meeting notes will be sent in `#logistics` as well.
 We have a Trello board for course organization. This is mostly used for making sure slides and assignments are ready before we need them, status on graded items (grading, needs uploading, uploaded). You do not need to check the Trello, as it's mostly for my (Ben's) use in keeping us organized. However, you should be able it, and it will let you can see, at a glance, the status of everything in the course. 
 
 ## Labs
+Labs are hosted every Friday. Each UCA and half TA attends 1 lab per week, and each full TA attends 2 labs. Staff assignments can be found on the [Labs course information page](../../information/labs). The labs themselves are hosted in the [Labs directory](../../labs).
+
+Each lab will have its own instructions on what is expected of students. Typically students will be working in groups. Your job as staff is to be actively trying to help students. Some students will really want help, but are too embarrassed or intimidated to ask. 
+
+That being said, some students will not want help. Trying to force help on a student who doesn't want it can make it more difficult for them to work, and potentially make them less likely to ask for help in the future when they do need help. Even if they're doing something incorrectly just let them figure it out, maybe they ask for help at a later point.
+
+Learn students' names! This is the place they get to know you and really get familiar with the course staff. 
 
 ## Office Hours
 Your office hours should either be in-person or over zoom. 
@@ -62,12 +69,14 @@ The best example of posts in this category are things like "what's on the next e
 If questions are coming in faster than the assigned staff can handle, like before a major deadline or exam, don't be afraid to `@` all UCAs asking if anyone is free to help out.
 
 ## Grading
-Grading is all done via Gradescope. For a guide on how to grade (both at the high level and how to use Gradescope itself), 
+Grading is all done via Gradescope. Most, if not all assignments in this course are autograded. For a guide on how to manual grade (at the high level, how to design a rubric, and how to use Gradescope itself), 
 see [this guide](https://groups.cs.umass.edu/uca/uca-training-grading-on-gradescope/) on the UCA website. 
 
- 
 ## Uploading to Moonami
 ### zyBooks
+:::note
+Until future notice, this course has no grades in zyBooks, so this section will be expanded as needed
+:::
 ### Gradescope
 
 ## Exams
@@ -114,3 +123,37 @@ Step 1 is so we know they're who they say they are. Step 2 is to make sure they 
 To proof read the exam, go to the Exam on Moodle, click the cog on the right, and select `Edit quiz`. On each question you will a field that says `(See questions)`, which you should open (it's way easier if you open it in a new tab). Then click the `Edit` dropdown, and select `Preview` (again, easier in a new tab).
 
 If you find a typo in a question, or find the wording confusing or ambiguous, `@` the instructor who last edited the question, including the question number, the name of the version, and the typo you found/what you found confusing. Unless specified otherwise, only Instructors should be editing exam questions directly. 
+
+## Responsibilities
+### UCAs
+All UCAs are going to have 3.5 out of their 5 hours "fixed": this is time reserved for labs, piazza, office hours, and meetings. The other hour and a half are sort of "up to the UCA" as to what we're expecting from you. Filling everyone's hours with tasks doesn't give us much room for flexibility, nor is it particularly engaging. It's not a good model for adapting to the challenges of various weeks.
+
+This is also a responsibility for you as a UCA to try new things. Figure out what the course needs, what students need, or even what you struggle with as a UCA and want to improve on.
+
+A guideline for UCA responsibilities is:
+- 1 hour of attending lab
+- 1 hour of hosting an office hour
+- 1 hour of monitoring Piazza, spread throughout a single day each week
+- 30 minutes of attending a weekly all-UCA meeting
+- 1 hour 30 minutes of flexible responsibilities, which can include
+  - attending a lecture
+  - proofreading slides, homework, or quizzes
+  - answering Piazza on busy days you aren't assigned to
+  - helping fix autograders
+  - reviewing similarity results for homeworks submitted to Gradescope
+
+If you're every feeling underutilized or unhappy about your responsibilities, ping Ben and I'll help you rework your responsibilities. 
+
+### TAs
+The TA responsibilities are a little less fun. For half TAs, you have 5 hours of fixed responsibilities between labs, office hours, piazza, and meetings. Full TAs have the same thing, but with 2 hours of labs, giving 6 hours of fixed responsibilities. 
+
+In addition, each TA will be required to complete the weekly homework and weekly lab. This is not to give you busy work or to test your abilities, it's so that we have at least four people each week reading through the documentation looking for confusing instructions or explanations, finding problems with the autograder, and who are very familiar with what we are asking from our students. 
+
+The hope is that each of these takes at most an hour. You should shoot to have a submission to the autograder by 5pm EST the day before the assignment is due. 
+
+A guideline for TA responsibilities is:
+- 1 or 2 hours of attending lab
+- 2 hours of hosting an office hour
+- 1 hour of monitoring Piazza, spread throughout a single day each week
+- 1 hour of attending a weekly meeting
+- Up to 2 hours of proofreading labs and homeworks
