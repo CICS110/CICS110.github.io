@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Staff
 
-This section is for information about the course, staff, and other general information.
+Meet all the wonderful people who are here to help you have an amazing experience in this course!
 
 ## Instructors
 <div class="grid-container">
