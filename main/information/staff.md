@@ -198,11 +198,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/lana.jpg"/>
             </div>
             <div id="name">Lana	Vu</div>
             <div id="bio">
-                
+                Hi! My name is Lana Vu and I'm a first semester sophomore CS major. I love to crochet, make jewelry, and dancing in my free time.
             </div>
         </div>
     </div>
