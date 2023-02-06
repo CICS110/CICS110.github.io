@@ -23,10 +23,11 @@ Meet all the wonderful people who are here to help you have an amazing experienc
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/allison.jpg"/>
             </div>
             <div id="name">Allison Poh</div>
             <div id="bio">
+            Hello! I’m Allison and I’m a second year PhD student. I greatly enjoy teaching computer science and I’m very happy to be part of the 110 staff 🙂 My research interests include HCI, gamification, and learning technologies. I’m a member of the Advanced Learning Technologies Lab where I work on a system that promotes math learning through game design and embodied learning. In my free time, I enjoy running and chasing my cats around the house.
             </div>
         </div>
     </div>
@@ -46,10 +47,11 @@ Meet all the wonderful people who are here to help you have an amazing experienc
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/eduardo.jpg"/>
             </div>
             <div id="name">Eduardo Calle Ortiz</div>
             <div id="bio">
+                Hi, I am Eduardo, a doctoral student in computer Science interested in AI. I am particularly interested in how AI will reframe education and any stuff related to AI and education. I am also the father of a two years old boy. I enjoy spending time with my wife and son when I am not studying.
             </div>
         </div>
     </div> 
