@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Staff
 
-This section is for information about the course, staff, and other general information.
+Meet all the wonderful people who are here to help you have an amazing experience in this course!
 
 ## Instructors
 <div class="grid-container">
@@ -16,7 +16,7 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Tim Richards</div>
             <div id="bio">
-                Tim Richards is a senior teaching faculty member at the Manning College of Information and Computer Sciences, where he holds a PhD in Computer Science and teaches a variety of courses and dabbles in research. His primary interests lie in compilers, operating systems, programming languages, web systems, the design and implementation of complex systems, and the art and science of effective teaching. As the lead faculty in the design and implementation of the new CICS introductory sequence (including CICS 110), Dr. Richards is dedicated to teaching computer science and enjoys sharing his passion with students. He has received the College Outstanding Teaching Award (COTA), nominated three times for a Distinguished Teaching Award (2022 currently pending a decision) and once for the Manning Prize, and a fellow of Innovation and Flexible Learning at UMass. In his free time, he loves to travel the world with his family, spend time with friends and loved ones, read, listen to podcasts and books, and engage in continuous learning. 
+                Tim Richards is a senior teaching faculty member at the Manning College of Information and Computer Sciences, where he teaches a variety of courses and dabbles in research. He is the course administrator for this course and is dedicated to teaching computer science and enjoys sharing his passion with students.
             </div>
         </div>
     </div>
