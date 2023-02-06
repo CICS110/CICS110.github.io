@@ -230,10 +230,11 @@ Meet all the wonderful people who are here to help you have an amazing experienc
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/sreya.jpeg"/>
             </div>
             <div id="name">Sreya Nimmagadda</div>
             <div id="bio">
+            Hello! My name is Sreya Nimmagadda and I am a junior Computer Science major. This is my second semester as a UCA for CICS 110. In my free time I love to paint, dance, and enjoy new foods!
             </div>
         </div>
     </div>
@@ -251,10 +252,11 @@ Meet all the wonderful people who are here to help you have an amazing experienc
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/wenhao.jpg"/>
             </div>
             <div id="name">Wenhao Yang</div>
             <div id="bio">
+            Hi! I'm Wenhao Yang. I'm a freshman majoring in Computer Science and Math. I enjoy reading, foosball, tennis, and games of all kinds.
             </div>
         </div>
     </div>
