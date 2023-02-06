@@ -1,4 +1,4 @@
-# Cole's version
+# Section 01, 06 (Cole Reilly)
 
 import { PowerPoint } from '@site/src/components/PowerPoint'
 
