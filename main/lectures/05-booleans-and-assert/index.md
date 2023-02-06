@@ -1,3 +1,3 @@
-# L5 Booleans & Assert
+# Lec 05 Booleans & Assert
 
 Coming soon...

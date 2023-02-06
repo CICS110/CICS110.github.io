@@ -1,4 +1,4 @@
-# L2 Arithmetic Expressions
+# Lec 02 Arithmetic Expressions
 
 import { PowerPoint } from '@site/src/components/PowerPoint'
 

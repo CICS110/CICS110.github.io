@@ -1,3 +1,3 @@
-# L26 Capstone Showcase
+# Lec 26 Capstone Showcase
 
 Coming soon...

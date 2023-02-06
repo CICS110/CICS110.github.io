@@ -1,3 +1,3 @@
-# B03 Assert
+# Lab 03: Assert
 
 Coming soon...

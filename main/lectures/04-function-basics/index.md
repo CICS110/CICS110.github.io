@@ -1,3 +1,3 @@
-# L4 Function Basics
+# Lec 04 Function Basics
 
 Coming soon...

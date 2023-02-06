@@ -1,3 +1,3 @@
-# L8 Branching Introduction
+# Lec 08 Branching Introduction
 
 Coming soon...
