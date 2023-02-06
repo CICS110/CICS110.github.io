@@ -16,7 +16,7 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Tim Richards</div>
             <div id="bio">
-                
+                Tim Richards is a senior teaching faculty member at the Manning College of Information and Computer Sciences, where he holds a PhD in Computer Science and teaches a variety of courses and dabbles in research. His primary interests lie in compilers, operating systems, programming languages, web systems, the design and implementation of complex systems, and the art and science of effective teaching. As the lead faculty in the design and implementation of the new CICS introductory sequence (including CICS 110), Dr. Richards is dedicated to teaching computer science and enjoys sharing his passion with students. He has received the College Outstanding Teaching Award (COTA), nominated three times for a Distinguished Teaching Award (2022 currently pending a decision) and once for the Manning Prize, and a fellow of Innovation and Flexible Learning at UMass. In his free time, he loves to travel the world with his family, spend time with friends and loved ones, read, listen to podcasts and books, and engage in continuous learning. 
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/jared.jpeg"/>
             </div>
             <div id="name">Jared Yeager</div>
             <div id="bio">
@@ -69,11 +69,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/kobi.png"/>
             </div>
             <div id="name">Kobi Falus</div>
             <div id="bio">
-                
+                Hi, I'm Kobi. I'm a Computer Science Master's student, that got my bachelor's here in Spring '22. This is my second time teaching this course, and I'm really excited to meet everyone. In my free time I like browsing Reddit/Youtube, playing board games, and talking with people. Feel free to come up and have a conversation with me!
             </div>
         </div>
     </div>  
@@ -88,7 +88,7 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Erfan Entezami</div>
             <div id="bio">
-                Hi! My name is Erfan and I’m a Ph.D. student in Computer Science at UMass. My research focuses on the intersection of machine learning and Human-computer interaction. The goal of my research is to design intelligent systems/algorithms that are able to deal with non-stationary situations. Outside of work, I enjoy reading, playing guitar, photography and hiking.
+                Hi! My name is Erfan and I’m a Ph.D. student in CS at UMass. My research focuses on the intersection of machine learning and Human-computer interaction. The goal of my research is to design intelligent systems/algorithms that are able to deal with non-stationary situations. Outside of work, I enjoy reading, playing guitar, photography and hiking.
             </div>
         </div>
     </div> 
@@ -117,7 +117,7 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/yuefeng.png"/>
             </div>
             <div id="name">Yuefeng Peng</div>
             <div id="bio">
@@ -165,11 +165,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/dev.jpg"/>
             </div>
             <div id="name">Dev Mehta</div>
             <div id="bio">
-                
+                Hey everyone! I’m Dev Mehta and I’m an undergraduate freshman studying Computer Science and pursuing a minor in Business. In my free time I love singing, swimming and playing pool.
             </div>
         </div>
     </div>
@@ -209,11 +209,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/rachana.jpg"/>
             </div>
             <div id="name">Rachana Reddy</div>
             <div id="bio">
-                
+                Hi! I’m Rachana Reddy and I’m currently a undegraduate junior Computer Science Major. I love listening to music, playing piano, and doing anything outdoors like taking walks, biking, or hiking!
             </div>
         </div>
     </div>
@@ -242,11 +242,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/tanush.jpg"/>
             </div>
             <div id="name">Tanush Savadi</div>
             <div id="bio">
-                
+                Hi, my name is Tanush, my friends call me Thanos (you can call me either). I am an undergraduate freshman Computer science major. I love playing video games, watching TV shows, playing and watching sports. I'm a big foodie and I am very interested in entrepreneurship!
             </div>
         </div>
     </div>
