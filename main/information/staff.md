@@ -27,7 +27,6 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Allison Poh</div>
             <div id="bio">
-                
             </div>
         </div>
     </div>
@@ -51,7 +50,6 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Eduardo Calle Ortiz</div>
             <div id="bio">
-                
             </div>
         </div>
     </div> 
@@ -106,11 +104,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/will.jpg"/>
             </div>
             <div id="name">Will Lee</div>
             <div id="bio">
-                
+               My name is Will Lee - third year Computer Science graduate student. Dad of two cats - Rebecca and Rachel
             </div>
         </div>
     </div> 
@@ -132,7 +130,7 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src="https://github.com/bburns-ds.png"/>
+                <img src="/img/ben.jpg"/>
             </div>
             <div id="name">Ben Burns</div>
             <div id="bio">
@@ -224,7 +222,6 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Sonali Palit</div>
             <div id="bio">
-                
             </div>
         </div>
     </div>
@@ -235,7 +232,6 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Sreya Nimmagadda</div>
             <div id="bio">
-                
             </div>
         </div>
     </div>
@@ -257,7 +253,6 @@ This section is for information about the course, staff, and other general infor
             </div>
             <div id="name">Wenhao Yang</div>
             <div id="bio">
-                
             </div>
         </div>
     </div>
