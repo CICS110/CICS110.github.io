@@ -81,6 +81,7 @@ This lecture schedule applies to the following sections:
 - [Th 4/06 - L15 Files](../lectures/files/)
 - [Tu 4/11 - L16 CSV Files](../lectures/csv-files/)
 - [Th 4/13 - L17 Recursion](../lectures/recursion/)
+- Tu 4/18 - No Class, Patriot’s Day
 - [Th 4/20 - L18 Classes and OOP](../lectures/classes-and-oop/)
 - [Tu 4/25 - L19 Methods](../lectures/methods/)
 - [Th 4/27 - L20 Installing Libraries](../lectures/libraries/)
