@@ -187,11 +187,11 @@ This section is for information about the course, staff, and other general infor
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/kelly.jpg"/>
             </div>
             <div id="name">Kelly Deng</div>
             <div id="bio">
-                
+                Hello my name is Kelly Deng and I’m an undergrad sophomore CS major and philosophy minor. I love reading and camping in my free time.
             </div>
         </div>
     </div>
