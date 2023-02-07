@@ -114,7 +114,7 @@ or introduce something that might be useful to know. **Due by the end of Fridays
 * **[zyBooks](../../information/syllabus#participation)** (10%):
 The online textbook has some exercises in it that count toward participation grade.
 **[TODO: NEED DUE DATES]**
-* **[Capstone Project](capstone-project)** (20%): A more open ended final project.
+* **[Capstone Project](../../information/syllabus#capstone-project)** (20%): A more open ended final project.
 **Due the last day of class**
 
 All homework assignments and labs (except for the first lab) can be worked on in groups of up to 4.
