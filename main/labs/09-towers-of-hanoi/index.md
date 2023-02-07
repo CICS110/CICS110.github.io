@@ -1,3 +1,3 @@
-# Lab 09: ???
+# Lab 09: Towers of Hanoi
 
 Coming soon...

@@ -1,3 +1,3 @@
-# Lab 06: ???
+# Lab 06: While
 
 Coming soon...
