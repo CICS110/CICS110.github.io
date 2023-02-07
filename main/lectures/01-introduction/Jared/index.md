@@ -20,9 +20,9 @@ I have decided not to prioritise these over getting something up before class.
 
 Short week 1 tasks:
 
-* Sign up for Piazza
-* Sign up for Gradescope
-* Sign up for Zybooks
+* Sign up for Piazza: **Due Friday 2/7**
+* Sign up for Gradescope: **Due Friday 2/7**
+* Sign up for Zybooks: **Due Friday 2/7**
 * Quiz 1: **Due Thursday 2/6**
 
 Lab this week is meeting your TA and making sure all the relevant software is installed.
@@ -33,7 +33,7 @@ My name is **Jared Yeager**.
 
 I'm **a computer science graduate student** here at UMass,
 so any level of formality from "Jared" to "Professor Yeager" is fine by me
-(although since I don't have a PhD, I'm not sure I can claim the title).
+(although since I don't have a PhD, I'm not sure I can claim the "Professor" title).
 Formality and hierarchy based on age starts to blur and melt down a bit as you get older.
 
 I have TA-ed computer science classes for several semesters,
@@ -41,15 +41,17 @@ but this is **my first time TO-ing** and **first time with CICS 110**.
 
 <details>
 <summary><b>Aside: Asking Questions</b></summary>
+
 This is my first time teaching a truly introductory class.
 It has also been almost a decade since I first took a programming class.
 
 This is all to say, I don't remember clearly what it is like to be in your shoes.
 There may be some things that have become natural to me that I don't realise are unnatural to you.
 
-So please, ask questions. Asking questions,
-and understanding the answer well enough to be able to answer your own questions,
-is really important to learning.
+So please, ask questions. Asking questions and making sure to understand
+the answer well enough that you could explain it your past self
+is a really powerful technique for learning.
+
 </details>
 
 ## Who are .. We?
@@ -72,6 +74,7 @@ you have the knowledge to try and do that.
 
 <details>
 <summary><b>Aside: Concepts, not Syntax</b></summary>
+
 I want to emphasise that this class is an introduction to *programming*.
 
 We use python, but many of the concepts we learn about (e.g. variables, branching, looping)
@@ -79,31 +82,44 @@ exist in almost every mainstream language.
 
 Your goal should be to internalise those concepts themselves.
 If you need to look up the syntax for a specific language, that's fine.
+
+As you see more languages,
+you'll find that specific syntax of a given language may be hard to remember.
+But knowing the concepts helps you look up whatever gaps you need to fill.
+
 </details>
 
 ## Syllabus
+
+:::caution
+
+The syllabus is somewhat under construction.
+
+:::
 
 The full Syllabus is available [here](../../information/syllabus), but some specifics
 
 ### Assignment Types
 
-* **[Homework](../../information/syllabus#homework-assignments)**:
+* **[Homework](../../information/syllabus#homework-assignments)** (40%):
 These are roughly weekly to bi-weekly programming exercises.
 **Due by the end of Wednesdays**
-* **[Weekly Quizzes](../../information/syllabus#quizzes)**:
+* **[Weekly Quizzes](../../information/syllabus#quizzes)** (10%):
 These are online quizzes on Moodle.
 They are untimed and can be attempted as many times as you like.
 **Due by the end of Thursdays**
-* **[Labs](../../information/syllabus#labs-1)**:
+* **[Labs](../../information/syllabus#labs-1)** (20%):
 Activities to be done in lab/discussion section that further explore a topic
 or introduce something that might be useful to know. **Due by the end of Fridays**
-* **[zyBooks](../../information/syllabus#participation)**:
-[TODO: something about participation]
-* **[Capstone Project](capstone-project)**: A more open ended final project.
+* **[zyBooks](../../information/syllabus#participation)** (10%):
+The online textbook has some exercises in it that count toward participation grade.
+**[TODO: NEED DUE DATES]**
+* **[Capstone Project](capstone-project)** (20%): A more open ended final project.
 **Due the last day of class**
 
 All homework assignments and labs (except for the first lab) can be worked on in groups of up to 4.
-When submitting the assignment, one person should submit and not the people they worked with.
+When submitting the assignment, only one person in the group should submit
+and they should note the people they worked with.
 There is a way to select partners on Gradescope (our auto-grader submission platform).
 
 ### Tools
@@ -121,11 +137,8 @@ Links to respective lecturers on Moodle
 This is a website for students to ask questions on.
 * **[zyBooks](https://learn.zybooks.com/zybook/UMASSCICS110Spring2023)**:
 This an interactive textbook used for this class.
-**[NEED DUE DATES]**
 
 ### Grading
-
-[TODO: get clarifications on this]
 
 One of our goals in this course is focussing on learning as much as possible.
 
@@ -138,21 +151,22 @@ To that end, the grading system is simplified into a 5-point scale as much as po
 
 <details>
 <summary><b>Aside: Learning vs Grades</b></summary>
+
 When you take a class, you have two goals:
 * Learn the material.
 * Get a good grade.
 
 Learning the material is necessary to be able to do things with the material in the future.
-Grade are what people use as a metric of how well someone knows the material.
+Grades are what people use as a metric of how well someone knows the material.
 
 They are related, but they are not the same thing.
 
 Given how fundamental the material in this course is,
 we want people to be able to dedicate their time and energy to actually learning the material;
-not have is siphoned away my the extra concerns imposed by optimising grades.
+not have it siphoned away by the extra concerns imposed by optimising grades.
 
 So we've simplified the grading scale to hopefully have less of a nagging effect of the sub-conscious,
-and we've made it assignments can be retried until understanding is achieved.
+and we've made it so that assignments can be retried until understanding is achieved.
 
 However, this puts a burden of trust/responsibility on you.
 
@@ -169,23 +183,25 @@ Getting stuck, then getting unstuck,
 and understanding what the issue was enough to explain it to your past self,
 is one of the best ways of really learning something.
 Try not to cheat yourself out of that experience.
+
 </details>
 
 ### Late Submissions and Token System
 
 Tokens are asymmetric time condensed into currency by modern science:
 * You start with 3.
-* You get one for every assignment submitted early.
+* You get one for every [TODO: clarify what assignment types qualify] submitted early/on-time. 
 * You can hold a total of 5.
-* You can spend 1 token for one day of extension for labs and homework.
-  * This only works on labs and homework
+* You can spend 1 token for one day of extension for [TODO: clarify what].
+  * This only works on [TODO: clarify what]
   * You can buy a maximum of 3 days of extension for an assignment
   * You must fill out this form to use/spend tokens [Add Link]
 * Remaining token and the end of the semester 
 
-## What is a programming language?
+## Programming in this Class
 
-**This is all for intuition, you don't need to know this.**
+<details>
+<summary><b>Aside: What <em>is</em> Programming</b></summary>
 
 [TODO: add diagram]
 
@@ -198,13 +214,15 @@ We translate the problem from our understanding/language to a programming langua
 (programming).
 The computer then translates that into it's own language (compilation/interpretation).
 
+</details>
+
 ### Python
 
 The programming language we choose to use for this class is called Python.
 
 * It is "scripting language", meaning you can start coding with less overhead.
-* It has a lot of build-in features that are very useful
-* It has a lot of useful libraries that have been developed
+* It has a lot of build-in features that are very useful.
+* It has a lot of useful libraries that have been developed.
 
 ### VSCode
 
@@ -216,7 +234,11 @@ It is wildly used and has a number of useful extensions.
 A sequence of instruction.
 Not unlike a recipe,
 or step-by-step instructions on how to drive somewhere,
-or step-by-step instructions on how to build something (legos, Ikea furniture).
+or step-by-step instructions on how to build something (e.g., legos, Ikea furniture).
+
+You can see how a recipe below can have a natural correspondence to something program-like.
+The step-by-step nature of being the key detail.
+The difference is in that the program needs very explicit details.
 
 A recipe:
 ```
@@ -251,7 +273,7 @@ RAM is a classic example.
 * **Input**: Anything we give the computer: clicking on a button, typing on a keyboard,
 entering text when prompted, etc.
 * **Output**: Anything the computer gives us: displays on a monitor, sounds,
-text it prints to a terminal
+text it prints to a terminal, etc.
 
 [TODO: steal Kobi's diagrams]
 
@@ -310,11 +332,14 @@ The computer "remembers" `your_name` was set to the input.
 
 ## Playing With Code
 
-Some examples of code to play around with.
+Some examples of code to play around with,
+to see what kind of cool things can be done.
 More are [here](./#exploring-code-activity)
 
 <details>
 <summary><b>Spirographs</b></summary>
+
+A pencil in a gear in a gear makes for some crazy doodles.
 
 ```py live_py title=Spirograph
 ########################################################
@@ -353,6 +378,8 @@ done()
 
 <details>
 <summary><b>Koch Snowflake</b></summary>
+
+A snowflake with infinite detail, to bad we can only ever approach it.
 
 ```py live_py title=Koch
 ########################################################
@@ -484,5 +511,10 @@ These are mostly thoughts I had anticipating certain questions.
 
 <details>
 <summary><b>TODO: Aside: Difficulty</b></summary>
-[TODO: Write out thoughts on difficulty of this class.]
+[TODO: Write out thoughts on the difficulty of this class.]
+</details>
+
+<details>
+<summary><b>TODO: Aside: Languages</b></summary>
+[TODO: Write out thoughts about how much it is a different language.]
 </details>
