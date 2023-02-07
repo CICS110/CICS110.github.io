@@ -10,7 +10,7 @@ export const PowerPoint = ({ lec_src }) => {
     const iframe_src = `https://view.officeapps.live.com/op/embed.aspx?src=${global_src}`;
     return (
         <div style={{ marginBottom: "4rem" }}>
-            <iframe src={iframe_src} width='100%' height='600px' frameborder='0'></iframe>
+            <iframe src={iframe_src} width='100%' height='600px' frameborder='0'></iframe>            
             <a href={lec_src} target="_blank" rel="noopener noreferrer">Download Powerpoint</a>
         </div>
     )

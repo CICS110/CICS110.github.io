@@ -1,3 +1,3 @@
-# Lab 08: ???
+# Lab 08: Modules & Files
 
 Coming soon...
