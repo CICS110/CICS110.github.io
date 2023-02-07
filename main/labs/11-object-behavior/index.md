@@ -1,3 +1,3 @@
-# Lab 11: ???
+# Lab 11: Object Behavior
 
 Coming soon...
