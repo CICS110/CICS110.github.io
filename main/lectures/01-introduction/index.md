@@ -1,5 +1,12 @@
 # Lec 01 Course Introduction
 
+## Reading / Participation
+
+- [Read Chapter 1 Introduction to Programming in CICS 110 - Foundations of Programming on zyBooks](https://learn.zybooks.com/) (note, you will first need to purchase the book)
+- Complete [Participation 1](/main/assignments/#participation) in zyBooks
+
+## Slides
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { PowerPoint } from '@site/src/components/PowerPoint'
@@ -12,6 +19,11 @@ import { PowerPoint } from '@site/src/components/PowerPoint'
     <PowerPoint lec_src={require('./Lecture_1_Cole.pptx').default} />
   </TabItem>
 </Tabs>
+
+## Additional Resources
+
+- [Learn Python with Socratica](https://youtu.be/bY6m6_IIN94) (Socratica)
+- [Hello World in Python](https://youtu.be/KOdfpbnWLVo) (Socratica)
 
 ## Exploring Code Activity
 
