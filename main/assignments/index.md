@@ -12,7 +12,7 @@ Our goal is to provide you with a comprehensive and engaging learning experience
 
 ## Deadlines
 
-Each assignment below provides you a suggested time to begin the assignment (B) and the deadline for the assignment (D). All assignments are due by 11:59 PM on the day/date specified. If you decide to spend [tokens](/main/information/syllabus#submission-currency-💵) for late days, you must fill out the late day submission form (*coming soon*). You may use tokens only for the assignments specified below.
+Each assignment below provides you a suggested time to begin the assignment (B) and the deadline for the assignment (D). All assignments are due by 11:59 PM on the day/date specified. If you decide to spend [tokens](/main/information/syllabus#submission-currency-) for late days, you must fill out the late day submission form (*coming soon*). You may use tokens only for the assignments specified below.
 
 ## Participation
 
@@ -32,13 +32,13 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 ## Homework
 
-✨ 🪙 **You do can earn and use tokes for this assignment type.** 🪙 ✨
+✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
 
 *No assigned work yet*
 
 ## Labs
 
-✨ 🪙 **You do can earn and use tokes for this assignment type.** 🪙 ✨
+✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
 
 *No assigned work yet*
 
