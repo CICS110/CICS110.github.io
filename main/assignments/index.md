@@ -32,13 +32,13 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 ## Homework
 
-✨ 🪙 **You do can earn and use tokes for this assignment type.** 🪙 ✨
+✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
 
 *No assigned work yet*
 
 ## Labs
 
-✨ 🪙 **You do can earn and use tokes for this assignment type.** 🪙 ✨
+✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
 
 *No assigned work yet*
 
