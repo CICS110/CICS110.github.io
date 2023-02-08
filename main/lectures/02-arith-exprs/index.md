@@ -16,7 +16,7 @@ import { PowerPoint } from '@site/src/components/PowerPoint'
     <PowerPoint lec_src={require('./Lecture_2.pptx').default}/>
   </TabItem>
   <TabItem value="Section 1, 6" label="Section 1, 6">
-    <PowerPoint lec_src={require('./Lecture_2.pptx').default}/>
+    <PowerPoint lec_src={require('./Lecture_2_Cole.pptx').default}/>
   </TabItem>
 </Tabs>
 
