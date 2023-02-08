@@ -220,10 +220,11 @@ Meet all the wonderful people who are here to help you have an amazing experienc
     <div class="grid-item">
         <div id="person">
             <div id="img">
-                <img src=""/>
+                <img src="/img/sonali.jpg"/>
             </div>
             <div id="name">Sonali Palit</div>
             <div id="bio">
+                Hi! My name is Sonali Palit. I'm a sophmore and I'm majoring in Computer Science. I was a UCA for CS121 last semester. I enjoy traveling and in my free time I like to sing and listen to music.
             </div>
         </div>
     </div>
