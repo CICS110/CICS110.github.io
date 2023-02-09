@@ -1,8 +1,8 @@
 ---
-title: "Lab 01: Python Setup"
+title: "Lab 01: Getting Started"
 ---
 
-# Hello, World!
+# Getting Started with Python
 
 ## About
 
