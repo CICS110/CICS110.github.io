@@ -38,9 +38,11 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 ## Labs
 
+Lab assignments are started during the lab sections. You have until 11:59 PM on the day the lab is suggested to be started. You must submit labs to Gradescope.
+
 ✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
 
-*No assigned work yet*
+- [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
 
 ## Capstone Project
 
