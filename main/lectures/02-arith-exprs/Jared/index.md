@@ -4,15 +4,6 @@ title: Section 04 (Jared Yeager)
 
 # Types and Operations
 
-:::caution
-
-This is not entirely complete, you may notice some TODOs I have left for myself.
-(There are probably a ton of typos too.)
-
-But it is 1pm and I have class at 2:30, so I'm throwing up what I have.
-
-:::
-
 ## Assignment Updates
 
 Short week 1 tasks:
@@ -45,7 +36,7 @@ It may by more useful to think of the right-hand side a "python calculator" of s
 <summary><b>Extra: REPLs</b></summary>
 
 This calculator-like thing is more formally know as a
-[read-eval-print loop REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop)
+[read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read–eval–print_loop)
 
 It reads an expression from the user, evaluates it, prints the result, and repeats (loops).
 
@@ -57,19 +48,19 @@ It reads an expression from the user, evaluates it, prints the result, and repea
 replit's python REPL is presumably a wrapper around python's built-in REPL.
 
 If you are in a terminal or powershell and python 3 is installed,
-then you can start up the built in REPL with the command `python3`
+then you can start up the built-in REPL with the command `python3`
 (if you have installed python, it is almost surely python 3).
 That's it, just `python3` with no file name after it.
 
 To get out of the REPL, you can use the `exit()` function,
-of you can hit control-d (it might be something else on Windows).
+or you can hit control-d (it might be something else on Windows).
 
 </details>
 
 ## Types
 
 We as humans understand the difference between numbers and words.
-Even within numbers, we have whole numbers, fractions, and decimals, for instance.
+Even within numbers, we have whole numbers, fractions, and decimals.
 
 Computers formalise this with a notion of *types*. All data has some type associated with it.
 Everything is something, maybe a number, maybe text, and later on, maybe weirder things.
@@ -77,7 +68,7 @@ Everything is something, maybe a number, maybe text, and later on, maybe weirder
 There are 3 types we care about at the moment:
 * Integers (`int`): these are the whole numbers of python,
 e.g.: `0`,`1`,`6`,`-7`.
-* Floating point numbers (`float`): these are the whole decimal numbers of python,
+* Floating point numbers (`float`): these are the decimal numbers of python,
 e.g.: `0.0`,`-1.67`,`4e23`.
 * Strings (`str`): these are the "text" type of python. e.g.: `"Hello, World!"`.
 
@@ -96,21 +87,57 @@ Why that specific number is much longer story.
 * Negative Infinity (prints as `-inf`): Much like `inf`, but negative.
 * Not a Number (prints as `nan`):
 Sometimes when you do illegal math you get an error (such as dividing by 0).
-Sometimes, lake with `1.8e308 - 1.8e308` (`inf` - `inf`) you get "Not a Number"
+Sometimes, like with `1.8e308 - 1.8e308` (`inf` - `inf`) you get "Not a Number"
 
 </details>
 
 <details>
-<summary><b>Extra: Escaping Strings</b></summary>
+<summary><b>Extra: Escape Sequences</b></summary>
 
-[TODO: extra information on escape characters]
+Sometime, you want to something a little fancy in your strings.
+Maybe you want a tab, maybe a newline, or maybe you want a quotation mark.
+
+To do these things, we need what are called *escape sequence*s.
+These are sequences of characters starting with a special *escape character*.
+The escape character, `\` (backslash) in python,
+tells the computer that what comes next is not verbatim,
+but rather a special sequence telling it to do something else.
+
+So for a new line, you can use `"\n"`, for tabs, `"\t"`.
+```
+>>> print("Escapable Whitespace:\n\tNewlines\n\tTabs")
+Escapable Whitespace:
+    Newlines
+    Tabs
+```
+
+For quotation marks, you don't need to escape if the marks around the entire string
+differ from what you are trying to display. E.g., `"'"` and `'"'` work how you might hope.
+You do need an escape if they match though, e.g., `"\""` and `'\''`.
+
+```
+>>> print("The ' in a \"...\"-style string doesn't need quotes")
+The ' in a "..."-style string doesn't need quotes
+>>> print('Don\'t forget to escape apostrophes in a \'...\'-style string')
+Don't forget to escape apostrophes in a '...'-style string
+```
+
+Finally, if you want a backslash itself to show up in a string, `\\`.
+```
+>>> print("Some Escape Sequences:\n\tNewline: \\n\n\tTab: \\t\n\tQuote (\"): \\\"\n\tBackslash (\\): \\\\")
+Some Escape Sequences:
+    Newline: \n
+    Tab: \t
+    Quote ("): \"
+    Backslash (\): \\
+```
 
 </details>
 
 ### Learning Something's Type
 
 If you want to know what something's type is, you can use the `type()` function.
-This take in anything and return the type, e.g., in the REPL
+This takes in anything and return the type, e.g., in the REPL
 (the first line is what I typed in, which is what the `>>>` represents):
 ```
 >>> type("Hello, World!")
@@ -145,8 +172,19 @@ So for instance, while you could say 17 divided by 5 is 3.4, you could also say
 The first approach is captured in python by `/`, the second with the following:
 * `//`: Integer Division/Floor Divisions. `17 // 5` would give `3`, the whole number
 of times to operator on the right can be taken out of the operator on the left.
-* `%`: Modulo/Remainder. `17 % 5` would give `2`, what remain of the operator on the left
+* `%`: Modulo/Remainder. `17 % 5` would give `2`, what remains of the operator on the left
 after the operator on the right is taken out of it as many times as possible.
+
+These both also work on `float`s in python.
+```
+>>> 18.5 // 5.1
+3.0
+>>> 18.5 % 5.1
+3.200000000000001
+```
+
+(As a bonus,
+you can even see the imperfection in the `float`'s ability to represent 3.2)
 
 ### Order of Operations
 
@@ -188,7 +226,7 @@ A demonstrated below:
 ### Operands' and Result's Types
 
 Since `int`s and `floats` are both numbers,
-you python lets you have operations with both in them:
+python lets you have operations with both in them:
 ```
 >>> 2 * 3.1415
 6.283
@@ -210,7 +248,7 @@ The type of the result depends on the type of the operands
 ```
 
 If either operand is a `float`, or the operation is `/`, the result will be a `float`.
-Otherwise (If both operands are `int` and the operation is **not** `/`), it will be an `int`.
+Otherwise (If both operands are both `int`s and the operation is **not** `/`), it will be an `int`.
 
 ## String Operations
 
@@ -218,13 +256,14 @@ We can work with more than numbers in python though. We also have text, aka stri
 
 Turns out, there are some handy operations we can perform on strings:
 * `+`: Concatenation. Combines 2 strings together, e.g., `"Hello" + " " + "World"`
-evaluates to `"Hello World"`
-* `*`: Repeat. This taken as operands a string and and an integer, in either order,
-and repeats the string that many times. E.g., `5 * "ha"` evaluates to `"hahahahaha"`
+evaluates to `"Hello World"`.
+* `*`: Repeat. This takes, as operands, a string and and an integer, in either order,
+and repeats the string that many times. E.g., `5 * "ha"` evaluates to `"hahahahaha"`.
 
 ## Converting Types (Casting)
 
-Finally, we can convert between these types if we so desire.
+Finally, we can convert between these types if we so desire
+(this is sometimes called *casting*).
 For example, if we have the string `"125"`, we may want to convert it to the
 integer `125`.
 
@@ -255,15 +294,60 @@ You may find it more appropriate to use the `round()` function.
 ```
 
 <details>
-<summary><b>Extra: It's Technically not Conversion</b></summary>
+<summary><b>Extra: Floor and Ceiling</b></summary>
 
-[TODO: write this]
+This truncating, or rounding down, is also called *floor*ing
+(hence "floor divisions", in fact).
+It can also be deliberately done with `math.floor()` in the
+[`math` Module](#math-module)
+
+The notion of rounding up is captured by the ceiling (`math.ceil()`) function.
 
 </details>
 
-## Math Module
+<details>
+<summary><b>Extra: It's Technically not Conversion</b></summary>
 
-[TODO: Ramble about the math module]
+This is material we will get to later.
+
+For each type (technically *class*),
+there is a special function, who's name matches the name of the type (class),
+called a *constructor*.
+
+Constructors construct an *object* of that type (class).
+They may also take in inputs to inform that construction.
+
+So `int(5.6)` isn't technically "converting" the `float` `5.6` to an `int`,
+but rather, creating a new `int` based on the `float` `5.6`.
+
+It's a subtle distinction,
+and for all intents are purposes is effectively conversion,
+but I like to include technically correct information where possible.
+
+</details>
+
+## `math` Module
+
+If you want even more mathematical functions and features,
+there is the [`math` module](https://docs.python.org/3/library/math.html).
+
+A [*module*](https://docs.python.org/3/tutorial/modules.html) is effectively a collection
+of functions and/or constants that aren't included by default.
+The term *library* is also frequently used for this concept.
+
+To *load* (or *import* or *include*) the `math` module, use the command `import math`
+(`import <module_name>` for modules more broadly). You can use this command in the REPL.
+
+There are useful function and constants in the module, like `sqrt()` and `pi`,
+but in order to use them (at least with this import method), we must refer to them
+as `math.sqrt()` or `math.pi`.
+```
+>>> math.sqrt(math.pi)
+1.7724538509055159
+```
+
+A full list of the function available to in the `math` module can be found
+in the [official documentation](https://docs.python.org/3/library/math.html).
 
 ---
 
