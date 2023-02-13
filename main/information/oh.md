@@ -9,7 +9,7 @@ All office hours will start the second week of classes (2/13). There are no offi
 
 | Day | Time | Course Staff |Name |  Location|
 |---|---|---|---|---|
-|Monday|10AM-11AM|UCA|Lana Vu |Zoom: [link](https://umass-amherst.zoom.us/u/aY342Y1gs)|
+|Monday|9AM-10AM|UCA|Lana Vu |Zoom: [link](https://umass-amherst.zoom.us/u/aY342Y1gs)|
 |Monday|12PM-1PM|UCA|Sonali Palit|Zoom: [link](https://umass-amherst.zoom.us/j/3326597420)|
 |Monday|1:30PM-3:30PM|TA|Manan Talwar|Zoom: [link](https://umass-amherst.zoom.us/j/95498894035)|
 |Monday |4PM-5PM|UCA|Dev Mehta|In-person: LGRC T225|
@@ -21,7 +21,7 @@ All office hours will start the second week of classes (2/13). There are no offi
 |Tuesday|4PM-5PM|TA|Will Lee|Zoom: [link](https://umass-amherst.zoom.us/j/4600211622)|
 |Tuesday|5:30PM-6:30PM|UCA|Emerson Lewiecki|Zoom: [link](https://umass-amherst.zoom.us/j/94187787101)|
 |Tuesday|7PM-9PM|Instructor|Cole Adam Reilly|Zoom: [link](https://umass-amherst.zoom.us/j/95380935979)|
-|Wednesday |11AM-12PM|Instructor|Eduardo Calle Ortiz|Zoom: link TBA|
+|Wednesday |11AM-12PM|Instructor|Eduardo Calle Ortiz|Zoom: [link](https://umass-amherst.zoom.us/j/92687526436)|
 |Wednesday|12PM-1PM|UCA|Tanush Savadi|Zoom: [link](https://umass-amherst.zoom.us/j/98218887926)|
 |Wednesday|1PM-2PM|UCA|Wenhao Yang|In-person: LGRC T223|
 |Wednesday|3PM-4PM|UCA|Cynthia Rajeshkanna|Zoom: [link](https://umass-amherst.zoom.us/j/97234574107)|

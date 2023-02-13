@@ -20,10 +20,10 @@ I have decided not to prioritise these over getting something up before class.
 
 Short week 1 tasks:
 
-* Sign up for Piazza: **Due Friday 2/7**
-* Sign up for Gradescope: **Due Friday 2/7**
-* Sign up for Zybooks: **Due Friday 2/7**
-* Quiz 1: **Due Thursday 2/6**
+* Quiz 1: **Due Thursday 2/9**
+* Sign up for Piazza: **Due Friday 2/10**
+* Sign up for Gradescope: **Due Friday 2/10**
+* Sign up for Zybooks: **Due Friday 2/10**
 
 Lab this week is meeting your TA and making sure all the relevant software is installed.
 
@@ -61,7 +61,7 @@ We have a big team here, [so check them out](../../information/staff)
 Mentioning anyone specifically other them Tim Richards, our Course Overmind,
 would be playing favourites.
 
-## What is the Class?
+## What is this Class?
 
 CICS 110: Introduction to Programming (I think).
 
@@ -188,6 +188,12 @@ Try not to cheat yourself out of that experience.
 
 ### Late Submissions and Token System
 
+:::caution
+
+The token system is undergoing some renovations.
+
+:::
+
 Tokens are asymmetric time condensed into currency by modern science:
 * You start with 3.
 * You get one for every [TODO: clarify what assignment types qualify] submitted early/on-time. 
@@ -195,7 +201,7 @@ Tokens are asymmetric time condensed into currency by modern science:
 * You can spend 1 token for one day of extension for [TODO: clarify what].
   * This only works on [TODO: clarify what]
   * You can buy a maximum of 3 days of extension for an assignment
-  * You must fill out this form to use/spend tokens [Add Link]
+  * You must fill out [this form](https://forms.gle/27pLKUQgsz9bjH9M9) to use/spend tokens
 * Remaining token and the end of the semester 
 
 ## Programming in this Class
@@ -265,11 +271,12 @@ A psuedo-program:
 
 That's an almost philosophical question.
 But for the sake of this class, let us say that a computer running a program has 5 parts:
-* **Processor**: The part of the computer that computes. The CPU, generally.
+* **Processor**: The part of the computer that computes. The CPU (central processing unit),
+generally.
 * **Instructions**: This is what tells the computer *what* to compute.
 This is our code.
 * **Memory**: This is that metaphoric scratch paper that the computer tracks it's work on.
-RAM is a classic example.
+RAM (random access memory) is a classic example.
 * **Input**: Anything we give the computer: clicking on a button, typing on a keyboard,
 entering text when prompted, etc.
 * **Output**: Anything the computer gives us: displays on a monitor, sounds,
@@ -278,7 +285,7 @@ text it prints to a terminal, etc.
 [TODO: steal Kobi's diagrams]
 
 For example, a game console running a video-game:
-* **Processor**: CPU and GPU, I suppose.
+* **Processor**: CPU and GPU (graphics processing unit), I suppose.
 * **Instructions**: The game's code.
 * **Memory**: RAM.
 * **Input**: Our button presses on a controller.
@@ -292,15 +299,23 @@ Let's take a look at that model with
 print("Hello, World")
 ```
 
-Run this program to see what it does.
+Run this program to see what it does (click the green button in the upper right).
+
+:::note
+
+You do not need to understand the mechanics of what is happening at this point.
+Merely observing `Hello, World` is displayed by running this is sufficient to
+apply the model.
+
+:::
 
 So what's happing with each component of the model for a computer running this program?
-* The **processor** is still the CPU
+* The **processor** is still the CPU and in processing the lines of code.
 * The **instructions** are just `print("Hello, World")`.
 * The **output** is the printed `Hello, World`.
 * The **input** ... well, there is no input used here.
 * The **memory** ... well, it's used in really technical ways,
-but not really too relevant here
+but not really too relevant here.
 
 As it turns out, not every part of of this model absolutely has to be used.
 
@@ -321,13 +336,20 @@ the computer ignores them. They exist for the use of humans reading the code.
 
 Run this program to see what it does.
 
+:::note
+
+You do not need to understand the mechanics of what is happening at this point either.
+Merely observing you are asked to input something
+and that that something shows up in the output is sufficient to apply the model.
+
+:::
+
 So what's happing with each component of the model for a computer running this program?
-* The **processor** is still the CPU
-* The **instructions** are those lines of code
-* The **input** is whatever we type in when prompted
-* That input is then stored in **memory** (RAM, in this case),
-and associated with `your_name`.
-The computer "remembers" `your_name` was set to the input.
+* The **processor** is still the CPU and in processing the lines of code.
+* The **instructions** are those lines of code.
+* The **input** is whatever we type in when prompted.
+* The **memory** (is RAM and) is used to remember what you input,
+so that it can be used in the output.
 * The **output** is the greeting you get.
 
 ## Playing With Code
@@ -507,14 +529,66 @@ and hitting enter/return, so in this case `python3 hello.py`
 
 ## Lingering Thoughts
 
-These are mostly thoughts I had anticipating certain questions.
+These are just some lingering thoughts I had.
 
 <details>
-<summary><b>TODO: Aside: Difficulty</b></summary>
-[TODO: Write out thoughts on the difficulty of this class.]
+<summary><b>Aside: Difficulty</b></summary>
+
+One question I always have (though seldom explicitly ask)
+when I take a new class is "how hard is this class"?
+
+Sitting now in the instructor's seat I realise how difficult a question that is answer.
+
+In my experience, I have encountered 3 bucked of difficulty:
+* Calculation difficulty: Where you have long and complicated calculations you have to do.
+A lot grunt work. Very easy to make careless mistakes. This is what I think of in
+higher level applied maths, physics, engineering.
+* Definition/memory difficulty: Where there is a lot information to try and absorb at once.
+I've had math classes with too many definitions to track/juggle.
+This is also what beats me up in history (lots of information)
+or foreign languages (lots of vocabulary).
+* Intuition difficulty: Where figuring out how to think about things is the challenge.
+This it what get me in the theoretical math and computer science classes.
+
+So how does this class rank in those?
+* Calculation difficulty: It shouldn't be bad here.
+In fact, a not uncommon use for programming is to make these sorts or things easier.
+Have the robots do the long, easy-to-mess-up type of work.
+* Definition/memory difficulty: I think will be an issue earlier on,
+but should hopefully ease up as we build a solid foundation.
+* Intuition difficulty: This is where I would worry.
+From the overhead of getting more comfortable navigating a computer to
+taking the thoughts in your head and expressing them as a program.
+This is where I think the challenge in this class will be.
+But it's also I think the coolest to overcome,
+because when something deeply alien to you mind start to a bit of intuitive sense,
+there can be very satisfying "I got it!" and a rewarding sense of progress.
+
 </details>
 
 <details>
-<summary><b>TODO: Aside: Languages</b></summary>
-[TODO: Write out thoughts about how much it is a different language.]
+<summary><b>Aside: Languages</b></summary>
+
+When I first learned some programming, I thought that the similarities between
+learning programming languages and foreign languages were tenuous at best.
+
+But now I think it can be instructive to consider the similarities.
+
+As you get more familiar with a foreign language,
+you find yourself doing a little less translation,
+and a little more "native-thinking".
+Foreign languages have their own internal logic.
+The way that you express something has some nuance literal translation can't quite capture.
+You conceptualise things differently, in a way that makes sense in that new language,
+but that is really hard to articulate.
+
+Programming languages are similar in that regard.
+There are a lot of cognates, to be sure.
+But getting comfortable with programming also means developing
+that different way of thinking.
+Thinking about problems and tasks in a logic-flow way.
+We'll try to practice this more explicitly with flowcharts.
+But ultimately, I think practice, making mistakes, and solving problems
+is probably critical to the process.
+
 </details>
