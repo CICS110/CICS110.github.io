@@ -18,7 +18,7 @@ Each assignment below provides you a suggested time to begin the assignment (B) 
 
 The [participation assignments](/main/information/syllabus#participation) can be found in the book used for this course. The book is titled *CICS 110 - Foundations of Programming* and can be found on the [zyBooks website](https://learn.zybooks.com/) after you purchase it (see Moodle for information on how to purchase the book). The zyBook will automatically record your scores as you complete each of the exercises.
 
-🔥 **You do not earn and cannot use tokes for this assignment type.** 🔥
+🔥 **You do not earn and cannot use tokens for this assignment type.** 🔥
 
 - Participation 1 (B: Mo 2/6, D: Th 2/16)
 
@@ -26,13 +26,14 @@ The [participation assignments](/main/information/syllabus#participation) can be
 
 This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They can be found on Moodle and are to be completed by the assigned due date. Your score for your latest attempt will be recorded in Moodle.
 
-🔥 **You do not earn and cannot use tokes for this assignment type.** 🔥
+🔥 **You do not earn and cannot use tokens for this assignment type.** 🔥
 
 - Quiz 1 Orientation (B: Mo 2/6, D: Th 2/9)
+- Quiz 2 Week 1 (B: Th 2/9, D: Th 2/16)
 
 ## Homework
 
-✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
+✨ 🪙 **You can earn and use tokens for this assignment type.** 🪙 ✨
 
 *No assigned work yet*
 
@@ -40,12 +41,13 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 Lab assignments are started during the lab sections. You have until 11:59 PM on the day the lab is suggested to be started. You must submit labs to Gradescope.
 
-✨ 🪙 **You can earn and use tokes for this assignment type.** 🪙 ✨
+🔥 🪙 **You can use, but not earn, tokens for this assignment type.** 🪙 🔥
 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
+- [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
 
 ## Capstone Project
 
-🔥 **You do not earn and cannot use tokes for this assignment type.** 🔥
+🔥 **You do not earn and cannot use tokens for this assignment type.** 🔥
 
 *No assigned work yet*
