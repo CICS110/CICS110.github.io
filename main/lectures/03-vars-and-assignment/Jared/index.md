@@ -8,7 +8,8 @@ title: Section 04 (Jared Yeager)
 
 This is not entirely complete, you may notice some TODOs I have left for myself.
 
-I'm still trying to figure out how I want to get diagrams and multi-image diagrams in here
+I'm still trying to figure out how I want to get diagrams and multi-image diagrams in here.
+But getting assignments out takes priority over that.
 
 :::
 
@@ -23,17 +24,78 @@ Stuff due next week:
 * HW 1: **Due Wednesday 2/22**
 * Quiz 3: **Due Thursday 2/23**
 * Lab 3: **Due Friday 2/23**
-* [TODO: Reading?]
+* [TODO: Reading? Presumably Thursday.]
 
 ## Assignment Workflow
 
+Caveat that this is but one approach.
+In the fullness of time,
+everyone develops their own preferred workflows and ways of doing things.
+
+But for the purposes of getting started, here is one workflow.
+
 ### Making a Folder
+
+A lot of IDEs (Integrated Development Environments, fancy work for editors)
+have a sort of built-in assumption that you are working on the project level,
+where the project may have multiple files.
+
+So often, the IDE is working in/opening the project folder.
+And so we a need a folder on our computer to do work in.
+
+Open your computer's file manage (e.g. Finder on Mac and File Explorer on Windows).
+
+Navigate to where you want to make this new folder.
+For example: I might have/make a `school` folder, and within that a `CICS110` folder,
+and within that a `HW` folder.
+
+Secondary click (right click on mouse, two-finger click on most trackpads, etc)
+in the finder where you want to folder to be to bring up a menu.
+Select either `New Folder` or `New > Folder` depending on your operating system.
+
+Give the new folder a name, `1-variables`, for instance.
+(You can secondary click on the folder to to bring up a menu that should have a `Rename` option,
+if need be.)
 
 ### Opening a Folder
 
+We need to open that folder in our editor to do stuff in it
+(you can also make files directly, but I'm not demoing that approach specifically).
+
+Launch VSCode.
+
+Select `File > Open Folder`. This notation means,
+click the `File` menu and then select `Open Folder` from the dropdown.
+
+This menu is likely in the upper-left area of the application or you entire screen
+(depending on your operating system).
+
 ### Making a File
 
+Select `File > New File ...`.
+
+VSCode will ask for a name for the file, give it a name ending in `.py`,
+e.g., `hello.py`. You need to specify that `.py` extension.
+
 ### Running a File
+
+Finally, if you installed the extension packet from the
+[VSCode installation guide](../../guides/vscode/installation#installing-python-extensions),
+then there should be a play-button-like triangle in the upper-right of the
+python file.
+
+Simply click that button and VSCode will open a terminal and run the file for you.
+
+<details>
+<summary><b>Extra: Running the File via Terminal</b></summary>
+
+You can deliberately open a terminal in VSCode via the menu
+`Terminal > New Terminal`.
+
+In the terminal, typing `python3` followed by a file name will run that file,
+e.g., `python3 hello.py`.
+
+</details>
 
 ## Parts of a Program
 
@@ -50,9 +112,13 @@ This lecture (and last) focusses on the data/objects portion.
 
 ### Proto Memory Diagrams
 
+[TODO: I really need to figure out diagrams. I just don't have tiiiiiiiiiiime.
+Maybe once spring break hits.]
+
 ## Variables
 
 Variables are a way to store and track information.
+
 Some people find the analogy of labeled boxes helpful,
 where objects are put into boxes labeled by the variable name,
 and can then be referenced by that variable name.
@@ -80,25 +146,25 @@ x = 2
 y = 1.5
 z = x + y
 print(z)
-x = -2
+x = -3
 print(x)
 print(z)
 ```
 
 So what does each line here do?
-* The first 4 lines are the same as before
-  * `x` is the `int` `2`
-  * `x` is the `float` `1.5`
-  * `z` is the `float` `3.5`, which was printed
-* `x` is set to the `int` `2`
-* `x`, which is now `-2`, is printed (so `-2` is printed)
-* `z`, which is still `3.5`, is printed (so `3.5` is printed)
+* The first 4 lines are the same as before.
+  * `x` is the `int` `2`.
+  * `x` is the `float` `1.5`.
+  * `z` is the `float` `3.5`, which is printed.
+* `x` is set to the `int` `-3`.
+* `x`, which is now `-3`, is printed (so `-3` is printed).
+* `z`, which is still `3.5`, is printed (so `3.5` is printed).
 
 ### Legal Names
 
 There are some important rules to remember about variable names:
-* Names must be composed of only letters, numbers, and underscores `_`
-* Names may not **begin** with a number (must start with letter or `_`)
+* Names must be composed of only letters, numbers, and underscores `_`.
+* Names may not **begin** with a number (must start with letter or `_`).
 * Names are case-sensitive. E.g., `Foo` and `foo` are different variables.
 
 Examples of legal variables names:
@@ -197,7 +263,7 @@ and stores it in the variable `your_name`.
 The second line is `print("Hello, " + your_name)`:
 * Again, `your_name` contains the string `"Jared"` in this step-through example.
 * The expression `"Hello, " + your_name` evaluates to `"Hello, Jared"`.
-* `print("Hello, " + your_name)` then prints `"Hello, Jared"`.
+* `print("Hello, " + your_name)` then prints `Hello, Jared` to the terminal.
 
 ---
 
@@ -220,12 +286,23 @@ This is an outline I had in the replit when demonstrating things.
 ### Instructor's Outline ###
 ############################
 
-# Making a File
-#   [How?]
-#   [Link to Guide?]
-#   Open Finder/File Navigate
+# Making a Folder
+#   Open Finder/File Navigater
 #   Navigate to desired location
 #     Could just use desktop
+#   Seconary Click -> New Folder
+
+# Opening Folder
+#   Launch VSCode (or equivalent)
+#   Navigate to folder you made
+
+# Makeing a File
+#   File -> New File
+#   Give it a name ending in .py
+
+# Run Script
+#   (Make sure extension is installed)
+#   Click the Triangle in the upper-right
 
 # Return to slides
 
