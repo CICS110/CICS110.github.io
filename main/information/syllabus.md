@@ -228,36 +228,40 @@ If there are extenuating circumstances beyond your control that prevent you from
 
 ### Submission Currency 💵
 
-To add some flexibility to submission deadlines, we will be using a form of “currency” in this course to earn “tokens” for submissions that are made before the day an assignment is due. If you submit an assignment before the deadline you will receive a token. You may then use a token to buy a late day allowing you to submit an assignment past the deadline. If you submit an assignment late and you run out of tokens, you may borrow tokens putting you in the negative. To get out of the hole you will need to submit subsequent assignments early to earn tokens back and pay your debt!
+To add some flexibility to submission deadlines, we will be using a form of “currency” in this course to earn “tokens” for submissions that are made before the day an assignment is due. If you submit an assignment on or before the deadline you will receive a token. You may then use a token to buy a late day allowing you to submit an assignment past the deadline. If you submit an assignment late and you run out of tokens, you may borrow tokens putting you in the negative. To get out of the hole you will need to submit subsequent assignments on time or early to earn tokens back and pay your debt!
 
 If you complete the course with leftover tokens it will be applied to your final grade and increase your overall grade for the course. If you complete the course with negative tokens it will be applied to your final grade and decrease your overall grade for the course.
 
-**Here are the rules:**
+✨ **Caveat:** you will only earn a token if your submission is at least *Meeting Standards*. Anything below is not considered to be token-level quality. ✨
 
-- You start the course with 3 tokens.
-- If you submit an assignment any day before or on the day an assignment is due you will receive a token.
-- If you submit an assignment any day after the day an assignment is due you will pay a token for each day past the due date.
-- You may only use tokens up to three days past the deadline of an assignment. After three days past the deadline you are no longer able to use tokens or submit an assignment late. It will be marked as missing with a 0.
-- You can only hold a maximum of 5 tokens. That is, if you have 5 tokens and you hand an assignment early or on time, you still have 5 tokens.
-- To use your tokens you must use our token request form available on the course LMS.
+### Token Rules
 
-**What can tokens be used for?**
+- You start the semester with 3 tokens.
+- A submission before or on a due date earns you 1 token.
+- You can optionally apply a token for each day late up to 3 days.
+- You can decide not to use tokens for late days. We reduce your
+  assignment score by 1 for each day late (e.g., -1).
+- After 3 days late an assignment and/or tokens will not be accepted.
+- You can hold a maximum of 5 tokens at any time.
+- You can earn tokens from **homeworks** only.
+- You can apply tokens to **homeworks** and **labs**.
 
-Tokens can be used on the following assessments:
+### Submissions, Gradescope, and Token Application
 
-- Homework
-- Labs
+The submission you choose to activate on gradescope is the submission we use. If your active submission is after the due date, and you do not report that your want to use tokens by submitting the token application form, we apply the late policy of -1 to your assignment submission per late day. **You must submit a token application form to apply tokens to an assignment.** The token application form is available on Moodle.
 
-**Examples:**
+### Examples
 
 - At the start of the semester Mia submits the first assignment two days early and receives a token increasing their purse to 4.
-- In the middle of the semester Pat is late by 2 days. This uses 2 tokens from their purse. This is not bad since Pat hasn’t missed an assignment. Pat has 1 token remaining.
-- At the end of the semester Jorge has 3 tokens and their grade is an 88. The tokens are applied and their final grade is a 91. Jorge is happy. 😃
-- At the end of the semester Tanya has -2 tokens and their grade is a 90. The tokens are applied and their final grade is an 88. Tanya is unhappy 😔, but understands.
+- In the middle of the semester Pat is late by 2 days. Pat decides to use 2 tokens from their purse. This is not bad since Pat hasn’t missed an assignment. Pat has 1 token remaining.
+- At the end of the semester Jorge has 3 tokens and their grade is a B+. The tokens are applied and their final their final grade ends up as an A. Jorge is happy. 😃
+- At the end of the semester Tanya has -2 tokens and their grade is an A-. The tokens are applied and their final grade is an B+. Tanya is unhappy 😔, but understands.
 
 You are ultimately responsible for maintaining your token count. We will do our best to calculate the number of tokens you have for each assignment. However, it may take a few days to do so.
 
-**Tokens may not be used or gained on in-class exercises or labs.**
+### Group Submissions
+
+When an assignment is submitted as a group, all group members earn a token if submitted before or on the date the assignment is due. If the assignment is submitted late, each group member can decide if they want to use tokens to pay for the late days or get marked down on the individual assignment.
 
 ## Incompletes
 
