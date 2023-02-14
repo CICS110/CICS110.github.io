@@ -44,7 +44,7 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 🔥 🪙 **You can use, but not earn, tokens for this assignment type.** 🪙 🔥
 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
-- [Lab 02 String Formatting](/main/labs/02-string-formatting) (B: Fr 2/17, D: Fr 2/17)
+- [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
 
 ## Capstone Project
 
