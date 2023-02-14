@@ -8,10 +8,10 @@ title: Section 04 (Jared Yeager)
 
 Short week 1 tasks:
 
-* Sign up for Piazza: **Due Friday 2/7**
-* Sign up for Gradescope: **Due Friday 2/7**
-* Sign up for Zybooks: **Due Friday 2/7**
-* Quiz 1: **Due Thursday 2/6**
+* Quiz 1: **Due Thursday 2/9**
+* Sign up for Piazza: **Due Friday 2/10**
+* Sign up for Gradescope: **Due Friday 2/10**
+* Sign up for Zybooks: **Due Friday 2/10**
 
 Lab this week is meeting your TA and making sure all the relevant software is installed.
 
