@@ -175,7 +175,7 @@ check out the *Other number representations* section of the [linked page](https:
 <details>
 <summary><b>Testing</b></summary>
 
-Stick some calls to `short_exp()` in (outside, and below the function)
+Stick some calls to `short_exp()` in your file (outside, and below the function)
 and click the play/run button in the upper-right, assuming the extensions are installed
 (or open VSCode's terminal and run `python3 format.py`).
 The outputs should have 2 decimal places each,
@@ -201,7 +201,7 @@ You may assume `precision` is a positive int.
 <details>
 <summary><b>Hints</b></summary>
 
-Check out the *Parametrized formats* section.
+Check out the *Parametrized formats* section of the [linked page](https://fstring.help).
 
 </details>
 
@@ -213,14 +213,16 @@ and try some calls without that third field at all (to make sure the default pre
 
 </details>
 
-### **2. Fix `long_div()`**
+### **2. Fix `long_div()` (2 points)**
 
-You a given a function that prints long division in only a semi-formatted manner:
+You a given a function that currently prints long division in only a semi-formatted manner:
 ```py live_py title=Long_Div_Starter
 def long_div(dividend:int, divisor:int) -> None:
   result = dividend // divisor
-  horizontal_bar = len(str(dividend)) * '-'
-  width = len(str(divisor)) + 1 + len(str(dividend))
+  length_dividend = len(str(dividend)) # how long the dividend is
+  length_divisor = len(str(divisor)) # how long the divisor is
+  horizontal_bar = length_dividend * '-'
+  width = length_divisor + 1 + length_dividend
   
   print(f"{result}")
   print(f"{horizontal_bar}")
@@ -229,40 +231,69 @@ def long_div(dividend:int, divisor:int) -> None:
 long_div(12865, 415)
 ```
 
-This function will take two ints, a `dividend` and `divisor`,
-and print a formatted long-division looking final result.
+This function takes two ints, a `dividend` and `divisor`,
+and should print out the long-division in a more appropriately formatted manner.
 
-For example, a call to `long_div(12865, 415)` would result in the following being printed:
+For example, a call to `long_div(12865, 415)` should result in the following being printed:
 ```
        31
     -----
 415|12865
 ```
 
+You task is to ensure the nicely formatted version is displayed.
+
 There are three lines of output total.
-* The last of the three is the `divisor`, followed by a vertical line (`'|'`), followed by the `dividend`. The length of this line also determines the total width of the area alignment occurs in.
+* The last of the three is the `divisor`, followed by a vertical line (`'|'`), followed by the `dividend`.
+The length of this line also determines the total width of the area alignment occurs in.
+(You may thus find the `width` variable helpful.)
 * The second line is a right-justified series of dashes (`'-'`) that covers exactly the `dividend`.
-* The first line is the result of the division, right justified. **Note**: this is integer divisions.
+the `horizontal_bar` variable already holds this, it just needs to be right-aligned.
+* The first line is the result of the division (note the use of integer division), right justified.
+The `result` variable already holds this, it just needs to be right-aligned.
 
 You may assume both inputs are positive integers and that the `dividend` is a multiple of the `divisor`.
 
-#### *Hints*
+<details>
+<summary><b>Hints</b></summary>
 
-The only new formatting tool is string alignment, which can be found under the *Padding/aligning strings* section.
+The only new formatting tool is string alignment,
+which can be found under the *Padding/aligning strings* section.
 
-There a two lengths that really need to be tracked.
-The first is the length of the dividend, because that determines the length of the horizontal line (remember `int * string` multiplication exists).
-The second is the length of the dividend and divisor and vertical line (one space), because that sets the overall width of the region things are being aligned in.
+Parametrized formats are still relevant.
 
-The length of a number could be obtained by turning the number into a string and using `len()`.
+Also, as intuition for the future, note where those variables came from:
+* We need the result of the division the show on top (`result`).
+* We need a horizontal bar as long as the dividend (`horizontal_bar`),
+* thus we need to know the length of the dividend (`length_dividend`).
+* Everything needs to be right-aligned to the width (`width`),
+* thus we need to know the length of the dividend and divisor (`length_divisor`).
 
-#### *Testing*
+</details>
 
-As before, just try some calls and see if they look right. Try some dividends of various length the make sure the bar on the second line adjusts correctly.
+<details>
+<summary><b>Testing</b></summary>
 
-### **3. Implement `long_addsub()`**
+As before, just try some calls and see if they look right.
+Try some dividends of various length the make sure the bar on the second line adjusts correctly.
 
-This function will take two ints, `n_top` and `n_bottom` say (names unimportant), and print a formatted long-addition/subtraction-looking final result.
+Make sure the first input to the function is multiple of the second.
+I would actually pick two `int`, get the product,
+and pass that product and an operand to the function. For instance:
+```py
+num1 = 31
+num2 = 415
+long_div(num1 * num2, num2)
+```
+That way you know what the answer should be and know the `divisor` divides the `dividend`.
+
+</details>
+
+### **3. Implement `long_addsub()` (2 points)**
+
+This function will take two ints, `n_top` and `n_bottom` say (names unimportant),
+and prints a formatted long-addition/subtraction-looking final result.
+A reasonable function prototype might be `long_addsub(n_top:int, n_bottom:int) -> None`.
 
 For example, a call to `long_addsub(31415, 926)` would result in the following being printed:
 ```
@@ -287,7 +318,8 @@ There are a lot of constraints:
 
 You may assume the both numbers are integers and that the first one is positive.
 
-#### *Hints*
+<details>
+<summary><b>Hints</b></summary>
 
 In terms of formatting machinery, this is made possible by abusing some formatting options under the *Signed numbers* section.
 
@@ -300,9 +332,12 @@ These length can be a bit trick to obtain, but calling `len()` on formatted f-St
 
 And for ensuring all these guarantees, well, there's always the `max()` function.
 
-#### *Testing*
+</details>
 
-There are enough interesting condition here that we want to make some tests to hit all out cases on concern.
+<details>
+<summary><b>Testing</b></summary>
+
+There are enough interesting condition here that we want to make some tests to hit all our cases of concern.
 
 Each of those constraints may offer some test cases.
 
@@ -316,8 +351,13 @@ This means we want a test where the second number is positive, and a test where 
 
 > The addition/subtraction symbol should never have a digit from the first number directly over it (it may have a digit from the result under it though).
 
-I look at this and see the variable here being how long the first number is relative to the second. I would want to test when the first number is longer, where they are the same length, and where the second number is larger.
+I look at this and see the variable here being how long the first number is relative to the second.
+I would want to test when the first number is longer, where they are the same length,
+and where the second number is longer.
 
 > If the result is negative, it's sign is left-justified.
 
-In order to check this, you need an example that has a negative result, and where that result is small enough in magnitude that the sign would be visibly moved.
+In order to check this, you need an example that has a negative result,
+and where that result is small enough in magnitude that the sign would be visibly moved.
+
+</details>
