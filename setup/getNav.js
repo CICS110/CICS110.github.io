@@ -1,5 +1,8 @@
 const content = require('./nav.json')
 
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 function get(mainFolder) {
 
   const navPlugins = content.map(item => [
@@ -10,6 +13,8 @@ function get(mainFolder) {
       path: `main`,
       routeBasePath: item.id,
       sidebarPath: require.resolve('./sidebars.js'),
+      remarkPlugins: [math],
+      rehypePlugins: [katex],
     },
   ])
 
