@@ -4,10 +4,19 @@
         <title>CICS 110 Blog</title>
         <link>https://CICS110.github.io/blog</link>
         <description>CICS 110 Blog</description>
-        <lastBuildDate>Mon, 06 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Feb 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Homework 1 is Live]]></title>
+            <link>https://CICS110.github.io/blog/hw-1-live</link>
+            <guid>hw-1-live</guid>
+            <pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Alrighty! Homework 1 is live.]]></description>
+            <content:encoded><![CDATA[<p>Alrighty! Homework 1 is live.</p><p>I'm going to sleep.</p>]]></content:encoded>
+            <category>homework</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://CICS110.github.io/blog/welcome</link>

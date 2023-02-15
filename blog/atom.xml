@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://CICS110.github.io/blog</id>
     <title>CICS 110 Blog</title>
-    <updated>2023-02-06T00:00:00.000Z</updated>
+    <updated>2023-02-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CICS110.github.io/blog"/>
     <subtitle>CICS 110 Blog</subtitle>
     <icon>https://CICS110.github.io/img/110-image-light.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Homework 1 is Live]]></title>
+        <id>hw-1-live</id>
+        <link href="https://CICS110.github.io/blog/hw-1-live"/>
+        <updated>2023-02-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Alrighty! Homework 1 is live.]]></summary>
+        <content type="html"><![CDATA[<p>Alrighty! Homework 1 is live.</p><p>I'm going to sleep.</p>]]></content>
+        <author>
+            <name>Jared Yeager</name>
+        </author>
+        <category label="homework" term="homework"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
