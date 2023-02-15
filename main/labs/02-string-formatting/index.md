@@ -152,7 +152,7 @@ You may assume that `base` is always positive.
 
 If you would like, you may use this starter code to make sure the spacing is appropriate:
 ```py live_py title=Short_Exp_Starter
-def short_exp(base, exponent):
+def short_exp(base:float, exponent:float) -> None:
   result = base ** exponent
   print(f"{base} ^ {exponent} = {result}")
 
@@ -216,12 +216,17 @@ and try some calls without that third field at all (to make sure the default pre
 ### **2. Fix `long_div()`**
 
 You a given a function that prints long division in only a semi-formatted manner:
-```py
-def long_div(dividend, divisor):
+```py live_py title=Long_Div_Starter
+def long_div(dividend:int, divisor:int) -> None:
   result = dividend // divisor
+  horizontal_bar = len(str(dividend)) * '-'
+  width = len(str(divisor)) + 1 + len(str(dividend))
+  
   print(f"{result}")
-  print(f"{5 * '-'}")
+  print(f"{horizontal_bar}")
   print(f"{divisor}|{dividend}")
+
+long_div(12865, 415)
 ```
 
 This function will take two ints, a `dividend` and `divisor`,
@@ -240,15 +245,6 @@ There are three lines of output total.
 * The first line is the result of the division, right justified. **Note**: this is integer divisions.
 
 You may assume both inputs are positive integers and that the `dividend` is a multiple of the `divisor`.
-
-If you would like, you may use this starter code to make sure the math is appropriate:
-```py live_py title=Short_Exp_Starter
-def short_exp(base, exponent):
-  result = base ** exponent
-  print(f"{base} ^ {exponent} = {result}")
-
-short_exp(31.415926, 27.182818)
-```
 
 #### *Hints*
 
