@@ -374,7 +374,11 @@ This program will ask for input that is a whole number (an int) representing the
 
 It will then solve for the roots (`x` such that the equation equals `0`) and print them on seperate lines.
 
-There is a [quadratic equation](https://en.wikipedia.org/wiki/Quadratic_equation) that gives the roots.
+There is a [quadratic equation](https://en.wikipedia.org/wiki/Quadratic_equation) that gives the roots:
+
+$$
+x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
 
 Running a correct implementation of this program could look like:
 ```
