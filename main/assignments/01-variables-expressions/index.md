@@ -94,8 +94,6 @@ This purpose of this homework is to practice variable assignment and expressions
 * Each will have 1 to 3 `print()` statements.
 * Each will have some reasonably short computations.
 
-### Due Date: Wednesday, Febuary 22
-
 ## Preamble
 
 The `input()` and `print()` function will be integral to this assignment.
@@ -440,6 +438,11 @@ As for how many times to do both, that depends on the lesser of the two numbers,
 </details>
 
 ## Grading Scale
+
+This assignment is roughly partitioned into 3 phases:
+* 3 Initial exercises worth 1 point each: `echo.py`, `aba.py`, `round.py`
+* 5 Middle exercises worth 2 points each: `liters.py`, `miles.py`, `kilos.py`, `temp.py`, `cube.py`
+* 3 Final exercises worth 3 points each: `seconds.py`, `quadratic.py`, `weave.py`
 
 Below are how many points translate to what level on the 5-point scale.
 
