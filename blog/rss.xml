@@ -4,10 +4,19 @@
         <title>CICS 110 Blog</title>
         <link>https://CICS110.github.io/blog</link>
         <description>CICS 110 Blog</description>
-        <lastBuildDate>Tue, 14 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Feb 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Office Hours and Tokens]]></title>
+            <link>https://CICS110.github.io/blog/oh-fixes-tokens</link>
+            <guid>oh-fixes-tokens</guid>
+            <pubDate>Thu, 16 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey y'all, two quick things]]></description>
+            <content:encoded><![CDATA[<p>Hey y'all, two quick things</p><ol><li>Most in-person office hours are in "LGRC" T223 or T225. These rooms are not in LGRC, they are actually in LGRT. If you take the elevator to the second floor of the Lederle Tower, take a right, and enter the last room on the left.</li><li>The form for applying tokens to late assignments is now posted under the "Administration" category in Moodle/Moonami. See the token policy in the <a href="/main/information/syllabus#late-and-early-submissions">syllabus</a>.</li></ol>]]></content:encoded>
+            <category>logistics</category>
+        </item>
         <item>
             <title><![CDATA[Homework 1 is Live]]></title>
             <link>https://CICS110.github.io/blog/hw-1-live</link>

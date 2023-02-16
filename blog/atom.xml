@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://CICS110.github.io/blog</id>
     <title>CICS 110 Blog</title>
-    <updated>2023-02-14T00:00:00.000Z</updated>
+    <updated>2023-02-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CICS110.github.io/blog"/>
     <subtitle>CICS 110 Blog</subtitle>
     <icon>https://CICS110.github.io/img/110-image-light.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Office Hours and Tokens]]></title>
+        <id>oh-fixes-tokens</id>
+        <link href="https://CICS110.github.io/blog/oh-fixes-tokens"/>
+        <updated>2023-02-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey y'all, two quick things]]></summary>
+        <content type="html"><![CDATA[<p>Hey y'all, two quick things</p><ol><li>Most in-person office hours are in "LGRC" T223 or T225. These rooms are not in LGRC, they are actually in LGRT. If you take the elevator to the second floor of the Lederle Tower, take a right, and enter the last room on the left.</li><li>The form for applying tokens to late assignments is now posted under the "Administration" category in Moodle/Moonami. See the token policy in the <a href="/main/information/syllabus#late-and-early-submissions">syllabus</a>.</li></ol>]]></content>
+        <author>
+            <name>Ben Burns</name>
+        </author>
+        <category label="logistics" term="logistics"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Homework 1 is Live]]></title>
         <id>hw-1-live</id>
