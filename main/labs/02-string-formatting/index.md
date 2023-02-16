@@ -2,6 +2,8 @@
 title: "Lab 02: String Formatting"
 ---
 
+import { PowerPoint } from '@site/src/components/PowerPoint'
+
 ## General Information
 
 <details>
@@ -109,7 +111,11 @@ This in generally useful making things more aesthetically pleasing and
 thus easier to make sense of at-a-glance.
 
 A reference for a number of formatting options can be found
-[here](https://fstring.help/)
+[here](https://fstring.help/).
+
+Below are some slides with examples of f-Strings:
+
+<PowerPoint lec_src={require('./Lab2_CICS110.pptx').default}/>
 
 ## Assignment
 
@@ -119,7 +125,7 @@ Labs and assignments from here on may be done in groups of up to 3.
 Only the Python Setup lab had to be done alone,
 because we wanted to ensure everyone had the environment set up.
 
-### **0.2. Make a file named `format.py`**
+### **0.2. Make a file named `format.py` (1 point)**
 
 Pretty self explanatory. Make a folder for the lab, open it in VSCode, make the file.
 
@@ -289,7 +295,7 @@ That way you know what the answer should be and know the `divisor` divides the `
 
 </details>
 
-### **3. Implement `long_addsub()` (2 points)**
+### **3. Implement `long_addsub()` (3 points)**
 
 This function will take two ints, `n_top` and `n_bottom` say (names unimportant),
 and prints a formatted long-addition/subtraction-looking final result.
@@ -361,3 +367,27 @@ In order to check this, you need an example that has a negative result,
 and where that result is small enough in magnitude that the sign would be visibly moved.
 
 </details>
+
+## Grading Scale
+
+Below are how many points translate to what level on the 5-point scale.
+
+### 1: Below Standards: 0-2 point
+
+This is the number of points gained by making the file and
+completing only half of the first exercise.
+
+### 2: Approaching Standards: 3-4 points
+
+This is the number of points gained by making the file and
+completing the first exercise.
+
+### 3: Meeting Standards: 5-6 points
+
+This is the number of points gained by making the file
+completing the first and second exercises.
+
+### 4: Exceeding Standards: 7-8 points
+
+This is the number of points gained by completing basically all the exercises
+(and specifically completing exercises 2 and 3).
