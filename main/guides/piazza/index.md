@@ -25,8 +25,8 @@ Piazza is helpful for you as a student for a variety of reasons:
 To ask a question, click the `New Post` button in the top left corner:
 
 <div style={{textAlign: 'center'}}>
-  <img 
-    src={require('./new-post.png').default} 
+  <img
+    src={require('./new-post.png').default}
     alt="Image of new post button"
   />
 </div>
@@ -34,18 +34,18 @@ To ask a question, click the `New Post` button in the top left corner:
 You'll then be presented with the following screen:
 
 <div style={{textAlign: 'center'}}>
-  <img 
-    src={require('./create.png').default} 
+  <img
+    src={require('./create.png').default}
     alt="Image of post creation screen"
   />
 </div>
 
-99% of the time you'll want to pick `Question`. 
-Public posts are `Entire Class`, private posts are `Individual Student(s)/Instructor(s)`. 
-If you pick the latter, typing `Instructors` posts to the entire staff. 
+99% of the time you'll want to pick `Question`.
+Public posts are `Entire Class`, private posts are `Individual Student(s)/Instructor(s)`.
+If you pick the latter, typing `Instructors` posts to the entire staff.
 You can also post to just your instructor if you need to, put we're prefer you reserve this for personal matters.
 
-Then select a folder based on what your question is about, type up your question. 
+Then select a folder based on what your question is about, type up your question.
 
 Before you select `Post My Question/Note`, you can chose if you want your question to have your name shown, or be anonymous to classmates.
 It's up to you, but I know from personal experience it's much easier to ask questions anonymously.
@@ -85,7 +85,7 @@ Instead,
 2. If you have a question about an assignment, please first submit your current code to Gradescope. Then, ask your question and include a link to your Gradescope submission at the bottom.
 
 > Example:
-> I am stuck on Todo 4, specifically the part with getting the print formatting right. Any advice? 
+> I am stuck on Todo 4, specifically the part with getting the print formatting right. Any advice?
 > 
 > Gradescope link: `link to submission`
 
