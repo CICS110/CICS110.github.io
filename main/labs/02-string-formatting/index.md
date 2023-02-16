@@ -25,9 +25,9 @@ and submit that zip file via drag-and-drop or browsing for it.
 * Compress a folder containing the files you want to submit into a zip file (zip file name does not matter),
 and submit that zip file via drag-and-drop or browsing for it.
 
-Gradecope will look for files with specific names, and those names are case-sensitive.
+Gradescope will look for files with specific names, and those names are case-sensitive.
 So if in the instructions we ask for a file named `hello.py`,
-then Gradescope will not recognise `Hello.py`, `hello.txt`, or `hello.py.txt`.
+then Gradescope will not recognize `Hello.py`, `hello.txt`, or `hello.py.txt`.
 
 #### Group Submissions
 
