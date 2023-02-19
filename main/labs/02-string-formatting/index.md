@@ -295,7 +295,14 @@ That way you know what the answer should be and know the `divisor` divides the `
 
 </details>
 
-### **3. Implement `long_addsub()` (3 points)**
+### **3. Implement `long_addsub()` (0 points)**
+
+:::warning
+
+The overall lab has been deemed too long,
+and this portion has been relegated to being purely extra content.
+
+:::
 
 This function will take two ints, `n_top` and `n_bottom` say (names unimportant),
 and prints a formatted long-addition/subtraction-looking final result.
@@ -372,22 +379,21 @@ and where that result is small enough in magnitude that the sign would be visibl
 
 Below are how many points translate to what level on the 5-point scale.
 
-### 1: Below Standards: 0-2 point
+### 1: Below Standards: 0-1 points
+
+This is the number of points gained by only making the file.
+
+### 2: Approaching Standards: 2 points
 
 This is the number of points gained by making the file and
 completing only half of the first exercise.
 
-### 2: Approaching Standards: 3-4 points
+### 3: Meeting Standards: 3-4 points
 
 This is the number of points gained by making the file and
 completing the first exercise.
 
-### 3: Meeting Standards: 5-6 points
+### 4: Exceeding Standards: 5 points
 
 This is the number of points gained by making the file
 completing the first and second exercises.
-
-### 4: Exceeding Standards: 7-8 points
-
-This is the number of points gained by completing basically all the exercises
-(and specifically completing exercises 2 and 3).
