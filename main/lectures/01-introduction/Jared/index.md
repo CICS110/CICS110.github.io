@@ -23,7 +23,7 @@ Short week 1 tasks:
 * Quiz 1: **Due Thursday 2/9**
 * Sign up for Piazza: **Due Friday 2/10**
 * Sign up for Gradescope: **Due Friday 2/10**
-* Sign up for Zybooks: **Due Friday 2/10**
+* Sign up for zyBooks: **Due Friday 2/10**
 
 Lab this week is meeting your TA and making sure all the relevant software is installed.
 
@@ -256,7 +256,7 @@ A recipe:
 6. Woohoo!!
 ```
 
-A psuedo-program:
+A pseudo-program:
 ```
 1. mix("flower", "salt", "sugar", "yeast")
 2. add("water")
