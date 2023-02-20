@@ -433,7 +433,17 @@ We haven't used string-int multiplication yet.
 
 You can think of the resultant string as `AB` a bunch of times followed by `A` a bunch of times or `B` a bunch of times. This in turn can be `AB` `n1` times, followed by `A` `n2` times, followed by `B` `n3` times; where `n2` or `n3` ends up being `0`.
 
-As for how many times to do both, that depends on the lesser of the two numbers, which there is a mathematical function to obtain.
+As for how many times to do both, that depends on the lesser of the two numbers,
+which is mathematically known as the "minimum".
+
+A function that computes the minimum would certainly be helpful.
+For most really simple operations like that, there likely is a built-in function or
+a function in the math library.
+
+We can't possibly memorize or know all the functions that exist in python,
+and so looking up functions that we hope or suspect might exist is a key skill.
+Hence, using a search engine for "python minimum function"
+is left as an exercise to the reader.
 
 </details>
 
