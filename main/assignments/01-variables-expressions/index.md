@@ -27,7 +27,7 @@ and submit that zip file via drag-and-drop or browsing for it.
 
 Gradecope will look for files with specific names, and those names are case-sensitive.
 So if in the instructions we ask for a file named `hello.py`,
-then Gradescope will not recognise `Hello.py`, `hello.txt`, or `hello.py.txt`.
+then Gradescope will not recognize `Hello.py`, `hello.txt`, or `hello.py.txt`.
 
 #### Group Submissions
 
@@ -94,8 +94,6 @@ This purpose of this homework is to practice variable assignment and expressions
 * Each will have 1 to 3 `print()` statements.
 * Each will have some reasonably short computations.
 
-### Due Date: Wednesday, Febuary 22
-
 ## Preamble
 
 The `input()` and `print()` function will be integral to this assignment.
@@ -136,7 +134,7 @@ Remember that for every file you need to have comments indicating the author(s) 
 # Spire IDs : 31415926,             27182818
 ```
 
-The `# Author`/`# Authors`, `# Email`/`# Emails`, and `# Spire ID`/`# Spire IDs` are the only really necesary formating detail.
+The `# Author`/`# Authors`, `# Email`/`# Emails`, and `# Spire ID`/`# Spire IDs` are the only really necessary formatting detail.
 
 Some copying and pasting will save you some sanity. Apologies for the tedium. In the future (once we have functions), you'll probably only need to make one file per assignment.
 
@@ -226,13 +224,13 @@ This program will ask for input that should represent a whole number (an int) of
 
 It should then convert that to cubic centimeters and print the converted value.
 
-There are 1000 cubic centimetres per liter.
+There are 1000 cubic centimeters per liter.
 
 Running a correct implementation of this program could look like:
 ```
 $ python3 liters.py
 Enter a number: 314
-314 litres is 314000 cubic centimetres
+314 litres is 314000 cubic centimeters
 ```
 
 (Or you could infer the conversion factor from the example...)
@@ -243,7 +241,7 @@ Like before, **the last number of the last line** must be the solution. The outp
 
 This program will ask for input that should represent a whole number (an int) of miles.
 
-It should then convert that to yards and to feet and print the converted values on seperate lines.
+It should then convert that to yards and to feet and print the converted values on separate lines.
 
 There are 1760 yards per mile and 3 feet per yard.
 
@@ -285,8 +283,8 @@ This program will ask for input that should represent a whole or decimal number 
 It should then convert that to Celsius and Kelvin.
 
 For the purposes of this assignment:
-* Converting the temperature from Fahrenheit to Celcius can be done by subtracting 32 from the temperature in Fahrenheit and then multiplying the result by 5 / 9.
-* Converting the temperature from Celcius to Kelvin can be done by adding 273.15 to the temperature in Celcius.
+* Converting the temperature from Fahrenheit to Celsius can be done by subtracting 32 from the temperature in Fahrenheit and then multiplying the result by 5 / 9.
+* Converting the temperature from Celsius to Kelvin can be done by adding 273.15 to the temperature in Celsius.
 
 Running a correct implementation of this program could look like:
 ```
@@ -298,7 +296,7 @@ Enter temperature in Fahrenheit: 31.41
 ```
 
 Formatting details:
-* The last number on the second-to-last line must be the Celcius conversion.
+* The last number on the second-to-last line must be the Celsius conversion.
 * The last number on the last line must be the Kelvin conversion.
 * No other lines of text or additional formatting is necessary
 
@@ -317,7 +315,7 @@ so you can safely truncate or round to the nearest thousandth or hundredth.
 
 This program will ask for input that is a whole number (an int) representing the length of the side of a cube.
 
-It should then compute the volume and surface area of the cube, and print the computed values on seperate lines.
+It should then compute the volume and surface area of the cube, and print the computed values on separate lines.
 
 For a given length:
 * The volume is the length cubed
@@ -364,7 +362,7 @@ Formatting details:
 <details>
 <summary><b>Hints</b></summary>
 
-This is the integer/floor division and remainder/module operatior challenge.
+This is the integer/floor division and remainder/module operator challenge.
 
 </details>
 
@@ -372,7 +370,7 @@ This is the integer/floor division and remainder/module operatior challenge.
 
 This program will ask for input that is a whole number (an int) representing the `a` `b` and `c` in the standard form of a quadratic equation `a x^2 + b x + c = 0`.
 
-It will then solve for the roots (`x` such that the equation equals `0`) and print them on seperate lines.
+It will then solve for the roots (`x` such that the equation equals `0`) and print them on separate lines.
 
 There is a [quadratic equation](https://en.wikipedia.org/wiki/Quadratic_equation) that gives the roots:
 
@@ -435,11 +433,26 @@ We haven't used string-int multiplication yet.
 
 You can think of the resultant string as `AB` a bunch of times followed by `A` a bunch of times or `B` a bunch of times. This in turn can be `AB` `n1` times, followed by `A` `n2` times, followed by `B` `n3` times; where `n2` or `n3` ends up being `0`.
 
-As for how many times to do both, that depends on the lesser of the two numbers, which there is a mathematical function to obtain.
+As for how many times to do both, that depends on the lesser of the two numbers,
+which is mathematically known as the "minimum".
+
+A function that computes the minimum would certainly be helpful.
+For most really simple operations like that, there likely is a built-in function or
+a function in the math library.
+
+We can't possibly memorize or know all the functions that exist in python,
+and so looking up functions that we hope or suspect might exist is a key skill.
+Hence, using a search engine for "python minimum function"
+is left as an exercise to the reader.
 
 </details>
 
 ## Grading Scale
+
+This assignment is roughly partitioned into 3 phases:
+* 3 Initial exercises worth 1 point each: `echo.py`, `aba.py`, `round.py`
+* 5 Middle exercises worth 2 points each: `liters.py`, `miles.py`, `kilos.py`, `temp.py`, `cube.py`
+* 3 Final exercises worth 3 points each: `seconds.py`, `quadratic.py`, `weave.py`
 
 Below are how many points translate to what level on the 5-point scale.
 

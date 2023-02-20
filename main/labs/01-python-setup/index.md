@@ -25,9 +25,9 @@ and submit that zip file via drag-and-drop or browsing for it.
 * Compress a folder containing the files you want to submit into a zip file (zip file name does not matter),
 and submit that zip file via drag-and-drop or browsing for it.
 
-Gradecope will look for files with specific names, and those names are case-sensitive.
+Gradescope will look for files with specific names, and those names are case-sensitive.
 So if in the instructions we ask for a file named `hello.py`,
-then Gradescope will not recognise `Hello.py`, `hello.txt`, or `hello.py.txt`.
+then Gradescope will not recognize `Hello.py`, `hello.txt`, or `hello.py.txt`.
 
 #### Group Submissions
 
@@ -81,7 +81,8 @@ by submitting this project you have provided your virtual signature in agreement
 
 Almost as a tradition, the first program someone learning to write code is likely to write is some variation of a [Hello World program](https://en.wikipedia.org/wiki/%22Hello%2C_World!%22_program). 
 
-So that's what you're doing! The real "assignment" here is more about installing things, setting up a programming envoronment, learning about the autograder, et cetera.
+So that's what you're doing! The real "assignment" here is more about installing things,
+setting up a programming environment, learning about the auto-grader, et cetera.
 
 ### Learning Objectives
 
@@ -168,7 +169,7 @@ The quotes around the input, `"Hello, World!"`, indicate it is text (a string, m
 <details>
 <summary><b>Testing</b></summary>
 
-While we have autograded tests for you, we don't want to encourage dependence on the autograder. We want to try and impart testing and debugging skills so that you are equipped in any circumstance.
+While we have auto-graded tests for you, we don't want to encourage dependence on the auto-grader. We want to try and impart testing and debugging skills so that you are equipped in any circumstance.
 
 To that end, we will have testing recommendations/suggestions where we can, so that you can test your code.
 
