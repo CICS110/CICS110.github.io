@@ -282,9 +282,6 @@ print(cube_surface_area())
 
 ## Variable Scope
 
-**Since this section would mostly be me stepping through code that could otherwise
-be stepped through on Python Tutor, I'm going to do a rough TL;DR for now**
-
 Variables can have one of two levels of *scope* (where they are "visible"):
 * Global: They are visible (can be references from) everywhere.
 * Local: They are visible (can be references from) only within a specific call of a function,
