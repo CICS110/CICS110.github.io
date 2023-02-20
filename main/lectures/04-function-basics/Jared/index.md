@@ -8,9 +8,6 @@ title: Section 04 (Jared Yeager)
 
 This is not entirely complete, you may notice some TODOs I have left for myself.
 
-In particular, I've abbreviated the last section in the interest of getting started on
-next week's material.
-
 :::
 
 ## Assignment Updates
