@@ -132,38 +132,125 @@ So a function signature for the area of a triangle function might be:
 So how do we make a function?
 
 First we make what is called the function *header*, basically saying
-"I'm making a function". The header is composed of the `def` (as in define)
-keyword followed by the signature for the function we want to create,
+"I'm making a function". The header is composed of the *keyword* `def`
+(as in "define"), followed by the signature for the function we want to create,
 followed by a `:`.
-```py
 
+So for the area of a triangle function, this would be
+```
+def triangle_area(base:float, height:float) -> float:
+  # [Add code here]
+```
+
+Then we want to add code to this function.
+The actual computation of the area, in this case.
+**Very important**: Code that is part of a function needs to be indented,
+that is how the computer tells it is part of the function.
+Updating our function:
+```py
+def triangle_area(base:float, height:float) -> float:
+  area = base * height / 2
+  # [Something is still missing]
+```
+
+But we are still missing something. Remember the black box view of this.
+This function should take in `base` and `height` and give back/return `area`.
+We've computed `area`, but we need a specific keyword to tell the function to return it.
+This is the `return` keyword. And so our function becomes:
+```py
+def triangle_area(base:float, height:float) -> float:
+  area = base * height / 2
+  return area
+```
+That last line says have "the function output/return `area`".
+
+As a final note, we could actually shorten this.
+`return` can work on any expression, not just a pure variable.
+For instance:
+```py live_py title=Triangle_Area
+def triangle_area(base:float, height:float) -> float:
+  return base * height / 2 # b * h / 2 is evaluated and returned
+
+print(triangle_area(3, 6))
+print(triangle_area(5, 5))
 ```
 
 ## None
 
-## Default Parameters
+Some functions, like `print()`, return nothing. Or at least in essence return nothing.
+However, because the mechanics of python demand they technically return something,
+they instead return a special object: `None`, of type `NoneType`. This thing represents nothing.
+A function the returns None represents a function that "has no return".
 
-## Variable Scope
+Below are examples of cases where a function returns nothing.
+Note that while the type is technically `NoneType`,
+we still use `-> None` to indicate no return.
 
----
+The first example case is a function that has no `return` at all.
+A practical example of such a function is a function that takes in information
+and prints it in an aesthetically pleasing manner.
+```py live_py title=No_Return
+def no_return() -> None:
+  print("I do not return, thus I return nothing (None)")
 
-:::caution
-
-From here on is post-lecture content,
-or notes about the lecture but not part of the lecture itself.
-
-:::
-
----
-
-<details>
-<summary><b>Instructor's Outline</b></summary>
-
-This is an outline I had in the replit when demonstrating things.
-
-```py
-
+ret = no_return() # ret = None
+print("no_return() returned: " + str(ret))
 ```
 
-</details>
+The second example case is a function that has just `return` with nothing after it.
+There are cases where the return of the function is not important,
+but you want to use `return` when ending the flow of execution.
+```py live_py title=Return_Nothing
+def return_nothing() -> None:
+  print("I return nothing, thus I return nothing (None)")
+  return
+
+ret = return_nothing() # ret = None
+print("return_nothing() returned: " + str(ret))
+```
+
+The third example case is a function that explicitly has `return None` in it.
+This is equivalent to the above,
+but there is a case where perhaps emphasising the `None` being returned makes sense.
+```py live_py title=Return_None
+def return_none() -> None:
+  print("I return None, thus I return nothing (None)")
+  return None
+
+ret = return_none() # ret = None
+print("return_none() returned: " + str(ret))
+```
+
+The fourth example is mechanically a subset of the third,
+a function that returns some expression that evaluates to `None`.
+I can't offhandedly think of a case where I would want to do this,
+but the world is big.
+```py live_py title=Return_Eval_None
+def return_eval_none() -> None:
+  return print("I return the None returned by print(), thus I return nothing (None)")
+
+ret = return_eval_none() # ret = None
+print("return_eval_none() returned: " + str(ret))
+```
+
+## Default Parameters
+
+```py live_py title=Cube_Surface_Area
+def cube_surface_area(length:float) -> float:
+  return 6 * length ** 2
+
+print(cube_surface_area(5))
+print(cube_surface_area(3))
+```
+
+```py live_py title=Cube_Surface_Area_Default
+def cube_surface_area(length:float=1) -> float:
+  return 6 * length ** 2
+
+print(cube_surface_area(5))
+print(cube_surface_area(3))
+print(cube_surface_area())
+```
+
+## Variable Scope
 
