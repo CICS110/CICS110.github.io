@@ -4,6 +4,15 @@ title: Section 04 (Jared Yeager)
 
 # Functions
 
+:::caution
+
+This is not entirely complete, you may notice some TODOs I have left for myself.
+
+In particular, I've abbreviated the last section in the interest of getting started on
+next week's material.
+
+:::
+
 ## Assignment Updates
 
 Stuff due this week:
@@ -235,15 +244,34 @@ print("return_eval_none() returned: " + str(ret))
 
 ## Default Parameters
 
-```py live_py title=Cube_Surface_Area
-def cube_surface_area(length:float) -> float:
-  return 6 * length ** 2
+Normally, if a function has, say, two parameters, then when *calling* (using) said function,
+you need to specify exactly that many values.
+For instance: for the `triangle_area()` function from earlier,
+`triangle_area(3, 1)` would be legal,
+whereas `triangle_area(3)` and `triangle_area(3, 1, 4)` would not.
 
-print(cube_surface_area(5))
-print(cube_surface_area(3))
+But there is a way in python to have functions with optional parameters that have a default values.
+So we can make a function for computing the surface area of cube,
+that optionally takes a length, otherwise, assumes that length is 1.
+
+The only real change, is to the signature.
+A length to surface area function might have the signature:
+```py
+cube_surface_area(length:float) -> float
 ```
 
-```py live_py title=Cube_Surface_Area_Default
+But we want for `cube_surface_area(3)` and `cube_surface_area()`
+to be legal, with the latter effectively being `cube_surface_area(1)`.
+
+We can make that parameter option with a default by adding `=`
+followed by a default value after the parameter name and type:
+```py
+cube_surface_area(length:float=1) -> float
+```
+
+From there it can be used in the *body* (code) of the function
+like any other parameter:
+```py live_py title=Cube_Surface_Area
 def cube_surface_area(length:float=1) -> float:
   return 6 * length ** 2
 
@@ -254,3 +282,54 @@ print(cube_surface_area())
 
 ## Variable Scope
 
+**Since this section would mostly be me stepping through code that could otherwise
+be stepped through on Python Tutor, I'm going to do a rough TL;DR for now**
+
+Variables can have one of two levels of *scope* (where they are "visible"):
+* Global: They are visible (can be references from) everywhere.
+* Local: They are visible (can be references from) only within a specific call of a function,
+and once that function call ends, they are gone.
+
+A variable's scope depends on where it is *defined* via `x = [something]`.
+For each level, global and local (not within and within a function),
+the first time an `x = [something]` occurs, `x` is *defined* to be that something
+(you can of course ).
+
+```py live_py title=Print_Global_Locally
+def print_num() -> None:
+  print(num)
+
+num = 2      # defined gloabally
+
+print_num()
+# print(num) # no local num, look-up global num, prints 2
+```
+
+```py live_py title=Print_Local_Globally
+def make_num() -> None:
+  num = 2
+
+make_num()
+# num = 2  # makes local num
+#          # deleted when function ends
+
+print(num) # error, no global num to print
+```
+
+When a variable is used within a function, the function first looks locally,
+and then globally. So if there is a local `x` and a global `x`, then we the local one
+will *shadow* (make effectively invisible to the function) the global one.
+
+```py live_py title=Shadow_Global
+def set_num() -> None:
+  num = 3
+  print(num)
+
+num = 5      # global num = 5
+
+set_num()
+# num = 3    # local num = 3, shadows global
+# print(num) # looks local first, sees local num, prints 3
+
+print(num)   # looks global, prints 5
+```
