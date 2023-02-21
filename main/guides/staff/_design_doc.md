@@ -7,6 +7,8 @@ sidebar_position: 2
 
 Preface: I made this as a way to organize my thoughts and to help me plan out the course. This was done primarily as an exercise so I can better understand the course content. I have no notion that any of this stuff is good, but it can be used if it seems helpful.
 
+Note: hidden (to not appear in search results) but not deleted (so i can reference it later)
+
 ## Things to ask:
 1. How much should we meet?
     - Currently is once a week. I think twice a week would be better since we are continually creating stuff. Since we are making stuff, we often will need to discuss next steps so we stay in sync. We also need to make sure that what we create is good, and I imagine the way we do this is by meeting and sharing what we did. Meeting twice a week would allow us to have more discussion about what we are doing, and would allow us to catch mistakes or miscommunications sooner.
