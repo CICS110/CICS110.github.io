@@ -20,7 +20,7 @@ Stuff due this week:
 Stuff due next week:
 * HW 1: **Due Wednesday 2/22**
 * Quiz 3: **Due Thursday 2/23**
-* Lab 3: **Due Friday 2/23**
+* Lab 3: **Due Friday 2/24**
 * [TODO: Reading? Presumably Thursday.]
 
 ## Black Box Functions
