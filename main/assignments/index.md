@@ -47,7 +47,7 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
 - [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
-- [Lab 03 Booleans and Assert](/main/labs/03-assert) (B: Fr 2/24, D: Fr 2/24)
+- [Lab 03 Booleans and Assert](/main/labs/assert) (B: Fr 2/24, D: Fr 2/24)
 
 ## Capstone Project
 
