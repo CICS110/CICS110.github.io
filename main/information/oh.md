@@ -20,7 +20,7 @@ All office hours will start the second week of classes (2/13). There are no offi
 |Tuesday|2:30PM-3:30PM|Instructor|Jakob (Kobi) Falus|In-person: Morrill 3 room 404|
 |Tuesday|4PM-5PM|Instructor|Jared Yeager|In-person: LGRC T223|
 |Tuesday|5PM-6PM|TA|Will Lee|Zoom: [link](https://umass-amherst.zoom.us/j/4600211622)|
-|Tuesday|5:30PM-6:30PM|UCA|Emerson Lewiecki|Zoom: [link](https://umass-amherst.zoom.us/j/94542021453)|
+|Tuesday|5:30PM-6:30PM|UCA|Emerson Lewiecki|Zoom: [link](https://umass-amherst.zoom.us/j/6760441067)|
 |Tuesday|7PM-9PM|Instructor|Cole Adam Reilly|Zoom: [link](https://umass-amherst.zoom.us/j/95380935979)|
 |Wednesday |11AM-12PM|Instructor|Eduardo Calle Ortiz|Zoom: [link](https://umass-amherst.zoom.us/j/92687526436)|
 |Wednesday|12PM-1PM|UCA|Tanush Savadi|Zoom: [link](https://umass-amherst.zoom.us/j/98218887926)|
