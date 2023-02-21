@@ -4,11 +4,85 @@ title: "Lab 01: Getting Started"
 
 # Getting Started with Python
 
+## General Information
+
+<details>
+<summary><b>Submitting to the Auto-Grader</b></summary>
+
+For auto-grading homework assignments in the course,
+we use [Gradescope](https://www.gradescope.com).
+
+#### General Submission Info
+
+When submitting files to Gradescope,
+you need to submit all the files you want graded at once.
+
+You can do this in several ways:
+* Select all files you want to submit and drag and drop them in the submission area when prompted.
+* Browse your files when prompted by Gradescope and select all files you want to submit.
+* Directly compress all the files you want to submit into a zip file (zip file name does not matter),
+and submit that zip file via drag-and-drop or browsing for it.
+* Compress a folder containing the files you want to submit into a zip file (zip file name does not matter),
+and submit that zip file via drag-and-drop or browsing for it.
+
+Gradescope will look for files with specific names, and those names are case-sensitive.
+So if in the instructions we ask for a file named `hello.py`,
+then Gradescope will not recognize `Hello.py`, `hello.txt`, or `hello.py.txt`.
+
+#### Group Submissions
+
+When a group of people is submitting an assignment,
+only one person should submit the solution.
+
+They should then add the other members to that submission.
+On the Gradescope page for a submission there should be a
+"+ Add Group Member" button by the name in the upper-right.
+
+This is important because if multiple people submit,
+our similarity checker will see identical submissions and flag that.
+
+#### Unlimited attempts
+
+You have unlimited attempts for our auto-graded assignments.
+
+This means that you should submit early and often in order
+to be confident that code you are writing as you go passes all of our tests.
+
+</details>
+
+<details>
+<summary><b>Academic Honesty</b></summary>
+
+All work that is completed in this assignment is your own group's.
+You may talk to other students about the problems you are to solve,
+however, you may not share code in any way, except with your partner(s). 
+What you submit **must be your own group's work**.
+
+You may not use any code that is posted on the internet. If you are
+not sure it is in your best interest to contact the course staff.
+We will be using software that will compare your code to other students in the course
+as well as online resources.
+It is very easy for us to detect similar submissions and will result in
+a failure for the exercise or possibly a failure for the course.
+Please, do not do this.
+It is important to be academically honest and submit your work only.
+Please review the [UMass Academic Honesty Policy and
+Procedures](https://www.umass.edu/honesty/) so you are aware of what this means.
+
+Copying partial or whole solutions, obtained from other students or elsewhere, is academic dishonesty.
+Do not share your code with your classmates, and do not use your classmates' code.
+If you are confused about what constitutes academic dishonesty you should re-read the course policies.
+We assume you have read the course policies in detail and
+by submitting this project you have provided your virtual signature in agreement with these policies.
+
+</details>
+
 ## About
 
 Almost as a tradition, the first program someone learning to write code is likely to write is some variation of a [Hello World program](https://en.wikipedia.org/wiki/%22Hello%2C_World!%22_program). 
 
-So that's what you're doing! The real "assignment" here is more about installing things, setting up a programming envoronment, learning about the autograder, et cetera.
+So that's what you're doing! The real "assignment" here is more about installing things,
+setting up a programming environment, learning about the auto-grader, et cetera.
 
 ### Learning Objectives
 
@@ -75,8 +149,6 @@ For example, the first three lines of a file may look like this:
 # Spire ID: 31415926
 ```
 
-
-
 **Note**: this is expected of every file going forward.
 
 ### **3. Add `print()` statement to `hello.py`**
@@ -97,7 +169,7 @@ The quotes around the input, `"Hello, World!"`, indicate it is text (a string, m
 <details>
 <summary><b>Testing</b></summary>
 
-While we have autograded tests for you, we don't want to encourage dependence on the autograder. We want to try and impart testing and debugging skills so that you are equipped in any circumstance.
+While we have auto-graded tests for you, we don't want to encourage dependence on the auto-grader. We want to try and impart testing and debugging skills so that you are equipped in any circumstance.
 
 To that end, we will have testing recommendations/suggestions where we can, so that you can test your code.
 

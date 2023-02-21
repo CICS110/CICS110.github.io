@@ -5,8 +5,13 @@ richards:
   image_url: https://github.com/timdrichards.png
 bburns: 
   name: Ben Burns
-  title: UCA
+  title: Head UCA
+  image_url: https://cics110.github.io/img/ben.jpg
 car:
   name: Cole Adam Reilly
   title: Instructor
   image_url: https://github.com/Colebeep.png
+jyeager:
+  name: Jared Yeager
+  title: Lord of the Autograder
+  image_url: https://cics110.github.io/img/jared.jpeg

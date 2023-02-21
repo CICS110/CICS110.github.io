@@ -143,21 +143,7 @@ You are responsible for monitoring your grades. Grades will be available through
 
 ### Grading Categories
 
-This course uses a *standards-based* grading system. Our goal is to shift focus from grades to learning. We will be using the following scale for all activities in this course:
-
-1. No Attempt
-2. Below Standards
-3. Approaching Standards
-4. Meeting Standards
-5. Exceeding Standards
-
-**What is standards-based grading? Why the shift from traditional grades?**
-
-We believe that grades should communicate, as clearly as possible, what students know and can do. We also seek to create a growth mindset environment that encourages students to take risks and to embrace mistakes as learning opportunities. Standards-based grading and the corresponding five-point scale are set up to support these two values by clarifying learning goals and assessing students on their progress towards meeting those goals, rather than prioritizing completion of tasks and assignments over learning. This allows for more meaningful student learning and teacher feedback, and moves away from an approach in which students are seeking to earn points rather than practicing to meet the learning goal.
-
-**What is the five-point scale?**
-
-Educational researchers developed the five-point scale to more clearly assess what a student knows and can do:
+This course uses a *standards-based* grading system. Our goal is to shift focus from grades to learning. Educational researchers developed a five-point scale to more clearly assess what a student knows and can do, which we will follow for all activities in this course:
 
 - **4:** Exceeding Standards, Consistently exceeds expectations for skills and understanding 
 - **3:** Meeting Standards, Consistently meets expectations for skills and understanding
@@ -165,53 +151,67 @@ Educational researchers developed the five-point scale to more clearly assess wh
 - **1:** Below Standards, Meets few expectations for skills and understanding
 - **0:** No Submissions, Did not submit assignment
 
+**What is standards-based grading? Why the shift from traditional grades?**
+
+We believe that grades should communicate, as clearly as possible, what students know and can do. We also seek to create a growth mindset environment that encourages students to take risks and to embrace mistakes as learning opportunities. Standards-based grading and the corresponding five-point scale are set up to support these two values by clarifying learning goals and assessing students on their progress towards meeting those goals, rather than prioritizing completion of tasks and assignments over learning. This allows for more meaningful student learning and teacher feedback, and moves away from an approach in which students are seeking to earn points rather than practicing to meet the learning goal.
+
 **What does this look like in practice?**
 
-Students will receive assignment and final grades on the 0-4 scale. ​Students will receive
+Students will receive assignment and final grades on the 0-4 scale:
+students will not receive letter grades (A, B, C, D) on assignments or fine-grained percentages.
+We will map our scale to letter grades for submission the the University at the end of the semester.
 
-1-5 grades on assignments and for your semester grade; students will not receive letter grades (A, B, C, D) on assignments or fine-grained percentages. We will map our scale to letter grades for submission the the University at the end of the semester.
+Grades are clearer to students:
+Teachers and students engage in conversation about what 4/3/2/1/0 work looks like,
+so students understand what is expected and what they are learning.
 
-Grades are clearer to students: ​Teachers and students engage in conversation about what 4/3/2/1/0 work looks like, so students understand what is expected and what they are learning.
-
-Grades are more useful and meaningful: ​When students get clear grades and feedback on a five point scale, they can monitor their progress and set goals for their learning. Teachers can also provide more specific feedback on how to improve from a “3” to a “4”.
+Grades are more useful and meaningful:
+When students get clear grades and feedback on a five point scale,
+they can monitor their progress and set goals for their learning.
+Teachers can also provide more specific feedback on how to improve from a “3” to a “4”.
 
 ### Grading Scale
 
-The following grade scale will be used for this course:
+For assignments that do give you a more granular number of points,
+we will try to articulate in the assignment description/instructions
+how many points map to what level on the 5-point scale.
 
-- A = 93-100%
-- A- = 90-92.99%
-- B+ = 87-89.99%
-- B = 83-86.99%
-- B- = 80-82.99%
-- C+ = 77-79.99%
-- C = 73-76.99%
-- C- = 70-72.99%
-- D+ = 67-69.99%
-- D = 60-66.99%
-- F = 0-59.99%
-
-**Note:** *some adjustments may be made to the above grade scale to better reflect student performance.*
+Those thresholds will be based on things like completing a set number of exercises
+or completing the more straight-forward exercises, for instance.
 
 ### Participation
 
-You will be assigned participation exercises to complete as part of the reading. These exercises exist inside of our online textbook, zyBooks, and you are expected to complete them by the assigned due date. You may not request an extension to the due date for these assignments.
+You will be assigned participation exercises to complete as part of the reading.
+These exercises exist inside of our online textbook, zyBooks,
+and you are expected to complete them by the assigned due date.
+You may not request an extension to the due date for these assignments.
 
 ### Quizzes
 
-There will be a weekly quiz that focuses on the material covered prior to the release of each quiz. These quizzes are cumulative. You are able to take the quiz as many times as necessary to achieve a 100%. Quizzes contain multiple choice style questions covering material from lecture, the reading, and possibly labs and assignments.
+There will be a weekly quiz that focuses on the material covered prior to the release of each quiz.
+These quizzes are cumulative.
+You are able to take the quiz as many times as necessary to achieve a 100%.
+Quizzes contain multiple choice style questions covering material from lecture, the reading, and possibly labs and assignments.
+You may not request an extension to the due date for these assignments.
 
 ### Labs
 
-Lab assignments are low-stakes exercises that are designed to allow you to practice your understanding of the material covered in the book and during lecture in the presence of the course staff in a collaborative setting. You will need to bring a laptop if you have one or work with another student. If you do not have a laptop, please notify the course staff so we can make arrangements for you to work with another student.
+Lab assignments are low-stakes exercises that are designed to allow you to practice your understanding of the material covered in the book and during lecture in the presence of the course staff in a collaborative setting.
+You will need to bring a laptop if you have one or work with another student.
+If you do not have a laptop, please notify the course staff so we can make arrangements for you to work with another student.
 
 ### Homework Assignments
 
-Homework assignments require you to solve computational problems using the Python programming language. You will be presented with a number of different challenges that will require you to understand the problem, this how to solve that problem computationally, and implement an algorithm using Python to solve that problem. You will have a homework approximately every week.
+Homework assignments require you to solve computational problems using the Python programming language.
+You will be presented with a number of different challenges that will require you to understand the problem, this how to solve that problem computationally, and implement an algorithm using Python to solve that problem.
+You will have a homework approximately every week.
 
 ### Capstone Project
 
-You will be required to design and implement a Python program to solve a problem of your choice. The capstone project will be assigned and submitted toward the end of the semester. You will have the freedom to use any aspect of Python you learned in this course in your solution. On the last day of class we will have a poster session where you will have the opportunity to showcase your project to other students as well as see projects produced by others.
+You will be required to design and implement a Python program to solve a problem of your choice.
+The capstone project will be assigned and submitted toward the end of the semester.
+You will have the freedom to use any aspect of Python you learned in this course in your solution.
+On the last day of class we will have a poster session where you will have the opportunity to showcase your project to other students as well as see projects produced by others.
 
 ## Late and Early Submissions
 
@@ -228,36 +228,40 @@ If there are extenuating circumstances beyond your control that prevent you from
 
 ### Submission Currency 💵
 
-To add some flexibility to submission deadlines, we will be using a form of “currency” in this course to earn “tokens” for submissions that are made before the day an assignment is due. If you submit an assignment before the deadline you will receive a token. You may then use a token to buy a late day allowing you to submit an assignment past the deadline. If you submit an assignment late and you run out of tokens, you may borrow tokens putting you in the negative. To get out of the hole you will need to submit subsequent assignments early to earn tokens back and pay your debt!
+To add some flexibility to submission deadlines, we will be using a form of “currency” in this course to earn “tokens” for submissions that are made before the day an assignment is due. If you submit an assignment on or before the deadline you will receive a token. You may then use a token to buy a late day allowing you to submit an assignment past the deadline. If you submit an assignment late and you run out of tokens, you may borrow tokens putting you in the negative. To get out of the hole you will need to submit subsequent assignments on time or early to earn tokens back and pay your debt!
 
 If you complete the course with leftover tokens it will be applied to your final grade and increase your overall grade for the course. If you complete the course with negative tokens it will be applied to your final grade and decrease your overall grade for the course.
 
-**Here are the rules:**
+✨ **Caveat:** you will only earn a token if your submission is at least *Meeting Standards*. Anything below is not considered to be token-level quality. ✨
 
-- You start the course with 3 tokens.
-- If you submit an assignment any day before or on the day an assignment is due you will receive a token.
-- If you submit an assignment any day after the day an assignment is due you will pay a token for each day past the due date.
-- You may only use tokens up to three days past the deadline of an assignment. After three days past the deadline you are no longer able to use tokens or submit an assignment late. It will be marked as missing with a 0.
-- You can only hold a maximum of 5 tokens. That is, if you have 5 tokens and you hand an assignment early or on time, you still have 5 tokens.
-- To use your tokens you must use our token request form available on the course LMS.
+### Token Rules
 
-**What can tokens be used for?**
+- You start the semester with 3 tokens.
+- A submission before or on a due date earns you 1 token.
+- You can optionally apply a token for each day late up to 3 days.
+- You can decide not to use tokens for late days. We reduce your
+  assignment score by 1 for each day late (e.g., -1).
+- After 3 days late an assignment and/or tokens will not be accepted.
+- You can hold a maximum of 5 tokens at any time.
+- You can earn tokens from **homeworks** only.
+- You can apply tokens to **homeworks** and **labs**.
 
-Tokens can be used on the following assessments:
+### Submissions, Gradescope, and Token Application
 
-- Homework
-- Labs
+The submission you choose to activate on gradescope is the submission we use. If your active submission is after the due date, and you do not report that your want to use tokens by submitting the token application form, we apply the late policy of -1 to your assignment submission per late day. **You must submit a token application form to apply tokens to an assignment.** The token application form is available on Moodle.
 
-**Examples:**
+### Examples
 
 - At the start of the semester Mia submits the first assignment two days early and receives a token increasing their purse to 4.
-- In the middle of the semester Pat is late by 2 days. This uses 2 tokens from their purse. This is not bad since Pat hasn’t missed an assignment. Pat has 1 token remaining.
-- At the end of the semester Jorge has 3 tokens and their grade is an 88. The tokens are applied and their final grade is a 91. Jorge is happy. 😃
-- At the end of the semester Tanya has -2 tokens and their grade is a 90. The tokens are applied and their final grade is an 88. Tanya is unhappy 😔, but understands.
+- In the middle of the semester Pat is late by 2 days. Pat decides to use 2 tokens from their purse. This is not bad since Pat hasn’t missed an assignment. Pat has 1 token remaining.
+- At the end of the semester Jorge has 3 tokens and their grade is a B+. The tokens are applied and their final their final grade ends up as an A. Jorge is happy. 😃
+- At the end of the semester Tanya has -2 tokens and their grade is an A-. The tokens are applied and their final grade is an B+. Tanya is unhappy 😔, but understands.
 
 You are ultimately responsible for maintaining your token count. We will do our best to calculate the number of tokens you have for each assignment. However, it may take a few days to do so.
 
-**Tokens may not be used or gained on in-class exercises or labs.**
+### Group Submissions
+
+When an assignment is submitted as a group, all group members earn a token if submitted before or on the date the assignment is due. If the assignment is submitted late, each group member can decide if they want to use tokens to pay for the late days or get marked down on the individual assignment.
 
 ## Incompletes
 

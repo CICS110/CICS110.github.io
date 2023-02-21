@@ -11,7 +11,7 @@ Short week 1 tasks:
 * Quiz 1: **Due Thursday 2/9**
 * Sign up for Piazza: **Due Friday 2/10**
 * Sign up for Gradescope: **Due Friday 2/10**
-* Sign up for Zybooks: **Due Friday 2/10**
+* Sign up for zyBooks: **Due Friday 2/10**
 
 Lab this week is meeting your TA and making sure all the relevant software is installed.
 
@@ -47,7 +47,8 @@ It reads an expression from the user, evaluates it, prints the result, and repea
 
 replit's python REPL is presumably a wrapper around python's built-in REPL.
 
-If you are in a terminal or powershell and python 3 is installed,
+If you are in a terminal (such as Terminal on Mac of PowerShell on Windows)
+and python 3 is installed,
 then you can start up the built-in REPL with the command `python3`
 (if you have installed python, it is almost surely python 3).
 That's it, just `python3` with no file name after it.
