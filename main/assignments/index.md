@@ -21,6 +21,7 @@ The [participation assignments](/main/information/syllabus#participation) can be
 🔥 **You do not earn and cannot use tokens for this assignment type.** 🔥
 
 - Participation 1 (B: Mo 2/6, D: Th 2/16)
+- Participation 2 (B: Th 2/16, D: Th 2/23)
 
 ## Quizzes
 
@@ -30,12 +31,13 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 - Quiz 1 Orientation (B: Mo 2/6, D: Th 2/9)
 - Quiz 2 Week 1 (B: Th 2/9, D: Th 2/16)
+- Quiz 3 Week 2 (B: Th 2/16, D: Th 2/23)
 
 ## Homework
 
 ✨ 🪙 **You can earn and use tokens for this assignment type.** 🪙 ✨
 
-*No assigned work yet*
+- [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
 
 ## Labs
 
@@ -45,6 +47,7 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
 - [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
+- [Lab 03 Booleans and Assert](/main/labs/assert) (B: Fr 2/24, D: Fr 2/24)
 
 ## Capstone Project
 
