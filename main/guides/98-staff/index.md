@@ -1,6 +1,5 @@
 ---
 author: Ben Burns
-sidebar_position: 100
 ---
 
 # Staff
