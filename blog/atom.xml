@@ -9,7 +9,7 @@
     <icon>https://CICS110.github.io/img/110-image-light.png</icon>
     <entry>
         <title type="html"><![CDATA[Office Hours and Tokens]]></title>
-        <id>oh-fixes-tokens</id>
+        <id>https://CICS110.github.io/blog/oh-fixes-tokens</id>
         <link href="https://CICS110.github.io/blog/oh-fixes-tokens"/>
         <updated>2023-02-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey y'all, two quick things]]></summary>
@@ -21,7 +21,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Homework 1 is Live]]></title>
-        <id>hw-1-live</id>
+        <id>https://CICS110.github.io/blog/hw-1-live</id>
         <link href="https://CICS110.github.io/blog/hw-1-live"/>
         <updated>2023-02-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Alrighty! Homework 1 is live.]]></summary>
@@ -33,7 +33,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>welcome</id>
+        <id>https://CICS110.github.io/blog/welcome</id>
         <link href="https://CICS110.github.io/blog/welcome"/>
         <updated>2023-02-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome students to our course on introductory programming! Whether you are brand new to programming or have some experience under your belt, we are excited to have you join us on this journey.]]></summary>
