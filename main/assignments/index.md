@@ -22,6 +22,7 @@ The [participation assignments](/main/information/syllabus#participation) can be
 
 - Participation 1 (B: Mo 2/6, D: Th 2/16)
 - Participation 2 (B: Th 2/16, D: Th 2/23)
+- Participation 3 (B: Th 2/23, D: Th 3/2)
 
 ## Quizzes
 
@@ -32,12 +33,14 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 - Quiz 1 Orientation (B: Mo 2/6, D: Th 2/9)
 - Quiz 2 Week 1 (B: Th 2/9, D: Th 2/16)
 - Quiz 3 Week 2 (B: Th 2/16, D: Th 2/23)
+- Quiz 4 Week 3 (B: Th 2/23, D: Th 3/2)
 
 ## Homework
 
 ✨ 🪙 **You can earn and use tokens for this assignment type.** 🪙 ✨
 
 - [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
+- Homework 02 (B: Th 2/23, D: We 3/1)
 
 ## Labs
 
