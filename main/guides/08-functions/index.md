@@ -16,8 +16,8 @@ All functions have two main parts:
 
 1. The **function header** defines the function's name, what inputs it can expect, if any, and what we can expect it to `return` if anything. There are 4 main parts to a function header:
    1. The `def` keyword will appear at the beginning of the function header, signifying to `python` that "Hey! This line is the definiton of a new function!"
-   2. The **function name** is simply the name of the function. For example, `print()`'s function name is 'print', and `math.pow(a, b)`'s name is 'pow'. The function name is what you use to call the function, much like how you use a variable's name to use the value of a variable. The function name will always be followed by a set of parameters: `()`
-   3. **Parameters**, also known as **arguments**, are the inputs that are passed to the function. Parameters are optional, since in some cases you may not want your function to take in any parameters. Parameters are defined as a list of names in the parenthesis following the function name.
+   2. The **function name** is simply the name of the function. For example, `print()`'s function name is 'print', and `math.pow(a, b)`'s name is 'pow'. The function name is what you use to call the function, much like how you use a variable's name to use the value of a variable. The function name will always be followed by a set of parenthesis: `()`
+   3. **Parameters**, also known as **arguments**, are the inputs that are passed to the function. Parameters are optional, since in some cases you may not want your function to take in any values. Parameters are defined as a series of parameter names separated by commas, written in the parenthesis following the function name.
    4. At the end of the function header, you will always find a colon (`:`) followed by a new line.
 2. The **function body** is the code that is executed when the function is called. The function body starts on the first line after the function header. (right after the `:`)
 
@@ -121,7 +121,7 @@ def name_age(name, age=18):
     print(f"{name} is {age} years old.")
 ```
 
-If a value is not provided for these parameters when the function is called, the default value is used. For example, if I call `name_age('John')`, the function will use `age's` default value of `18`. If we call the function with both `name` and `age` parameters, the provided value is used.
+If a value is not provided for these parameters when the function is called, the default value is used. For example, if I call `name_age('John')`, the function will use `age`'s default value of `18`. If we call the function with both `name` and `age` parameters, the provided value is used.
 
 In this case, we can pass two positional parameters, like `name_age('John', 20)`. However, in some cases you might have 20 parameters with default values, and you only want to specify one. In this case, you would specify you want to change `age` in your call: `name_age('John', age=20)`.
 
