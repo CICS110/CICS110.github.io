@@ -81,7 +81,11 @@ by submitting this project you have provided your virtual signature in agreement
 
 The aim of this homework assignment is to practice writing functions and working with booleans.
 
-As our skillset continues to expand, you should keep in mind that programming is a fairly cumulative process and as such you would want to refresh concepts introduced so far to succeed in this assignment.
+As our skillset continues to expand,
+you should keep in mind that programming is a fairly cumulative process and as such
+you would want to refresh concepts introduced so far to succeed in this assignment.
+
+**You may find [this guide](../guides/functions) on functions useful as a reference.**
 
 ### Learning Objectives
 
@@ -526,8 +530,8 @@ The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described ab
 
 Example:
 ```py
-are_parallel(0.75, 0.75, 1, 2) # This should return True
-are_parallel(1, 3.5, 2.5, 2.5) # This should return False
+are_parallel(0.75, 1, 0.75, 2) # This should return True
+are_parallel(1, 2.5, 3.5, 2.5) # This should return False
 ```
 
 ### **4b. Coincident Lines (3 points)**
@@ -543,8 +547,8 @@ The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described ab
 
 Example:
 ```py
-are_same(0.75, 0.75, 1, 1) # This should return True
-are_same(0.75, 0.75, 1, 2) # This should return False
+are_same(0.75, 1, 0.75, 1) # This should return True
+are_same(0.75, 1, 0.75, 2) # This should return False
 ```
 
 ### **4c. Lines with Unique Intersection (3 points)**
@@ -560,8 +564,9 @@ The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described ab
 
 Example:
 ```py
-have_unique_intersection(1, 3.5, 2.5, 2.5) # This should return True
-have_unique_intersection(0.75, 0.75, 2, 4) # This should return False
+have_unique_intersection(1, 2.5, 3.5, 2.5) # This should return True
+have_unique_intersection(0.75, 2, 0.75, 4) # This should return False
+have_unique_intersection(0.75, 2, 0.75, 2) # This should return False
 ```
 
 ### **4d. Intersecting Lines (3 points)**
@@ -577,9 +582,9 @@ The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described ab
 
 Example:
 ```py
-have_intersection(1, 3.5, 2.5, 2.5) # This should return True
-have_intersection(0.75, 0.75, 1, 1) # This should return True
-have_intersection(0.75, 0.75, 2, 4) # This should return False
+have_intersection(1, 2.5, 3.5, 2.5) # This should return True
+have_intersection(0.75, 1, 0.75, 1) # This should return True
+have_intersection(0.75, 2, 0.75, 4) # This should return False
 ```
 
 ### **4e. Point of intersection**
@@ -601,8 +606,9 @@ The function takes as arguments four floats `m1`, `m2`, `b1`, `b2` as described 
 
 Example:
 ```py
-x_intersect(1, 3.5, 2.5, 2.5)   # This should return 0
-x_intersect(3.5, 3.5, 2.5, 7.5) # This should give an ERROR!
+x_intersect(1, 2.5, 3.5, 2.5)   # This should return 0
+x_intersect(3.5, 2.5, 3.5, 7.5) # This should give an ERROR!
+x_intersect(3.5, 2.5, 3.5, 2.5) # This should give an ERROR!
 ```
 
 ### **Part II: Determining the $y$ coordinate (3 points)**
@@ -626,8 +632,9 @@ The function takes as arguments four floats `m1`, `m2`, `b1`, `b2` as described 
 
 Example:
 ```py
-y_intersect(1, 3.5, 2.5, 2.5)   # This should return 2.5
-y_intersect(3.5, 3.5, 2.5, 7.5) # This should give an ERROR!
+y_intersect(1, 2.5, 3.5, 2.5)   # This should return 2.5
+y_intersect(3.5, 2.5, 3.5, 7.5) # This should give an ERROR!
+y_intersect(3.5, 2.5, 3.5, 2.5) # This should give an ERROR!
 ```
 
 ### **5. Implement `quadratic.py`**
