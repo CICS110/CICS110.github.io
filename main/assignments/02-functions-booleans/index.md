@@ -558,7 +558,7 @@ The two lines intersect at a unique point if $m_1 \neq m_2$.
 Your task is to implement a function with the following signature:
 
 ```py
-def have_unique_intesection(m1:float, b1:float, m2:float, b2:float) -> bool
+def have_unique_intersection(m1:float, b1:float, m2:float, b2:float) -> bool
 ```
 The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described above and returns whether the two lines defined by the specified parameters intersect at a unique point or not.
 
@@ -576,7 +576,7 @@ Two lines are said to intersect either if they have a unique intersection point 
 Your task is to implement a function with the following signature:
 
 ```py
-def have_intesection(m1:float, b1:float, m2:float, b2:float) -> bool
+def have_intersection(m1:float, b1:float, m2:float, b2:float) -> bool
 ```
 The function take as argument four floats `m1`, `m2`, `b1`, `b2` as described above and returns whether the two lines defined by the specified parameters intersect or not.
 
