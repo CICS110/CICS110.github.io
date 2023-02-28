@@ -4,10 +4,19 @@
         <title>CICS 110 Blog</title>
         <link>https://CICS110.github.io/blog</link>
         <description>CICS 110 Blog</description>
-        <lastBuildDate>Thu, 16 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Feb 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Snow Day and HW2 extended]]></title>
+            <link>https://CICS110.github.io/blog/2-28-snow-day</link>
+            <guid>https://CICS110.github.io/blog/2-28-snow-day</guid>
+            <pubDate>Tue, 28 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[As campus is closed today (2/28), classes are canceled today for]]></description>
+            <content:encoded><![CDATA[<p>As campus is closed today (2/28), classes are canceled today for</p><ul><li>Section 02 (Eduardo)</li><li>Section 04 (Jared)</li><li>Section 05 (Allison)</li></ul><p>In observance of class being canceled, the deadline for Homework 02 has been pushed back to this Friday, March 3rd. Homework 03 will be due the following Friday, March 10th. Late days will still be available for both assignments until further notice.</p>]]></content:encoded>
+            <category>logistics</category>
+        </item>
         <item>
             <title><![CDATA[Office Hours and Tokens]]></title>
             <link>https://CICS110.github.io/blog/oh-fixes-tokens</link>

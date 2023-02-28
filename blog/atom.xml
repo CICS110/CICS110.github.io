@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://CICS110.github.io/blog</id>
     <title>CICS 110 Blog</title>
-    <updated>2023-02-16T00:00:00.000Z</updated>
+    <updated>2023-02-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CICS110.github.io/blog"/>
     <subtitle>CICS 110 Blog</subtitle>
     <icon>https://CICS110.github.io/img/110-image-light.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Snow Day and HW2 extended]]></title>
+        <id>https://CICS110.github.io/blog/2-28-snow-day</id>
+        <link href="https://CICS110.github.io/blog/2-28-snow-day"/>
+        <updated>2023-02-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As campus is closed today (2/28), classes are canceled today for]]></summary>
+        <content type="html"><![CDATA[<p>As campus is closed today (2/28), classes are canceled today for</p><ul><li>Section 02 (Eduardo)</li><li>Section 04 (Jared)</li><li>Section 05 (Allison)</li></ul><p>In observance of class being canceled, the deadline for Homework 02 has been pushed back to this Friday, March 3rd. Homework 03 will be due the following Friday, March 10th. Late days will still be available for both assignments until further notice.</p>]]></content>
+        <author>
+            <name>Ben Burns</name>
+        </author>
+        <category label="logistics" term="logistics"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Office Hours and Tokens]]></title>
         <id>https://CICS110.github.io/blog/oh-fixes-tokens</id>
