@@ -40,7 +40,7 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 ✨ 🪙 **You can earn and use tokens for this assignment type.** 🪙 ✨
 
 - [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
-- Homework 02 (B: Th 2/23, D: We 3/1)
+- [Homework 02 Functions and Booleans](/main/assignments/functions-booleans) (B: Th 2/23, D: ~~We 3/1~~ Fr 3/3 )
 
 ## Labs
 
@@ -51,6 +51,7 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
 - [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
 - [Lab 03 Booleans and Assert](/main/labs/assert) (B: Fr 2/24, D: Fr 2/24)
+- [Lab 04 List Slicing](/main/labs/collections) (B: Fr 3/3, D: 3/3)
 
 ## Capstone Project
 
