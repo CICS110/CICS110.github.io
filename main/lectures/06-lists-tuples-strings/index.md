@@ -1,12 +1,18 @@
 # Lec 06 Lists, Tuples, Sets
 
-## Due this week
+## Assignment Updates
 
-- Participation 2 Due Thursday
-    - This is the Zybooks
-- Quiz 3 Due Thursday
-- HW1 Due Wednesday
-- [Lab Due Friday (2/24)](/main/labs/assert)
+Stuff due this week:
+* Participation 3 **Due Thursday 3/2**
+* Quiz 4: **Due Thursday 3/2**
+* HW 2: **Due Friday 3/3**
+* Lab 4: **Due Friday 3/3**
+
+Stuff due next week:
+* (Presumably) Participation 4 **Due Thursday 3/9**
+* (Presumably) Quiz 5: **Due Thursday 3/9**
+* HW 3: **Due Friday 3/10**
+* Lab 5: **Due Friday 3/10**
 
 ## Slides
 
