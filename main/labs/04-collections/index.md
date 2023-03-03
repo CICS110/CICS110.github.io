@@ -246,6 +246,8 @@ Write a function named `get_indices_1_4_7()` that takes in a list and returns a 
 
 For example, if the list is `["apples", "bananas", "cherries", "dates", "eggplant", "figs", "grapes", "honeydew", "icacina"]`, then the output should be `["bananas", "eggplant", "honeydew"]`.
 
+You may assume that the list has at least 8 elements (so indices 1, 4, and 7 all have elements).
+
 <details>
 <summary><b>Hint</b></summary>
 
