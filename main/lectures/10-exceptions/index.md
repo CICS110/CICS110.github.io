@@ -1,3 +1,0 @@
-# Lec 10 Exceptions
-
-Coming soon...

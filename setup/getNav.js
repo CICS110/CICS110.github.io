@@ -10,8 +10,8 @@ function get(mainFolder) {
     /** @type {import('@docusaurus/plugin-content-docs').Options} */
     {
       id: item.id,
-      path: `main`,
-      routeBasePath: item.id,
+      path: `main/${item.id}`,
+      routeBasePath: `main/${item.id}`,
       sidebarPath: require.resolve('./sidebars.js'),
       remarkPlugins: [math],
       rehypePlugins: [katex],
@@ -19,7 +19,7 @@ function get(mainFolder) {
   ])
 
   const navItems = content.map(item => ({
-    to: item.id,
+    to: `main/${item.id}`,
     position: item.position,
     label: item.label,
   }))

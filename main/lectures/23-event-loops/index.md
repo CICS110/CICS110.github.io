@@ -1,3 +1,0 @@
-# Lec 23 Event Loops
-
-Coming soon...

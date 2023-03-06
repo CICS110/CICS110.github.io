@@ -1,3 +1,0 @@
-# Lec 19 Methods
-
-Coming soon...

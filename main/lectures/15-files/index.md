@@ -1,3 +1,0 @@
-# Lec 15 Files
-
-Coming soon...

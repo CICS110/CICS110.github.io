@@ -1,3 +1,0 @@
-# Lec 08 Branching Introduction
-
-Coming soon...
