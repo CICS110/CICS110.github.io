@@ -23,6 +23,7 @@ The [participation assignments](/main/information/syllabus#participation) can be
 - Participation 1 (B: Mo 2/6, D: Th 2/16)
 - Participation 2 (B: Th 2/16, D: Th 2/23)
 - Participation 3 (B: Th 2/23, D: Th 3/2)
+- Participation 4 (B: Th 3/2, D: Th 3/9)
 
 ## Quizzes
 
@@ -34,6 +35,7 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 - Quiz 2 Week 1 (B: Th 2/9, D: Th 2/16)
 - Quiz 3 Week 2 (B: Th 2/16, D: Th 2/23)
 - Quiz 4 Week 3 (B: Th 2/23, D: Th 3/2)
+- Quiz 5 Week 4 (B: Th 3/2, D: Th 3/9)
 
 ## Homework
 
@@ -41,6 +43,7 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 - [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
 - [Homework 02 Functions and Booleans](/main/assignments/functions-booleans) (B: Th 2/23, D: ~~We 3/1~~ Fr 3/3 )
+- [Homework 03 Sequence Types](/main/assignments/sequence-types) (B: Fr 3/3, Fr 3/10)
 
 ## Labs
 
@@ -51,7 +54,8 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 - [Lab 01 Getting Started](/main/labs/python-setup) (B: Fr 2/10, D: Fr 2/10)
 - [Lab 02 String Formatting](/main/labs/string-formatting) (B: Fr 2/17, D: Fr 2/17)
 - [Lab 03 Booleans and Assert](/main/labs/assert) (B: Fr 2/24, D: Fr 2/24)
-- [Lab 04 List Slicing](/main/labs/collections) (B: Fr 3/3, D: 3/3)
+- [Lab 04 List Slicing](/main/labs/collections) (B: Fr 3/3, D: Fr 3/3)
+- Lab 05 Conditionals (B: Fr 3/10, D: Fr 3/10)
 
 ## Capstone Project
 
