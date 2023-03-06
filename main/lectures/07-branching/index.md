@@ -1,4 +1,4 @@
-# Lec 7: Branching
+# Lec 07: Branching
 
 ## Assignment Updates
 
