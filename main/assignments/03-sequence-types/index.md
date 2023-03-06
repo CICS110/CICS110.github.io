@@ -321,8 +321,8 @@ The function does not take any argument. It should ask the user for an input str
 
 Example:
 ```py
-get_input('rock')  # This should return 'rock'
-get_input('PaPeR') # This should return 'paper'
+get_input() # If the user types 'rock' when prompted, this should return 'rock'
+get_input() # If the user types 'PaPeR' when prompted, this should return 'paper'
 ```
 
 ### **3b. Check if player 1 wins (1 point)**
