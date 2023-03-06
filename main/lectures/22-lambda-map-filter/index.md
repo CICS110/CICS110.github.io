@@ -1,3 +1,0 @@
-# Lec 22 Lambda, Map, Filter
-
-Coming soon...

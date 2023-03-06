@@ -1,3 +1,0 @@
-# Lec 13 List Comprehensions
-
-Coming soon...

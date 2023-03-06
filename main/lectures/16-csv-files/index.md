@@ -1,3 +1,0 @@
-# Lec 16 CSV Files
-
-Coming soon...

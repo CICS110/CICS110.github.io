@@ -1,3 +1,0 @@
-# Lec 09 Branching & Debugging
-
-Coming soon...

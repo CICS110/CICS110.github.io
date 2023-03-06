@@ -1,3 +1,0 @@
-# Lab 12: Fetch & Filter
-
-Coming soon...

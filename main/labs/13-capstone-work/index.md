@@ -1,3 +1,0 @@
-# Lab 13: Capstone Work
-
-Coming soon...

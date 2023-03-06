@@ -1,3 +1,0 @@
-# Lab 05: Debugging Control Flow
-
-Coming soon...
