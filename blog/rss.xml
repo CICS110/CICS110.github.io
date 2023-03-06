@@ -4,10 +4,19 @@
         <title>CICS 110 Blog</title>
         <link>https://CICS110.github.io/blog</link>
         <description>CICS 110 Blog</description>
-        <lastBuildDate>Tue, 28 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Token Balance Update]]></title>
+            <link>https://CICS110.github.io/blog/3-06-tokens</link>
+            <guid>https://CICS110.github.io/blog/3-06-tokens</guid>
+            <pubDate>Mon, 06 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[All students should have received an email containing their current token balance. Included in the email is a report of what assignments tokens were applied to or earned on, if any. The email was sent to each students' umass.edu email as reported in Moonami. If you did not receive an email, please follow up on Piazza note @290.]]></description>
+            <content:encoded><![CDATA[<p>All students should have received an email containing their current token balance. Included in the email is a report of what assignments tokens were applied to or earned on, if any. The email was sent to each students' <code>umass.edu</code> email as reported in Moonami. If you did not receive an email, please follow up on Piazza note @290.</p>]]></content:encoded>
+            <category>logistics</category>
+        </item>
         <item>
             <title><![CDATA[Snow Day and HW2 extended]]></title>
             <link>https://CICS110.github.io/blog/2-28-snow-day</link>

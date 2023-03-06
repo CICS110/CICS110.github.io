@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://CICS110.github.io/blog</id>
     <title>CICS 110 Blog</title>
-    <updated>2023-02-28T00:00:00.000Z</updated>
+    <updated>2023-03-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CICS110.github.io/blog"/>
     <subtitle>CICS 110 Blog</subtitle>
     <icon>https://CICS110.github.io/img/110-image-light.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Token Balance Update]]></title>
+        <id>https://CICS110.github.io/blog/3-06-tokens</id>
+        <link href="https://CICS110.github.io/blog/3-06-tokens"/>
+        <updated>2023-03-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[All students should have received an email containing their current token balance. Included in the email is a report of what assignments tokens were applied to or earned on, if any. The email was sent to each students' umass.edu email as reported in Moonami. If you did not receive an email, please follow up on Piazza note @290.]]></summary>
+        <content type="html"><![CDATA[<p>All students should have received an email containing their current token balance. Included in the email is a report of what assignments tokens were applied to or earned on, if any. The email was sent to each students' <code>umass.edu</code> email as reported in Moonami. If you did not receive an email, please follow up on Piazza note @290.</p>]]></content>
+        <author>
+            <name>Ben Burns</name>
+        </author>
+        <category label="logistics" term="logistics"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Snow Day and HW2 extended]]></title>
         <id>https://CICS110.github.io/blog/2-28-snow-day</id>
