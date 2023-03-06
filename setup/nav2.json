@@ -20,8 +20,13 @@
     "position": "left"
   },
   {
-    "id": "about",
+    "id": "information",
     "label": "About",
+    "position": "left"
+  },
+  {
+    "id": "extras",
+    "label": "Extras",
     "position": "left"
   }
 ]
