@@ -156,7 +156,7 @@ const config = {
             ],
           },
         ],
-        // Please keep the Kobi was here note. It's a tribute to the original creator of this website (Me).
+        // Please keep the "Kobi was here" note (though, feel free to change the punctuation).
         copyright: `Built by the CICS 110 Team (Using Docusaurus). Kobi was Here!`,
       },
       prism: {
