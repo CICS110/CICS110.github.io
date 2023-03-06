@@ -6,7 +6,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // Should be the name of the folder containing the docs folders
-const mainFolder = '';
+const mainFolder = 'main';
 
 const { navItems, navPlugins } = require('./setup/getNav.js')(mainFolder);
 
@@ -109,19 +109,19 @@ const config = {
             items: [
               {
                 label: 'Syllabus',
-                href: 'main/information/syllabus',
+                href: '/main/information/syllabus',
               },
               {
                 label: 'Schedule',
-                href: 'main/information/schedule',
+                href: '/main/information/schedule',
               },
               {
                 label: 'Lectures',
-                href: 'main/lectures',
+                href: '/main/lectures',
               },
               {
                 label: 'Labs',
-                href: 'main/labs',
+                href: '/main/labs',
               },
             ],
           },
@@ -130,11 +130,11 @@ const config = {
             items: [
               {
                 label: 'Homework',
-                href: 'main/assignments',
+                href: '/main/assignments',
               },
               {
                 label: 'Labs',
-                href: 'main/labs',
+                href: '/main/labs',
               },
             ],
           },
@@ -156,7 +156,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus. (This is a placeholder))`,
+        copyright: `Built by the CICS 110 Team (Using Docusaurus). Kobi was Here!`,
       },
       prism: {
         theme: lightCodeTheme,
