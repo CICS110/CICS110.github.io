@@ -1,3 +1,0 @@
-# Lec 14 Creating Modules
-
-Coming soon...

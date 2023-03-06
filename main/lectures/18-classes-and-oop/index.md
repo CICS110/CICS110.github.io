@@ -1,3 +1,0 @@
-# Lec 18 Classes and OOP
-
-Coming soon...

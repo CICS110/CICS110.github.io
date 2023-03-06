@@ -1,3 +1,0 @@
-# Lab 10: Designing Objects
-
-Coming soon...
