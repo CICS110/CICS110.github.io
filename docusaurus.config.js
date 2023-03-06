@@ -23,8 +23,12 @@ const config = {
   organizationName: 'CICS110',
   trailingSlash: false,
 
+  markdown: {
+    mermaid: true,
+  },
+
   // Add live python code execution
-  themes: ['docusaurus-live-brython'],
+  themes: ['docusaurus-live-brython', '@docusaurus/theme-mermaid'],
 
   i18n: {
     defaultLocale: 'en',
