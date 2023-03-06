@@ -1,4 +1,4 @@
-const content = require('./nav2.json')
+const content = require('./nav.json')
 
 const math = require('remark-math');
 const katex = require('rehype-katex');
