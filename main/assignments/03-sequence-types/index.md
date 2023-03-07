@@ -700,21 +700,16 @@ cipher_decrypt('4N4MN')  # This should return 'MANAN'
 ## Grading Scale
 
 Note that points may be obtained from anywhere,
-you do not need to try or complete work in any particular order
-(except where a function depends on another function).
+you do not need to try to complete work in any particular order.
+
+There is also an abundance of possible points to obtain,
+giving you options in what you want to work on
+in order to get your total points within the desired range.
 
 ### 1: Below Standards: 0-5 points
 
-This is the number of points that demonstrates proficiency equivalent to completing `logic.py` and `fun_math.py`.
-
 ### 2: Approaching Standards: 6-11 points
-
-This is the number of points that demonstrates proficiency equivalent to completing through `units.py`.
 
 ### 3: Meeting Standards: 12-17 points
 
-This is the number of points that demonstrates proficiency equivalent to completing through `lines.py`.
-
 ### 4: Exceeding Standards: 18+ points
-
-This is the number of points that demonstrates proficiency equivalent to completing almost the entire assignment.
