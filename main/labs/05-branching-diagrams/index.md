@@ -172,7 +172,7 @@ There are special names associated with the number of hits it take you to comple
 
 You know the drill at this point, this lab is in a file named `golf.py` Use the starter codes and fill in the `TODO`
 
-### **1. Implement `played_sport()`**
+### **1. Implement `played_sport()` (1 point)**
 
 `played_sport()` is a function that takes in a string parameter representing a sport name,
 and implements the control flow diagram below.
@@ -191,7 +191,7 @@ sport = input("What sports have you played before: ").lower()
 played_sport(sport)
 ```
 
-### **2. Implement `legal_par()`**
+### **2. Implement `legal_par()` (1 point)**
 
 `legal_par()` is a function that takes in an integer parameter representing the par for a hole,
 and implements the control flow diagram below.
@@ -210,7 +210,7 @@ Prompt for input and save it in a variable. Let's call that variable `par`. Call
 
 </details>
 
-### **3. Implement `score()`**
+### **3. Implement `score()` (1 point)**
 
 `score()` is a function that takes in two integer parameters:
 * The first represents the par for a hole.
@@ -236,7 +236,7 @@ Below are how many points translate to what level on the 5-point scale.
 
 ### 1: Below Standards: 0 points
 
-### 2: Approaching Standards: 1 points
+### 2: Approaching Standards: 1 point
 
 ### 3: Meeting Standards: 2 points
 
