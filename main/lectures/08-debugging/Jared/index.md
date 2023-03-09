@@ -24,7 +24,7 @@ I feel that a fairly strong visual component is necessary
 for conversations about "how to use the debugger".
 I don't think I can do that in a reasonable span of time in this format,
 and I don't think I can do it better than has already been done:
-* [Getting Unstuck guide](../guides/getting-unstuck)
+* [Getting Unstuck guide](../../guides/getting-unstuck)
 * [The Slides](.)
 * [VSCode Debugging Guide](https://code.visualstudio.com/docs/editor/debugging)
 
