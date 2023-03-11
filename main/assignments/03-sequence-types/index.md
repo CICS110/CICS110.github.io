@@ -2,7 +2,7 @@
 title: "HW 03: Sequence Types"
 ---
 
-# Functions and Booleans
+# Lists, Tuples, and Strings
 
 ## General Information
 
