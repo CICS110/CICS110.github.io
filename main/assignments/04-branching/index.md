@@ -708,7 +708,8 @@ We represent a student using a Python list. Each element of the list represents 
 | 5            | Final Score              |
 | 6            | All HW Scores            |
 | 7            | All Project Scores       |
-| 8            | All Participation Scores |
+| 8            | All Lab Scores           |
+| 9            | All Participation Scores |
 
 Here is how to interpret this:
 
