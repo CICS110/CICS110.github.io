@@ -216,7 +216,7 @@ triangle_side_type(10, 10, 10)  # This should return "equilateral"
 
 Anyone else addicted to Wordle? We are! And so is Google (try Googling Wordle and watch the Google logo change). If you've never played Wordle before, here's the rundown:
 
-World is a game of guessing words. You get 6 chances to guess a 5-letter word. If a letter is highlighted green, then that letter is in the word and in the correct spot. If a letter is highlighted yellow, then that letter is in the word but in the wrong spot. If a letter is highlighted grey, then that letter is not in the word in any spot.
+Wordle is a game of guessing words. You get 6 chances to guess a 5-letter word. If a letter is highlighted green, then that letter is in the word and in the correct spot. If a letter is highlighted yellow, then that letter is in the word but in the wrong spot. If a letter is highlighted grey, then that letter is not in the word in any spot.
 
 For this task, you will create functions for building the Wordle game.
 
