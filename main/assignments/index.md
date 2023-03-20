@@ -46,7 +46,7 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 - [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
 - [Homework 02 Functions and Booleans](/main/assignments/functions-booleans) (B: Th 2/23, D: ~~We 3/1~~ Fr 3/3 )
 - [Homework 03 Sequence Types](/main/assignments/sequence-types) (B: Fr 3/3, Fr 3/10)
-- [Homework 04 Branching](/main/assignments/branching) (B: Mo 3/20, We 3/29)
+- [Homework 04 Branching](/main/assignments/branching-diagrams) (B: Mo 3/20, We 3/29)
 
 ## Labs
 
