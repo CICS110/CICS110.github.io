@@ -295,7 +295,7 @@ Your task is to implement a function with the following signature:
 def one_turn(soln)
 ```
 
-Parameter `soln` is the solution. In addition to the function calls in the test snippet from `exact_match_compare`, you must also check if the player won the game. The player wins if their guess is equal to the solution. If the player wins, print "Congratulation". You should also call `exit()` which will ensure that the program is done executing.
+Parameter `soln` is the solution. In addition to the function calls in the test snippet from `exact_match_compare`, you must also check if the player won the game. The player wins if their guess is equal to the solution. If the player wins, print "Congratulations" and call `exit()`, which will ensure that the program is done executing.
 
 *Testing: Test your function by calling `one_turn("COULD")`. The output should be identical to the example in 2c.*
 
