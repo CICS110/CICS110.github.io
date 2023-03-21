@@ -1,3 +1,0 @@
-# Lec 09 Looping
-
-Coming Soon ...
