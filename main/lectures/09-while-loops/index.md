@@ -1,5 +1,15 @@
 # Lec 09 While Loops
 
+## Reflection Form
+
+Please fill out this reflection form: [click here](https://bit.ly/cics110)
+
+The form is anonymous and will be used to help us improve the course.
+
+Please be honest and provide constructive feedback if possible.
+
+We will immediately take action on any feedback provided to improve the course.
+
 ## Assignment Updates
 
 Stuff due this week:
