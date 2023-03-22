@@ -17,7 +17,7 @@ Stuff due this week:
 - Participation 5 due Thursday
   - All (or almost all) of the participation HWs are up now (10 in total)
 - Quiz 6 due Thursday
-- HW4 Due this Friday
+- HW4 Due Next Wednesday (3/29)
   - Branching
   - Has been available since last lab day
 - Lab on Friday
