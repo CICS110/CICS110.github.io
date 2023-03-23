@@ -245,7 +245,7 @@ print((1,2,3) + (8,9)) # (1, 2, 3, 8, 9)
 print(2 * ("a","b"))   # ('a', 'b', 'a', 'b')
 ```
 
-## Unpacking
+## Unpacking/Destructuring
 
 Imagine you had a reasonably-short
 tuple that you know you wanted to work with all of its elements,
@@ -294,6 +294,33 @@ a, b = point1          # (a, b) = (3, 1)
 x, y = point2          # (x, y) = (4, 1)
 point_add = (a+x, b+y)
 print(point_add)       # (7, 2)
+```
+
+This is known as *unpacking* or *destructuring*. The tuple `(3, 1)` is unpacked into
+the variables `a` and `b` for more convenient access.
+
+### Discarding
+
+What if we want to unpack a tuple for convenience,
+but we don't need all the elements,
+and don't want to make up variable names for the ones we don't need.
+
+For instance: computing the width (x-distance) between two points.
+We only care about the first elements in the tuple.
+
+We can use an underscore (`_`) instead of a variable name if we don't
+care about tracking that value and don't want to make up a name.
+
+```py live_py title=Width_Unpacking
+# Assume these were set in the past somewhere
+point1 = (3,1)
+point2 = (4,1)
+# ...
+# Now we want to get the x-distance
+a, _ = point1      # (a, _) = (3, 1) # a = 3
+x, _ = point2      # (x, _) = (4, 1) # x = 4
+width = abs(a - x)
+print(width)       # 1
 ```
 
 ## Negative Indexing
@@ -429,3 +456,20 @@ st = "".join(t) # "92653"
 print(sl)
 print(st)
 ```
+
+## Checking Containment
+
+We can check if some value is in a list/tuple/string (any collection generally)
+with the `in` keyword.
+`value in collection` evaluate to `True` if `value` is in `collection` and `False` otherwise.
+
+```py live_py title=In
+print("3 in [1,2,3]:", 3 in [1,2,3])
+print("0 in (1,2,3):", 0 in (1,2,3))
+print("'H' in 'Hello':", 'H' in 'Hello')
+print("'h' in 'Hello':", 'h' in 'Hello')
+
+# For strings, in can work for sub-string
+print("'Hel' in 'Hello':", 'He' in 'Hello')
+```
+
