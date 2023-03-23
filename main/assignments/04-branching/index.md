@@ -906,8 +906,8 @@ The function takes as an argument `part_scores` which is a list of size 10 conta
 
 Example:
 ```py
-compute_lab([100, 100, 50, 100, 100, 50, 100, 50, 50, 50]) # This should return 4
-compute_lab([0, 0, 50, 100, 100, 50, 0, 50, 0, 50])  # This should return 2
+compute_participation([100, 100, 50, 100, 100, 50, 100, 50, 50, 50]) # This should return 4
+compute_participation([0, 0, 50, 100, 100, 50, 0, 50, 0, 50])  # This should return 2
 ```
 
 ### **4h. Compute Weighted Cumulative Score** (2 points)
