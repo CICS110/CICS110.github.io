@@ -2,7 +2,7 @@
 title: Section 04 (Jared Yeager)
 ---
 
-# Looping
+# Looping (While)
 
 ## Repeating Actions
 
