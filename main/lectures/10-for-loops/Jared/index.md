@@ -255,7 +255,7 @@ This `zip` object can be cast to a list/tuple or iterated over directly with a f
 
 The first element in a `zip` object is a tuple containing the first elements of all
 arguments to the `zip()` function. The second a tuple of all the second arguments.
-And so one.
+And so on.
 
 So for example, I can do the inverse of the previous example:
 
@@ -309,4 +309,34 @@ for min_num, guess, max_num in zip(mins, guesses, maxs):
 
 ## Enumerating
 
-TODO: Fill in this section
+Sometimes you do actually want the index and the element, maybe for pretty printing.
+Certainly by iterating over indices you can get both (for you can get elements from indices)
+
+```py live_py title=Indices
+points = [(3, 1, 4), (1, 5, 9), (2, 6, 5), (3, 5, 8), (9, 7, 9)]
+
+for i in range(len(points)):
+  x, y, z = points[i] # normal destructuring
+  print(f"Point {i+1}: x = {x}, y = {y}, z = {z}")
+```
+
+But having to do that `points[i]` thing is such a bother (it's really not that bad),
+and so there is fancy machinery to save us from this one line.
+
+We have `enumerate()`, which takes and iterable and generates something of type `enumerate`.
+The `enumerate` can either be iterated over in a loop (or used anywhere else a iterator can be)
+or turned into a list or such.
+
+The first element in an `enumerate` object is a tuple containing `0` (the first index) and
+the first element of the argument to the `enumerate()` function.
+The second a tuple of `1` and the second element of the argument.
+And so on.
+
+Behold the power of that, and nested destructuring:
+
+```py live_py title=Enumerate
+points = [(3, 1, 4), (1, 5, 9), (2, 6, 5), (3, 5, 8), (9, 7, 9)]
+
+for (i, (x, y, z)) in enumerate(points):
+  print(f"Point {i+1}: x = {x}, y = {y}, z = {z}")
+```
