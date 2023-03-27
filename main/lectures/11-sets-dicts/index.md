@@ -7,6 +7,7 @@ Stuff due this week:
 - Participation 6 due Thursday
 - Quiz 6 due Thursday
 - Lab on Friday
+- HW 4 due Wednesday
 
 ## Slides
 
