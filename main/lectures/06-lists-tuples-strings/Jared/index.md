@@ -473,3 +473,22 @@ print("'h' in 'Hello':", 'h' in 'Hello')
 print("'Hel' in 'Hello':", 'He' in 'Hello')
 ```
 
+### Non-containment
+
+There are actually two ways to check if `value` is **not** in `collection`.
+Since `value in collention` returns a boolean, `not (value in collention)`
+would get the negation.
+(`not value in collention` is equivalent,
+but the parentheses are good for clarity if you don't really know the precedence of operators.)
+
+But as a more english-intuitive option, we also have `value not in collection`
+
+```py live_py title=Not_In
+value = 0
+collection = [1,2,3]
+
+print(value in collection)         # False
+print(not value in collection)     # True
+print(value not in collection)     # True
+print(not value not in collection) # False
+```
