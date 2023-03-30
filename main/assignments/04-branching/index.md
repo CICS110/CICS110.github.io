@@ -970,8 +970,8 @@ As an example, we can interpret `weights_1` as follows: Anything $\geq$ 93 shoul
 
 Example:
 ```py
-get_cumulative(86.25, weights_1) #This should return 'B'
-get_cumulative(86.25, weights_2) #This should return 'B-'
+determine_grade(86.25, weights_1) #This should return 'B'
+determine_grade(86.25, weights_2) #This should return 'B-'
 ```
 
 ### **4j. Print Grade Report** (1 point)
