@@ -540,7 +540,7 @@ Out of guesses, answer was: 31
 
 Hint: You should be calling all functions from 4a to 4c here.
 
-## **5. Implement `tic_tac_toe.py`**
+## **5. Implement `tic-tac-toe.py`**
 
 In this problem, you will be implementing the classic tic-tac-toe game. The game is played between two people on a 3x3 grid. Player 1 is X and Player 2 is O. Each player (starting with Player 1) takes turns marking an empty square on the board. The first player to get three marks in a row (either horizontally, vertically, or diagonally) wins the game. It is possible for games to end in a tie, where no one wins.
 
@@ -585,7 +585,7 @@ While 5a created a structure for storing the Xs and Os of our board using nested
 def print_board(board)
 ```
 
-`board` is the 3x3 nested list structure. This function should print (not return) the board like in the examples in the `tic_tac_toe.py` description above. At this point, you can test your function on an empty board, like in Example 1, as well as a hard-coded board, like in Example 2.
+`board` is the 3x3 nested list structure. This function should print (not return) the board like in the examples in the `tic-tac-toe.py` description above. At this point, you can test your function on an empty board, like in Example 1, as well as a hard-coded board, like in Example 2.
 
 Example 1:
 ```py
