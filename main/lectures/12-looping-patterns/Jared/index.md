@@ -404,7 +404,7 @@ print(points_comp)
 
 Outer-to-inner to left-to-right, expression brought to the front.
 
-## Apotheosis (More Examples)
+## Apotheosis (Absurd Examples)
 
 Combining all these things can allow you to do some incredibly complex tasks in remarkably dense code.
 When fundamentals are cemented and you start incorporating these sorts of things,
@@ -413,3 +413,18 @@ than writing code.
 But when a something you've spent the time to schemingly craft works, it feels really good.
 
 I'll have some examples of more complicated things here as I think of them.
+
+Maybe instead of a list of factors for a number,
+you want a dictionary with numbers as keys and a sets of factors as values.
+```py live_py title=Factors_Dict
+nums = [12, 25, 50, 60, 100]
+factor_dict = {num:{i for i in range(1,num) if num % i == 0} for num in nums}
+print("\n".join([f"{num:>3d}: {factors}" for num,factors in factor_dict.items()]))
+```
+There is a set comprehension inside the dictionary comprehension
+(since the value is a set of factors).
+As for the print: I could have have done a for loop like a sane person,
+but I can also to `.join()` of a list comprehension.
+This print list comprehension also leverages destructuring for convenience.
+
+
