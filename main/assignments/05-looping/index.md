@@ -494,7 +494,7 @@ The function should print "Too High" and return `False` if the guess is greater 
 
 Example:
 ```py
-compare(5, 7)   # Should print "Too High!" and return False
+compare(5, 7)   # Should print "Too High" and return False
 compare(5, 2)   # Should print "Too Low" and return False
 compare(5, 5)   # Should print "That's It!" and return True
 ```
