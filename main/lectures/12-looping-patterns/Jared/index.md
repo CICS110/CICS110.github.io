@@ -414,20 +414,20 @@ But when a something you've spent the time to schemingly craft works, it feels r
 
 I'll have some examples of more complicated things here as I think of them.
 
-In the following we have a list of adjectives and nouns,
-and we want to get all combinations, with the correct article too.
-For instance "red" and "house" would produce "a red house".
+In the following I have a list of adjectives and nouns,
+and I want to get all combinations, with the correct article too.
+For instance, "red" and "house" would produce "a red house".
 ```py live_py title=Adj_Noun
 adjs = ["red", "orange", "blue", "enormous", "small", "awful", "scary"]
 nouns = ["fruit", "house", "snake", "fate"]
 adj_nouns = {f"{'an' if adj[0] in 'aeiou' else 'a'} {adj} {noun}" for adj in adjs for noun in nouns}
 print("\n".join(adj_nouns))
 ```
-Chained for loops and an f-string expression with a ternary inside.
-For the density, I'm doing `"\n".join()` for prints instead of a for loop.
+There are chained for loops and an f-string expression with a ternary inside.
+For densities sake, I'm doing `"\n".join()` for prints instead of a for loop.
 
 In the following, instead of a list of factors for a number like earlier,
-I want a dictionary with numbers as keys and a sets of factors as values.
+I want a dictionary with numbers as keys and sets of factors as values.
 ```py live_py title=Factors_Dict
 nums = [12, 25, 50, 60, 100]
 factor_dict = {num:{i for i in range(1,num) if num % i == 0} for num in nums}
@@ -438,3 +438,13 @@ There is a set comprehension inside the dictionary comprehension
 As for the print: I could have have done a for loop like a sane person,
 but I can also do `.join()` on a list comprehension.
 This print list comprehension also leverages destructuring for convenience.
+
+The following was code I made to display a circle based on the points in said circle.
+I chose to cut off the most extreme points (so displaying from $-(r-1)$ to $(r-1)$ inclusive).
+```py live_py title=Print_Circle
+r = 20
+points = [(x,y) for x in range(-r, r+1) for y in range(-r, r+1) if x ** 2 + y ** 2 <= r ** 2]
+print("\n".join([" ".join([("•" if (x,y) in points else " ") for x in range(-r+1, r)]) for y in range(r-1, -r, -1)]))
+```
+There is a `.join()` on a list comprehension, whose expression is itself
+a `.join()` on a list comprehension, whose expression is a ternary operator.
