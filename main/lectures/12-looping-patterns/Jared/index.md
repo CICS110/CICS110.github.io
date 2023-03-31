@@ -404,7 +404,7 @@ print(points_comp)
 
 Outer-to-inner to left-to-right, expression brought to the front.
 
-## Apotheosis (Absurd Examples)
+## Apotheosis (More Exotic Examples)
 
 Combining all these things can allow you to do some incredibly complex tasks in remarkably dense code.
 When fundamentals are cemented and you start incorporating these sorts of things,
@@ -414,8 +414,20 @@ But when a something you've spent the time to schemingly craft works, it feels r
 
 I'll have some examples of more complicated things here as I think of them.
 
-Maybe instead of a list of factors for a number,
-you want a dictionary with numbers as keys and a sets of factors as values.
+In the following we have a list of adjectives and nouns,
+and we want to get all combinations, with the correct article too.
+For instance "red" and "house" would produce "a red house".
+```py live_py title=Adj_Noun
+adjs = ["red", "orange", "blue", "enormous", "small", "awful", "scary"]
+nouns = ["fruit", "house", "snake", "fate"]
+adj_nouns = {f"{'an' if adj[0] in 'aeiou' else 'a'} {adj} {noun}" for adj in adjs for noun in nouns}
+print("\n".join(adj_nouns))
+```
+Chained for loops and an f-string expression with a ternary inside.
+For the density, I'm doing `"\n".join()` for prints instead of a for loop.
+
+In the following, instead of a list of factors for a number like earlier,
+I want a dictionary with numbers as keys and a sets of factors as values.
 ```py live_py title=Factors_Dict
 nums = [12, 25, 50, 60, 100]
 factor_dict = {num:{i for i in range(1,num) if num % i == 0} for num in nums}
@@ -424,7 +436,5 @@ print("\n".join([f"{num:>3d}: {factors}" for num,factors in factor_dict.items()]
 There is a set comprehension inside the dictionary comprehension
 (since the value is a set of factors).
 As for the print: I could have have done a for loop like a sane person,
-but I can also to `.join()` of a list comprehension.
+but I can also do `.join()` on a list comprehension.
 This print list comprehension also leverages destructuring for convenience.
-
-
