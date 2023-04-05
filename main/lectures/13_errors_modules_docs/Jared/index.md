@@ -147,8 +147,8 @@ And so that `user_num` is not undefined,
 we can have `user_num` set to 0 in the except block.
 
 ```py live_py title=Convert_Try_Except
-user_str = input("Please enter a number:")
 try:
+  user_str = input("Please enter a number:")
   user_num = float(user_str)
   print("Thank you for the legal input")
 except:
@@ -163,8 +163,8 @@ tries to convert input and resets if the input causes an error.
 
 ```py live_py title=Get_Input_Try_Except
 while True:
-  user_str = input("Please enter a number:")
   try:
+    user_str = input("Please enter a number:")
     user_num = float(user_str)
   except:
     print("Illegal input recieved")
@@ -172,6 +172,103 @@ while True:
   break
 print(f"user_num set to {user_num}")
 ```
+
+<details>
+<summary><b>Extra: `except Exception` </b></summary>
+
+We can specify a specific type of exception for `except` to handle.
+
+The syntax is simply to use `except exception_type:` instead of `except:`,
+where `exception_type` is some exception type.
+There are [lists of exception types online](https://www.w3schools.com/python/python_ref_exceptions.asp).
+We can also use `Exception` as a generic catch-most type
+(It catches all errors, the stuff it doesn't catch, you probably don't want to catch).
+
+```py live_py title=Convert_Try_Except_Specific
+try:
+  user_str = input("Please enter a non-zero number: ")
+  user_num = float(user_str)
+  inv_num = 1 / user_num
+  print("Thank you for the legal input")
+except ValueError:
+  print("Illegally formatted input recieved")
+  inv_num = 0
+print(f"inv_num set to {inv_num}")
+```
+
+In this above code, only `ValueError`s are handled.
+So an illegal input to `float()`, like `"foo"`, would be handled;
+but a legal input that causes a different error,
+like `"0"`, causing a `ZeroDivisionError`, would not.
+
+We can specify multiple specific errors via a tuple (or at least a tuple-looking thing).
+
+```py live_py title=Convert_Try_Except_Multiple_Specific
+try:
+  user_str = input("Please enter a non-zero number: ")
+  user_num = float(user_str)
+  inv_num = 1 / user_num
+  print("Thank you for the legal input")
+except (ValueError, ZeroDivisionError):
+  print("Illegally input recieved")
+  inv_num = 0
+print(f"inv_num set to {inv_num}")
+```
+
+Why does this ability to specify what exception(s) to handle help us?
+Because we can have multiple `except` clauses.
+This allows us to handle different types of errors differently.
+
+```py live_py title=Convert_Try_Except_Cases
+try:
+  user_str = input("Please enter a non-zero number: ")
+  user_num = float(user_str)
+  inv_num = 1 / user_num
+  print("Thank you for the legal input")
+except ValueError:
+  print("Illegally formatted input recieved")
+  inv_num = 0
+except ZeroDivisionError:
+  print("Zero recieved as input")
+  inv_num = 0
+except: # will catch any remaining Exceptions
+  # E.g., EOFError could be trigger via control-D (on unix-based systems) when asked for input
+  print("Unknown error encountered")
+  inv_num = 0
+print(f"inv_num set to {inv_num}")
+```
+
+</details>
+
+<details>
+<summary><b>Extra: `except Exception as var_name` </b></summary>
+
+We can store the exception as a variable in order to
+more readily extract some information from it
+(Exceptions are objects too, so can be stored in variables).
+
+The syntax is simply to use `except exception_type as var_name:`,
+where `exception_type` is again some exception type and `var_name` is a choice of variable name.
+Again, a [list of exception types](https://www.w3schools.com/python/python_ref_exceptions.asp).
+
+An example of using this to get some information out of the exception:
+
+```py live_py title=Convert_Try_Except_As
+try:
+  user_str = input("Please enter a non-zero number: ")
+  user_num = float(user_str)
+  inv_num = 1 / user_num
+  print("Thank you for the legal input")
+except Exception as err: # will catch any remaining Exceptions
+  print("Exception occured!")
+  print(f"Exception type: {type(err)}")
+  print(f"Exception args: {err.args}")
+  print(f"Exception print:\n{err}")
+  inv_num = 0
+print(f"inv_num set to {inv_num}")
+```
+
+</details>
 
 ### `else`
 
@@ -197,8 +294,8 @@ The input example from before could be refactored to look like this:
 
 ```py live_py title=Get_Input_Else
 while True:
-  user_str = input("Please enter a number:")
   try:
+    user_str = input("Please enter a number:")
     user_num = float(user_str)
   except:
     print("Illegal input recieved")
@@ -243,8 +340,8 @@ The earlier example about converting the input or defaulting to 0
 could be refactored to look like this:
 
 ```py live_py title=Convert_Finally
-user_str = input("Please enter a number:")
 try:
+  user_str = input("Please enter a number:")
   user_num = float(user_str)
   print("Thank you for the legal input")
 except:
@@ -298,8 +395,8 @@ while True:
 
 ```py live_py title=Finally_Continue
 while True:
-  user_str = input("Please enter a number:")
   try:
+    user_str = input("Please enter a number:")
     user_num = float(user_str)
   except:
     print(f"Illegal input recieved: {user_str}")
