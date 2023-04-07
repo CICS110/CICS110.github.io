@@ -127,7 +127,7 @@ In this exercise, you will implement an algorithm to count words frequency store
 
 #### 1.1 A FIRST ATTEMPT (3 points)
 
-```py live_py title=Word Count
+```py live_py title=Word_Count
 # The following story was created using ChatGPT
 
 text = "Once upon a time, there was a little girl named Lily who loved to explore. \
@@ -167,7 +167,7 @@ print(new_list)
 
 #### 1.3 DEVELOPING AN IMPLEMENTATION (2 points)
 
-```py live_py title=Your Word Count
+```py live_py title=Your_Word_Count
 # The following story was created using ChatGPT
 
 text = "Once upon a time, there was a little girl named Lily who loved to explore. \
@@ -203,7 +203,7 @@ Here is one way to go about this problem. Say I have $13$ books on my bookshelf.
     <li> Use the following code to implement your solution. (1 point) (4 minutes) </li>
 </ol>
 
-```py live_py title=Your Book Count
+```py live_py title=Your_Book_Count
 listOfBooks = [{'title':'Harry Potter', 'Author':'J.K. Rowling'}]
 listOfBooks.append({'title':'Fantastic Beasts & Where to Find Them', 'Author':'J.K. Rowling'})
 listOfBooks.append({'title':'Quidditch Through the Ages', 'Author':'J.K. Rowling'})
