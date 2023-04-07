@@ -355,7 +355,7 @@ print(f"lst_g (global, after) : {lst_g}")
 
 As for **why** you see this difference in behaviour,
 the technical stuff is somewhat outside of scope for this class,
-so I'll include it in sections below (when time permits), but a very short overview:
+so I'll include it in sections below, but a very short overview:
 * When you pass a parameter to the function, **it is the same object in memory**
 * `y += 1` didn't change the object `int` `5` to `int` `6`,
 it set the variable `y` to `int` `6` (and so `y` and `x` no longer referred to the same object).
@@ -363,7 +363,7 @@ it set the variable `y` to `int` `6` (and so `y` and `x` no longer referred to t
 `list` `[3, 1, 4]` (`lst_f` and `lst_g` still referred to the same object,
 and so that change was reflected in `lst_g`).
 
-Stepping through these examples and code in the lecture slides in pythontutor
+Stepping through these examples and code in the lecture slides in pythontutor.com
 may be helpful in visualising this distinction.
 
 But as for what you need to really remember right now:
@@ -389,6 +389,204 @@ a slightly different way in which I conceptualise mutability.
 
 ---
 
-[CONTENT TO COME]
+### Variables and Addresses
 
+Mutability isn't actually about "if we change the object, does that change persist",
+It's about "can we **truly** change the **object itself**,
+or do we end up making **clones/new objects**".
 
+Earlier in the semester, we introduced memory diagrams, talked about
+objects as value-type bundles, and associated those with variable names
+(like `x|6|int` and `y|"Hello"|str`).
+
+That model has some issues. The object bundling is fine,
+but the issue is that multiple variable names can be associated with the same object.
+
+So we have our objects (value-type bundles). Every object exists somewhere in the vast
+aether-soup of memory. The location where it lives/exists is called its address.
+We humans also generally live at addresses, though ours are more complicated.
+The object addresses are just numbers, like 12345 (as opposed to 12345 Aether-Soup Lane).
+
+Variables are technically probably more like nicknames for these address than anything else.
+We can get the address of the object associated with a variable with the `id()` function.
+
+```py live_py title=Id
+x = 31415
+y = "Hello"
+z = False
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+print(f"z referes to the {type(z).__name__:>4} {z} at address {id(z):>11} Aether-Soup Lane")
+```
+
+(Why is the web-python giving negative addresses for `int`s?
+That makes no sense. This thing is cursed.)
+
+Here's where things get dicey. Two variables can refer to the **same object**,
+we'll see this when we pass things to function, but even simple assignment has this effect.
+
+```py live_py title=Id_Equal
+x = "Hello"
+y = x
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+```
+
+Notice, `y = x` doesn't copy `x` to `y`, it makes them reference the
+**exact same object in memory**.
+
+And here's where mutability comes in. If a type is immutable,
+then no methods or operations associated with that type will change the value of
+the object, so no weird issues arise.
+
+```py live_py title=Id_Upper
+x = "Hello"
+y = x
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+
+print("CAPITALISING")
+z = x.upper() # returns a new object
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+print(f"z referes to the {type(z).__name__:>4} {z} at address {id(z):>11} Aether-Soup Lane")
+```
+
+But for mutable types, some methods or operations may change the value of the object,
+and that will be visible to every variable referring to that object.
+
+```py live_py title=Id_Update
+x = [3, 1, 4, 1, 5]
+y = x
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+
+print("UPDATING")
+x[4] = 6 # changes (mutates) an existing object
+
+print(f"x referes to the {type(x).__name__:>4} {x} at address {id(x):>11} Aether-Soup Lane")
+print(f"y referes to the {type(y).__name__:>4} {y} at address {id(y):>11} Aether-Soup Lane")
+```
+
+### Variables and Passing
+
+When we start passing things to functions,
+this issue arises again and feels even more obscured.
+The parameter of the function and the variable passed in
+both reference the same object.
+
+```py live_py title=Passing_Id
+def print_text(text):
+  print(f"print_text's text  : (lives at {id(text)}): {text}")
+
+word = "Hello!"
+
+print(f"global word, before: (lives at {id(word)}): {word}")
+print_text(word)
+print(f"global word, after : (lives at {id(word)}): {word}")
+```
+
+And so if a mutable type is passed to a function,
+and we update the value of the object passed in,
+this change is visible outside the function.
+
+```py live_py title=Passing_Updating
+def print_num(nums):
+  print(f"print_num's nums, before: (lives at {id(nums)}): {nums}")
+  # This updates the object
+  nums[4] = 6
+  print(f"print_num's nums, after : (lives at {id(nums)}): {nums}")
+
+num_list = [3, 1, 4, 1, 5]
+
+print(f"global num_list,  before: (lives at {id(num_list)}): {num_list}")
+print_num(num_list)
+print(f"global num_list,  after : (lives at {id(num_list)}): {num_list}")
+```
+
+### Mutating Operations
+
+As a final complicating factor, even if a type is mutable, not every operation, method,
+or action associated with it will mutate it.
+
+Compare the two below, which actually behave remarkably differently.
+
+```py live_py title=Passing_Append
+def print_num(nums):
+  print(f"print_num's nums, before: (lives at {id(nums)}): {nums}")
+  # This updates the object
+  nums += [9]
+  print(f"print_num's nums, after : (lives at {id(nums)}): {nums}")
+
+num_list = [3, 1, 4, 1, 5]
+
+print(f"global num_list,  before: (lives at {id(num_list)}): {num_list}")
+print_num(num_list)
+print(f"global num_list,  after : (lives at {id(num_list)}): {num_list}")
+```
+
+```py live_py title=Passing_Add
+def print_num(nums):
+  print(f"print_num's nums, before: (lives at {id(nums)}): {nums}")
+  # This creates a new object from the existing two
+  nums = nums + [9]
+  print(f"print_num's nums, after : (lives at {id(nums)}): {nums}")
+
+num_list = [3, 1, 4, 1, 5]
+
+print(f"global num_list,  before: (lives at {id(num_list)}): {num_list}")
+print_num(num_list)
+print(f"global num_list,  after : (lives at {id(num_list)}): {num_list}")
+```
+
+So if you want to get really granular, you just need to be careful around the use
+of mutating operations/methods.
+
+### Copying the Avoid This
+
+Alright, so what if you want to pass a mutable type,
+and mutate it in a function, but not have that alter things outside the function.
+
+Well, you can always pass a copy to the function.
+There is, in fact, a module for that: the `copy` module.
+In particular, `copy.deepcopy()` should ensure you have a deep enough copy to avoid this issue.
+
+```py live_py title=Passing_Copy
+import copy
+
+def print_num(nums):
+  print(f"print_num's nums, before: (lives at {id(nums)}): {nums}")
+  nums += [9]
+  print(f"print_num's nums, after : (lives at {id(nums)}): {nums}")
+
+num_list = [3, 1, 4, 1, 5]
+
+print(f"global num_list,  before: (lives at {id(num_list)}): {num_list}")
+print_num(copy.deepcopy(num_list))
+print(f"global num_list,  after : (lives at {id(num_list)}): {num_list}")
+```
+
+That's it. You could also have the copying done inside the function if you wanted to.
+That actually might make more sense since you could forget about the need to do
+it once the function is done.
+
+```py live_py title=Making_Copy
+import copy
+
+def print_num(nums):
+  nums = copy.deepcopy(nums)
+  print(f"print_num's nums, before: (lives at {id(nums)}): {nums}")
+  nums += [9]
+  print(f"print_num's nums, after : (lives at {id(nums)}): {nums}")
+
+num_list = [3, 1, 4, 1, 5]
+
+print(f"global num_list,  before: (lives at {id(num_list)}): {num_list}")
+print_num(num_list)
+print(f"global num_list,  after : (lives at {id(num_list)}): {num_list}")
+```
