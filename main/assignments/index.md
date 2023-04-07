@@ -25,6 +25,9 @@ The [participation assignments](/main/information/syllabus#participation) can be
 - Participation 3 (B: Th 2/23, D: Th 3/2)
 - Participation 4 (B: Th 3/2, D: Th 3/9)
 - Participation 5 (B: Th 3/9, D: Th 3/23)
+- Participation 6 (B: Th 3/23, D: Th 3/30)
+- Participation 7 (B: Th 3/30, D: Th 4/6)
+- Participation 8 (B: Th 4/6, D: Th 4/13)
 
 ## Quizzes
 
@@ -38,6 +41,9 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 - Quiz 4 Week 3 (B: Th 2/23, D: Th 3/2)
 - Quiz 5 Week 4 (B: Th 3/2, D: Th 3/9)
 - Quiz 6 Week 5 (B: Th 3/9, D: Th 3/23)
+- Quiz 7 Loops (B: Th 3/23, D: Th 3/30)
+- Quiz 8 Dicts, Sets, Comprehensions (B: Th 3/30, D: Th 4/6)
+- Quiz 9 Try, Except, Modules (B: Th 4/6, D: 4/13)
 
 ## Homework
 
@@ -45,8 +51,9 @@ This course assigns [weekly quizzes](/main/information/syllabus#quizzes). They c
 
 - [Homework 01 Variables and Expressions](/main/assignments/variables-expressions) (B: We 2/15, D: 2/22)
 - [Homework 02 Functions and Booleans](/main/assignments/functions-booleans) (B: Th 2/23, D: ~~We 3/1~~ Fr 3/3 )
-- [Homework 03 Sequence Types](/main/assignments/sequence-types) (B: Fr 3/3, Fr 3/10)
-- [Homework 04 Branching](/main/assignments/branching) (B: Mo 3/20, We 3/29)
+- [Homework 03 Sequence Types](/main/assignments/sequence-types) (B: Fr 3/3, D: Fr 3/10)
+- [Homework 04 Branching](/main/assignments/branching) (B: Mo 3/20, D: We 3/29)
+- [Homework 05 Looping](/main/assignments/looping) (B: We 3/29, D: We 4/12)
 
 ## Labs
 
@@ -59,7 +66,9 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 - [Lab 03 Booleans and Assert](/main/labs/assert) (B: Fr 2/24, D: Fr 2/24)
 - [Lab 04 List Slicing](/main/labs/collections) (B: Fr 3/3, D: Fr 3/3)
 - [Lab 05 Conditionals](/main/labs/branching-diagrams) (B: Fr 3/10, D: Fr 3/10)
-- Lab 06 Loops (B: Fr 3/24, D: Fr 3/24)
+- [Lab 06 Loops](/main/labs/looping) (B: Fr 3/24, D: Fr 3/24)
+- [Lab 07 Sets and Dictionaries](/main/labs/sets-dicts) (B: Fr 3/31, D: Fr 3/31)
+- [Lab 08 Modules and Exceptions](/main/labs/modules-exceptions) (B: Fr 4/7, D: Fr 4/7)
 
 ## Capstone Project
 
