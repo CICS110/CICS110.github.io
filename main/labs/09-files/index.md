@@ -23,9 +23,9 @@ If you have questions about the expected level of detail on questions asking for
 
 ### 1. Reading Syntax (1 point)
 
-This question is just a refresher on file access syntax. Write three line program that opens the file `instructions.txt`, reads out its contents, stores them in a variable named `text`, and closes the file.
+This question is just a refresher on file access syntax. Write a three line program that opens the file `instructions.txt`, reads out its contents, stores them in a variable named `text`, and closes the file.
 
-Your submission should consist of only 3 lines of Python code. No explanation is needed.
+Your submission should consist of only 3 lines of Python code. No explanation is needed. You may assume that `instructions.txt` is in the same directory as your Python file.
 
 ### 2. Write vs. Append (1 point)
 
