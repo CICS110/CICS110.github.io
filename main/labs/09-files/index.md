@@ -73,10 +73,10 @@ As a hint, your solution should not involve any reading of the input file outsid
 
 Below are how many points translate to what level on the 5-point scale.
 
-### 1: Below Standards: 0-1 point
+### 1: Below Standards: 0 points
 
 ### 2: Approaching Standards: 2 points
 
 ### 3: Meeting Standards: 3 points
 
-### 4: Exceeding Standards: 4-5 points
+### 4: Exceeding Standards: 4 points
