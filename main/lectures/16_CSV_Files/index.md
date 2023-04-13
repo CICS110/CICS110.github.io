@@ -23,3 +23,15 @@ import { PowerPoint } from '@site/src/components/PowerPoint'
     <PowerPoint lec_src={require('./Lecture_16_Cole.pptx').default}/>
   </TabItem>
 </Tabs>
+
+## CSV File
+
+[my_csv.csv Download](./my_csv.csv)
+
+my_csv.csv Contents:
+```
+Name,Price,Quantity
+Pen,0.2,3
+Pineapple,3.84,2
+Apple,0.79,6
+```
