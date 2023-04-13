@@ -129,7 +129,7 @@ The `# Author`/`# Authors`, `# Email`/`# Emails`, and `# Spire ID`/`# Spire IDs`
 
 Some copying and pasting here will save you some time and sanity.
 
-Note that these details are necessary for the autograder to recognize your solution.
+Note that these details are necessary for the auto-grader to recognize your solution.
 
 ## **1. Implement `basic_io.py` (REQUIRED)**
 
@@ -139,7 +139,7 @@ It can be somewhat overwhelming to start working with files. This problem is int
 
 In this problem, you will implement some simple functions that will help you get comfortable with file handling in Python.
 
-Note that every part of this problem will require an informative error message if there is an exception while opening a file. If you call a function from an earlier part that already catches exceptions, then you should not have to implement an exception handler in the current function. For example, if your ```read_string``` function handles an exception and you call ```read_string``` from ```read_lines```, then your ```read_lines``` function won't require an exception check. Also note that the autograder will be looking for the exact error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file.
+Note that every part of this problem will require an informative error message if there is an exception while opening a file. If you call a function from an earlier part that already catches exceptions, then you should not have to implement an exception handler in the current function. For example, if your ```read_string``` function handles an exception and you call ```read_string``` from ```read_lines```, then your ```read_lines``` function won't require an exception check. Also note that the auto-grader will be looking for the exact error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file.
 
 ### **1a. Implement `read_string` (1 point)**
 
@@ -660,13 +660,13 @@ then you should get the following output:
 }
 ```
 
-*Hint: Use `read_lines` to read the contents of the file and store it in a variable, say `text`. To count the number of lines, simply take the length of `text`. To count the number of sentences, you can simply count the occurences of `.`. To count the number of words, split the lines in `text` and take the length of the list(s) so obtained. To count occurences of numbers, characters and digits, iterate over all words, maintaining and updating counters for each of these. You can identify if a character is a digit using `string.digits`. Likewise, you can identify if a character is an alphabet using `string.ascii_letters`.*
+*Hint: Use `read_lines` to read the contents of the file and store it in a variable, say `text`. To count the number of lines, simply take the length of `text`. To count the number of sentences, you can simply count the occurrences of `.`. To count the number of words, split the lines in `text` and take the length of the list(s) so obtained. To count occurrences of numbers, characters and digits, iterate over all words, maintaining and updating counters for each of these. You can identify if a character is a digit using `string.digits`. Likewise, you can identify if a character is an alphabet using `string.ascii_letters`.*
 
 ### **3b. Implement `get_info_files` (2 points)**
 
 In the previous problem, we analyzed a single file for statistics such as sentence count, word count, etc. In this problem, we will analyze the same statistics for multiple files.
 
-Your task is to implement a function that takes as argument a list `fname_list` containing names of certain files. If a file in the list cannot be opened, it should be ignored (and an erorr message should be displayed, but if you're calling ```get_info``` from this function then you shouldn't need to reimplement the error message logic). This function should return a dictionary formatted as under reporting the following statistics:
+Your task is to implement a function that takes as argument a list `fname_list` containing names of certain files. If a file in the list cannot be opened, it should be ignored (and an error message should be displayed, but if you're calling ```get_info``` from this function then you shouldn't need to reimplement the error message logic). This function should return a dictionary formatted as under reporting the following statistics:
 
 ```
 {
@@ -753,7 +753,7 @@ then you should get the following output:
 
 ### **3c. Implement `word_and_number_counts` (2 points)**
 
-Analyzing a file can help us understand the contents of the file better. In this problem, you will count the occurences of words in a given file.
+Analyzing a file can help us understand the contents of the file better. In this problem, you will count the occurrences of words in a given file.
 
 Your task is to implement a function that takes as argument the name of a file `fname`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, the function returns a dictionary that displays each word and number in the file as key and its count in the file as the value.
 
@@ -809,7 +809,7 @@ then you should get the following output:
     'uca': 1
 }
 ```
-Notice that in context of this problem, `110` is considered to be a word and its occurences are counted. That is, numbers are left in string form so the function is technically counting the occurences of words and numbers.
+Notice that in context of this problem, `110` is considered to be a word and its occurrences are counted. That is, numbers are left in string form so the function is technically counting the occurrences of words and numbers.
 
 *Hint: By now you probably know how to get a list of words after reading a file. If not, take a look at the hint in 3a. Once you have this list, iterate over all the words in this list, adding the word as a key to the dictionary with value 1 if the word is initially not present in the dictionary. Otherwise, if the word is present in the dictionary, increment the value by 1. This is similar to what you did in Lab 7.*
 
@@ -912,7 +912,7 @@ then you should get the following output:
 
 ### **3e. Implement `letter_and_digit_counts` (2 points)**
 
-Analyzing a file can help us understand the contents of the file better. In this problem, will count the occurences of characters in a given file.
+Analyzing a file can help us understand the contents of the file better. In this problem, will count the occurrences of characters in a given file.
 
 Your task is to implement a function that takes as argument the name of a file `fname`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, the function returns a dictionary that displays each character in the file as key and its count in the file as the value. It should return `None` if the file is empty.
 
@@ -1065,7 +1065,7 @@ then you should get the following output:
 ## **4. Implement `csv_parse.py`**
 In this problem, you will learn how to parse a CSV file. A CSV file, short for Comma-Separated Values, is a plain text file that contains data in a tabular format, with each row representing a record and each column representing a field. The values in each field are separated by a comma. CSV files can be opened and edited by many different software applications, including spreadsheet programs like Microsoft Excel, and are commonly used for data storage, transfer, and analysis.
 
-Below is an example of ```students.csv```. Each row represents a record for a different student. Each record has 12 values (seperated by commas) that correspond to 12 different fields: student name, section, score1, score2, ..., score10. We will work with the following ```students.csv``` for this problem (note that the autograder will use a version of ```students.csv``` with more students and sections).
+Below is an example of ```students.csv```. Each row represents a record for a different student. Each record has 12 values (separated by commas) that correspond to 12 different fields: student name, section, score1, score2, ..., score10. We will work with the following ```students.csv``` for this problem (note that the auto-grader will use a version of ```students.csv``` with more students and sections).
 ```
 Noa Marijus,A,91.4,82.53,86.52,84.7,81.69,84.11,86.29,91.63,92.42,94.7
 Christa Maple,B,97.37,80.58,88.78,68.53,88.3,73.72,74.44,79.22,78.09,74.82
@@ -1100,7 +1100,7 @@ Example of returned list of dictionaries:
  {'name': 'Ryanne Rusty', 'section': 'A', 'scores': [96.2, 80.3, 88.78, 68.53, 88.3, 73.72, 74.44, 79.22, 78.09, 75.32], 'average': 80.29}]
 ```
 
-If ```read_lines``` returns ```None```, then an error occured when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```lines``` is ```None```. This check should happen before creating the dictionary.
+If ```read_lines``` returns ```None```, then an error occurred when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```lines``` is ```None```. This check should happen before creating the dictionary.
 
 *Hint: Since each record of the CSV is a comma-separated string, you can use ```.split(',')``` to split the string into a list. You can then index this list to retrieve specific values. For example, given the string ```txt = "apple,banana,carrot,donut"```, I can split the string by calling ```txt.split(',')``` which will return ```["apple", "banana", "carrot", "donut"]```. I can now get the 1st value by indexing the list at index 0: ```list[0]```. Splitting and indexing can also be done in one line: ```txt.split(',')[0]```.*
 
@@ -1113,7 +1113,7 @@ The function should have the following signature:
 def write_csv(fname, student_list)
 ```
 
-```fname``` is the filename (e.g., 'output.txt') and ```student_list``` is the contents of the CSV file in a list data structure (i.e., the output of ```read_csv```). For each dictionary in students_list, you need to create a string that contains the student name, section, and 10 scores with commas seperating each value. That is, the string should be identical to one record in the original CSV file.
+```fname``` is the filename (e.g., 'output.txt') and ```student_list``` is the contents of the CSV file in a list data structure (i.e., the output of ```read_csv```). For each dictionary in students_list, you need to create a string that contains the student name, section, and 10 scores with commas separating each value. That is, the string should be identical to one record in the original CSV file.
 
 Example of ```output.txt```:
 ```
@@ -1125,7 +1125,7 @@ Ryanne Rusty,A,96.2,80.3,88.78,68.53,88.3,73.72,74.44,79.22,78.09,75.32
 
 Since ```write_lines``` takes a list as the second parameter, we want to store each of these strings in a single list and pass this list to ```write_lines```.
 
-*Hint: Although it can be done, you are highly encouraged to NOT implement this function using only one line of code. Rather, it will be easier to tackle this problem using a loop (e.g., ```for student in student_list```) and using variables for the multiple pieces (e.g., ```name = student['name']```). For getting the scores to print in a comma-serperated string, you can use python's ```map``` function to map the scores to a string, and then ```join``` the mapping into a string using a comma as a seperator (e.g., ```','.join(...)```).*
+*Hint: Although it can be done, you are highly encouraged to NOT implement this function using only one line of code. Rather, it will be easier to tackle this problem using a loop (e.g., ```for student in student_list```) and using variables for the multiple pieces (e.g., ```name = student['name']```). For getting the scores to print in a comma-separated string, you can use python's ```map``` function to map the scores to a string, and then ```join``` the mapping into a string using a comma as a separator (e.g., ```','.join(...)```).*
 
 ## **5. Implement `csv_split.py`**
 CSV files can hold a lot of data. For this reason, it is common to want to filter or split on values. In this problem, you will practice both filtering and splitting on section and average. We will continue to work with ```students.csv``` for this problem.
@@ -1175,7 +1175,7 @@ could return:
 ```
 
 ### **5c. Implement `split_section` (3 point)**
-Splitting refers to splitting the file into multiple, smaller files based on some criteria. We wish to split ```students.csv``` into multiple files, one for each section: ```students_section_A.csv``` and ```students_section_B.csv``` (note that the ```students.csv``` used by the autograder will have an unknown number of sections). Each file will contain only records for students belonging to each respective section.
+Splitting refers to splitting the file into multiple, smaller files based on some criteria. We wish to split ```students.csv``` into multiple files, one for each section: ```students_section_A.csv``` and ```students_section_B.csv``` (note that the ```students.csv``` used by the auto-grader will have an unknown number of sections). Each file will contain only records for students belonging to each respective section.
 
 The function should have the following signature:
 
@@ -1185,7 +1185,7 @@ def split_section(fname)
 
 ```fname``` is the original filename (e.g., 'students.csv'). Your function should do the following in order:
 * Read the CSV file by calling ```read_csv``` in ```csv_parse```. Let's call the output of ```read_csv``` ```students```.
-* If ```read_csv``` returns ```None```, then an error occured when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
+* If ```read_csv``` returns ```None```, then an error occurred when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
 * Get a set of sections. DO NOT hardcode a set. Rather, use set comprehensions to find all sections in ```students```. Let's call this set ```sections```.
 * For each section in ```sections```, filter the ```students``` by ```section``` and use ```write_csv``` in ```csv_parse``` to write the contents to a file named ```students_section_?.csv```, where ```?``` is the actual section (e.g., ```students_section_A.csv```).
 
@@ -1231,7 +1231,7 @@ When working with data, it is common to calculate statistics (e.g., mean, min, m
 
 You will need to use the functions you implemented in ```basic_io.py```, ```csv_parse.py```, and ```csv_split``` here, so be sure to import all three at the top of ```csv_stats.py```.
 
-Note: 6a and 6b are recommended helper functions that will not be tested by the autograder. You are encouraged to test them locally.
+Note: 6a and 6b are recommended helper functions that will not be tested by the auto-grader. You are encouraged to test them locally.
 
 ### **6a. Implement `get_stats`**
 The first thing we need to do is create a function that will calculate all of the stats we wish to work with. Given a list of numbers called ```num```, we can calculate the mean, min, max, range, and standard deviation by using several built-in python functions:
@@ -1293,7 +1293,7 @@ should return:
 ```
 
 ### **6c. Implement `write_assignment_stats` (3 points)**
-We are now ready to write the stats for each assignment to a seperate file. The function will look similar to ```split_section``` and ```split_average``` in ```csv_split```, however we are outputting all stats to a single file called ```students_stats.csv```.
+We are now ready to write the stats for each assignment to a separate file. The function will look similar to ```split_section``` and ```split_average``` in ```csv_split```, however we are outputting all stats to a single file called ```students_stats.csv```.
 
 The function should have the following signature:
 
@@ -1303,7 +1303,7 @@ def write_assignment_stats(fname)
 
 ```fname``` is the original filename (e.g., 'students.csv'). Your function should do the following in order:
 * Read the CSV file by calling ```read_csv``` in ```csv_parse```. Let's call the output of ```read_csv``` ```students```.
-* If ```read_csv``` returns ```None```, then an error occured when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
+* If ```read_csv``` returns ```None```, then an error occurred when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
 * Get the average stats and assignment stats by calling ```get_assignment_stats```.
 * Output each dictionary of stats as a single line to ```students_stats.csv```.
 The stats should output in the following order: min, max, range, mean, and std\_dev. The first line should be the stats for average, and the remaining lines should each be the stats for one of the assignments (in order). Thus,  ```students_stats.csv``` should have 11 lines.
@@ -1317,7 +1317,7 @@ Example of the first 3 lines of ```student_stats.csv```:
 ```
 
 ### **6d. Implement `write_section_assignment_stats` (3 points)**
-Similar to ```write_assginment_stats```, we will write the assignment stats to a seperate file. This time, we will write to multiple files, namely one for each section: ```students_section_A_stats.csv``` and ```students_section_B_stats.csv``` (note that the ```students.csv``` used by the autograder will have an unknown number of sections).
+Similar to ```write_assginment_stats```, we will write the assignment stats to a separate file. This time, we will write to multiple files, namely one for each section: ```students_section_A_stats.csv``` and ```students_section_B_stats.csv``` (note that the ```students.csv``` used by the auto-grader will have an unknown number of sections).
 
 The function should have the following signature:
 
