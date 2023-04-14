@@ -46,7 +46,7 @@ After 3 weeks of logging my water intake and one hundred total entires, I open t
 
 ### 4. More Books (2 points)
 
-I own *lots* of books, so many that I can't remember all their names, much less where they all are in my house. Instead, I keep a single file named `books.txt` that contains a list of the title of every book, each on it's own line. The first few lines of the file are shown below:
+I own *lots* of books, so many that I can't remember all their names, much less where they all are in my house. Instead, I keep a single file named `books.txt` that contains a list of the title of every book, each on its own line. The first few lines of the file are shown below:
 
 ```plaintext
 Ender's Game
