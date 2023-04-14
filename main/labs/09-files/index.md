@@ -59,7 +59,7 @@ Curious George
 
 #### 4.1 Get Titles (1 point)
 
-Write a function `get_titles` that takes in the file path as its single parameter, and reads in all the titles from the file, and returns a set of all the book titles listed in the file. Make sure you close the file before you return.
+Write a function `get_titles` that takes in the file path as its single parameter, reads in all the titles from the file, and returns a set of all the book titles listed in the file. Make sure you close the file before you return.
 
 Your submission should consist of only Python code. No explanation is needed. You can assume the file path parameter is a valid path, and the file is safe to open.
 
