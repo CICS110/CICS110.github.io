@@ -18,7 +18,7 @@ During the semester, you utilized programming fundamentals to solve various real
 * Include at least 5 functions that you have created and called elsewhere in the code.
 * Include branching logic. You must use at least one if-elif-else statement.
 * Use assert statements to test your branching logic.
-* Include looping. You must use at least one for loop AND at least one whle loop. The while loop must include a break statement and/or a continue statement inside the loop.
+* Include looping. You must use at least one for loop AND at least one while loop. The while loop must include a break statement and/or a continue statement inside the loop.
 * Include a comprehension for at least one of the following: mapping or filtering.
 * Include logic for working with a file You must read from and/or write to a file. The file could be a text file or a csv file.
 * Create and use a class with at least two methods (*we will discuss classes in lecture soon*).
@@ -36,7 +36,7 @@ There are **6 steps** to this project. Below is a timeline for all parts. **All 
 
 ### Step 1. Select a Real-World Problem
 
-By no means do we expect you to solve life’s biggest challenges. You don’t have to find a cure for cancer or dominate the AI chatbot race. The key here is to select a problem that is interesting to you and **IS MANAGEABLE TO SOLVE BEFORE THE CAPSTONE DUE DATE**. You must also be able to solve your problem using **ALL** of the required concepts/skills listed above. We highly encourage you to discuss your project idea with your instructor and/or lab TA. **You must propose your project idea by April 28st (11:59pm) via Moodle**. 
+By no means do we expect you to solve life’s biggest challenges. You don’t have to find a cure for cancer or dominate the AI chatbot race. The key here is to select a problem that is interesting to you and **IS MANAGEABLE TO SOLVE BEFORE THE CAPSTONE DUE DATE**. You must also be able to solve your problem using **ALL** of the required concepts/skills listed above. We highly encourage you to discuss your project idea with your instructor and/or lab TA. **You must propose your project idea by April 28th (11:59pm) via Moodle**. 
 
 Here are some example project ideas:
 * Calendar application for scheduling meetings (similar to YouCanBook.me)
@@ -45,7 +45,7 @@ Here are some example project ideas:
 
 ### Step 2. Make a Plan
 
-Before you start programming, you should plan out your solution. You don’t have to create a sophisticated plan, and your plan doesn’t have to be flawless (you should expect to face some hurdles during implementation). Rather, you should list the main steps you will need to take to solve the problem. For example, each homework question that you solved this semester was broken down into several parts (a, b, …). Each part was one step to solving the main problem. In doing this, we turned a large problem (like “implement wordle”) into several smaller and more manageable problems (like “get guess” and “complete one turn”). You should think about what steps you will need to take and what functions you will need to create to complete those steps. **When you propose your project idea on Moodle on April 21st (11:59pm), you will be asked to include your plan**.
+Before you start programming, you should plan out your solution. You don’t have to create a sophisticated plan, and your plan doesn’t have to be flawless (you should expect to face some hurdles during implementation). Rather, you should list the main steps you will need to take to solve the problem. For example, each homework question that you solved this semester was broken down into several parts (a, b, …). Each part was one step to solving the main problem. In doing this, we turned a large problem (like “implement Wordle”) into several smaller and more manageable problems (like “get guess” and “complete one turn”). You should think about what steps you will need to take and what functions you will need to create to complete those steps. **When you propose your project idea on Moodle on April 21st (11:59pm), you will be asked to include your plan**.
 
 Below is an example project plan for Wordle. Note how we tried to flag the main functions, loops, branchings, try/excepts, etc. **You don’t have to have every item in the requirements list flagged in your project plan, however, you should aim to have most items in there** (see Grading Scale below). You must have all requirements in your final implementation. In your plan, **you must include at least one decision tree diagram** that reflects a core branching component of your project.
 
