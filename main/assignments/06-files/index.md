@@ -219,7 +219,7 @@ you should get as output the following:
 
 Another fundamental task in file handling is to open a file and write `text` into the file, where `text` is some string.
 
-Your task is to implement a function that takes as argument the name of a file `fname` and a string `text`. The function should first attempt to open the file `fname`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, your code should write into the file `text`.
+Your task is to implement a function that takes as argument the name of a file `fname` and a string `text`. The function should first attempt to open the file `fname`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to write`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, your code should write into the file `text`.
 
 The function should have the following signature:
 
@@ -254,7 +254,7 @@ CICS 110 is an introductory python class.
 
 A quick variation is to open a file and write to it line by line i.e. every string in a provided list is written into the file line by line.
 
-Your task is to implement a function that takes as argument the name of a file `fname` and a list of strings `text`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, this function should use `write_string` to write the elements of `text` into the file `fname` line by line.
+Your task is to implement a function that takes as argument the name of a file `fname` and a list of strings `text`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to write`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, this function should use `write_string` to write the elements of `text` into the file `fname` line by line.
 
 The function should have the following signature:
 
@@ -291,7 +291,7 @@ World
 
 A third fundamental task in file handling is to open a file and write contents into it without erasing the existing contents of the file i.e. add new content at the end of the file.
 
-Your task is to implement a function that takes as argument the name of a file `fname` and a string `text`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, your code should write into the file `text` after the existing content of the file.
+Your task is to implement a function that takes as argument the name of a file `fname` and a string `text`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to append`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, your code should write into the file `text` after the existing content of the file.
 
 The function should have the following signature:
 
@@ -331,7 +331,7 @@ Ben is a UCA for CICS 110.Tanush is also a UCA.
 
 A quick variation is to open a file and append to it line by line i.e. every string in a provided list is written into the file line by line after the existing content in the file.
 
-Your task is to implement a function that takes as argument the name of a file `fname` and a list of strings `lines`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, the function should use `append_string` to append the elements of `lines` into the file `fname` line by line after the existing content of the file.
+Your task is to implement a function that takes as argument the name of a file `fname` and a list of strings `lines`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to append`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, the function should use `append_string` to append the elements of `lines` into the file `fname` line by line after the existing content of the file.
 
 The function should have the following signature:
 
