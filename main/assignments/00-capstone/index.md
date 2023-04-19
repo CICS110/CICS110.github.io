@@ -36,7 +36,7 @@ There are **6 steps** to this project. Below is a timeline for all parts. **All 
 
 ### Step 1. Select a Real-World Problem
 
-By no means do we expect you to solve life’s biggest challenges. You don’t have to find a cure for cancer or dominate the AI chatbot race. The key here is to select a problem that is interesting to you and **IS MANAGEABLE TO SOLVE BEFORE THE CAPSTONE DUE DATE**. You must also be able to solve your problem using **ALL** of the required concepts/skills listed above. We highly encourage you to discuss your project idea with your instructor and/or lab TA. **You must propose your project idea by April 21st (11:59pm) via Moodle**. 
+By no means do we expect you to solve life’s biggest challenges. You don’t have to find a cure for cancer or dominate the AI chatbot race. The key here is to select a problem that is interesting to you and **IS MANAGEABLE TO SOLVE BEFORE THE CAPSTONE DUE DATE**. You must also be able to solve your problem using **ALL** of the required concepts/skills listed above. We highly encourage you to discuss your project idea with your instructor and/or lab TA. **You must propose your project idea by April 28st (11:59pm) via Moodle**. 
 
 Here are some example project ideas:
 * Calendar application for scheduling meetings (similar to YouCanBook.me)
