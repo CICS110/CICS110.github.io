@@ -20,7 +20,7 @@ The lab contains 4 questions. If you have questions about the expected level of 
 
 Consider the following recursive function that takes in a list of numbers and computes the sum of all the elements in the list:
 
-```py
+```py live_py title=Sum
 def sum_list(lst):
     if len(lst) == 0:
         return 0
@@ -34,7 +34,7 @@ Identify the base case and the recursive step. Your answer should be two code sn
 
 Recall that base case terminates our recursion by return a specific value without making a new recursive call. Let's assume we have a recursive function that takes in an integer $$n$$ and counts the number of digits $$n$$ has. A partial implementation of the function is shown below:
 
-```py
+```py live_py title=Count
 def digit_count(n):
     # <TODO: Write a base case>
 
@@ -48,7 +48,7 @@ For example, `digit_count(100)` returns `3`, and `digit_count(1234567)` returns 
 
 Consider the following recursive function that takes in two nonnegative integers $$a$$ and $$b$$, and computes the quantity $$a ^ b$$:
 
-```py
+```py live_py title=Exponentiation
 def exponentiation(a, b):
     if b == 0:
         return 1
@@ -62,7 +62,7 @@ Unfortunately, our implementation has a problem: sometimes the function works, b
 
 In lecture 17 we saw a way to implement the factorial function recursively:
 
-```py
+```py live_py title=Factorial
 def factorial(n):
     if n == 0:
         return 1
@@ -70,7 +70,7 @@ def factorial(n):
         return n * factorial(n - 1)
 ```
 
-Convert the recursive implementation
+Try to change this recursive implementation of factorial to one that uses loops instead. The final solution should not include a call to factorial() inside the factorial() function (though you can have it outside to test it)
 
 ## Grading Scale
 
