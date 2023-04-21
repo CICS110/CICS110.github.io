@@ -23,9 +23,9 @@ If you have questions about the expected level of detail on questions asking for
 
 ### 1. Reading Syntax (1 point)
 
-This question is just a refresher on file access syntax. Write three line program that opens the file `instructions.txt`, reads out its contents, stores them in a variable named `text`, and closes the file.
+This question is just a refresher on file access syntax. Write a three line program that opens the file `instructions.txt`, reads out its contents, stores them in a variable named `text`, and closes the file.
 
-Your submission should consist of only 3 lines of Python code. No explanation is needed.
+Your submission should consist of only 3 lines of Python code. No explanation is needed. You may assume that `instructions.txt` is in the same directory as your Python file.
 
 ### 2. Write vs. Append (1 point)
 
@@ -46,7 +46,7 @@ After 3 weeks of logging my water intake and one hundred total entires, I open t
 
 ### 4. More Books (2 points)
 
-I own *lots* of books, so many that I can't remember all their names, much less where they all are in my house. Instead, I keep a single file named `books.txt` that contains a list of the title of every book, each on it's own line. The first few lines of the file are shown below:
+I own *lots* of books, so many that I can't remember all their names, much less where they all are in my house. Instead, I keep a single file named `books.txt` that contains a list of the title of every book, each on its own line. The first few lines of the file are shown below:
 
 ```plaintext
 Ender's Game
@@ -59,7 +59,7 @@ Curious George
 
 #### 4.1 Get Titles (1 point)
 
-Write a function `get_titles` that takes in the file path as its single parameter, and reads in all the titles from the file, and returns a set of all the book titles listed in the file. Make sure you close the file before you return.
+Write a function `get_titles` that takes in the file path as its single parameter, reads in all the titles from the file, and returns a set of all the book titles listed in the file. Make sure your file is closed before you return.
 
 Your submission should consist of only Python code. No explanation is needed. You can assume the file path parameter is a valid path, and the file is safe to open.
 
@@ -73,10 +73,10 @@ As a hint, your solution should not involve any reading of the input file outsid
 
 Below are how many points translate to what level on the 5-point scale.
 
-### 1: Below Standards: 0-1 point
+### 1: Below Standards: 0 points
 
 ### 2: Approaching Standards: 2 points
 
 ### 3: Meeting Standards: 3 points
 
-### 4: Exceeding Standards: 4-5 points
+### 4: Exceeding Standards: 4 points

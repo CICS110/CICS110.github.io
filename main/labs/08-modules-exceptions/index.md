@@ -147,10 +147,10 @@ After all the numbers have been processed, the calculate_sum function returns th
 
 Below are how many points translate to what level on the 5-point scale.
 
-### 1: Below Standards: 0-1 point
+### 1: Below Standards: 0 point
 
-### 2: Approaching Standards: 2-3 points
+### 2: Approaching Standards: 2 points
 
-### 3: Meeting Standards: 3-4 points
+### 3: Meeting Standards: 3 points
 
-### 4: Exceeding Standards: >4 points
+### 4: Exceeding Standards: 4 points

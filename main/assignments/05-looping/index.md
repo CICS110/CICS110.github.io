@@ -128,7 +128,7 @@ The `# Author`/`# Authors`, `# Email`/`# Emails`, and `# Spire ID`/`# Spire IDs`
 
 Some copying and pasting here will save you some time and sanity.
 
-Note that these details are necessary for the autograder to recognize your solution.
+Note that these details are necessary for the auto-grader to recognize your solution.
 
 ## **1. Implement `loops.py`**
 
@@ -564,7 +564,7 @@ Tie (i.e., no one wins):
 
 ### **5a. Implement `make_empty_board` (1 point)**
 
-Since the game begins with an emtpy board, our first step is to create an empty board. Your task is to implement a function with the following signature:
+Since the game begins with an empty board, our first step is to create an empty board. Your task is to implement a function with the following signature:
 
 ```py
 def make_empty_board()
@@ -638,7 +638,7 @@ Hint: Your implementation here should be very similar to `get_legal_guess` from 
 
 ### **5d. Implement `space_empty` (1 point)**
 
-When a player enters a row and column, we need to make sure the square/location at (row, column) is emtpy. Your task is to implement a function with the following signature:
+When a player enters a row and column, we need to make sure the square/location at (row, column) is empty. Your task is to implement a function with the following signature:
 
 ```py
 def space_empty(board, loc)
@@ -693,7 +693,7 @@ Please enter a row number: 1
 Please enter a column number: 1
 ```
 
-Hint: `get_legal_row_or_col_num()` does NOT require a parameter (in fact, the autograder requires `get_legal_row_or_col_nums()` to work without any parameters). However, if you want to specify to the user when they should enter a row versus a column (like in the example above), you can tweak `get_legal_row_or_col_num()` to accept a string `prompt` with a default value (e.g., `get_legal_row_or_col_nums(prompt="Please enter a row/column number: )`). Then, in `get_legal_coordinate()`, you could pass either "Please enter a row number" or "Please enter a column number" as the prompt to overwrite the default prompt. This is not a requirement, but will make your program more user-friendly.
+Hint: `get_legal_row_or_col_num()` does NOT require a parameter (in fact, the auto-grader requires `get_legal_row_or_col_nums()` to work without any parameters). However, if you want to specify to the user when they should enter a row versus a column (like in the example above), you can tweak `get_legal_row_or_col_num()` to accept a string `prompt` with a default value (e.g., `get_legal_row_or_col_nums(prompt="Please enter a row/column number: )`). Then, in `get_legal_coordinate()`, you could pass either "Please enter a row number" or "Please enter a column number" as the prompt to overwrite the default prompt. This is not a requirement, but will make your program more user-friendly.
 
 ### **5f. Implement `update_board` (1 point)**
 
@@ -821,7 +821,7 @@ Finally, it's time to play! Your task is to implement a function with the follow
 def play_game()
 ```
 
-The function should start by creating an emtpy board. While there are still free spaces on the board and a winner has not been found, a turn of tic-tac-toe should be played. If there are no more free spaces and a winner has not been found, then "Tie!" should be outputted.
+The function should start by creating an empty board. While there are still free spaces on the board and a winner has not been found, a turn of tic-tac-toe should be played. If there are no more free spaces and a winner has not been found, then "Tie!" should be outputted.
 
 Example:
 ```
