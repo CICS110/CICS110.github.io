@@ -636,8 +636,9 @@ Assume a file `cics110.txt` with the following contents:
 
 ```
 CICS 110 is an introduction to computer programming and problem solving using computers.
-This course teaches you how real-world problems can be solved computationally using programming constructs and data abstractions of a modern programming language. Concepts and techniques covered include variables, expressions, data types, objects, branching, iteration, functions, classes, and methods.
-We will also cover how to translate problems into a sequence of instructions, investigate the fundamental operation of a computational system and trace program execution and memory, and learn how to test and debug programs.
+This course teaches you how problems in the real world can be solved computationally using programming constructs and data abstractions of a modern programming language.
+Concepts and techniques covered range from variables and expressions to logic and control flow to data structures and classes.
+We will also cover how to translate problems into a sequence of instructions as well as how to trace though and debug programs.
 No previous programming experience required. This is a 4 credit class. There are 6 sections being offered in Spring 2023.
 ```
 
@@ -651,11 +652,11 @@ then you should get the following output:
 
 ```
 {
-    'lines': 4,
+    'lines': 5,
     'sentences': 7,
-    'words': 102,
+    'words': 96,
     'numbers': 4,
-    'letters': 616,
+    'letters': 520,
     'digits': 9
 }
 ```
@@ -705,8 +706,9 @@ Assume a file `cics110.txt` with the following contents:
 
 ```
 CICS 110 is an introduction to computer programming and problem solving using computers.
-This course teaches you how real-world problems can be solved computationally using programming constructs and data abstractions of a modern programming language. Concepts and techniques covered include variables, expressions, data types, objects, branching, iteration, functions, classes, and methods.
-We will also cover how to translate problems into a sequence of instructions, investigate the fundamental operation of a computational system and trace program execution and memory, and learn how to test and debug programs.
+This course teaches you how problems in the real world can be solved computationally using programming constructs and data abstractions of a modern programming language.
+Concepts and techniques covered range from variables and expressions to logic and control flow to data structures and classes.
+We will also cover how to translate problems into a sequence of instructions as well as how to trace though and debug programs.
 No previous programming experience required. This is a 4 credit class. There are 6 sections being offered in Spring 2023.
 ```
 
@@ -730,11 +732,11 @@ then you should get the following output:
 ```
 {
     'cics110.txt': {
-                        'lines': 4,
+                        'lines': 5,
                         'sentences': 7,
-                        'words': 102,
+                        'words': 96,
                         'numbers': 4,
-                        'letters': 616,
+                        'letters': 520,
                         'digits': 9
                     },
     'temp.txt': {
@@ -905,7 +907,7 @@ then you should get the following output:
                         'this': 1,
                         'class': 1,
                         'are': 1,
-                        'awesome!': 1
+                        'awesome': 1
                     }
 }
 ```
