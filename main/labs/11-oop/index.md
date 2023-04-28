@@ -11,13 +11,13 @@ This week's lab focuses on object oriented programming, primarily on
 
 Refer to lecture 18 for examples of Python objects and methods.
 
-## How big is this lab?
+## How Big is this Lab?
 
 The lab contains 5 questions. If you have questions about the expected level of detail for any of the questions, please ask your lab staff.
 
 ## Assignment
 
-### 1. Create an instance of a class (1 point)
+### 1. Create an Instance of a Class (1 point)
 
 This question is just a refresher on class and object syntax. Consider the following `Student` class:
 
