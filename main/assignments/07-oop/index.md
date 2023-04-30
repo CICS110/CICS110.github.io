@@ -186,8 +186,8 @@ print(tri.perimeter())  # output 9
 Example:
 ```py
 isotri = IsoscelesTriangle(2,5)
-print(isotri.get_sides())  # output (2, 5, 5)
-print(isotri.perimeter())  # output 12
+print(isotri.get_sides())  # output (2, 2, 5)
+print(isotri.perimeter())  # output 9
 ```
 *Hint: You can use Python's super() function to refer to the parent class explicitly. That is, super() in `IsoscelesTriangle` will refer to `Triangle`. You can use this to call `Triangle`'s `__init__()` method (e.g., `super().__init__()`).*
 
