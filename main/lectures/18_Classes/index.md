@@ -6,7 +6,7 @@ Stuff due soon:
 
 - HW6 Due Wednesday (Files)
 - Participation due Thursday
-- Qui due Thursday
+- Quiz due Thursday
 - Lab on Friday
 - Capstone Proposal Due Friday
 
