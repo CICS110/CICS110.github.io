@@ -301,13 +301,14 @@ def append_string(fname, text)
 
 Example:
 
-Assume a file `cics110.txt` with the following contents:
+Assume a file `cics110.txt` with the following contents (note the newline at the end):
 
 ```
 CICS 110 students will succeed in their future endeavors.
 Allison is an instructor for CICS 110.
 Manan is a TA for CICS 110.
 Ben is a UCA for CICS 110.
+
 ```
 
 If you run the following code statement,
@@ -322,7 +323,8 @@ append_string('cics110.txt', 'Tanush is also a UCA.')
 CICS 110 students will succeed in their future endeavors.
 Allison is an instructor for CICS 110.
 Manan is a TA for CICS 110.
-Ben is a UCA for CICS 110.Tanush is also a UCA.
+Ben is a UCA for CICS 110.
+Tanush is also a UCA.
 ```
 
 *Hint: This is essentially the same as `write_string` but instead of opening the file in write mode, you need to open it in append mode.*
@@ -341,13 +343,14 @@ def append_lines(fname, lines)
 
 Example:
 
-Assume a file `cics110.txt` with the following contents:
+Assume a file `cics110.txt` with the following contents (note the newline at the end):
 
 ```
 CICS 110 students will succeed in their future endeavors.
 Allison is an instructor for CICS 110.
 Manan is a TA for CICS 110.
 Ben is a UCA for CICS 110.
+
 ```
 If you run the following code statement,
 
@@ -366,8 +369,6 @@ Tanush is a UCA.
 Lana is a UCA.
 Dev is a UCA.
 ```
-
-Notice the difference between the examples in 1e. and 1f. Here, you must add a new line character `\n` before you append `lines` to append beginning at the next line.
 
 *Hint: This is essentially the same as 1d. but instead of write mode, you should open the file in append mode. The hint in 1d. applies for this problem as well.*
 
