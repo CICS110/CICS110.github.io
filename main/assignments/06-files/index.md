@@ -609,9 +609,16 @@ You must import both of these from `string` module.
 
 ### **3a. Implement `get_info` (3 points)**
 
-Analyzing a file can help us understand the contents of the file better. In this problem, we will report some interesting file statistics.
+Analyzing a file can help us understand the contents of the file better.
+In this problem, we will report some interesting file statistics.
 
-Your task is to implement a function that takes as argument the name of a file `fname`. If an exception occurs while opening the file, the function should display the informative error message `Error occurred when opening FNAME to read`, where `FNAME` should be replaced with the actual name of the file, and the function should then return `None`. If an exception does not occur while opening, the function should return a dictionary formatted as under reporting the following statistics:
+Your task is to implement a function that takes as argument the name of a file `fname`.
+If an exception occurs while opening the file,
+the function should display the informative error message `Error occurred when opening FNAME to read`,
+where `FNAME` should be replaced with the actual name of the file,
+and the function should then return `None`.
+If an exception does not occur while opening,
+the function should return a dictionary formatted as under reporting the following statistics:
 
 ```
 {
@@ -623,7 +630,12 @@ Your task is to implement a function that takes as argument the name of a file `
     digits: DIGIT_COUNT
 }
 ```
-where LINE_COUNT represents the total number of lines of text in the file, SENTENCE_COUNT represents the total number of sentences in the file, WORD_COUNT represents the total number of words in the file, NUMBERS_COUNT represents the total number of numbers in the file, LETTERS_COUNT represents the total number of alphabetic characters in the file, and DIGITS_COUNT represents the total number of digits in the file.
+where LINE\_COUNT represents the total number of lines of text in the file,
+SENTENCE\_COUNT represents the total number of sentences in the file,
+WORD\_COUNT represents the total number of words in the file,
+NUMBERS\_COUNT represents the total number of numbers in the file,
+LETTERS\_COUNT represents the total number of alphabetic characters in the file,
+and DIGITS\_COUNT represents the total number of digits in the file.
 
 The function should have the following signature:
 
@@ -662,7 +674,16 @@ then you should get the following output:
 }
 ```
 
-*Hint: Use `read_lines` to read the contents of the file and store it in a variable, say `text`. To count the number of lines, simply take the length of `text`. To count the number of sentences, you can simply count the occurrences of `.`. To count the number of words, split the lines in `text` and take the length of the list(s) so obtained. To count occurrences of numbers, characters and digits, iterate over all words, maintaining and updating counters for each of these. You can identify if a character is a digit using `string.digits`. Likewise, you can identify if a character is an alphabet using `string.ascii_letters`.*
+*Hint: You can use `read_string` from part 1 to read the contents of the file and store it in a variable, say `text`.
+To count the number of lines, you can get the length of the list returned by the `.splitlines()` string method.
+To count the number of sentences, you can simply count the occurrences of `"."` (there is a `.count()` string method).
+You can then get a list of "tokens" (words and numbers) by taking `text`,
+replacing the periods (`"."`)s with nothing `""` (there is a `.replace()` string method),
+replacing the newlines (`"\n"`) with spaces (`" "`), and splitting on the spaces (there is a `.split()` method).
+To count occurrences of words, numbers, characters, and digits, you can iterate over all words,
+maintaining and updating counters for each of these.
+You can identify if a character is a digit using `string.digits`.
+Likewise, you can identify if a character is a letter using `string.ascii_letters`.*
 
 ### **3b. Implement `get_info_files` (2 points)**
 
@@ -1186,11 +1207,16 @@ The function should have the following signature:
 def split_section(fname)
 ```
 
-```fname``` is the original filename (e.g., 'students.csv'). Your function should do the following in order:
+```fname``` is the original filename (e.g., `'students.csv'`). Your function should do the following in order:
 * Read the CSV file by calling ```read_csv``` in ```csv_parse```. Let's call the output of ```read_csv``` ```students```.
 * If ```read_csv``` returns ```None```, then an error occurred when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
 * Get a set of sections. DO NOT hardcode a set. Rather, use set comprehensions to find all sections in ```students```. Let's call this set ```sections```.
-* For each section in ```sections```, filter the ```students``` by ```section``` and use ```write_csv``` in ```csv_parse``` to write the contents to a file named ```students_section_?.csv```, where ```?``` is the actual section (e.g., ```students_section_A.csv```).
+* For each section in ```sections```,
+filter the ```students``` by ```section``` and use
+```write_csv``` in ```csv_parse```
+to write the contents to a file who's name is of the form ```FROMFILE_section_SECTION.csv```,
+where `FROMFILE` is `fname` (the file we are splitting) and
+where `SECTION` is the actual section (e.g., ```students_section_A.csv```).
 
 Example of ```students_section_A.csv```:
 ```
@@ -1217,7 +1243,9 @@ def split_average(fname)
 scores = {"1": (-1,60), "2": (60,75), "3": (75,85), "4": (85,101)}
 ```
 
-The output file should be named ```students_score_?.csv```, where ```?``` is the score category (either 1, 2, 3, or 4).
+The output file should have a name of the form ```FROMFILE_score_SCORE.csv```,
+where `FROMFILE` is `fname` (the file we are splitting) and
+where `SCORE` is the score category (either 1, 2, 3, or 4).
 
 Example of ```students_score_4.csv```:
 ```
@@ -1308,10 +1336,14 @@ def write_assignment_stats(fname)
 * Read the CSV file by calling ```read_csv``` in ```csv_parse```. Let's call the output of ```read_csv``` ```students```.
 * If ```read_csv``` returns ```None```, then an error occurred when opening the file. It's best to catch this error with an if statement that simply returns ```None``` if ```students``` is ```None```.
 * Get the average stats and assignment stats by calling ```get_assignment_stats```.
-* Output each dictionary of stats as a single line to ```students_stats.csv```.
-The stats should output in the following order: min, max, range, mean, and std\_dev. The first line should be the stats for average, and the remaining lines should each be the stats for one of the assignments (in order). Thus,  ```students_stats.csv``` should have 11 lines.
+* Output each dictionary of stats as a single line to a file
+who's name is of the form ```FROMFILE_stats.csv```, where `FROMFILE` is `fname`.
+The stats should output in the following order: min, max, range, mean, and std\_dev.
+The first line should be the stats for average,
+and the remaining lines should each be the stats for one of the assignments (in order).
+Thus, this file should have 11 lines.
 
-Example of the first 3 lines of ```student_stats.csv```:
+Example of the first 3 lines of ```students_stats.csv```:
 
 ```
 80.29,87.879,7.588999999999999,84.03825,3.702226179949031
@@ -1320,7 +1352,12 @@ Example of the first 3 lines of ```student_stats.csv```:
 ```
 
 ### **6d. Implement `write_section_assignment_stats` (3 points)**
-Similar to ```write_assginment_stats```, we will write the assignment stats to a separate file. This time, we will write to multiple files, namely one for each section: ```students_section_A_stats.csv``` and ```students_section_B_stats.csv``` (note that the ```students.csv``` used by the auto-grader will have an unknown number of sections).
+Similar to ```write_assginment_stats```,
+we will write the assignment stats to a separate file.
+This time, we will write to multiple files,
+namely one for each section.
+Note that the input file (e.g., ```students.csv```)
+used by the auto-grader will have an unknown number of sections.
 
 The function should have the following signature:
 
@@ -1328,7 +1365,15 @@ The function should have the following signature:
 def write_section_assignment_stats(fname)
 ```
 
-```fname``` is the original filename (e.g., 'students.csv'). Your function should be similar to ```write_assginment_stats```. However, you should loop through a set of sections (as in ```split_section```) and only include those records with a matching section letter in your stats calculation (*hint: Use filter_section from csv_split*). Each output file should still have 11 lines.
+```fname``` is the original filename (e.g., 'students.csv').
+Your function should be similar to ```write_assginment_stats```.
+However, you should loop through a set of sections (as in ```split_section```)
+and only include those records with a matching section letter in your stats calculation
+(*hint: Use `filter_section` from `csv_split`*).
+The stats from each section should be written to a file who's name is of the from
+`FROMFILE_section_SECTION_stats.csv`,
+where `FROMFILE` is `fname` and where `SECTION` is the actual section.
+Each output file should still have 11 lines.
 
 Example of the first 3 lines of ```students_section_A_stats.csv```:
 ```
