@@ -860,7 +860,16 @@ print(bag.get_contents())  # prints {'red': 1, 'green': 2, 'blue': 3}
 
 ### **5c. Implement the `take_marble()` method (1 point)**
 
-Taking a marble out of the marble bag is random. For this method, you will need to import the random module in order to randomly select a marble to take out of the bag (i.e., randomly select red, green, or blue marble). When a marble is removed from the bag, the count of marbles for that particular color must be decremented by 1. The return for this method must be the marble taken from the bag ("red", "green", or "blue"). If there are no marbles to be removed from the bag, return `None`. Note that, since selection for taking out is random, this function does not require a parameter (besides `self`).
+Taking a marble out of the marble bag is random.
+For this method, you will need to import the random module in order to randomly select a marble to take out of the bag
+(i.e., randomly select red, green, or blue marble).
+When a marble is removed from the bag,
+the count of marbles for that particular color must be decremented by 1.
+The return for this method must be the marble taken from the bag (`"red"`, `"green"`, or `"blue"`).
+If there are no marbles to be removed from the bag,
+print `"Bag is empty."` and return `None`.
+Note that, since selection for taking out is random,
+this function does not require a parameter (besides `self`).
 
 ### **5d. Implement the `add_marbles()` method (1 point)**
 
