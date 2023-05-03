@@ -6,9 +6,7 @@ Stuff due soon:
 
 - HW7 Due 5/15
 - Capstone Project Presentations 5/16 and 5/17
-- Participation due Thursday
 - Quiz due Thursday
-- Lab on Friday
 
 ## Slides
 
