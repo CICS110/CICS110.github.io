@@ -382,7 +382,7 @@ As for what types are mutable, here are the ones we already know:
 Material from here on was not part of the lecture,
 but is stuff I think is helpful to note.
 
-It also has be going a bit off script and talking more
+It also has me going a bit off script and talking more
 a slightly different way in which I conceptualise mutability.
 
 :::

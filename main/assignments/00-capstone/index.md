@@ -30,7 +30,7 @@ There are **6 steps** to this project. Below is a timeline for all parts. **All 
 ### Submission Timeline
 
 * **Project Proposal & Plan:** April 28th (11:59pm) via Gradescope
-* **Implementation:** May 10th (11:59pm) via Moodle
+* **Implementation:** May 15th (11:59pm) via Moodle
 * **Poster Presentation:** submissions are due May 15th (11:59pm) via Moodle; presentations are during the last class (May 16th if you’re in a Tu/Th section or May 17th if you’re in a Mo/We section)
 * **Reflection:** May 19th (11:59pm) via Moodle
 * **Peer Grading:** May 19th (11:59pm) via Moodle
@@ -92,7 +92,7 @@ Use the following template for your project plan: [Project Proposal and Plan Tem
 
 ### Step 3. Implement a Solution Using Python
 
-**Start early and collaborate often**. If you get stuck, first ask your group members for help. You can visit any course staff’s office hours for additional help, but do note that we do not have the solution to every problem in the world. We can help you conceptually, but we won’t be able to answer “Why doesn’t this work?” without any context. **Implementation is due May 10th (11:59pm) via Moodle**.
+**Start early and collaborate often**. If you get stuck, first ask your group members for help. You can visit any course staff’s office hours for additional help, but do note that we do not have the solution to every problem in the world. We can help you conceptually, but we won’t be able to answer “Why doesn’t this work?” without any context. **Implementation is due May 15th (11:59pm) via Moodle**.
 
 Pair programming can be challenging to manage, but there are several tools that can help your group work effectively. The simplest version control tool that we can offer you is Gradescope. As many of you know, Gradescope saves your submission history, allowing you to jump back to past submissions (i.e., versions) of your code. If you tag your group members for each submission, then all group members should be able to see the full version history. You can use **Capstone Project Sandbox** in Gradescope for this purpose. A more conventional approach to version control is using [Github](https://github.com/). This is definitely a more advanced and sophisticated version control technique than Gradescope, but it's worth checking out if you want to learn a widely used tool. Github can be integrated with VSCode (see [Working with GitHub in VSCode](https://code.visualstudio.com/docs/sourcecontrol/github)). **You are not required to use either of these techniques.**
 
