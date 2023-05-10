@@ -26,13 +26,13 @@ import { PowerPoint } from '@site/src/components/PowerPoint'
 
 - [TKinter Documentation](https://docs.python.org/3/library/tkinter.html)
 - [TKinter Tutorial](https://www.tutorialspoint.com/python/python_gui_programming.htm)
-- Download [gui.py]('./gui.py')
+- Download [gui.py](./gui.py)
     - This code is a simple GUI that displays a label and a button using TKinter
-- Download [event.py]('./event.py')
+- Download [event.py](./event.py)
     - This code has a button that triggers an event when clicked
-- Download [stopwatch.py]('./stopwatch.py')
+- Download [stopwatch.py](./stopwatch.py)
     - This code is a stopwatch that counts up when you click the start button
-- Download [stopwatch_lap.py]('./stopwatch_lap.py')
+- Download [stopwatch_lap.py](./stopwatch_lap.py)
     - This code is a stopwatch that counts up when you click the start button. It also has a lap button that records the current time and displays it in a list
 
 ## Notes
