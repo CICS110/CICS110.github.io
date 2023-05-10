@@ -113,3 +113,7 @@ The reflection is **INDIVIDUAL**. It is required but will be graded based on com
 
 ## Grading Scale
 Each person will individually grade 3 peer projects during the poster presentations. The grading rubric will be added here by April 21st.
+
+## Rubric
+
+Link to rubric: [https://docs.google.com/spreadsheets/d/1z44zCLcjgp0E-VKFZhzvcoTeZxXnruXcD5PCrsLR9is/edit#gid=0](https://docs.google.com/spreadsheets/d/1z44zCLcjgp0E-VKFZhzvcoTeZxXnruXcD5PCrsLR9is/edit#gid=0)
