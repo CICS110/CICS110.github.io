@@ -74,4 +74,4 @@ Lab assignments are started during the lab sections. You have until 11:59 PM on 
 
 🔥 **You do not earn and cannot use tokens for this assignment type.** 🔥
 
-*No assigned work yet*
+[Project Instructions](./assignments/capstone)
