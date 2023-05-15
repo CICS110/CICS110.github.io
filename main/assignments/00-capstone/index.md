@@ -7,7 +7,6 @@ During the semester, you utilized programming fundamentals to solve various real
 ### Requirements:
 
 * Implemented in Python.
-* In addition to the usual header comments (authors, emails, and spire IDs), include comments throughout the code to explain what the code is doing. You don't need a comment for every line of code, but you should add a comment for every function and every large chunk of code (e.g., loops, branching, etc.).
 * Include variables of various data types (e.g., integers, floats, sequence data types, etc.). You must use at least one of the following sequence data types: list, tuple, or set.
 * Include a dictionary and retrieve a value by key from the dictionary.
 * Include expressions that involve operators, variables, and constants (e.g., x >= 10).
