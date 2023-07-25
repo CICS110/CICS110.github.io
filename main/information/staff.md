@@ -73,7 +73,7 @@ Meet all the wonderful people who are here to help you have an amazing experienc
             </div>
             <div id="name">Kobi Falus</div>
             <div id="bio">
-                Hi, I'm Kobi. I'm a Computer Science Master's student, that got my bachelor's here in Spring '22. This is my second time teaching this course, and I'm really excited to meet everyone. In my free time I like browsing Reddit/Youtube, playing board games, and talking with people. Feel free to come up and have a conversation with me!
+                Hi, I'm Kobi. This is my second time teaching this course, and I'm really excited to meet everyone. In my free time I like browsing Reddit/Youtube, playing board games, and talking with people. Feel free to come up and have a conversation with me!
             </div>
         </div>
     </div>  
