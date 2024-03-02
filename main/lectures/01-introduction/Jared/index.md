@@ -50,7 +50,7 @@ There may be some things that have become natural to me that I don't realise are
 
 So please, ask questions. Asking questions and making sure to understand
 the answer well enough that you could explain it your past self
-is a really powerful technique for learning.
+is a really powerful learning technique.
 
 </details>
 
@@ -209,16 +209,31 @@ Tokens are asymmetric time condensed into currency by modern science:
 <details>
 <summary><b>Aside: What <em>is</em> Programming</b></summary>
 
-[TODO: add diagram]
-
 Imagine we have some task we want accomplished,
-we have our own human languages that we can articulate that in.
-Computers similarly, have a language of instructions that they understand.
+we have our own human languages that we can articulate that in
+(e.g., "go forward, turn left at the next light ...").
+Computers similarly, have a language of instructions that they understand
+(e.g., "83 c0 11" ("add eax, 17")).
 
-A programming language is in between these.
-We translate the problem from our understanding/language to a programming language
-(programming).
-The computer then translates that into it's own language (compilation/interpretation).
+Human language is too vague for computer to understand.
+And computer language is ... I mean, look at it.
+Programming languages are a middle ground.
+They possess the rigour necessary for a computer to understand them,
+but also possess enough of the trappings of human languages to be
+a little more intuitive to us.
+
+*Programming* is thus the act of coming up with instructions for a task and
+translating those instructions from a human language to programming language.
+This translated set of instructions is what we call a *program*.
+
+Once that is done, the computer is able to translate (or *compilation*)
+the program the rest of the way to its own language.
+
+```mermaid
+flowchart TB
+  human[Human Language]-->|"==> Programming <=="|prog[Programming Language]
+  prog-->|Compiling|mach[Machine Language]
+```
 
 </details>
 
@@ -237,10 +252,12 @@ It is wildly used and has a number of useful extensions.
 
 ## What is a program?
 
-A sequence of instruction.
-Not unlike a recipe,
-or step-by-step instructions on how to drive somewhere,
-or step-by-step instructions on how to build something (e.g., legos, Ikea furniture).
+A sequence of instructions to accomplish some task.
+These instructions are very sequential, done one-after-another,
+and often the order is very important.
+This bears resemblance to things like recipes,
+instructions on how to drive somewhere,
+or instructions on how to build something (lego sets, Ikea furniture, etc.).
 
 You can see how a recipe below can have a natural correspondence to something program-like.
 The step-by-step nature of being the key detail.
@@ -282,7 +299,20 @@ entering text when prompted, etc.
 * **Output**: Anything the computer gives us: displays on a monitor, sounds,
 text it prints to a terminal, etc.
 
-[TODO: steal Kobi's diagrams]
+```mermaid
+flowchart LR
+  input["Input 👁️"]
+  input-->proc
+  subgraph brain["🧠"]
+    inst[Instructions]
+    proc[Processor]
+    mem[Memory]
+    inst <--> proc
+    proc <--> mem
+  end
+  output["Output ✋"]
+  proc-->output
+```
 
 For example, a game console running a video-game:
 * **Processor**: CPU and GPU (graphics processing unit), I suppose.
@@ -325,7 +355,7 @@ Let's make it just a little more interesting:
 ```py live_py title=Hello_You
 # Receives your name from the input, 
 # Then stores it in the memory (with the label 'your_name')
-your_name = input()
+your_name = input("Enter your name")
 # The processor adds "Hello " in front of your name
 # Finally, the processor sends the result to the output
 print("Hello, " + your_name)
@@ -479,7 +509,8 @@ First step is to make a folder for the file to live in.
 Open your computer's file manage (e.g. Finder on Mac and File Explorer on Windows).
 
 Make a folder somewhere of you choosing.
-For example: I might have/make a `school` folder, and within that a `CICS110` folder,
+For example: There is likely some sort of `Documents` folder on your machine.
+within that I might have/make a `school` folder, and within that a `CICS110` folder,
 and within that a `labs` folder,
 and within that would make a folder named `01-hello-world`.
 Everyone has their own system, so do what makes sense to you.
@@ -495,9 +526,7 @@ Select `File > Open` or `File > Open Folder`, both seem to work.
 This notation means, "within the `File` menu, select `Open`.
 
 This menu is likely in the upper left area of the application or you entire screen
-(depending on you operating system).
-
-[TODO: Include picture, maybe]
+(depending on your operating system).
 
 ### Make a File
 
@@ -524,12 +553,12 @@ If you click that, VSCode will open a terminal and run the code.
 
 You can also open the Terminal yourself via the menu `Terminal > New Terminal`.
 You can then give the run command yourself by typing `python3 [FILENAME]` in the terminal
-and hitting enter/return, so in this case `python3 hello.py`
+and hitting enter/return. So in this case it would be `python3 hello.py`
 (the extension is part of the name, as far as the terminal is concerned).
 
 ## Lingering Thoughts
 
-These are just some lingering thoughts I had.
+These are just some lingering thoughts I had that didn't fit very well anywhere.
 
 <details>
 <summary><b>Aside: Difficulty</b></summary>
@@ -537,24 +566,24 @@ These are just some lingering thoughts I had.
 One question I always have (though seldom explicitly ask)
 when I take a new class is "how hard is this class"?
 
-Sitting now in the instructor's seat I realise how difficult a question that is answer.
+Sitting now in the instructor's seat I realise how difficult a question that is to answer.
 
-In my experience, I have encountered 3 bucked of difficulty:
+In my experience, I have encountered 3 types of difficulty:
 * Calculation difficulty: Where you have long and complicated calculations you have to do.
 A lot grunt work. Very easy to make careless mistakes. This is what I think of in
-higher level applied maths, physics, engineering.
+higher level applied maths, physics, or engineering.
 * Definition/memory difficulty: Where there is a lot information to try and absorb at once.
 I've had math classes with too many definitions to track/juggle.
 This is also what beats me up in history (lots of information)
 or foreign languages (lots of vocabulary).
 * Intuition difficulty: Where figuring out how to think about things is the challenge.
-This it what get me in the theoretical math and computer science classes.
+This it what gets me in the theoretical math and computer science classes.
 
 So how does this class rank in those?
 * Calculation difficulty: It shouldn't be bad here.
 In fact, a not uncommon use for programming is to make these sorts or things easier.
 Have the robots do the long, easy-to-mess-up type of work.
-* Definition/memory difficulty: I think will be an issue earlier on,
+* Definition/memory difficulty: I think this will be an issue earlier on,
 but should hopefully ease up as we build a solid foundation.
 * Intuition difficulty: This is where I would worry.
 From the overhead of getting more comfortable navigating a computer to
@@ -589,6 +618,6 @@ that different way of thinking.
 Thinking about problems and tasks in a logic-flow way.
 We'll try to practice this more explicitly with flowcharts.
 But ultimately, I think practice, making mistakes, and solving problems
-is probably critical to the process.
+will be crucial to the process.
 
 </details>
