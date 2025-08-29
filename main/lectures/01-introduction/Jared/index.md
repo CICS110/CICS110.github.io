@@ -16,17 +16,6 @@ I have decided not to prioritise these over getting something up before class.
 
 :::
 
-## Assignment Updates
-
-Short week 1 tasks:
-
-* Quiz 1: **Due Thursday 2/9**
-* Sign up for Piazza: **Due Friday 2/10**
-* Sign up for Gradescope: **Due Friday 2/10**
-* Sign up for zyBooks: **Due Friday 2/10**
-
-Lab this week is meeting your TA and making sure all the relevant software is installed.
-
 ## Who am I?
 
 My name is **Jared Yeager**.
@@ -58,7 +47,7 @@ is a really powerful learning technique.
 
 We have a big team here, [so check them out](../../information/staff)
 
-Mentioning anyone specifically other them Tim Richards, our Course Overmind,
+Mentioning anyone specifically other than Tim Richards, our Course Overmind,
 would be playing favourites.
 
 ## What is this Class?
@@ -215,7 +204,7 @@ we have our own human languages that we can articulate that in
 Computers similarly, have a language of instructions that they understand
 (e.g., "83 c0 11" ("add eax, 17")).
 
-Human language is too vague for computer to understand.
+Human language is too vague for computers to understand.
 And computer language is ... I mean, look at it.
 Programming languages are a middle ground.
 They possess the rigour necessary for a computer to understand them,
@@ -226,7 +215,7 @@ a little more intuitive to us.
 translating those instructions from a human language to programming language.
 This translated set of instructions is what we call a *program*.
 
-Once that is done, the computer is able to translate (or *compilation*)
+Once that is done, the computer is able to translate (or *compile*)
 the program the rest of the way to its own language.
 
 ```mermaid
@@ -255,13 +244,13 @@ It is wildly used and has a number of useful extensions.
 A sequence of instructions to accomplish some task.
 These instructions are very sequential, done one-after-another,
 and often the order is very important.
-This bears resemblance to things like recipes,
+This bears a resemblance to things like recipes,
 instructions on how to drive somewhere,
 or instructions on how to build something (lego sets, Ikea furniture, etc.).
 
 You can see how a recipe below can have a natural correspondence to something program-like.
-The step-by-step nature of being the key detail.
-The difference is in that the program needs very explicit details.
+The step-by-step nature being the key detail.
+The difference is that the program needs very explicit form and information.
 
 A recipe:
 ```
@@ -292,7 +281,7 @@ But for the sake of this class, let us say that a computer running a program has
 generally.
 * **Instructions**: This is what tells the computer *what* to compute.
 This is our code.
-* **Memory**: This is that metaphoric scratch paper that the computer tracks it's work on.
+* **Memory**: This is the metaphoric scratch paper that the computer tracks it's work on.
 RAM (random access memory) is a classic example.
 * **Input**: Anything we give the computer: clicking on a button, typing on a keyboard,
 entering text when prompted, etc.
@@ -340,7 +329,7 @@ apply the model.
 :::
 
 So what's happing with each component of the model for a computer running this program?
-* The **processor** is still the CPU and in processing the lines of code.
+* The **processor** is still the CPU that is processing the lines of code.
 * The **instructions** are just `print("Hello, World")`.
 * The **output** is the printed `Hello, World`.
 * The **input** ... well, there is no input used here.
@@ -375,7 +364,7 @@ and that that something shows up in the output is sufficient to apply the model.
 :::
 
 So what's happing with each component of the model for a computer running this program?
-* The **processor** is still the CPU and in processing the lines of code.
+* The **processor** is still the CPU that is processing the lines of code.
 * The **instructions** are those lines of code.
 * The **input** is whatever we type in when prompted.
 * The **memory** (is RAM and) is used to remember what you input,
@@ -488,9 +477,6 @@ or notes about the lecture but not part of the lecture itself.
 
 ## Making and Running a Python File
 
-(This is post-lecture content,
-or notes about the lecture but not part of the lecture itself.)
-
 With any luck, when demonstrating the programs for the last section in class,
 I showed myself making the program.
 
@@ -517,15 +503,15 @@ Everyone has their own system, so do what makes sense to you.
 
 ### Open that Folder in VSCode
 
-We need to open that folder in out editor to do stuff in it
+We need to open that folder in our editor to do stuff in it
 (you can also make files directly, but I'm not demoing that approach specifically)
 
-Launch VSCode. (This of course assumes Python and VSCode are installed)
+Launch VSCode. (This of course assumes Python and VSCode are installed.)
 
 Select `File > Open` or `File > Open Folder`, both seem to work.
-This notation means, "within the `File` menu, select `Open`.
+This notation means, "within the `File` menu, select `Open`".
 
-This menu is likely in the upper left area of the application or you entire screen
+This menu is likely in the upper left area of the application or of your entire screen
 (depending on your operating system).
 
 ### Make a File
@@ -590,8 +576,8 @@ From the overhead of getting more comfortable navigating a computer to
 taking the thoughts in your head and expressing them as a program.
 This is where I think the challenge in this class will be.
 But it's also I think the coolest to overcome,
-because when something deeply alien to you mind start to a bit of intuitive sense,
-there can be very satisfying "I got it!" and a rewarding sense of progress.
+because when something deeply alien to your mind starts to make a bit of intuitive sense,
+there can be very satisfying "I get it!" and a rewarding sense of progress.
 
 </details>
 
