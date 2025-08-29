@@ -4,18 +4,15 @@ title: Section 04 (Jared Yeager)
 
 # Types and Operations
 
-## Assignment Updates
-
-Short week 1 tasks:
-
-* Quiz 1: **Due Thursday 2/9**
-* Sign up for Piazza: **Due Friday 2/10**
-* Sign up for Gradescope: **Due Friday 2/10**
-* Sign up for zyBooks: **Due Friday 2/10**
-
-Lab this week is meeting your TA and making sure all the relevant software is installed.
-
 ## replit
+
+:::note
+
+This was written prior to replit being placed behind making an account.
+I am unenthused with a cursory glance at alternatives,
+so I can't just substitute in another tool.
+
+:::
 
 For this lecture,
 it will be convenient to have [replit](https://replit.com/languages/python3) open.
@@ -26,17 +23,35 @@ Go ahead and try it with `print("Hello, World")`.
 
 But we will be using the right-hand side today.
 On the right hand side you can put code/expressions (e.g. arithmetic)
-one line at a time, they will be evaluated,
+one line at a time. These will be evaluated,
 and the results will be displayed.
 
 The distinction is subtle.
 It may by more useful to think of the right-hand side a "python calculator" of sorts.
 
+Throughout this lecture,
+whenever I show a block of code I run in replit (or any other "REPL"),
+I will have a `>>>` before the line of code, and the result on the following lines.
+For instance:
+
+```
+>>> 123 + 456
+579
+```
+
+Represents me running the line `123 + 456` in replit and seeing that
+evaluate to the result `579`.
+Note that in the runnable code blocks on the website
+(which are more like running a python file),
+I would need to print the result if I wanted to see it (`print(123 + 456)`).
+In replit, you are told the result.
+
 <details>
 <summary><b>Extra: REPLs</b></summary>
 
 This calculator-like thing is more formally know as a
-[read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read–eval–print_loop)
+[read-eval-print loop (REPL)](https://en.wikipedia.org/wiki/Read–eval–print_loop),
+hence the name **repl**it.
 
 It reads an expression from the user, evaluates it, prints the result, and repeats (loops).
 
@@ -53,7 +68,7 @@ then you can start up the built-in REPL with the command `python3`
 (if you have installed python, it is almost surely python 3).
 That's it, just `python3` with no file name after it.
 
-To get out of the REPL, you can use the `exit()` function,
+To get out of the REPL, you can use the `exit()` or `quit()` function,
 or you can hit control-d (it might be something else on Windows).
 
 </details>
@@ -75,7 +90,8 @@ e.g.: `0.0`,`-1.67`,`4e23`.
 
 When we want to make a string out of verbatim text in code,
 we surround it with quotation marks so that the computer knows it is text, not code.
-We may use `"` or `'`. **Note**, these are both straight quotes.
+We may use pairs of `"` or `'` (the start and end quote must match, both `"` or both `'`).
+**Note**, these are both straight quotes.
 Curvy quotes like `“`, `”`, `‘`, and `’` do **not** work.
 
 <details>
@@ -89,6 +105,12 @@ Why that specific number is much longer story.
 * Not a Number (prints as `nan`):
 Sometimes when you do illegal math you get an error (such as dividing by 0).
 Sometimes, like with `1.8e308 - 1.8e308` (`inf` - `inf`) you get "Not a Number"
+
+```py live_py title=Fun_Floats
+print(2e308)         # inf
+print(-2e308)        # -inf
+print(2e308 - 2e308) # nan
+```
 
 </details>
 
@@ -105,6 +127,8 @@ tells the computer that what comes next is not verbatim,
 but rather a special sequence telling it to do something else.
 
 So for a new line, you can use `"\n"`, for tabs, `"\t"`.
+(The website's live python is a bit buggy with fancy whitespace,
+so you should try this in a REPL yourself.)
 ```
 >>> print("Escapable Whitespace:\n\tNewlines\n\tTabs")
 Escapable Whitespace:
@@ -138,14 +162,15 @@ Some Escape Sequences:
 ### Learning Something's Type
 
 If you want to know what something's type is, you can use the `type()` function.
-This takes in anything and return the type, e.g., in the REPL
-(the first line is what I typed in, which is what the `>>>` represents):
-```
->>> type("Hello, World!")
-<class 'str'>
+This takes in anything and returns its type. For example:
+
+```py live_py title=Get_Type
+print(type(-127))     # <class 'int'>
+print(type(3.1415))   # <class 'float'>
+print(type("Hello!")) # <class 'str'>
 ```
 
-Ignore the `class` thing. We are being told is a string (`str`)
+Ignore the `class` thing (its basically just the technical name for "type" in python).
 
 ## Arithmetic Operations
 
@@ -165,10 +190,18 @@ The basic arithmetic operators in python:
 * `/`: Division
 * `**`: Exponentiation
 
+```py live_py title=Arithmetic
+print(3 + 5)  # 8
+print(3 - 5)  # -2
+print(3 * 5)  # 15
+print(3 / 5)  # 0.6
+print(3 ** 5) # 243
+```
+
 There are two more arithmetic operators in python.
 They both have to do with the concept of whole number division with a remainder.
-So for instance, while you could say 17 divided by 5 is 3.4, you could also say
-17 divided by 5 is 3 with a remainder of 2 (because 5 * 3 + 2 = 17).
+So for instance, while you could say $17$ divided by $5$ is $3.4$, you could also say
+$17$ divided by $5$ is $3$ with a remainder of $2$ (because $5 * 3 + 2 = 17$).
 
 The first approach is captured in python by `/`, the second with the following:
 * `//`: Integer Division/Floor Divisions. `17 // 5` would give `3`, the whole number
@@ -177,15 +210,75 @@ of times to operator on the right can be taken out of the operator on the left.
 after the operator on the right is taken out of it as many times as possible.
 
 These both also work on `float`s in python.
-```
->>> 18.5 // 5.1
-3.0
->>> 18.5 % 5.1
-3.200000000000001
+
+```py live_py title=Division
+print(17 // 5)     # 3
+print(17 % 5)      # 2
+print(18.5 // 5.1) # 3.0
+print(18.5 % 5.1)  # 3.2
 ```
 
 (As a bonus,
-you can even see the imperfection in the `float`'s ability to represent 3.2)
+you can even see the imperfection in the `float`'s ability to represent 3.2.)
+
+<details>
+<summary><b>Extra: <code>^</code> is <em>not</em> Exponentiation</b></summary>
+
+You may have the instinct to represent $3 ^ 5$ as `3 ^ 5`,
+though in python $3 ^ 5$ is actually represented as `3 ** 5`.
+While this is wrong, it isn't syntactically illegal,
+which can make it even trickier to catch as an error.
+
+:::danger
+
+The following is far outside the scope of what we need to worry about in this class.
+
+:::
+
+`^` is an operator that only makes sense in the context of the underlying
+binary representations of numbers.
+Brief binary primer:
+
+In "base 10" (our usual number system),
+we have a $1$s, $10$s, $100$s, etc. place.
+These are "how many $10^0$s, how many $10^1$s, how many $10^2$s, etc.
+And for each place,
+we can have between $0$ and $9$ (10 possibilities) of that particular $10^n$.
+
+In binary (or "base 2"), the places are for $2^n$s.
+Each place can have $0$ or $1$ (2 possibilities)
+of that particular $2^n$. For example:
+* $11_2$ (or `0b11` in python) has a $1$ in the $2^0$s (aka $1$s) place,
+  and a $1$ in the $2^1$s (aka $2$s) place. $11_2 = 1 * 2^1 + 1 * 2^0 = 3$.
+* $101_2$ (or `0b101` in python) has a $1$ in the $2^0$s (aka $1$s) place,
+  a $0$ in the $2^1$s (aka $2$s) place, and a $1$ in the $2^2$s (aka $4$s) place.
+  $101_2 = 1 * 2^2+ 0 * 2^1 + 1 * 2^0 = 5$.
+
+So with the notion of binary representations in mind, there are some specific binary
+arithmetic operators:
+* `&`: bitwise and. For each $n$, the $2^n$s place of `a & b` is a $1$ if
+  **both** the $2^n$s place of `a` is a $1$ **and**
+  the $2^n$s place of `b` is a $1$;
+  otherwise it is a $0$.
+* `|`: bitwise or. For each $n$, the $2^n$s place of `a | b` is a $1$ if
+  **either** the $2^n$s place of `a` is a $1$ **or** 
+  the $2^n$s place of `b` is a $1$ (this includes if both are $1$);
+  otherwise it is a $0$.
+* `^`: bitwise exclusive or (xor). For each $n$,
+  the $2^n$s place of `a ^ b` is a $1$ if
+  **exactly one of** the $2^n$s places of `a` and `b` is $1$
+  (and the the other's is $0$);
+  otherwise (both $1$s or both $0$s), it is a $0$.
+
+```py live_py title=Bit_Arithmetic
+print(0b11)   # 3 (0b011)
+print(0b101)  # 5 (0b101)
+print(3 & 5)  # 1 (0b001)
+print(3 | 5)  # 7 (0b111)
+print(3 ^ 5)  # 6 (0b110)
+```
+
+</details>
 
 ### Order of Operations
 
@@ -200,28 +293,32 @@ The order:
 * `+`, `-`: **A**ddition and **S**ubtraction are last.
 
 Some examples of results by using parentheses to change the order of evaluation:
-```
->>> 5 ** 4 * 3 + 2
-1877
->>> 5 ** 4 * (3 + 2)
-3125
->>> 5 ** (4 * 3) + 2
-244140627
->>> 5 ** (4 * 3 + 2)
-6103515625
->>> 5 ** (4 * (3 + 2))
-95367431640625
+```py live_py title=Order_of_Operations
+print(5 ** 4 * 3 + 2)     # 1877
+print(5 ** 4 * (3 + 2))   # 3125
+print(5 ** (4 * 3) + 2)   # 244140627
+print(5 ** (4 * 3 + 2))   # 6103515625
+print(5 ** (4 * (3 + 2))) # 95367431640625
 ```
 
-And within a level of *precedence*, the order of evaluation goes from left to right.
+And within a level of *precedence*,
+the order of evaluation generally goes from left to right,
+both in math and in python.
 A demonstrated below:
+```py live_py title=Normal_Associativity
+print(2 - 3 + 4)   # 3 (default left associativity)
+print((2 - 3) + 4) # 3 (explicit left first)
+print(2 - (3 + 4)) # -5 (explicit right first)
 ```
->>> 2 - 3 + 4
-3
->>> (2 - 3) + 4
-3
->>> 2 - (3 + 4)
--5
+
+There is an interesting exception. Both in math and python,
+exponentiation goes from top/right to bottom/left.
+For example $2 ^ {3 ^ 2} = 2 ^ {(3 ^ 2)}$.
+
+```py live_py title=Exp_Associativity
+print(2 ** 3 ** 2)   # 512 (default right associativity)
+print((2 ** 3) ** 2) # 64 (explicit left first)
+print(2 ** (3 ** 2)) # 512 (explicit right first)
 ```
 
 ### Operands' and Result's Types
@@ -235,17 +332,13 @@ python lets you have operations with both in them:
 
 The type of the result depends on the type of the operands
 (and if the operation is division or not).
-```
->>> type(1 + 1)
-<class 'int'>
->>> type(1 + 1.0)
-<class 'float'>
->>> type(1.0 + 1)
-<class 'float'>
->>> type(1.0 + 1.0)
-<class 'float'>
->>> type(1 / 1)
-<class 'float'>
+```py live_py title=Result_Type
+# print() can take multiple comma-separated arguments
+print(1 + 1,     type(1 + 1))     # 2 <class 'int'>
+print(1 + 1.0,   type(1 + 1.0))   # 2.0 <class 'float'>
+print(1.0 + 1,   type(1.0 + 1))   # 2.0 <class 'float'>
+print(1.0 + 1.0, type(1.0 + 1.0)) # 2.0 <class 'float'>
+print(1 / 1,     type(1 / 1))     # 1.0 <class 'float'>
 ```
 
 If either operand is a `float`, or the operation is `/`, the result will be a `float`.
@@ -256,10 +349,16 @@ Otherwise (If both operands are both `int`s and the operation is **not** `/`), i
 We can work with more than numbers in python though. We also have text, aka strings (`str`).
 
 Turns out, there are some handy operations we can perform on strings:
-* `+`: Concatenation. Combines 2 strings together, e.g., `"Hello" + " " + "World"`
-evaluates to `"Hello World"`.
-* `*`: Repeat. This takes, as operands, a string and and an integer, in either order,
-and repeats the string that many times. E.g., `5 * "ha"` evaluates to `"hahahahaha"`.
+* `+`: Concatenation. Combines 2 strings together.
+* `*`: Repeat. This takes, as operands, a string and an integer, in either order,
+and repeats the string that many times.
+
+For example:
+```py live_py title=String_Operations
+print("Hello" + " " + "World") # "Hello World" 
+print(5 * "ha")                # "hahahahaha" 
+print("ho" * 3)                # "hohoho" 
+```
 
 ## Converting Types (Casting)
 
@@ -271,9 +370,9 @@ integer `125`.
 Conversion function are conveniently named after their types:
 * `int()`: attempts to convert something to an `int`.
 E.g., `int("125")` evaluates to `125`.
-* `float()`: attempts to convert something to an `float`
+* `float()`: attempts to convert something to a `float`
 E.g., `float("125")` evaluates to `125.0`.
-* `str()`: attempts to convert something to an `str`.
+* `str()`: attempts to convert something to a `str`.
 E.g., `str(-0.12)` evaluates to `"-0.12"`.
 
 I say "attempts", because some things are illegal and will fail:
@@ -287,20 +386,18 @@ ValueError: invalid literal for int() with base 10: '3.14'
 Finally, a warning about converting `float`s to `int`s,
 the `int()` function truncates (chops off) the decimal part.
 You may find it more appropriate to use the `round()` function.
-```
->>> int(126.9999999999)
-126
->>> round(126.9999999999)
-127
+```py live_py title=Float_to_Int
+print(int(126.9999999999))   # 126
+print(round(126.9999999999)) # 127
 ```
 
 <details>
 <summary><b>Extra: Floor and Ceiling</b></summary>
 
 This truncating, or rounding down, is also called *floor*ing
-(hence "floor divisions", in fact).
+(hence "floor division" from earlier, in fact).
 It can also be deliberately done with `math.floor()` in the
-[`math` Module](#math-module)
+[`math` Module](#math-module), explained more below.
 
 The notion of rounding up is captured by the ceiling (`math.ceil()`) function.
 
@@ -316,7 +413,7 @@ there is a special function, who's name matches the name of the type (class),
 called a *constructor*.
 
 Constructors construct an *object* of that type (class).
-They may also take in inputs to inform that construction.
+They may also take in arguments to inform that construction.
 
 So `int(5.6)` isn't technically "converting" the `float` `5.6` to an `int`,
 but rather, creating a new `int` based on the `float` `5.6`.
@@ -341,73 +438,11 @@ To *load* (or *import* or *include*) the `math` module, use the command `import 
 
 There are useful function and constants in the module, like `sqrt()` and `pi`,
 but in order to use them (at least with this import method), we must refer to them
-as `math.sqrt()` or `math.pi`.
-```
->>> math.sqrt(math.pi)
-1.7724538509055159
+as `math.sqrt()` and `math.pi`.
+```py live_py title=Math_Module
+import math
+print(math.sqrt(math.pi)) # 1.7724538509055159
 ```
 
 A full list of the function available to in the `math` module can be found
 in the [official documentation](https://docs.python.org/3/library/math.html).
-
----
-
-:::caution
-
-From here on is post-lecture content,
-or notes about the lecture but not part of the lecture itself.
-
-:::
-
----
-
-<details>
-<summary><b>Instructor's Outline</b></summary>
-
-This is an outline I had in the replit when demonstrating things.
-
-```py
-############################
-### Instructor's Outline ###
-############################
-
-# types:
-#   int      (whole numbers)
-#   float    (decimal point numbers)
-#   string   (text)
-
-# type() function
-
-# Familiar Math Operations:
-#   Addition:        +
-#   Subtraction:     -
-#   Multiplication:  *
-#   Division:        /
-#   Exponentiation:  **
-
-# order of operations
-
-# types in vs types out
-#    1. floats dominate
-#    2. division outputs floats
-
-# String Operations:
-#   Concatination:   +
-#   Repeat:          *
-
-# Casting
-#    int(), float(), str()
-#    use round() for float -> int
-
-# Less-Familiar Math Operations:
-#   Floor Division:  //
-#   Modulo:          %
-
-# Math Library (import math)
-#   math.pi
-#   math.sqrt()
-#   https://docs.python.org/3/library/math.html
-```
-
-</details>
-
