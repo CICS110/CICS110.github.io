@@ -4,25 +4,6 @@ title: Section 04 (Jared Yeager)
 
 # Functions
 
-:::caution
-
-This is not entirely complete, you may notice some TODOs I have left for myself.
-
-:::
-
-## Assignment Updates
-
-Stuff due this week:
-* Reading 1: **Due Thursday 2/16**
-* Quiz 2: **Due Thursday 2/16**
-* Lab 2: **Due Friday 2/17**
-
-Stuff due next week:
-* HW 1: **Due Wednesday 2/22**
-* Quiz 3: **Due Thursday 2/23**
-* Lab 3: **Due Friday 2/24**
-* [TODO: Reading? Presumably Thursday.]
-
 ## Black Box Functions
 
 There are several ways to look at what functions are.
@@ -46,26 +27,25 @@ Here is how that view relates so some functions we've already seen.
 `int(42.67)`:
 * function: `int()`.
 * input: `42.67`, of type `float`.
-* output: `42`, of type `int`.
 * side effects: none.
+* output: `42`, of type `int`.
 
 `print("Hello, World")`:
 * function: `print()`.
 * input: `"Hello, World"`, a `str`.
 * side effects: prints `Hello, World` to terminal.
-**Note:** this is "output" in program sense, but not in the within-program function sense.
-After all, if I had `x = print(Hello, World)`, what would `print(Hello, World)`
-evaluate to? What would be store in `x`? That's the function output.
-* output: (We'll come back to this, but:)`None`, of type `NoneType`.
-
-For now, thing of `None` as a special object that represents nothing.
-In essence, the function returns nothing, or doesn't return anything.
+  **Note:** this is "output" in program sense, but not in the within-program function sense.
+  After all, if I had `x = print("Hello, World")`, what would `print("Hello, World")`
+  evaluate to? What would be store in `x`? That's the function output.
+* output: `None`, of type `NoneType`. We'll come back to this, but for now,
+  think of `None` as a special object that represents nothing.
+  In essence, the function returns nothing, or doesn't return anything.
 
 `input("Please enter a number: ")`:
 * function: `input()`.
 * input: `"Please enter a number: "`, a `str`. This is the input in the function sense.
 * side effects: prints `"Please enter a number: "` to terminal.
-Blocks the program until we enter something (input in the use-program-interaction sense).
+Blocks the program until we enter something (input in the user-program-interaction sense).
 Say we enter `314`.
 * output: `"314"` (what we typed in), of type `str`.
 
@@ -114,14 +94,14 @@ Viewing functions as black boxes is fine for calling them.
 But there are times we want to build a "black box" that does something like,
 say, compute the area of a triangle.
 
-What functions are, and what we would be making, is a reusable piece of code.
-A named piece of code that depends on some *parameters* (e.g., base and height) and
-produces some *return* (e.g., area).
+What functions are, and what we would be making, are reusable pieces of code,
+named pieces of code that each depend on some *parameters* (e.g., base and height) and
+produce some *return* (e.g., area).
 
 ### Function Signatures
 
 Function *signatures* are a condensed way of representing the parameter and return
-information if a function.
+information if a function, which we need to make functions in a bit.
 
 For instance: `round(number:float) -> int`
 * The name of the function, `round` is the first thing.
@@ -142,7 +122,7 @@ First we make what is called the function *header*, basically saying
 (as in "define"), followed by the signature for the function we want to create,
 followed by a `:`.
 
-So for the area of a triangle function, this would be
+So for the area of a triangle function, this could be
 ```
 def triangle_area(base:float, height:float) -> float:
   # [Add code here]
@@ -173,6 +153,7 @@ That last line says have "the function output/return `area`".
 As a final note, we could actually shorten this.
 `return` can work on any expression, not just a pure variable.
 For instance:
+
 ```py live_py title=Triangle_Area
 def triangle_area(base:float, height:float) -> float:
   return base * height / 2 # b * h / 2 is evaluated and returned
@@ -195,6 +176,7 @@ we still use `-> None` to indicate no return.
 The first example case is a function that has no `return` at all.
 A practical example of such a function is a function that takes in information
 and prints it in an aesthetically pleasing manner.
+
 ```py live_py title=No_Return
 def no_return() -> None:
   print("I do not return, thus I return nothing (None)")
@@ -206,6 +188,9 @@ print("no_return() returned: " + str(ret))
 The second example case is a function that has just `return` with nothing after it.
 There are cases where the return of the function is not important,
 but you want to use `return` when ending the flow of execution.
+We haven't gotten to branching, but something like
+"if the arguments are illegal in some way, `return`/abort immediately".
+
 ```py live_py title=Return_Nothing
 def return_nothing() -> None:
   print("I return nothing, thus I return nothing (None)")
@@ -217,7 +202,8 @@ print("return_nothing() returned: " + str(ret))
 
 The third example case is a function that explicitly has `return None` in it.
 This is equivalent to the above,
-but there is a case where perhaps emphasising the `None` being returned makes sense.
+but there may be a case where emphasising that `None` is being returned makes sense.
+
 ```py live_py title=Return_None
 def return_none() -> None:
   print("I return None, thus I return nothing (None)")
@@ -231,6 +217,10 @@ The fourth example is mechanically a subset of the third,
 a function that returns some expression that evaluates to `None`.
 I can't offhandedly think of a case where I would want to do this,
 but the world is big.
+Maybe a case of returning the result of a helper function,
+which may itself return `None` or not,
+depending on its own success.
+
 ```py live_py title=Return_Eval_None
 def return_eval_none() -> None:
   return print("I return the None returned by print(), thus I return nothing (None)")
@@ -260,7 +250,7 @@ cube_surface_area(length:float) -> float
 But we want for `cube_surface_area(3)` and `cube_surface_area()`
 to be legal, with the latter effectively being `cube_surface_area(1)`.
 
-We can make that parameter option with a default by adding `=`
+We can make that parameter optional with a default by adding `=`
 followed by a default value after the parameter name and type:
 ```py
 cube_surface_area(length:float=1) -> float
@@ -286,8 +276,7 @@ and once that function call ends, they are gone.
 
 A variable's scope depends on where it is *defined* via `x = [something]`.
 For each level, global and local (not within and within a function),
-the first time an `x = [something]` occurs, `x` is *defined* to be that something
-(you can of course ).
+the first time an `x = [something]` occurs, `x` is *defined* to be that something.
 
 ```py live_py title=Print_Global_Locally
 def print_num() -> None:
@@ -311,7 +300,7 @@ print(num) # error, no global num to print
 ```
 
 When a variable is used within a function, the function first looks locally,
-and then globally. So if there is a local `x` and a global `x`, then we the local one
+and then globally. So if there is a local `x` and a global `x`, then we say the local one
 will *shadow* (make effectively invisible to the function) the global one.
 
 ```py live_py title=Shadow_Global
