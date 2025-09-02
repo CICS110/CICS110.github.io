@@ -19,7 +19,8 @@ Today we will be considering some **un-ordered** collection types.
 *Sets* are a pure collection of **unique** elements. Any given value is either in the set or not.
 
 Sets can be declared with squiggly brackets (`{}`) with comma-separated values.
-Empty sets must be created with the `set()` function (`{}` alone makes an empty dictionary).
+Empty sets must be created with the `set()` function
+(`{}` alone makes an empty dictionary, which we shall see soon).
 
 ```py live_py title=Make_Set
 empty_set = set()
@@ -41,16 +42,16 @@ print(fruits[0]) # Throws Error
 The real thing you would do with a set is check membership.
 
 ```py live_py title=In_Set
-fruits = {"apple", "banana", 314, "cherry", "durian", 3.14}
+fruits = {"apple", "banana", "cherry", "durian"}
 
-print("apple" in fruits)     # True
-print("pineapple" in fruits) # False
+print("apple" in fruits)  # True
+print("carrot" in fruits) # False
 ```
 
 ### Dictionaries
 
-*Dictionaries* are almost a generalisation of a lists in a way.
-Lists are a collection of indexed elements, the indices are 0 to length minus 1 (inclusive).
+*Dictionaries* are almost a generalisation of lists in a way.
+Lists are collections of indexed elements, the indices are 0 to length minus 1 (inclusive).
 These indices impose a natural ordering on the elements in the list.
 
 Dictionaries replace indices with arbitrary **unique** *keys*, and these keys map to *values*
@@ -59,7 +60,7 @@ Using keys to index into the dictionary is what forces them to need to be unique
 These keys can be anything, and so there is no clear ordering.
 
 This is really useful if you want to track categorical information about something.
-So a dictionary with information about person maybe has `"age"`, `"height"`, `"hair colour"`
+So a dictionary with information about person maybe has `"age"`, `"height"`, and `"hair colour"`
 as keys, for instance.
 
 Dictionaries can be declared with squiggly brackets (`{}`) with comma-separated `key:value` pairs.
@@ -86,7 +87,7 @@ print(f"Jared['hobby']: {Jared['hobby']}")   # origami
 print(f"Jared['name']: {Jared['name']}")     # Error!
 ```
 
-If the key does not exist on an access attempt, and error occurs (setting is fine though).
+If the key does not exist on an access attempt, an error occurs (setting is fine though).
 This can be used to retrieve `value`s (as above), update values for a given `key`, and
 make new `keys` and set the associated `value`.
 
@@ -103,7 +104,7 @@ Jared["last name"] = "Yeager"
 print(f"Jared: {Jared}")
 ```
 
-Finally, `in`. Checks if a `key` is a key in the dictionary.
+Finally, `in` checks if a `key` is a key in the dictionary.
 
 ```py live_py title=In_Dict
 Jared = {"age": 26, "job": "TO", "height": (6, 1), "hobby": "origami"}
@@ -115,7 +116,7 @@ print(("age", 26) in Jared) # False
 ## Useful Methods
 
 Naturally, the official documentation has the full list of methods for all of these types.
-I want to flag a few that might be useful now so they you know such things exist.
+I want to flag a few that might be useful now so that you know such things exist.
 You don't need to memorise these, knowing they exist in order
 to be able to look them up in the future is the real goal.
 
@@ -177,10 +178,37 @@ print(f"diff    : {fruits.difference(colours)}")
 print(f"sym diff: {fruits.symmetric_difference(colours)}")
 ```
 
+But sets also have all sort of nice symbol alternatives for these
+
+```py live_py title=Set_Ops_Symbols
+fruits = {"apple", "banana", "orange"}
+colours = {"orange", "yellow", "green"}
+print(f"inter   : {fruits & colours}")  # akin to and
+print(f"union   : {fruits | colours}")  # akin to or
+print(f"diff    : {fruits - colours}")  # akin to ... nimp
+print(f"sym diff: {fruits ^ colours}")  # akin to xor
+```
+
+Sets also allow for usage of `<`, `<=`, `>`, and `>=` to
+check subsets and supersets in the way you probably expect.
+
+```py live_py title=Set_Ops_Comparisons
+def fruit_str(str_set):
+  return str(str_set).replace("'","").replace(" ","")
+
+fruits = {"🍎","🍌","🍊"} # You can indeed do emoji
+for alt in [{"🍎","🍌","🍊"},{"🍎","🍊"},{"🍎","🍌","🍊","🍇"},{"🍎","🍊","🍇"}]:
+  print(f"{fruit_str(fruits)} > {fruit_str(alt)}: {fruits > alt}")
+  print(f"{fruit_str(fruits)} >= {fruit_str(alt)}: {fruits >= alt}")
+  print(f"{fruit_str(fruits)} < {fruit_str(alt)}: {fruits < alt}")
+  print(f"{fruit_str(fruits)} <= {fruit_str(alt)}: {fruits <= alt}")
+```
+
 ### Dictionaries
 
 Some general methods:
-* `.update(d)`: adds key-value pair from dictionary-like object (iterable with key-value pairs) `d` to the dictionary
+* `.update(d)`: adds key-value pairs from dictionary-like object
+  (iterable with key-value pairs) `d` to the dictionary
 * `.pop(k)` removes and key-value pair for key `k` and returns the associated value
 
 ```py live_py title=Dict_Update
@@ -207,21 +235,11 @@ Some methods for extracting all keys/values of a dictionary:
 * `.values()`: returns an iterable of the values
 * `.items()`: returns an iterable of key-value tuples
 
-```py live_py title=Dict_Keys
+```py live_py title=Dict_Keys_Values_Items
 fruit_colours = {"apple": "red", "banana": "yellow", "cherry": "red"}
 print(f"dict: {fruit_colours}")
 print(f"keys: {fruit_colours.keys()}")
-```
-
-```py live_py title=Dict_Values
-fruit_colours = {"apple": "red", "banana": "yellow", "cherry": "red"}
-print(f"dict  : {fruit_colours}")
 print(f"values: {fruit_colours.values()}")
-```
-
-```py live_py title=Dict_Items
-fruit_colours = {"apple": "red", "banana": "yellow", "cherry": "red"}
-print(f"dict : {fruit_colours}")
 print(f"items: {fruit_colours.items()}")
 ```
 
@@ -327,7 +345,6 @@ Converting **to** a dictionary basically requires a set/list/tuple of key-value 
 (stings can't be element-wise paired like this).
 
 ```py live_py title=To_Dict
-fruits = {"apple": "red", "orange": "orange", "banana": "yellow"}
 set_to_dict = dict({('apple', 'red'), ('banana', 'yellow'), ('orange', 'orange')})
 print(set_to_dict)
 
@@ -444,7 +461,7 @@ print(f"d: {d}") # Error, because d has no value
 ```
 
 However, it can also be used to delete **elements** from a
-**mutable and indexable** collection (e.i., lists and dicts).
+**mutable and indexable** collection (i.e., lists and dicts).
 
 ```py live_py title=Del_Elem
 list_var = [3,1,4,1,5]
