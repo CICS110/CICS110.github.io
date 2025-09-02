@@ -61,13 +61,13 @@ and some **indented** block of `code` (can be multiple lines).
 The `more_code` is not part of the while loop, just some context around it.
 
 If `condition` is/evaluates to `True`,
-then the flow of execution will enter the while block and `code` will be executed;
+then the flow of execution will enter the while-block and `code` will be executed;
 then the `condition` will be checked again, and if it again is/evaluates to `True`,
 `code` will be executed again. This will repeat until `condition` is/evaluates to `False`.
 
 If `condition` is/evaluates to `False`,
 either the first time it is checked or sometime after `code` was executed,
-then the flow of execution will skip over the while block and `more_code` will be executed.
+then the flow of execution will skip over the while-block and `more_code` will be executed.
 
 As an example, here is code for the countdown scenario:
 
@@ -149,7 +149,7 @@ But putting that back into the original context is a little trickier.
 The key difference in context is that there is an original "Get input".
 But after that, the core loop is the same.
 
-We can consider that initial "Get input" as a one-off,
+We can consider that initial "get input" as a one-off (unrolling a partial loop),
 and have our core loop start with the diamond. That gets us the following:
 
 ```mermaid
@@ -181,9 +181,9 @@ print(f"Sum of {nums}: {total}")
 ### Breaking Out of the Loop
 
 (You can probably imagine what I'm about to say.)
-But that's kind of gross, and we have machinery for this!
-Alright, it's not super gross.
-But, writing the same line of code for the same task in multiple separate locations
+That's kind of gross, and we have machinery for this!
+Alright, it's not super gross,
+but writing the same line of code for the same task in multiple separate locations
 is kind of a "code smell". It is a sign that we can probably do better.
 
 So let's go back to the original diagram:
@@ -204,11 +204,12 @@ It turns out that there is a special command, `break`,
 that breaks us out of whatever loop we are in. So if we see `"done"`, we can just break.
 
 But what is the loop condition? What's interesting is that the "is done" check that
-controls the loop would actually now be in an if statement inside the loop.
+controls the loop would actually now be in an if statement inside the loop
+indicating that it is time to break.
 
-And if we are considering the loop to start at "Get input",
+If we are considering the loop to start at "get input",
 then we never have a condition there that could end to loop.
-In other word, from the while loop's perspective, we **always loop** (maybe trigging a break inside).
+In other words, from the while loop's perspective, we **always loop** (maybe trigging a break inside).
 
 And so we get this:
 
@@ -270,14 +271,12 @@ flowchart LR
 There is one more special command for loops, `continue`.
 `continue` has you skip the rest of the commands in the loop
 and immediately begin the next iteration.
-
 This can be useful if a run of the loop is borked and you need to start over,
 such as if an illegal input is encountered.
 
-So let's add exactly that to the summation example,
+Let's add exactly that to the summation example,
 making it so that if the the input would not become a number,
 we scold the user and go right back to asking for a number.
-
 Here's the new control flow diagram:
 
 ```mermaid
