@@ -4,20 +4,6 @@ title: Section 04 (Jared Yeager)
 
 # Debugging
 
-## Assignment Updates
-
-Stuff due this week:
-* Participation 4 **Due Thursday 3/9**
-* Quiz 5: **Due Thursday 3/9**
-* HW 3: **Due Friday 3/10**
-* Lab 5: **Due Friday 3/10**
-
-Stuff due next week:
-* Nothing! Enjoy the break!
-
-Finally, HW4 will **not** be due the week of 3/20 to 3/24.
-We want to treat the break (3/11 to 3/19) as null time.
-
 ## Other Resources
 
 I feel that a fairly strong visual component is necessary
@@ -29,13 +15,13 @@ and I don't think I can do it better than has already been done:
 * [VSCode Debugging Guide](https://code.visualstudio.com/docs/editor/debugging)
 
 I'll mostly use these notes to pontificate about how I think about debugging.
+This is more of a philosophical rambling set of notes.
 
 ## Fixing Bugs
 
 Inevitably, you will encounter cases where you run your code
 and it either does the wrong thing or explodes.
-That is to say, *Bugs* or *errors* occur.
-
+That is to say, *bugs* or *errors* occur.
 Fixing those is what programming is really about.
 It's also where some of the best learning happens.
 
@@ -51,7 +37,7 @@ So this step is likely pretty easy.
 
 If you are using some sort of randomness, such as the `random` module,
 you may have some cases where the bug occurs and some where it doesn't.
-Take the code below as an example. Run it multiple times. By my estimates there
+Take the code below as an example. Run it multiple times. By my estimate there
 is 27.1% chance of an error occurring on each run.
 
 ```py live_py title=Random
@@ -113,7 +99,7 @@ This is frequently where the debugger comes in, allowing you to step through you
 and see where your expectations of what will happen first depart from what the program is doing.
 
 I'm a bit more of a plebeian myself,
-in that I generally use print statement a lot to just print the values of variables.
+in that I generally use print statements a lot to just print the values of variables.
 If I was really at a loss, I'd probably start by having print statements at the
 beginning and end of my functions to show me the arguments values and returns of each function call.
 
