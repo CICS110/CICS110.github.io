@@ -9,7 +9,6 @@ I suspect this is mostly going to be an example dump.
 Any sort of looping you want to do can be accomplished with a while loop.
 But, as is often the case in the programming world,
 we have special machinery for some sub-cases.
-
 *for loop*s are not different in kind from while loops,
 they are just more convenient for some cases.
 
@@ -20,12 +19,11 @@ The "problem we want to solve"?
 
 The while loop is most natural when your mental framing of a problem is
 "I want to do X while/as long as Y" or "I want to do X until Y".
-
 The for loop is for "I want to do X for each/every Z":
 * "For every/each element in this list"
 * "For every/each element in this tuple"
 * "For every/each letter in this string"
-* "For every/each number in this range"
+* "For every/each number in this range" (this also captures "do something W times")
 
 The countdown ("10 ... 9 ... ... 1 ... Blastoff!") example from last time is an example of this,
 it has us printing ("doing X") every number from 10 to 1 ("the range 10 to 1").
@@ -52,7 +50,7 @@ assignment of `variable_name` such that
 
 If `iterable`'s elements have some sort of canonical ordering,
 `variable_name` will be assigned and `code` run based on that ordering
-(so lists go in the order you probably expect for instance).
+(so lists go in the order you probably expect, for instance).
 This'll be clearer with some examples.
 
 As for what can be iterated over/what is an *iterable*:
@@ -81,7 +79,7 @@ Quite a lot! Hence, examples to come.
 Here's an example that prints a bunch of elements in a list:
 
 ```py live_py title=Print_List
-# a list of not all string that we want to print
+# a list of not all strings that we want to print
 ones = [True, 1, 1.0, "One"]
 for elem in ones:
   print(elem)
@@ -91,7 +89,7 @@ for elem in ones:
 
 ### On Tuples
 
-Here's an example that prints is the days of the week are weekdays or weekends.
+Here's an example that prints whether the days of the week are weekdays or weekends.
 
 ```py live_py title=Get_Type
 for day in ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"):
@@ -145,7 +143,7 @@ print(f"nums_range     : {nums_range}")
 print(f"nums_range type: {type(nums_range)}")
 
 # Displaying the range as a list
-nums_list = list(range(10))
+nums_list = list(nums_range)
 print(f"nums_list      : {nums_list}")
 print(f"nums_list type : {type(nums_list)}")
 ```
@@ -171,8 +169,10 @@ print("Blastoff!")
 
 ## Nesting
 
-We can have loops inside loop, we refer to this an *nesting*.
+We can have loops inside loops, we refer to this an *nesting*.
 We need an additional level of indentation for every level of nesting.
+(We've already seen this with branching and while-looping,
+perhaps I was supposed to hide that until now, whoops.)
 
 ```py live_py title=Nesting
 for x in range(3):
@@ -240,8 +240,8 @@ xs = []
 ys = []
 
 for x, y in points:
-  xs += [x] # xs = xs + [x], e.i. append
-  ys += [y] # ys = ys + [y], e.i. append
+  xs += [x] # xs = xs + [x], i.e. append
+  ys += [y] # ys = ys + [y], i.e. append
 
 print(xs)
 print(ys)
@@ -278,9 +278,9 @@ Naturally, if you actually wanted the zip to be a list, you'd do the `list(zip(.
 approach, the loop is there to show it works.
 
 As for an example where the loop over a zip is more natural,
-there was a point in the auto-grader for Guess a Number
-(*sigh* that's not out yet to link to)
-where I want a bunch on minimums, maximums and random guesses in those ranges.
+there was a point in an auto-grader for a guess a number game
+where I wanted a bunch of minima, maxima, and random guesses in those ranges
+nicely bundled together to run tests on.
 
 ```py live_py title=Guess_a_Number
 import random
@@ -304,6 +304,7 @@ print()
 
 # print respetive values
 for min_num, guess, max_num in zip(mins, guesses, maxs):
+  # Here I could do some work with paired up guesses and their ranges
   print(f"{min_num} <= {guess} <= {max_num}")
 ```
 
@@ -323,7 +324,7 @@ for i in range(len(points)):
 But having to do that `points[i]` thing is such a bother (it's really not that bad),
 and so there is fancy machinery to save us from this one line.
 
-We have `enumerate()`, which takes and iterable and generates something of type `enumerate`.
+We have `enumerate()`, which takes any iterable and generates something of type `enumerate`.
 The `enumerate` can either be iterated over in a loop (or used anywhere else a iterator can be)
 or turned into a list or such.
 
