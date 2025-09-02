@@ -4,31 +4,17 @@ title: Section 04 (Jared Yeager)
 
 # Lists, Tuples, and Strings
 
-## Assignment Updates
-
-Stuff due this week:
-* Participation 3 **Due Thursday 3/2**
-* Quiz 4: **Due Thursday 3/2**
-* HW 2: **Due Friday 3/3**
-* Lab 4: **Due Friday 3/3**
-
-Stuff due next week:
-* (Presumably) Participation 4 **Due Thursday 3/9**
-* (Presumably) Quiz 5: **Due Thursday 3/9**
-* HW 3: **Due Friday 3/10**
-* Lab 5: **Due Friday 3/10**
-
 ## Lists, Tuples, ... and Strings
 
 We have covered various types (`int`, `float`, `str`, `bool`) up to now.
 And we have used variables to store and access objects of these types.
-But there is a weakness in out ability to hold information.
+But there is a weakness in our ability to hold information.
 We don't have a good way to hold, say, 100 `int`s. And wanting to take an average of
 100 numbers is not an unreasonable goal.
 
-And so we have a number of *collection type*s or *collection*s in python.
-These are types that exists to store a bunch of information.
-Within those are *sequence type*s, types that store a bunch of things in some order.
+We now turn our focus to some of the many *collection type*s or *collection*s in python.
+These are types that exist to store a bunch of information.
+Within those are *sequence type*s, types that store a bunch of information **in some order**.
 
 ### Lists
 
@@ -52,7 +38,7 @@ followed by `]`.
 **Note: indexing starts at 0.**
 So the first element in the list has index `0`, second has index `1`, ...,
 last element has index `length-1` (where `length` is the length of this list,
-generally obtained via `len()` function).
+generally obtained via the `len()` function).
 
 ```py live_py title=Index_List
 l = [3, 1, 4, 1, 5]
@@ -62,7 +48,7 @@ print(l[1])        # 1
 print(l[len(l)-1]) # 5
 ```
 
-Finally, you can change the elements at an in index of the list.
+Finally, you can change the element at a given in index of the list.
 
 ```py live_py title=Edit_List
 l = [3, 1, 4, 1, 5]
@@ -105,8 +91,8 @@ We say a tuple is *immutable*, whereas a list is *mutable*:
 
 ```py live_py title=Edit_Tuple
 t = (3, 1, 4, 1, 5)
-print(t)        # (3, 1, 4, 1, 5)
-t[0] = 5        # Error
+print(t) # (3, 1, 4, 1, 5)
+t[0] = 5 # Error
 ```
 
 ### Strings
@@ -117,23 +103,22 @@ That said, when you index into a string you just get a string of length 1.
 
 ```py live_py title=Index_String
 s = "Hello, World!"
-print(s[2])         # "l"
-print(s[4])         # "o"
-print(s[10])        # "l"
+print(s[2])  # "l"
+print(s[4])  # "o"
+print(s[10]) # "l" 
 ```
 
-Like tuples however, you can not edit them.
+Like tuples however, they are immutable (you can not edit them).
 
 ```py live_py Edit_String
 s = "Hello, World!"
-s[12]               # "!"
-s[12] = "?"         # Error
+print(s[12]) # "!"
+s[12] = "?"  # Error
 ```
 
 ### When to use What
 
 Strings are for text, pretty clear. You want text? Strings.
-
 But lists vs tuples?
 The mechanical difference is just that lists are mutable and tuples aren't.
 
@@ -144,10 +129,9 @@ a y-coordinate to get a 2D point.
 Lists to me are more for working with bulk, many of the same type of thing.
 If I need to store a long list of numbers to later get some stats about,
 I'd generally use a list.
-
 But maybe that's just me. I tend to just default to lists in general,
-partly because they are more flexible, but partly because other languages have list
-analogues more than they do tuple analogues.
+partly because they are more flexible, but partly because they are more like
+"arrays" in other languages and so feel more "canonical" to me.
 
 ## Methods
 
@@ -163,7 +147,7 @@ you can invoke the `append()` method like so: `l.append(3)`
 
 We've seen the dot `.` before in a different context.
 My intuition is that `foo.bar` Is saying something like
-"get the `bar` attribute/variable/function/something from `foo`":
+"get the `bar` attribute/variable/function/whatever from `foo`":
 * `math.sqrt()` is "get the `sqrt()` function from the `math` module (library)".
 * `math.pi` is "get the `pi` constant from the `math` module (library)".
 * `l.append()` is "get the `append()` method from `l`". And if `l` is list,
@@ -207,19 +191,127 @@ with all occurrences of substring `old` replaced by `new`.
 Hi = "Hello, World!"
 hi = Hi.lower()
 HI = Hi.upper()
-H1 = Hi.replace("o", "0")
+H1 = Hi.replace("o", "0").replace("l", "1").replace("e", "3") # Chaining!
 print(Hi) # Hello, World!
 print(hi) # hello, world!
 print(HI) # HELLO, WORLD!
-print(H1) # Hell0, W0rld!
+print(H1) # H3110, W0r1d!
 ```
 
 **Notice that the `Hi` used to invoke these method was unchanged.**
 
-This behaviour is remarkable different from lists.
+This behaviour is remarkably different from lists.
 Methods **can** change the thing used to call them, but they may not.
-The only real way to know is to read the documentation, and better yet:
-play around and test them in a REPL or some such.
+For immutable types, a new copy must be returned.
+For mutable types, I would heuristically expect the invoking instance to be mutated,
+but that isn't guaranteed.
+The only real way to know is to read the documentation, or better yet,
+play around and test them in a REPL or some-such.
+
+This is a subtlety that is easy to get tripped up on,
+so I want to hang on it a bit more.
+We can consider methods from the black-box function perspective,
+where the invoking instance (such as `Hi` in `Hi.upper()`) can be viewed
+either as input or as being baked in
+(i.e., `Hi.upper()` is a distinct function for each value of `Hi`).
+
+<details>
+<summary><b>Extra: Which is it?</b></summary>
+
+:::caution
+
+This is peaking behind the curtain quite a bit prematurely.
+We will come back to this point in the fullness of time
+(i.e., when we get to classes).
+
+:::
+
+Since we are applying a model, on some level it really is just a matter of perspective.
+But, as a fun technical detail, `list.append()` and `str.upper()` are the base functions.
+`[True, 1.0].append()` and `"Hello, World!".upper()`
+are functions based on them with the invoking instance built in.
+
+```py live_py title=True_Functions
+print(list.append)
+print(str.upper)
+print()
+print([True, 1.0].append)
+print("Hello, World!".upper)
+```
+
+These base/type-level functions can be used directly,
+by providing what would be the invoking instance as the first argument.
+
+```py live_py title=Calling_True_Functions
+ones = [True, 1.0]
+list.append(ones, "one")
+print(ones) # [True, 1.0, "one"]
+Hi = "Hello, World!"
+hi = str.upper(Hi)
+print(hi)   # HELLO, WORLD!
+```
+
+</details>
+
+<details>
+<summary><b>Extra: Currying</b></summary>
+
+:::caution
+
+This is about mathematics far outside the scope of this course.
+
+:::
+
+This whole concept of making a new functions by baking in an argument
+is related to the mathematical idea of *currying* functions.
+This starts getting into lambda calculus and other very alien looking things,
+but the idea isn't too crazy with some examples.
+If I had the function $$f(x,y) = 2x^2 + xy + 3y^2$$, I could say let
+$$f_x(y) = 2x^2 + xy + 3y^2$$ be a family of functions for all possible values of
+$$x$$. Now I can have functions $$f_1(y) = 2 + y + 3y^2$$ and
+$$f_{\pi}(y) = 2\pi^2 + \pi y + 3y^2$$ that have "baked in" specific values for $$x$$.
+
+We are talking about this same idea,
+just with programming functions instead.
+`list.append(ones, "one")` is analogous to using $$f(x, y)$$,
+`ones.append("one")` is analogous to using $$f_x(y)$$.
+
+</details>
+
+Compare the following in this framework.
+
+`[True, 1.0].append("one")`:
+* Function: `[True, 1.0].append()`
+  (or `list.append()`, depending on perspective).
+* Input: `"one"` (and maybe also `[True, 1.0]`, depending on respective perspective).
+* Side Effect: the list object in memory originally with value `[True, 1.0]`
+  becomes `[True, 1.0, "one"]`
+  (and so without some variable to reference the list, it would be lost).
+* Output: `None`.
+
+`"Hello, World!".upper()`:
+* Function: `"Hello, World!".upper()`
+  (or `str.upper()`, depending on perspective).
+* Input: none (or maybe `"Hello, World!"`, depending on respective perspective).
+* Side Effect: none.
+* Output: `"HELLO, WORLD!"`.
+
+```py live_py title=Updated_VS_New
+ones = [True, 1.0]
+on3s = ones.append("one")
+print(ones) # [True, 1.0, "one"]
+print(on3s) # None
+print()
+Hi = "Hello, World!"
+hi = Hi.upper()
+print(Hi)   # Hello, World!
+print(hi)   # HELLO, WORLD!
+```
+
+For my part, I prefer the methods that return a new object,
+as that is closer to the more pure mathematical intuition of functions.
+Moreover, you can readily chain such methods together, such as the `.replace()` chain
+in the string methods example.
 
 ---
 
@@ -261,7 +353,7 @@ print(point_add) # (7, 2)
 ```
 
 You might find using the tuple name and indices repeatedly bothersome or unclear,
-especially of say `point1[0]` showed up multiple times in a calculation.
+especially if, say, `point1[0]` showed up multiple times in a calculation.
 You could use helper variables to diminish that to some extent.
 
 ```py live_py title=2D_Add_Variables
@@ -279,9 +371,8 @@ print(point_add)       # (7, 2)
 ```
 
 I find this more visually clear,
-especially if those variables are used multiple times each.
-
-The initial assignment isn't the nicest.
+especially if those variables are used multiple times each,
+but the initial assignment isn't the nicest.
 Python has special machinery to do this a little more nicely though.
 
 ```py live_py title=2D_Add_Unpacking
@@ -335,7 +426,7 @@ print(l[length-1]) # prints 4
 ```
 
 You could also write `l[len(l)-1]`. This is ... kind of gross.
-It turns out, there is shortcut for this: `l[-1]`.
+It turns out there is shortcut for this: `l[-1]`.
 
 ```py live_py title=Negative_Indices
 l = [0,1,2,3,4]
@@ -357,11 +448,11 @@ you can extract sub-lists/tuples/strings called *slices*.
 
 For a list (or tuple or string) `l`,
 you can get the element at an index `index` via `l[index]`.
-There is a generalised indexing form though `l[from:to:step]`.
+There is a generalised indexing form though: `l[from:to:step]`.
 This gets you a sub-list/tuple/string based on the indices from `from` (inclusive) to
 `to` (exclusive) in increments of `step`.
 
-In fact, and of these three can be left blank (as long as the `:` are still there).
+In fact, any of these three can be left blank (as long as the `:`s are still there).
 `step` defaults to `1`.
 `from` and `to` default to the limits of the list
 (`step` may be negative, so `from` could be the end of the list when unspecified).
@@ -446,31 +537,35 @@ If you want to convert a list/tuple of strings intro a string by
 effectively concatenating everything in the list/tuple together,
 you probably want to use the `str.join()` method.
 The invoking string should be whatever you want to appear between each element of the list/tuple,
-generally this `""`.
+the glue, so to speak.
+For pure concatenation this is `""`, but you can get pretty exotic with it.
+This can be a very powerful tool for printing lists of things with nice formatting.
 
 ```py live_py title=Join
 l = ["3","1","4","1","5"]
 t = ("9","2","6","5","3")
-sl = "".join(l) # "31415"
-st = "".join(t) # "92653"
-print(sl)
-print(st)
+print("".join(l))               # "31415"
+print("".join(t))               # "92653"
+
+print("+".join(l))              # "3+1+4+1+5"
+print(" * ".join(l))            # "3 * 1 * 4 * 1 * 5"
+print("[" + ", ".join(l) + "]") # "[3, 1, 4, 1, 5]" 
 ```
 
 ## Checking Containment
 
 We can check if some value is in a list/tuple/string (any collection generally)
 with the `in` keyword.
-`value in collection` evaluate to `True` if `value` is in `collection` and `False` otherwise.
+`value in collection` evaluates to `True` if `value` is in `collection` and `False` otherwise.
 
 ```py live_py title=In
-print("3 in [1,2,3]:", 3 in [1,2,3])
-print("0 in (1,2,3):", 0 in (1,2,3))
-print("'H' in 'Hello':", 'H' in 'Hello')
-print("'h' in 'Hello':", 'h' in 'Hello')
+print("3 in [1,2,3]:", 3 in [1,2,3])         # True
+print("0 in (1,2,3):", 0 in (1,2,3))         # False
+print("'H' in 'Hello':", 'H' in 'Hello')     # True
+print("'h' in 'Hello':", 'h' in 'Hello')     # False
 
 # For strings, in can work for sub-string
-print("'Hel' in 'Hello':", 'He' in 'Hello')
+print("'Hel' in 'Hello':", 'Hel' in 'Hello') # True
 ```
 
 ### Non-containment
@@ -480,8 +575,7 @@ Since `value in collention` returns a boolean, `not (value in collention)`
 would get the negation.
 (`not value in collention` is equivalent,
 but the parentheses are good for clarity if you don't really know the precedence of operators.)
-
-But as a more english-intuitive option, we also have `value not in collection`
+But as a more english-intuitive option, we also have `value not in collection`.
 
 ```py live_py title=Not_In
 value = 0
