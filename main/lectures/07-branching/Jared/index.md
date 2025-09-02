@@ -4,20 +4,6 @@ title: Section 04 (Jared Yeager)
 
 # Branching
 
-## Assignment Updates
-
-Stuff due this week:
-* (Presumably) Participation 4 **Due Thursday 3/9**
-* (Presumably) Quiz 5: **Due Thursday 3/9**
-* HW 3: **Due Friday 3/10**
-* Lab 5: **Due Friday 3/10**
-
-Stuff due next week:
-* Nothing! Enjoy the break!
-
-Finally, HW4 will **not** be due the week of 3/20 to 3/24.
-We want to treat the break (3/11 to 3/19) as null time.
-
 ## Making Choices
 
 We as humans have plenty of cases where what we do depends on something.
@@ -26,23 +12,28 @@ For instance, if it is raining, I will grab my umbrella.
 With boolean expressions we could represent the "it is raining" part of that.
 The "I will grab my umbrella" part could be represented a bunch of ways in code
 (such as adding `"umbrella"` to some list).
-But the the **"if"** part, having the code be dependent on the boolean,
+But that **"if"** part, having the code be dependent on the boolean,
 that we can't do.
 
 Time to change that.
 
 <details>
-<summary><b>Extra: Bootleg Branching</b></summary>
+<summary><b>Very Extra: Bootleg Branching</b></summary>
 
 :::warning
 
-This will actively do damage to your psyche.
+This isn't a real point, this is just psychopathic coding.
+This may do actively do damage to your psyche.
+Although if you can make sense of it,
+you are probably in a really solid place.
 
 :::
 
 Technically, we could bootleg branching by abusing short-circuiting.
-
-If this code makes an iota of sense to you ...
+By having the code we would like to be conditionally executed be in
+right hand side of an `and` statement, it will only be executed if the
+left hand side evaluates to `True`;
+otherwise the short circuiting on `False` would prevent that code from being run.
 
 ```py live_py title=Bootleg_If
 equipment = ["coat", "hat"]
@@ -68,15 +59,14 @@ not is_jared and print(f"Hello, {name}")
 ## Control Flow Diagrams
 
 But before we get to new code syntax,
-lets talk about a new tool for organising our thoughts on branching:
+let's talk about a new tool for organising our thoughts on branching:
 *control flow diagrams*.
-
 As the name somewhat implies,
 these are diagrams that show the flow of control/execution of code
 (or of actions more broadly).
 
 In a more strict form:
-* They are composed of rectangle, diamonds, and arrows
+* They are composed of rectangles, diamonds, and arrows
 * Rectangles represent actions (instructions in code)
 * Diamonds represent choices/decisions (boolean conditions in code)
 * There is a "Start" rectangle
@@ -84,7 +74,7 @@ In a more strict form:
 * Diamonds have a "True" and "False" path coming out of them
 
 For instance,
-A control for diagram for grabbing an umbrella before heading out if it is raining
+A control flow diagram for grabbing an umbrella before heading out if it is raining
 might look like:
 
 ```mermaid
@@ -144,11 +134,11 @@ and some **indented** *block* of `code` (can be multiple lines).
 The `more_code` is not part of the if statement, just some context around it.
 
 If `condition` is/evaluates to `True`,
-then the flow of execution will enter the if block and `code` will be executed,
-then the flow of execution will exit the if block and `more_code` will be executed.
+then the flow of execution will enter the if-block and `code` will be executed,
+then the flow of execution will exit the if-block and `more_code` will be executed.
 
 If `condition` is/evaluates to `False`,
-then the flow of execution will skip over the if-block and `more_code` will be executed.
+then the flow of execution will skip over the if-block and just `more_code` will be executed.
 
 As an example, here is code for the "if it is raining, I will grab my umbrella" scenario:
 
@@ -211,14 +201,14 @@ After the `if` block we have the keyword `else`, a `:`,
 and some **indented** *block* of `code` (can be multiple lines).
 
 If `condition` is/evaluates to `True`,
-then the flow of execution will enter the if block and `if_block_code` will be executed,
-then the flow of execution will exit the if block (ignoring the else block)
+then the flow of execution will enter the if-block and `if_block_code` will be executed,
+then the flow of execution will exit the if-block (ignoring the else-block)
 and `more_code` will be executed.
 
 If `condition` is/evaluates to `False`,
-then the flow of execution will enter the else block (ignoring the if block)
+then the flow of execution will enter the else-block (ignoring the if-block)
 and `else_block_code` will be executed,
-then the flow of execution will exit the else block and `more_code` will be executed.
+then the flow of execution will exit the else-block and `more_code` will be executed.
 
 Returning to the "where I eat" example:
 
@@ -273,7 +263,7 @@ else:
       print("Wearing coat and shoes")
 ```
 
-This nested if-else-if-else-if-else think is pretty gross.
+This nested if-else-if-else-if-else thing is pretty gross.
 And wouldn't you know it, we have machinery for this.
 Introducing `elif` (a portmanteau of "else" and "if"):
 
@@ -282,6 +272,9 @@ if condition1:
   if_block_code
 elif condition2:
   elif_block_code
+.....             # OPTIONAL
+else:             # OPTIONAL
+  else_block_code # OPTIONAL
 
 more_code
 ```
@@ -290,15 +283,15 @@ After the `if` block we have the keyword `elif`, another condition, a `:`,
 and some **indented** *block* of `code` (can be multiple lines).
 
 If `condition1` is/evaluates to `True`,
-then the flow of execution will enter the if block and `if_block_code` will be executed,
-then the flow of execution will exit the if block (ignoring all remaining elif and else blocks)
+then the flow of execution will enter the if-block and `if_block_code` will be executed,
+then the flow of execution will exit the if-block (ignoring all remaining elif and else blocks)
 and `more_code` will be executed.
 
 If `condition1` is/evaluates to `False`,
-then the flow of execution will skip over the if block and check `condition2`.
+then the flow of execution will skip over the if-block and check `condition2`.
 If `condition2` is/evaluates to `True`,
-then the flow of execution will enter the elif block and `elif_block_code` will be executed,
-then the flow of execution will exit the elif block (ignoring all remaining elif and else blocks)
+then the flow of execution will enter the elif-block and `elif_block_code` will be executed,
+then the flow of execution will exit the elif-block (ignoring all remaining elif and else blocks)
 and `more_code` will be executed.
 
 You can chain as many `elif`s together as you like, and can end them in an `else`.
