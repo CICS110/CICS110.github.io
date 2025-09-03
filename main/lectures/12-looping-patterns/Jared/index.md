@@ -7,23 +7,20 @@ title: Section 04 (Jared Yeager)
 This lecture is **pure syntax sugar**. Not a thing here will be necessary.
 Not a thing here will be tested on a programming assignment
 (I'm not crawling your abstract syntax trees to figure out **how** you solved something).
-Comprehensions don't even exist outside of python.
+Comprehensions don't even exist outside of Python.
 And yet, these things can be incredibly useful and powerful tools in the arsenal
 once the fundamentals are cemented.
 
 ### Syntax Sugar
 
 What is *syntax sugar*?
-
 Syntax sugar is my crippling addiction.
 It is syntax that allows you to express certain common tasks in a denser/more concise form.
-
 Sufficient mastery of syntax sugar can allow one to convert some tasks from a multi-line
 nested looping/branching statement, to a one-line eldritch monstrosity.
 Doing this gives me a kind of rush that I can't describe and continually crave.
 It has made me what some would call a "degenerate", a "monster", or a "psychopath".
-But I don't care. There is beauty in the horror and horror in the beauty.
-And I am beholden to the madness that emanates therefrom.
+But I don't care. There is beauty in the horror.
 
 ## Ternary Operators
 
@@ -32,21 +29,21 @@ And I am beholden to the madness that emanates therefrom.
 There are cases where you want to set a value based on a condition.
 
 A basic mathematical example is the "indicator function",
-which takes in an element $x$ and a set $A$, and returns 1 if $x$ is in $A$ and 0 if not.
+which takes in a set $A$ and an element $x$, and returns 1 if $x$ is in $A$ and 0 if not.
 
 Just isolating the check and variable assignment (not making this into a python function),
 we could accomplish the indicator checking like so:
 
 ```py live_py title=Indicator
-x = 0 # you can change this value around
 A = {1,2,3,4,5}
+x = 0 # you can change this value around
 
 if x in A:
-  indicator_x_A = 1
+  indicator_A_x = 1
 else:
-  indicator_x_A = 0
+  indicator_A_x = 0
 
-print(f"indicator function of x and A: {indicator_x_A}")
+print(f"indicator function of A and x: {indicator_A_x}")
 ```
 
 ### Syntax Sugar: Ternary Operator
@@ -58,21 +55,21 @@ The syntax sugar for this is: `value_t if condition else value_f`.
 We call this the *ternary operator*,
 I guess because there are 3 operands (`value_t`, `condition`, and `value_f`).
 
-The way to read this is that if `condition` is/evaluate to true,
+The way to read this is that if `condition` is/evaluates to `True`,
 the ternary expression evaluates to `value_t`,
-if `condition` is/evaluate to false, it evaluates to `value_f`.
+if `condition` is/evaluates to `False`, it evaluates to `value_f`.
 
 Behold the earlier example using this:
 ```py live_py title=Indicator_Ternary
+A = {1,2,3,4,5}
 x = 0
 y = 3
-A = {1,2,3,4,5}
 
-indicator_x_A = 1 if x in A else 0
-indicator_y_A = 1 if y in A else 0
+indicator_A_x = 1 if x in A else 0
+indicator_A_y = 1 if y in A else 0
 
-print(f"indicator function of x and A: {indicator_x_A}")
-print(f"indicator function of y and A: {indicator_y_A}")
+print(f"indicator function of A and x: {indicator_A_x}")
+print(f"indicator function of A and y: {indicator_A_y}")
 ```
 
 A 4-line if-else statement has become a 1-line ternary operator.
@@ -88,7 +85,7 @@ and it is a very frequent thing to do.
 
 For example, say I wanted a list of the first 10 square numbers.
 This could be done by taking a list of the numbers 1 to 10, and squaring all of them.
-That "squaring all of them" is a on operation (squaring) being performed on all
+That "squaring all of them" is an operation (squaring) being performed on all
 elements in the collection. That is mapping.
 
 Code for that could look like:
@@ -111,7 +108,7 @@ some other collection.
 
 The syntax sugar for list comprehensions is: `[expression for var_name in collection]`.
 Every element in `collection` is iterated over and assigned to `var_name` in turn
-(the for `for var_name in collection` is exactly like a for loop).
+(the for in `for var_name in collection` is exactly like a for loop).
 `expression` may make use of the variable named `var_name`, and is evaluated for each
 element in `collection`. And the results are bundled together in a list.
 
@@ -224,10 +221,9 @@ print(f"factors_comp: {factors_comp}")
 
 :::caution
 
-Material from here on was not part of the lecture,
-but I'm not done with the madness yet.
-I must corrupt more, I must twist more.
-**I must write unintelligible code!!!**
+Material from here on was not part of the lecture.
+This is basically a bunch of examples leveraging syntax sugar,
+because I enjoy playing around with it a little too much.
 
 :::
 
@@ -410,7 +406,7 @@ Combining all these things can allow you to do some incredibly complex tasks in 
 When fundamentals are cemented and you start incorporating these sorts of things,
 you find yourself spending more time thinking "how am I going to write this code"
 than writing code.
-But when a something you've spent the time to schemingly craft works, it feels really good.
+But when something you've spent the time to schemingly craft works, it feels really good.
 
 I'll have some examples of more complicated things here as I think of them.
 
