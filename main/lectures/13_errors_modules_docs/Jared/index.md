@@ -17,9 +17,10 @@ For example, say we ask for a number from a user and try to convert it to a floa
 If they enter something illegal, and we directly try to convert that to a float,
 there will be an error.
 
-```
+```py live_py title=Illegal_Input
 user_str = input("Please enter a number:")
 user_num = float(user_str) # Error on illegal inputs.
+print(user_num)
 ```
 
 At the moment,
@@ -31,6 +32,7 @@ while is_illegal(user_str): # What EXACTLY is the is_illegal check?
   print("Illegal input was entered.")
   user_str = input("Please enter a number:")
 user_num = float(user_str)
+print(user_num)
 ```
 
 But sometimes it is really hard or impossible to tell if an argument will be illegal
@@ -38,10 +40,12 @@ before actually using it.
 In the above example, what exactly `is_illegal` should be is hard to specify.
 I would be hard-pressed to give the exact boolean specification
 for what strings can and can not be converted into floats safely.
+(I mean, I use a specific ugly regex for something like this in the auto-grader,
+so I can come up with **something**, but it isn't a fun time.)
 
 In these cases, we would like the ability to try something, and if it goes wrong,
 abort/try again/recover/something.
-That will be ability gained from the machinery of today's lecture.
+That will be the ability gained from the machinery of today's lecture.
 
 ## Error Types
 
@@ -99,12 +103,11 @@ the promised new machinery.
 These are what I would probably more colloquially call "bugs".
 These are when the code does what you are telling it to do (as code does),
 but not what you meant.
-
 For example:
 
 ```py live_py title=Parity_Logic_Error
 import random
-num = random.randint(0,1)
+num = random.randint(0,9)
 if num % 2 == 1: # This 1 should be a 0
   print(f"{num} is even")
 else:
@@ -133,18 +136,18 @@ except:
 
 By now this keyword-colon style is probably familiar. Here are the components:
 * The keyword `try` (with `:`).
-* The "try block", `try_block_code`.
+* The "try-block", `try_block_code`.
 This code is executed like normal until an exception occurs.
 If an exception occurs, no further code in this block will be executed.
 * The `except` keyword (with `:`).
-* The "except block", `except_block_code`.
+* The "except-block", `except_block_code`.
 This code runs if, and only if, an exception occurs in the try-block.
 
-So we can put that input-to-float conversion inside a try block in case something
+So we can put that input-to-float conversion inside a try-block in case something
 bad happens during the conversion.
-And then we can have an error message print in the except block.
-And so that `user_num` is not undefined,
-we can have `user_num` set to 0 in the except block.
+And then we can have an error message print in the except-block.
+And to ensure that `user_num` is not undefined,
+we can have `user_num` set to `0` in the except-block.
 
 ```py live_py title=Convert_Try_Except
 try:
@@ -245,7 +248,7 @@ print(f"inv_num set to {inv_num}")
 
 We can store the exception as a variable in order to
 more readily extract some information from it
-(Exceptions are objects too, so can be stored in variables).
+(Exceptions are objects too, so can be assigned to variables).
 
 The syntax is simply to use `except exception_type as var_name:`,
 where `exception_type` is again some exception type and `var_name` is a choice of variable name.
@@ -315,6 +318,11 @@ except:
   except_block_code
 ```
 
+Although perhaps there is a case where you would want errors in the
+else-block code to **not** be caught,
+perhaps either to trigger a fatal error, or perhaps to be caught by some broader
+try-except that this all is contained in.
+
 ### `finally`
 
 Finally, there is a finally block. This block always runs and is the last to run.
@@ -325,7 +333,7 @@ try:
   try_block_code
 except:
   except_block_code
-# else and else block here if desired
+# else and else-block here if desired
 finally:
   finally_block_code
 ```
@@ -352,7 +360,7 @@ finally:
 ```
 
 That said, I'm pretty sure that most **normal** uses of try-except-finally
-could just be accomplished with a try-except like so (may I'm missing something):
+could just be accomplished with a try-except like so (maybe I'm missing something):
 
 ```py
 try:
@@ -375,9 +383,9 @@ This could do damage to your psyche and possibly sow more confusion than underst
 When I said the finally block always runs, I mean it **always** runs.
 This has terrifying implications.
 And when I said "**normal**" uses could be done with a try-except,
-I meant cases not deliberately abusing that fact.
+I meant cases not deliberately abusing this fact.
 
-Below are two examples if `finally` winning over the control flow of `break`
+Below are two examples of `finally` winning over the control flow of `break`
 and `continue`.
 
 ```py live_py title=Finally_Break
@@ -418,7 +426,7 @@ while count < 10:
   try:
     break
   finally:
-    print("Not this time")
+    print("And thus the cylce ends. We shall meet again... at the beginning.")
     count += 1
     continue
 print(f"count: {count}")
@@ -443,7 +451,7 @@ def get_num():
   try:
     return 0
   finally:
-    print("How about I return 1?")
+    print("How about I return 1 instead?")
     return 1
 print(f"num: {get_num()}")
 ```
@@ -480,7 +488,7 @@ def no_escape():
     try:
       exit()
     finally:
-      print("You're too impulsive. This is my time, my space. Your escape will fail")
+      print("You're too impulsive. This is my time, my space. Your escape will fail.")
       count += 1
       continue
   print(f"count: {count}")
@@ -529,7 +537,7 @@ print(f"Recieved: {user_str}")
 ```
 
 Try the above on purely letters (e.g., "Foo") and something else (e.g., "314").
-Notice that we get to set error message.
+Notice that we get to set the error message.
 
 Specific types of errors can be raised, for example, the above could have been:
 
