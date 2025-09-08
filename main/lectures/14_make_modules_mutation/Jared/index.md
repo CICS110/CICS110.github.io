@@ -20,7 +20,7 @@ which we will see later in this course.
 ### Learning to Use New Modules
 
 There are more modules out there than we could conceivably keep track of,
-and more function within most modules than we could reasonably remember.
+and more functions within most modules than we could reasonably remember.
 
 A fundamental skill in programming is the ability to look up information about
 modules or functions that you haven't used much or at all before.
@@ -29,7 +29,7 @@ When encountering a new function/module or when wanting to use one that we
 don't quite remember the details of,
 a reasonable first step is searching (via a search engine) for
 "python [module/function name]".
-(Simply, when encountering a new issue, searching for
+(Generally, when encountering a new issue, searching for
 "python [issue/problem/question]" makes a lot of sense.)
 
 The [official documentation](https://docs.python.org/3/)
@@ -39,7 +39,7 @@ It can have a lot of written technical specifics and details
 that may not make enough sense yet though.
 
 When first playing with a new function, I find it really helpful to see some examples.
-There a number of websites I see coming up in searches that generally have examples
+There are a number of websites I see coming up in searches that generally have examples
 or example-oriented explanations:
 * geeksforgeeks.org
 * w3schools.com
@@ -53,7 +53,6 @@ I expect to run across while searching.
 ### Some Common Modules
 
 We've run into a number of built-in modules already.
-
 Here are some common modules that may have been of use so far in this course
 or were explored more recently in lectures/slides:
 * [`math`](https://docs.python.org/3/library/math.html):
@@ -75,10 +74,8 @@ But there are actually a number of fancy import incantations we haven't seen yet
 ### `import x`
 
 We can import a module to gain access to it and all therein.
-
 The syntax for this is `import module_name`,
 where `module_name` is the name of the module to import.
-
 This is what we are already familiar with, but I note it for completeness.
 
 An example:
@@ -87,7 +84,7 @@ An example:
 import datetime
 
 now = datetime.datetime.now()
-print(f"today        : {now}")
+print(f"now          : {now}")
 
 giga_sec = datetime.timedelta(seconds=10**9)
 print(f"10^9 secs    : {giga_sec}")
@@ -99,7 +96,6 @@ print(f"1Gs from now : {future}")
 ### `import x as a`
 
 We can import a module and give it a new name.
-
 The syntax for this is `import module_name as new_name`,
 where `module_name` is the name of the module to import and `new_name` is what we rename it to.
 
@@ -110,7 +106,7 @@ so I'll rename it to `dt`:
 import datetime as dt
 
 now = dt.datetime.now()
-print(f"today        : {now}")
+print(f"now          : {now}")
 
 giga_sec = dt.timedelta(seconds=10**9)
 print(f"10^9 secs    : {giga_sec}")
@@ -121,25 +117,23 @@ print(f"1Gs from now : {future}")
 
 ### `from x import y,z`
 
-We can import a specific *attribute* (variable, function, class, etc.) from a module.
+We can import specific *attributes* (variables, functions, classes, etc.) from a module.
 If we use this to get attribute `y` from module `x`,
 we can just use `y` in code instead of `x.y`.
-
 The syntax for this is `from module_name import attribute_name`,
 where `module_name` is the name of the module of interest
 and `attribute_name` is the attribute we want.
-
 We can also have multiple attributes separated by commas.
 
 For example,
 let's get the `datetime` and `timedelta` attributes from `datetime` directly,
-and avoid the need to write `datetime.`:
+and avoid the need to write (the initial) `datetime.`:
 
 ```py live_py title=From_Import
 from datetime import datetime,timedelta
 
 now = datetime.now()
-print(f"today        : {now}")
+print(f"now          : {now}")
 
 giga_sec = timedelta(seconds=10**9)
 print(f"10^9 secs    : {giga_sec}")
@@ -150,13 +144,11 @@ print(f"1Gs from now : {future}")
 
 ### `from x import y as b,z as c`
 
-This allows us to import a specific *attribute* (variable, function, class, etc.)
-from a module and give it a new name.
-
+Finally, we can import a specific *attributes* (variables, functions, classes, etc.)
+from a module and give them new names.
 The syntax for this is `from module_name import attribute_name as new_name`,
 where `module_name` is the name of the module of interest,
 `attribute_name` is the attribute we want, and `new_name` is what we rename it to.
-
 We can also have multiple attributes and new names separated by commas.
 
 For example, to be really confusing,
@@ -166,7 +158,7 @@ I'll rename `datetime.datetime` to `dt` and `datetime.timedelta` to `td`:
 from datetime import datetime as dt,timedelta as td
 
 now = dt.now()
-print(f"today        : {now}")
+print(f"now          : {now}")
 
 giga_sec = td(seconds=10**9)
 print(f"10^9 secs    : {giga_sec}")
@@ -185,7 +177,6 @@ The issue with this is potential name collisions.
 For example, `math` and `numpy` (a big non-built-in module) both have a `log()` function
 in them. So if both `from math import *` and `from numpy import *` are done,
 then `log()` will refer to the later one loaded, obscuring the earlier one loaded.
-
 (I can't demo this particular case because the web-python uses only built-in libraries.)
 
 Moreover, you might have name collisions between variables/functions you load
@@ -383,7 +374,7 @@ Material from here on was not part of the lecture,
 but is stuff I think is helpful to note.
 
 It also has me going a bit off script and talking more
-a slightly different way in which I conceptualise mutability.
+about a slightly different way in which I conceptualise mutability.
 
 :::
 
