@@ -48,7 +48,6 @@ print(f"type of 'foo' : {type('foo')}") # <class 'str'>
 
 Notice how the prints all contain the word **class**?
 Python itself certainly doesn't seem to feel there is an appreciable difference.
-
 The existence of the two different terms has more to do with history and the
 mechanics of other languages.
 
@@ -61,10 +60,9 @@ Specific **things** of some type.
 Objects are to classes what a `5` living in memory is to `int`.
 Objects are specific *instances* of a type/class.
 
-So if we have the class `int`, then specific ints like `4`, `-345`, `0`, etc.
+If we take the class `int`, then specific ints like `4`, `-345`, `0`, etc.
 that live and exist in memory are objects.
-
-If we have the class `list`,
+If we take the class `list`,
 then specific lists like `[3, 6, -1]`, `["foo", "bar"]`, `[]`, etc.
 that live and exist in memory are objects.
 
@@ -72,22 +70,18 @@ that live and exist in memory are objects.
 
 Object oriented programming is a language design paradigm and a programming paradigm
 that centres around classes and objects.
-
 That main characters and considerations are the objects.
 The objects are able to change/be changed by their methods.
 Objects and methods serve as the main nouns and verbs (respectively) of OOP.
 
 There are class-specific functions called *methods*,
-which require a specific object to invoke them via `object_var_name.mathod_name(args)`.
-
-There are class-specific variables called *field*,
+which require a specific object to invoke them via `object_var_name.method_name(args)`.
+There are class-specific variables called *fields*,
 which require a specific object to reference them via `object_var_name.field_name`.
-
 It's all about the object, its *attributes* (methods and fields),
 and using the methods to alter the fields.
 
 A lot of stuff we've done could be done in a more object-oriented programming-y manner.
-
 For example, a game of tic-tac-toe could have a `TicTacToeGame` class,
 with a specific instance/object representing a single game.
 Each object would have its own board (the class would have a board field),
@@ -149,8 +143,8 @@ class Dog:
     print("Woof!")
 
 spot = Dog()
-spot.bark()
-Dog.bark(spot)
+spot.bark()    # object perspective, "self" is implicitly spot
+Dog.bark(spot) # class perspective, "self" is explicitly spot
 ```
 
 The `bark()` method takes in `self`, which won't be used yet. But what **is** self.
@@ -164,10 +158,9 @@ specified explicitly.
 ## Initialisation
 
 There are number of special method names that have special meanings/roles.
-The only only we must contend with in this lecture is `__init__`.
+The only one we must contend with in this lecture is `__init__`.
 This is special method know as the *constructor*,
 and governs how the object is initialised.
-
 If we want to initialise a class in any way other than the default manner,
 we can implement the `__init__()` method.
 
@@ -196,7 +189,6 @@ spot.bark()
 
 That's cute and all,
 but it would be good if the name could be more permanently associated with the dog.
-
 Well, objects can have instance variables,
 so something like `spot.name` would give us the name associated with `spot`.
 
@@ -226,8 +218,7 @@ fido.bark()
 ```
 
 So finally: we have our class/type `Dog`. It's objects will have an instance variable `name`,
-which is set by the constructor. We also have a method that lets the dog can `bark()`.
-
+which is set by the constructor. We also have a method that lets the dog `bark()`.
 And this sort of encapsulates all of the core machinery for making classes.
 
 <details>
@@ -264,25 +255,25 @@ x = A()
 y = A()
 z = A()
 # x, y, and z all see the class variable
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 print("*** UPDATE: x,y ***")
 # x and y get instance variables that shadow the class variable
 x.val = 2
 y.update(3)
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 print("*** UPDATE: A ***")
-# clas variable changes, z still sees class variable
+# class variable changes, z still sees class variable
 A.val = 5
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 ```
 
 ```py live_py title=Class_Variable_Mut
@@ -296,27 +287,27 @@ x = A()
 y = A()
 z = A()
 # x, y, and z all see the class variable
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 print("*** UPDATE: x,y,z ***")
 # x and y update the class variable
 x.val.append(3)
 y.update(1)
 # z gets an instance variable that shadows the class variable
 z.val = [3, 1, 4]
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 print("*** UPDATE: A ***")
 # class variable changes, x and y still see class variable
 A.val = [2, 7, 1]
-print(f"A.val: {A.val} lives as {id(A.val)}")
-print(f"x.val: {x.val} lives as {id(x.val)}")
-print(f"y.val: {y.val} lives as {id(y.val)}")
-print(f"z.val: {z.val} lives as {id(z.val)}")
+print(f"A.val: {A.val} lives at {id(A.val)}")
+print(f"x.val: {x.val} lives at {id(x.val)}")
+print(f"y.val: {y.val} lives at {id(y.val)}")
+print(f"z.val: {z.val} lives at {id(z.val)}")
 ```
 
 </details>
