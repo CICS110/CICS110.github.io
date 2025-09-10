@@ -7,7 +7,7 @@ title: Section 04 (Jared Yeager)
 There are a a few lingering topics about classes to cover.
 
 First, the notion of inheritance:
-where we can have class that is an expansion/sub-class of another class.
+where we can have a class that is an expansion/sub-class of another class.
 
 Second, some more fancy double-underscore (or *dunder*) methods,
 which allow us to define string conversion and to specify operator behaviour.
@@ -31,7 +31,7 @@ For our demo-ing purposes, we will consider all of these as pets, moreover:
 And so the idea is that we can have a `Pet` class, that does this shared stuff:
 initialising with a name, and `sleep()`ing.
 And we can then have `Dog`, `Cat`, and `Snake` classes that *extend* `Pet`.
-We would also say these are *sub-classes* of `Pet`, or that the `Pet` is the *super-class*
+We would also say these are *sub-classes* of `Pet`, or that `Pet` is the *super-class*
 or *parent class* of these three.
 
 ```mermaid
@@ -80,8 +80,8 @@ class Dog(Pet):
     print("Woof!")
 
 inu = Dog("Inu")
-print(f"Is Inu a Pet? {isinstance(inu, Pet)}")
-print(f"Is Inu a Dog? {isinstance(inu, Dog)}")
+print(f"Is Inu a Pet? {isinstance(inu, Pet)}") # True
+print(f"Is Inu a Dog? {isinstance(inu, Dog)}") # True
 
 print()
 
@@ -134,7 +134,7 @@ Sometimes, we do want a sub-class to behave differently from it's parent.
 Maybe we want it to expand on the functionality of the parent, or maybe we want to
 override it all together.
 
-Let's say we go a bit nuts in out `Pet` example, and get a pet `Jellyfish`.
+Let's say we go a bit nuts in our `Pet` example, and get a pet `Jellyfish`.
 Now, jellyfish are not exactly know for "sleeping", per se
 (it sort of becomes a semantic quibble about what one means by "sleep").
 
@@ -318,7 +318,7 @@ con4.print_board()
 ## Dunder Methods
 
 There are a lot of special method names with their own significance and effects,
-like `__init__()`. Most of these names start and end with "double underscores"
+like `__init__()`. Most of these names start and end with "**d**ouble **under**scores"
 and have thus earned the moniker "dunder" methods.
 
 We will look at the dunder method that governs string conversion,
