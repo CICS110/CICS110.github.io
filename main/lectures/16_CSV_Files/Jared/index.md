@@ -9,15 +9,13 @@ import TabItem from '@theme/TabItem';
 
 This will mostly be an example of a specific kind of file you might work with,
 and some built-in machinery specifically for that type of file.
-
 That type of file in question: CSVs.
 
 ## What are CSV Files
 
-CSV (short for "*comma-separated value(s)*") files are
+CSV (short for "*comma-separated values*") files are
 effectively the file type for tables and spreadsheets.
-
-So, consider this table of elements (in the "periodic table of elements" sense):
+Consider this table of elements (in the "periodic table of elements" sense):
 
 | Element | Symbol | Atomic Mass |
 | :---: | :---: | :---: |
@@ -28,7 +26,6 @@ So, consider this table of elements (in the "periodic table of elements" sense):
 | Boron | B | 10.811 |
 
 Look how beautifully it is rendered on this website.
-
 A CSV is basically the pure data/content of that table,
 it is much less aesthetically pleasing, but it contains all the
 same information:
@@ -45,7 +42,6 @@ Boron,B,10.811
 Observe the parallels between the table and the CSV.
 Honestly, the CSV just looks like the table but without the formatting
 (and with the commas).
-
 The format has a couple characteristics:
 * The header row of the table (if it exists) is the first row of the CSV.
 * Every non-header row in the table, becomes a line in the CSV, called a *record*.
@@ -67,16 +63,15 @@ Boron,B,10.811
 Why cut of the header? Because it is annoying one-off row to deal with.
 Why keep the header? Because it contains useful information about what the file
 means/represents.
-There are arguments both ways.
+There are arguments both ways, life is full of trade-offs.
 
 ## Direct CSV Handling (Lists of Lists)
 
 We'll look at unpacking, manipulating, and re-packaging a CSV
-both will only the machinery we already have (basic I/O and string methods)
+both with only the machinery we already have (basic I/O and string methods)
 and with machinery provided by the `csv` module.
-
 For both of these, we will be starting with the file `elements.csv`
-with the following contents:
+with the following contents (no header row for simplicity):
 
 ```csv
 Hydrogen,H,1.00784
@@ -90,7 +85,6 @@ Our goal will be go from this "element name, periodic symbol, atomic mass"
 layout to a layout of "atomic number, periodic symbol, element name, atomic mass".
 This will be done by swapping the element name and periodic symbol for each row,
 and sticking the atomic number at the front.
-
 The updated table will be written to `updated_elements.csv`.
 
 ### Normal I/O
@@ -114,7 +108,7 @@ with open("elements.csv", "r") as elem_file:
 pprint.pprint(elem_rows)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 ['Hydrogen,H,1.00784',
@@ -123,6 +117,10 @@ The above code will produce the output below.
  'Beryllium,Be,9.0121',
  'Boron,B,10.811']
 ```
+
+Notice how I pretty-print the file contents to make sure the `open()` call is working.
+Yes, this is done for you the reader to see something for the steps as I go,
+but this is also how I actually code. Run early, run often, build up incrementally.
 
 </TabItem>
 <TabItem value="split" label="Split">
@@ -153,7 +151,7 @@ with open("elements.csv", "r") as elem_file:
 pprint.pprint(elem_table)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [['Hydrogen', 'H', '1.00784'],
@@ -162,6 +160,9 @@ The above code will produce the output below.
  ['Beryllium', 'Be', '9.0121'],
  ['Boron', 'B', '10.811']]
 ```
+
+Again, a single new line of code is written,
+and then run with a print statement to make sure it works.
 
 </TabItem>
 <TabItem value="modification" label="Modify">
@@ -186,7 +187,7 @@ with open("elements.csv", "r") as elem_file:
 for i in range(len(elem_table)):
   row = elem_table[i]     # updates to row will affect elem_table (mutability)
   row[:2] = row[1::-1]    # Swap Symbol and Name entry of row
-  row.insert(0, str(i+1)) # Add number (as string) to start of row
+  row.insert(0, str(i+1)) # Add atomic number (as string) to start of row
 
 pprint.pprint(elem_table)
 ```
@@ -196,8 +197,7 @@ pprint.pprint(elem_table)
 
 Let's not kid ourselves, my code is not that coherent.
 We are transforming each row again, you bet I'd use a comprehension.
-
-Oh, I need what index in the list something is?
+Oh, and I need what index in the list something is?
 That's what we have `enumerate()` for.
 
 ```py
@@ -216,7 +216,7 @@ Actually ... The honest truth is I'd do something even worse...
 
 </details>
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [['1', 'H', 'Hydrogen', '1.00784'],
@@ -228,7 +228,7 @@ The above code will produce the output below.
 
 Note that I made the atomic numbers strings,
 because now we are going to need to pack everything back up into a string
-and write to a new CSV.
+and write it to a new CSV.
 
 </TabItem>
 <TabItem value="join_cols" label="Join Per Row">
@@ -256,7 +256,7 @@ new_elem_rows = [",".join(row) for row in elem_table]
 pprint.pprint(new_elem_rows)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 ['1,H,Hydrogen,1.00784',
@@ -369,7 +369,6 @@ Do not grow up to write code like me.
 
 CSVs introduce the need to do that initial split on commas or
 the later join on commas (depending on if we need to read from or write to a CSV).
-
 This stuff is kind of annoying.
 As an alternative,
 there is some machinery that handles it for us in the built-in `csv` module.
@@ -397,7 +396,7 @@ with open("elements.csv", "r") as elem_file:
 pprint.pprint(elem_table)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [['Hydrogen', 'H', '1.00784'],
@@ -430,7 +429,7 @@ for i in range(len(elem_table)):
 pprint.pprint(elem_table)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [[1, 'H', 'Hydrogen', '1.00784'],
@@ -540,7 +539,7 @@ with open("elements.csv", "r") as elem_file:
 pprint.pprint(elem_dicts)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [{'Atomic Mass': '1.00784', 'Element': 'Hydrogen', 'Symbol': 'H'},
@@ -572,7 +571,7 @@ for i in range(len(elem_dicts)):
 pprint.pprint(elem_dicts)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [{'Atomic Mass': '1.00784',
@@ -604,7 +603,7 @@ The "swapping" from the non-dictionary example manifests as
 a specific order of fields when we convert the rows back to strings in this
 dictionary-centric approach. (I'm doing the newlines here as well.)
 
-Again, joining/turning the dictionaries into row-string is per-row operation,
+Again, joining/turning the dictionaries into row-strings is per-row operation,
 so a comprehension is a natural fit.
 In order to get the desired order, I'm using an f-String
 (which also allows me to not need to explicitly convert the atomic number to a string).
@@ -626,7 +625,7 @@ new_elem_rows = [f"{row['Atomic Number']},{row['Symbol']},{row['Element']},{row[
 pprint.pprint(new_elem_rows)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 ['1,H,Hydrogen,1.00784\n',
@@ -703,7 +702,7 @@ with open("elements.csv", "r") as elem_file:
 pprint.pprint(elem_table)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [{'Atomic Mass': '1.00784', 'Element': 'Hydrogen', 'Symbol': 'H'},
@@ -735,7 +734,7 @@ for i in range(len(elem_table)):
 pprint.pprint(elem_table)
 ```
 
-The above code will produce the output below.
+The above code will produce the following:
 
 ```
 [{'Atomic Mass': '1.00784',
