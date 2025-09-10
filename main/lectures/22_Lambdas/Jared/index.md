@@ -87,7 +87,7 @@ print(new_l)
 </TabItem>
 </Tabs>
 
-In all of these, the core mapping as always of the form:
+In all of these, the core mapping is always of the form:
 
 ```py
 new_list = []
@@ -149,8 +149,8 @@ print(to_nums)
 print(list(to_nums))
 ```
 
-This is generalised higher-order mapping function,
-so great for applying functions to a whole collection.
+This is a generalised higher-order mapping function,
+so great for applying functions to whole collections.
 
 ```py live_py title=Map_
 from math import sqrt
@@ -181,7 +181,7 @@ for element in COLLECTION:
 
 We can see the only variables are:
 * `COLLECTION`, the collection we want to filter, and
-* `CONDITION`, a function that checks if we want to keep an element or not.
+* `CONDITION`, a boolean function that checks if we want to keep an element or not.
 
 So we could imagine a sort of "general filter" function.
 
@@ -222,7 +222,9 @@ def is_odd(x):
 l = [3,1,4,1,5,9,2,6]
 evens = filter(is_even, l)
 odds = filter(is_odd, l)
+print(evens)
 print(list(evens))
+print(odds)
 print(list(odds))
 ```
 
@@ -240,14 +242,13 @@ print(list(squares))
 ```
 
 That's kind of annoying, or at least **I** don't like that.
-
-Well, conveniently enough for us,
+Conveniently enough for us,
 python has machinery for creating nameless, purely expression-based functions
 on the fly.
-
 These functions are known as lambda functions.
 (The name comes from [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus),
 a very elegant, function-based model of computation.)
+
 The python syntax for making such a function is:
 
 ```py
@@ -319,6 +320,9 @@ print([int(x) for x in l])
 print(list(map(int, l)))
 ```
 
+The `map()` is a little shorter than the comprehension
+and doesn't require introducing that new helper variable `x`.
+
 If we want to map something **and then** filter the results
 (other way around is a different story),
 a comprehension isn't really a natural way to do that (you need a weird nested thing),
@@ -338,6 +342,10 @@ l = ["314", "Hello", "foo", "42", "17.5", "2718", "bar"]
 print([x for x in [safe_int(s) for s in l] if x is not None])
 print(list(filter(lambda x: x is not None, map(safe_int, l))))
 ```
+
+Look how a whole comprehension is done for the mapping part, and then
+**another** comprehension is does for the filtering part.
+That isn't pretty.
 
 <details>
 <summary><b>Extra: Well, Actually ...</b></summary>
@@ -410,7 +418,6 @@ So then where do lambdas fit in? Well, uh, the entire next optional section, but
 basically any other time you want to give a function a pure-expression function
 that isn't worth making a more permanent function.
 Basically any time you want to avoid defining a more permanent function.
-
 It just so happens that in Python mapping and filtering are already
 really well covered by comprehensions.
 
@@ -432,8 +439,7 @@ print(approx_integral(lambda x: x**3 + x, 0, 1, 250))
 
 We've talked now in two lectures about mapping and filtering,
 but there is a third common idiom often spoken of in the same context: reducing.
-
-Often we find ourselves wanting to take every element in a collection
+We often find ourselves wanting to take every element in a collection
 and aggregate them together in some way. This is called *reducing*.
 
 Some examples include:
@@ -508,7 +514,7 @@ So our summation and product from earlier become:
 from functools import reduce
 
 l = [3,1,4,1,5,9,2,6]
-total = reduce(lambda x, y: x + y, l, 0)
+total = reduce(lambda acc, n: acc + n, l, 0)
 print(total)
 ```
 
@@ -516,7 +522,7 @@ print(total)
 from functools import reduce
 
 l = [3,1,4,1,5,9,2,6]
-prod = reduce(lambda x, y: x * y, l, 1)
+prod = reduce(lambda acc, n: acc * n, l, 1)
 print(prod)
 ```
 
@@ -527,7 +533,7 @@ Factorial is just a specific product (1 to n), right?
 from functools import reduce
 
 def factorial(n):
-  return reduce(lambda x, y: x * y, range(1,n+1), 1)
+  return reduce(lambda acc, i: acc * i, range(1,n+1), 1)
 
 for i in range(10):
   print(f"{i}! = {factorial(i)}")
@@ -542,8 +548,8 @@ Note that ternary operators are kosher in lambda functions.
 from functools import reduce
 
 l = [3,1,4,1,5,9,2,6]
-minimum = reduce(lambda x, y: x if x < y else y, l)
-maximum = reduce(lambda x, y: x if x > y else y, l)
+minimum = reduce(lambda acc, n: acc if acc < n else n, l)
+maximum = reduce(lambda acc, n: acc if acc > n else n, l)
 print(minimum)
 print(maximum)
 ```
@@ -556,7 +562,7 @@ The underscore (`_`) is basically a "I'm not even naming this variable" characte
 from functools import reduce
 
 l = [3,1,4,1,5,9,2,6]
-count = reduce(lambda n, _: n + 1, l, 0)
+count = reduce(lambda acc_n, _: acc_n + 1, l, 0)
 print(count)
 ```
 
