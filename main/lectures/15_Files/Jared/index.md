@@ -6,14 +6,15 @@ title: Section 04 (Jared Yeager)
 
 Files are containers for storing information that live on our computers.
 (And I/O just stands for Input/Output.)
-
 That definition isn't very elucidating.
-But the ability to store information beyond the life of our programs can be quite useful.
+More intuitively, they are bundles of data, be that text, numbers, formatting information,
+etc.
 
+The ability to store information beyond the life of our programs can be quite useful.
 Some things files help with:
 * Giving lots of automatic input:
 Instead of typing a bunch of input and capturing it with the `input()` function,
-we can write all that input in a file and have to program read that file.
+we can write all that input in a file and have the program read that file.
 * Having non-hard-coded data structures:
 Imagine our program has some big lookup table in it.
 Instead of hard-coding it in the python script, we can have the information written in a file.
@@ -21,7 +22,7 @@ The script could then load and read that file to build the lookup table.
 This makes it a lot easier to edit that table in the future,
 and makes the code more modular (easier to swap out parts without breaking other parts).
 * Saving and loading information:
-If you program wants some information to persist
+If your program wants some information to persist
 across runs of the program, it can write information to a file
 and load it again when re-launched. For instance, saving progress in a video-game.
 * Working with new types of stuff:
@@ -59,7 +60,6 @@ Durian
 ### `open(file_name, mode)`
 
 The first step when working with files is to open the file.
-
 The function for this is the `open()` function.
 This takes in two argument.
 The first is a string with name of the file to open.
@@ -67,12 +67,12 @@ The second is a string indicating what *mode* to open the file in.
 
 The basic modes (examples will come later):
 * `"r"` (read mode): Opens the file for reading.
-If the file does not exits, an error occurs.
+If the file does not exist, an error occurs.
 * `"w"` (write mode): Opens the file for writing.
-If the file does not exits, it is created.
+If the file does not exist, it is created.
 If the file already has content, **that content is erased** (or "*truncated*").
 * `"a"` (append mode): Opens the file for writing.
-If the file does not exits, it is created.
+If the file does not exist, it is created.
 If the file already has content, writing occurs **after** the existing content.
 
 `open()` will return an object of a special type for files.
@@ -105,20 +105,18 @@ out of `open()`:
 ### `.close()`
 
 Closing files is good practice.
-
 The computer has to do a bit of book-keeping for every open file.
 Closing the file frees up the space that was used for the
 book-keeping associated with that files.
 At our scale it doesn't really matter, but it's good to adopt the instinct early.
-
 This is done with the `.close()` method.
-
 I also recommend closing the file as soon as you can.
+
 With proper and early closing of files, the outline of our code becomes:
 
 ```py
 read_file = open("words.txt", "r")
-# READ FILE
+# READ FILE (AND SAVE CONTENTS)
 read_file.close()
 
 write_file = open("rev_words.txt", "w")
@@ -129,9 +127,7 @@ write_file.close()
 ### `.read()`
 
 Let's actually **do** something now.
-
 There are a few different methods for reading from files.
-
 The most generic that will work for all files is `.read()`.
 This will just return the whole file as one long string.
 
@@ -169,7 +165,7 @@ print(clean_lines) # ['Apple', 'Banana', 'Cherry', 'Durian']
 
 Another option is the `.readline()` (singular) method.
 This reads one line from the file each call,
-and returns it as string (with the newline character).
+and returns it as a string (with the newline character).
 It returns `''` when it has reached the end of the file.
 
 ```py
@@ -228,8 +224,8 @@ write_file.close()
 Finally, writing to a file is done with the `.write()` method.
 This takes in a string to write to the file and writes it.
 
-For our reversing lines example, I have the reversed list of lines as strings,
-I just need to join them together with newlines to get the final string to
+For our reversing lines example, we have the reversed list of lines as strings,
+we just need to join them together with newlines to get the final string to
 write to `rev_words.txt`.
 Well, this is exactly what that weird `.join()` string method does.
 
@@ -268,7 +264,7 @@ write_file.close()
 
 I promised some examples on opening in write mode vs append mode.
 Write mode and append mode function the same on empty files (they make a new one).
-So it suffices to restrict out consideration to when a file already exists.
+So it suffices to restrict our consideration to when a file already exists.
 
 When writing to a file that already exists, the old content is truncated.
 
@@ -282,14 +278,14 @@ write_file.close()
 
 # File is over-written
 over_write_file = open("more_words.txt", "w")
-write_file.write("Over-wrote the past.")
+write_file.write("Back to the past.")
 write_file.close()
 ```
 
 When the above code is run, the final content of `more_text.txt` will be:
 
 ```
-Over-wrote the past.
+Back to the past.
 ```
 
 Because, opening up `more_text.txt` in write mode erases
@@ -308,7 +304,7 @@ write_file.close()
 
 # File is appended to
 append_file = open("more_words.txt", "a")
-append_file.write("Astonishingly, did not violate causality.")
+append_file.write("unleashed an unspeakable evil.")
 append_file.close()
 ```
 
@@ -318,7 +314,7 @@ When the above code is run, the final content of `more_text.txt` will be:
 Long ago,
 In a distant land,
 I ... 
-Astonishingly, did not violate causality.
+unleashed an unspeakable evil.
 ```
 
 Because, opening up `more_text.txt` in append mode
@@ -340,17 +336,17 @@ with open(arguements...) as file_var_name:
 ```
 
 We have:
-* The keyword `with`.
-* The `open()` call for how we want to open the file.
-* The keyword `as`.
-* The variable name `file_var_name`, which hold the opened file.
-* The colon (`:`).
+* The keyword `with`
+* The `open()` call for how we want to open the file
+* The keyword `as`
+* The variable name `file_var_name`, to which the opened file will be assigned
+* The colon (`:`)
 * The code block (`code_block`), which may make use of the variable `file_var_name`
 
-I think you can probably guess what this does, but: It opens the file, saves it in
+I think you can probably guess what this does, but: It opens the file, assigns it to
 `file_var_name`, runs `code_block`, and closes the file at the end (or if an error occurs).
 
-With this, out earlier reverse-file-lines solution can be refactored like so:
+With this, our earlier reverse-file-lines solution can be refactored like so:
 
 ```py
 with open("words.txt", "r") as read_file:
@@ -363,13 +359,13 @@ with open("rev_words.txt", "w") as write_file:
 ## Files in Other Places
 
 All of this has been based on the idea that the file being opened is in
-the same folder as the code you are running. This won't always be the case.
+the same folder as the code we are running. This won't always be the case.
 
 ### Directory Hierarchy
 
 We need a brief interlude about the *file system* on computers,
 how the system is structured/"where files are"
-(in the model, where they actually are is a much more complicated story).
+(in the model at any rate; where they actually are is a much more complicated story).
 
 Your computer has *folders* (also called *directories*) and *files*.
 There is a top-level/root folder somewhere,
@@ -404,8 +400,6 @@ What does all this mean:
 the folder `files`.
 * Within that `files` folder is the file `foo.txt` and the folder `bar`.
 * Within that `bar` folder is the file `baz.txt`.
-
-[Example from earlier with `words.txt`]
 
 So if we wanted `main.py` to just read and print the contents of the file `words.txt`,
 we just do that as before:
@@ -486,8 +480,7 @@ CICS 110
 So we can go down, but what about up? What if we wanted to
 say "go to `CICS 110`, get `about.txt`". Well, since `CICS 110` isn't in
 `sandbox` we can't quite do that.
-
-We can say "go **up**, get `about.txt`".
+But we can say "go **up**, get `about.txt`".
 We write that as `../about.txt`,
 where the `..` is a special reference for the parent directory.
 
