@@ -23,9 +23,8 @@ In order to really explore the full power of a given tool,
 and see all the kinds of places it can fit in to the broader puzzle,
 it is necessary to experiment and try pushing the limits of what we can do with something.
 Trying to guess how things might behave in a weird case,
-and make experiments to test that hypothesis
-(stepping through them in the debugger or pythontutor) can be enlightening.
-
+and making experiments to test that hypothesis
+(and maybe stepping through them in the debugger or pythontutor) can be enlightening.
 This helps us both see what the tool is capable of,
 but also improve our understanding of the mechanics of it.
 
@@ -67,6 +66,20 @@ It turns out that those scope rules we presented you are ... a simplification
 (though they are correct for 1 level of definition,
 and the spirit of them provides guidance for deeper levels).
 
+In this case, since the function `bar()` is a local variable in `foo()`,
+it does not exist beyond that.
+
+```py live_py title=Def_Fun_In_Fun_Scope
+def foo():
+  def bar():
+    print("bar")
+  print("foo")
+  bar()
+
+foo()
+bar() # ERROR
+```
+
 But look at all the questions and exploration that comes out of just that example.
 
 **We could ask**: Given rule 1 and rule 2, can we call a function inside another function?
@@ -85,14 +98,14 @@ bar()
 Yes, and we actually do that quite frequently (and also did in the prior example).
 
 **We could ask**: Given rule 1 and rule 2, can we call a function inside another function,
-if the function we are calling hasn't been defined yet?
+if the function we are calling hasn't been defined **yet**?
 
 ```py live_py title=Fun_Call_In_Fun_Rev
 def bar():
   foo() # foo is not defined when bar is defined
   print("bar")
 
-# what if bar() was here 
+# bar() here would cause an error
 
 def foo():
   print("foo")
@@ -104,13 +117,12 @@ Understanding this would force us to cement some understanding of scoping rules.
 `foo()` is not called when `bar()` is defined (a function is not run when it is defined).
 When `bar()` is called (and run), `foo()` has been defined globally,
 so the `foo()` within the `bar()` call can be found (when the code looks globally).
-
 If the global `bar()` call was before `foo()` was defined, this would not work.
 
 **We could ask**: If a function can call a function that has not yet been defined,
 can a function ... call itself?
 
-(Run this one locally in a sandbox project so that you can kill it with control-c)
+(Run this one locally in a sandbox project so that you can kill it with control-c.)
 ```py
 def foo():
   print("foo")
@@ -119,7 +131,7 @@ def foo():
 foo()
 ```
 
-So, uh, yeah, you totally can!
+So, uh, yeah, it totally can!
 Seems like a dangerous power though, so let's figure out how to do that safely.
 
 <details>
@@ -167,14 +179,13 @@ def factorial(n):
   if n == 0:
     return 1
 
-print(f"factorial(0)  : {factorial(0)}")  # None
+print(f"factorial(0) : {factorial(0)}")  # 1
 ```
 
 ### Inductive/Recursive Cases
 
 *Inductive/Recursive Cases* are the spicy cases,
 where our function calls itself in some way.
-
 It is extremely important that the function call itself with a
 **different argument than it received**, in particular,
 it should call itself only on arguments that are
@@ -183,14 +194,12 @@ it should call itself only on arguments that are
 In the factorial case, our recursive case is all the whole numbers $n$ such that $n > 0$.
 And note that factorial of $n$ depends on factorial of $n-1$, and $n - 1$ is closer to $0$
 than $n$ is.
-
 If the function only calls itself on inputs that approach a base case,
 then we say it is *well founded*, and it will not have an issue of infinite recursion.
 
 For instance: the $n = 3$ case will depend on $n-1 = 2$,
 which will depend on $(n-1)-1 = 1$, which will depend on $((n-1)-1)-1 = 0$,
 which is a base case.
-
 A properly defined recursion should always eventually reach a base case.
 
 Sticking that recursive case in gets us this:
@@ -204,9 +213,9 @@ def factorial(n):
   # n! = n * (n-1)!
   return n * factorial(n-1)
 
-print(f"factorial(0)  : {factorial(0)}")  # 1
-print(f"factorial(1)  : {factorial(1)}")  # 1
-print(f"factorial(5)  : {factorial(5)}")  # 120
+print(f"factorial(0) : {factorial(0)}")  # 1
+print(f"factorial(1) : {factorial(1)}")  # 1
+print(f"factorial(5) : {factorial(5)}")  # 120
 ```
 
 (You could use `if`-`else` if you preferred,
@@ -225,7 +234,6 @@ To properly guard our function, we should weed these cases out.
 Because if we have our function deal with these cases via an error/abort,
 then there is no risk of infinite recursion from these cases
 (since the function terminates on that call).
-
 The risk of an illegal input triggering an infinite recursion is the only reason
 I feel compelled to specifically flag these cases.
 (After all, almost any function runs the risk of illegal inputs,
@@ -394,10 +402,10 @@ So for `fin(n)` it takes "on the order of"
 $2^n$ steps for this function to compute that. Quite horrendous at scale.
 
 There is a whole programming technique called *dynamic programming*
-while is about turning these kinds of recursions into iterative approaches
-that effective cache/save the results of previous function calls.
+which is about turning these kinds of recursions into iterative approaches
+that effectively cache/save the results of previous function calls.
 
-Applying that technique her could lead to something like:
+Applying that technique here could lead to something like:
 ```py live_py title=Fibonacci_Iteration
 def fib(n):
   # fib_list effectively stores/caches what would be
@@ -413,10 +421,14 @@ for i in range(10):
   print(f"fib({i}) : {fib(i)}")
 ```
 
-So for `fin(n)` this now takes "on the order of" $n$ steps.
+So for `fib(n)` this now takes "on the order of" $n$ steps.
 
 As a bonus, there is actually a **constant time**
 way to calculate the fibonacci sequence.
+(Constant number of operations at any rate,
+true time complexity is technically a more complicated story
+involving lengths of binary representations of numbers
+and the actual mechanics of arithmetic operations.)
 
 ```py live_py title=Fibonacci_Constant
 rt5 = 5 ** (1/2)
@@ -434,7 +446,7 @@ for i in range(10):
 
 ### $3n+1$ Sequence
 
-Consider a sequence of number based on these rules:
+Consider a sequence of numbers based on these rules:
 * You start at some positive number (our input).
 * You stop when the sequence gets to 1.
 * For even $n$, the next number is $\frac{1}{2}n$
@@ -486,7 +498,7 @@ And maybe we want the sum of all these numbers.
 That ... is not pleasant to do iteratively.
 
 You may find this example rather contrived. And it is.
-But it isomorphic/structurally equivalent to a quite common structure:
+But it is isomorphic/structurally equivalent to a quite common structure:
 [a tree](https://en.wikipedia.org/wiki/Tree_(data_structure))
 (albeit with values only at the leaves).
 So the structure of it is not so far afield from something that may exist.
@@ -525,4 +537,59 @@ def nested_list_sum(nested_list):
 
 nested_list = [1,[2,[3,[4,5],6],7],8,[[9]]]
 print(f"Sum: {nested_list_sum(nested_list)}") # 45
+```
+
+### Merge Sort
+
+The examples of recursion here have been fairly mathematical and rather contrived.
+When I learned recursion the example was Towers of Hanoi, which is also fairly contrived.
+
+The issue is that recursion is often a useful tool for
+iterating through fundamentally recursive structures,
+but we don't really see those structure until the data structures class
+(CS187, I believe). So I can't really talk about binary search trees,
+searching through the filesystem (which is a tree), arithmetic expression parsing,
+abstract syntax trees for code, etc.
+
+We also don't really feel people have enough of a theory backing until after CS250,
+so we don't touch the divide-and-conquer style of programming until CS311.
+I suppose you could use recursion to find your way through a maze,
+but that's basically depth-first search, another thing saved for later.
+
+I suppose maybe the most useful example of recursion that isn't getting too far ahead is
+sorting with merge sort. The setting is you have an unsorted list and want to sort it.
+Organising data is a reasonable thing to want to do, and one of the more efficient ways
+to do it is recursive.
+
+The idea is to take the unsorted list, split it in half, sort the halves (recur),
+and weave the sorted halves back together.
+
+Our base case is "a trivially sorted list", i.e., a list of length 0 or 1.
+Our recursive case is otherwise, when we have a list of length 2 or more.
+Our recursion here is well founded because splitting the list gives us shorter lists,
+which brings us closer to the length 0 or 1 base case.
+
+Putting this into code could look like:
+
+```py live_py title=Merge_Sort
+def merge_sorted(l1, l2): # assuming l1 and l2 are sorted, weave together
+  merge = [] # start with empty list
+  while l1 != [] and l2 != []: # while both have an element
+    # append smaller smallest element of the 2 lists
+    merge.append((l1 if l1[0] <= l2[0] else l2).pop(0))
+  return merge + l1 + l2 # one or both of l1 and l2 are empty at this point
+
+def merge_sort(unsorted_list):
+  # If it's not a nested list
+  if len(unsorted_list) <= 1:
+    return unsorted_list
+  # Recur on halves (I use odd and even indices for halving, since I like the look)
+  sorted_even_half = merge_sort(unsorted_list[::2])
+  sorted_odd_half = merge_sort(unsorted_list[1::2])
+  # merge together
+  sorted_list = merge_sorted(sorted_even_half, sorted_odd_half)
+  return sorted_list
+
+unsorted_list = [3,1,4,1,5,9,2,6,5,3,5]
+print(f"Sorted list: {merge_sort(unsorted_list)}")
 ```
