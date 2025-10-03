@@ -55,7 +55,7 @@ GUIs are essential for a more user-friendly presentation of the program,
 but they are something of a dragon for us to wrestle with and to get to a pleasing state.
 
 We'll look at a sometimes-built-in Python module for making primitive GUIs,
-tkinter, to get the of what making a GUI can look like.
+tkinter, to get the gist of what making a GUI can look like.
 We'll give our GUI some simple functionality,
 bearing in mind the notion that ultimately we want
 the user to be able to do something/*trigger* an event (e.g., click a button in the GUI),
@@ -123,7 +123,7 @@ label.place(x=320, y=100, anchor="center")
 window.mainloop()
 ```
 
-The label constructor can take many things, but we use:
+The label constructor can take many things, but here we use:
 * `text`, the text we want displayed
 * `font`, information about the font of the text being displayed
 
@@ -165,7 +165,7 @@ state = {"count": 0}
 label = Label(text=f"Count: {state['count']}", font=("Helvetica", 64, "bold"))
 label.place(x=320, y=100, anchor="center")
 
-button =  Button(text="Increase Count", font=("Helvetica", 32))
+button = Button(text="Increase Count", font=("Helvetica", 32))
 button.place(x=320, y=300, anchor="center")
 
 window.mainloop()
@@ -194,7 +194,7 @@ def increase_count():
   state['count'] += 1
   label["text"] = f"Count: {state['count']}"
 
-button =  Button(text="Increase Count", font=("Helvetica", 32), command=increase_count)
+button = Button(text="Increase Count", font=("Helvetica", 32), command=increase_count)
 button.place(x=320, y=300, anchor="center")
 
 window.mainloop()
